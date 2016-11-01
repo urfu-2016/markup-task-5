@@ -1,3 +1,71 @@
+.cat
+{
+    display: inline-block;
+}
+
+.cat:hover
+{
+    box-shadow: 9 2px 2px rgba(0, 0, 0, .15);
+}
+
+.cat a:hover
+{
+    color: red;
+}
+
+.cat img:hover
+{
+    filter: contrast(175%);
+}
+
+.cat .category:hover
+{
+    font-weight: bold;
+}
+
+img
+{
+    width: 200px;
+}
+
+a
+{
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description
+{
+    width: 200px;
+}
+
+.category
+{
+    color: #58585a;
+    text-decoration: underline;
+}
+
+.price > span:first-child
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #96070a;
+}
+
+.price > span:nth-child(2)
+{
+    color: #3a3a3c;
+    text-decoration: line-through;
+}
+
+.price > span:after
+{
+    content: '₽';
+}
+
 .rating
 {
     unicode-bidi: bidi-override;
@@ -24,12 +92,12 @@
 .rating > input:hover:before,
 .rating > input:hover ~ input:before
 {
-    color: red;
+    color: #ffc613;
 }
 
 .rating > input:checked:before,
 .rating > input:checked ~ input:before
 {
     content: '★';
-    color: red;
+    color: #ffc613;
 }
