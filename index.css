@@ -1,0 +1,35 @@
+.rating
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > input
+{
+    display: inline-block;
+    visibility: hidden;
+}
+
+.rating > input:before
+{
+    visibility: visible;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    content: '☆';
+    font-size: 2.5em;
+    color: #000;
+}
+
+.rating > input:hover:before,
+.rating > input:hover ~ input:before
+{
+    color: red;
+}
+
+.rating > input:checked:before,
+.rating > input:checked ~ input:before
+{
+    content: '★';
+    color: red;
+}
