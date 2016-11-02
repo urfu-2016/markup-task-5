@@ -1,0 +1,125 @@
+body,
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+sup
+{
+    font-size: 10px;
+}
+
+ul
+{
+    margin: 5px 0 0;
+}
+
+.one-in-row:checked ~ main .image
+{
+    display: inline-block;
+    min-height: 0;
+    width: 30%;
+}
+
+.one-in-row:checked ~ main .thumbnail
+{
+    position: static;
+}
+
+.one-in-row:checked ~ main .info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.one-in-row:checked ~ main .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.one-in-row:checked ~ main .cat
+{
+    width: 100%;
+}
+
+.cat
+{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+.cat:hover
+{
+    border: 1px solid black;
+    padding: 9px;
+}
+
+.image
+{
+    min-height: 305px;
+    position: relative;
+}
+
+.name
+{
+    white-space: nowrap;
+}
+
+.thumbnail
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+.current-price
+{
+    color: red;
+    font-size: larger;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.star
+{
+    width: 17px;
+    margin: 0;
+    padding: 0;
+}
+
+.star:nth-child(even)
+{
+    z-index: 3;
+}
+
+.star:nth-child(odd):after
+{
+    visibility: visible;
+    z-index: 2;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    bottom: 20px;
+    content: '☆';
+}
+
+.category
+{
+    text-decoration: underline;
+    color: #666;
+}
