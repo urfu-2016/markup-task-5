@@ -89,7 +89,7 @@
     position: absolute;
     bottom: 0;
     display: block;
-    opacity: 0.9;
+    opacity: .9;
 }
 
 .cat-image:hover
