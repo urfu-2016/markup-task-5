@@ -1,11 +1,12 @@
 .cat
 {
+    width: 200px;
     display: inline-block;
 }
 
 .cat:hover
 {
-    box-shadow: 9 2px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
 }
 
 .cat a:hover
@@ -25,21 +26,15 @@
 
 img
 {
-    width: 200px;
+    width: 100%;
 }
 
 a
 {
     display: block;
-    width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.description
-{
-    width: 200px;
 }
 
 .category
@@ -100,4 +95,23 @@ a
 {
     content: '★';
     color: #ffc613;
+}
+
+input:checked ~ .cat
+{
+    width: 100%;
+    display: block;
+}
+
+input:checked ~ .cat > img
+{
+    display: inline-block;
+    width: 25%;
+}
+
+input:checked ~ .cat > .main-info
+{
+    display: inline-block;
+    position: relative;
+    left: 10%;
 }
