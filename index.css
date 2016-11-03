@@ -1,0 +1,176 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* For stars (COPY-PASTE FROM GOOGLE) */
+
+.rating > .rating-input
+{
+    display: none;
+}
+
+.rating > .star-label:before
+{
+    margin: 5px;
+    font-size: 2vw;
+    font-family: FontAwesome, fantasy;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > .star-label
+{
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > .rating-input:checked ~ .star-label, /* show gold star when clicked */
+.rating:not(:checked) > .star-label:hover, /* hover current star */
+.rating:not(:checked) > .star-label:hover ~ .star-label
+{
+    color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > .rating-input:checked + .star-label:hover,
+    /* hover current star when changing rating */
+.rating > .rating-input:checked ~ .star-label:hover,
+.rating > .star-label:hover ~ .rating-input:checked ~ .star-label,
+    /* lighten current selection */
+.rating > .rating-input:checked ~ .star-label:hover ~ .star-label
+{
+    color: #ffed85;
+}
+
+/* Ctrl+C / Ctrl+V end */
+
+/* My own css */
+
+.cat-card
+{
+    border: #00f dotted 4px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.display-type-checkbox
+{
+    display: none;
+}
+
+.display-type-checkbox-label:after
+{
+    content: 'Плитки';
+}
+
+.display-type-checkbox:checked ~ .display-type-checkbox-label:after
+{
+    content: 'Список';
+}
+
+.display-type-checkbox:checked ~ .content .cat-card
+{
+    width: 80%;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card .cat-img-div,
+.display-type-checkbox:checked ~ .content .cat-card .cat-description,
+.display-type-checkbox:checked ~ .content .cat-card .cat-caption
+{
+    margin: 5px;
+    vertical-align: middle;
+    width: 30%;
+    display: inline-block;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card
+{
+    border: #00f solid 3px;
+}
+
+.cat-name
+{
+    text-overflow: ellipsis;
+}
+
+.cat-name:hover
+{
+    border: #00f solid 2px;
+}
+
+.cat-img:hover
+{
+    border: #0f0 dotted 3px;
+    padding: 0;
+}
+
+.cat-img-div
+{
+    min-height: 350px;
+    position: relative;
+}
+
+.cat-card:hover
+{
+    border-color: #0f0;
+}
+
+.cat-category:hover
+{
+    text-decoration: underline;
+}
+
+.cat-img
+{
+    padding: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: block;
+}
+
+.uncommon
+{
+    color: #73cf33;
+}
+
+.rare
+{
+    color: #00f;
+}
+
+.epic
+{
+    color: #80f;
+}
+
+.legendary
+{
+    color: #ffa500;
+}
+
+.old-cost
+{
+    text-decoration: line-through;
+}
+
+.display-type-checkbox-label,
+.display-type-checkbox:checked ~ .display-type-checkbox-label:hover
+{
+    border: #00f dotted 2px;
+}
+
+.display-type-checkbox:checked ~ .display-type-checkbox-label,
+.display-type-checkbox-label:hover
+{
+    border: #00f solid 2px;
+}
