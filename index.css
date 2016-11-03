@@ -16,14 +16,14 @@
     margin: 5px 0 0;
 }
 
-.one-in-row:checked ~ main .image
+.one-in-row:checked ~ main .image-wrapper
 {
     display: inline-block;
     min-height: 0;
     width: 30%;
 }
 
-.one-in-row:checked ~ main .thumbnail
+.one-in-row:checked ~ main .cat-image
 {
     position: static;
 }
