@@ -1,0 +1,30 @@
+.item
+{
+    border: 1px solid black;
+    width: 750px;
+    padding: 10px;
+    margin: 20px;
+    display:inline-block;
+}
+
+.item ul
+{
+    display:inline-block;
+}
+
+.item p
+{
+    padding-left: 10px;
+    display:inline-block;
+}
+
+.item img
+{
+    display:inline-block;
+    width: 230;
+}
+
+div
+{
+    display:inline-block;
+}
