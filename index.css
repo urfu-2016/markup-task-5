@@ -103,7 +103,7 @@ header
     background: url('img/git.svg') no-repeat 50% 0;
     background-size: 192px 192px;
     margin-top: 92px;
-    padding: 216px 0 0 0;
+    padding: 216px 0 0;
     text-align: center;
 }
 
@@ -125,40 +125,43 @@ header
     padding: 0 24px;
 }
 
-input[name="switcher"]
+input[name='switcher']
 {
     display: none;
 }
 
-input[name="switcher"]:checked + .switcher-text
+input[name='switcher']:checked + .switcher-text
 {
     background-image: url('img/list.svg');
 }
 
-input[name="switcher"]:checked + .switcher-text::before
+input[name='switcher']:checked + .switcher-text::before
 {
-    content: 'В виде списка'
+    content: 'В виде списка';
 }
 
-input[name="switcher"]:checked ~ .entries .entry
+input[name='switcher']:checked ~ .entries .entry
 {
     display: block;
     margin-right: 0;
     width: 100%;
 }
 
-input[name="switcher"]:checked ~ .entries .entry > *
+input[name='switcher']:checked ~ .entries .entry-img-contaner,
+input[name='switcher']:checked ~ .entries .description,
+input[name='switcher']:checked ~ .entries .about
+
 {
     display: inline-block;
     vertical-align: top;
 }
 
-input[name="switcher"]:checked ~ .entries .entry-img-contaner
+input[name='switcher']:checked ~ .entries .entry-img-contaner
 {
     width: 30%;
 }
 
-input[name="switcher"]:checked ~ .entries .entry-img-contaner img
+input[name='switcher']:checked ~ .entries .entry-img-contaner img
 {
     height: auto;
     position: static;
@@ -166,13 +169,13 @@ input[name="switcher"]:checked ~ .entries .entry-img-contaner img
     width: 100%;
 }
 
-input[name="switcher"]:checked ~ .entries .description
+input[name='switcher']:checked ~ .entries .description
 {
     padding-left: 2%;
     width: 28%;
 }
 
-input[name="switcher"]:checked ~ .entries .about
+input[name='switcher']:checked ~ .entries .about
 {
     width: 39%;
 }
@@ -199,7 +202,7 @@ input[name="switcher"]:checked ~ .entries .about
 
 .switcher-text::before
 {
-    content: 'В виде сетки'
+    content: 'В виде сетки';
 }
 
 .entry
@@ -218,7 +221,7 @@ input[name="switcher"]:checked ~ .entries .about
 .entry:hover
 {
     border-color: #b0bec5;
-    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, .35);
 }
 
 .entry-img-contaner
@@ -274,7 +277,8 @@ input[name="switcher"]:checked ~ .entries .about
     text-decoration: none;
 }
 
-.rating, .rating .value
+.rating,
+.rating .value
 {
     background-repeat: repeat-x;
     height: 24px;
