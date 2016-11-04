@@ -2,6 +2,7 @@
 {
     width: 200px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .cat:hover
@@ -24,12 +25,21 @@
     font-weight: bold;
 }
 
-img
+.image
 {
-    width: 100%;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
 }
 
-a
+.image > img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.main-info > a
 {
     display: block;
     white-space: nowrap;
@@ -103,10 +113,16 @@ input:checked ~ .cat
     display: block;
 }
 
-input:checked ~ .cat > img
+input:checked ~ .cat > .image
 {
     display: inline-block;
     width: 25%;
+}
+
+input:checked ~ .cat > .image img
+{
+    position: initial;
+    height: inherit;
 }
 
 input:checked ~ .cat > .main-info
