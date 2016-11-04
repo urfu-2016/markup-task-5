@@ -1,0 +1,201 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@font-face
+{
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+        url('./fonts/OpenSans-Regular.ttf') format('tff');
+}
+
+.kindness-wrapper
+{
+    display: table-row;
+}
+
+.kindness
+{
+    float: left;
+    border: none;
+}
+
+.config,
+.kindness-input
+{
+    display: none;
+}
+
+.kindness-label
+{
+    float: right;
+    color: #D3D3D3;
+}
+
+.kindness-label:before
+{
+    font-size: 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'FontAwesome', fantasy;
+    content: '\f005';
+    margin: 0;
+}
+
+.half:before
+{
+    position: absolute;
+    content: '\f089';
+}
+
+.kindness-input:checked ~ .kindness-label,
+.kindness:not(:checked) > .kindness-label:hover,
+.kindness:not(:checked) > .kindness-label:hover ~ .kindness-label
+{
+    color: #CEB566;
+}
+
+.kindness-input:checked + .kindness-label:hover,
+.kindness-input:checked ~ .kindness-label:hover,
+.kindness-label:hover ~ .kindness-input:checked ~ .kindness-label,
+.kindness-input:checked ~ .kindness-label:hover ~ .kindness-label
+{
+    color: #F9BE02;
+}
+
+body
+{
+    font: 18pt 'Open Sans', sans-serif;
+}
+
+.window
+{
+    border: 2px solid #E3E3E3;
+    padding: 30px;
+    margin: 10px;
+    background-color: #F3E2BB;
+    color: #D9431C;
+}
+
+.head
+{
+    font-size: 32pt;
+    text-align: center;
+    text-shadow: 3px 3px #FFF;
+    margin-bottom: 20px;
+}
+
+.label
+{
+    margin-left: 10px;
+}
+
+.label-tile
+{
+    margin-left: 30px;
+}
+
+.item:hover,
+.item > .image > img:hover
+{
+    box-shadow: 5px 5px 10px #D3D3D3;
+}
+
+.label-tile:hover,
+.label-list:hover,
+.item > .image > img:hover,
+.category:hover
+{
+    cursor: pointer;
+}
+
+.item
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.name
+{
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 22pt
+}
+
+.name:hover,
+.category:hover
+{
+    text-decoration: underline;
+}
+
+.category
+{
+    font-size: 14pt;
+    color: #808080;
+}
+
+.price
+{
+    color: #F00;
+    font-weight: bold;
+}
+
+.previous-price
+{
+    color: #808080;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.description > p
+{
+    font-size: 14pt;
+    margin-top: 30px;
+}
+
+.name,
+.category,
+.estimation,
+.price
+{
+    display: block;
+}
+
+.list:checked ~ .content > .item > .image,
+.list:checked ~ .content > .item > .description,
+.tile:checked ~ .content > .item
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list:checked ~ .content > .item > .description
+{
+    max-width: 50%;
+}
+
+.list:checked ~ .content > .item > .image > img
+{
+    width: 400px;
+    margin-right: 10px;
+}
+
+.tile:checked ~ .content > .item
+{
+    width: 300px;
+}
+
+.tile:checked ~ .content > .item > .image
+{
+    min-height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tile:checked ~ .content > .item > .image > img
+{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

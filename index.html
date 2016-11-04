@@ -1,8 +1,811 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Мяндекс.Муррркет</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="head window">
+            <header>Мяндекс.Муррркет</header>
+        </div>
+        <input class="config tile" id="tile" type="radio" name="view" checked>
+        <input class="config list" id="list" type="radio" name="view">
+        <label class="label label-tile" for="tile">
+            <img alt="tile" title="tile" src="./img/glyphicon-th-large.png">
+        </label>
+        <label class="label label-list" for="list">
+            <img alt="list" title="list" src="./img/glyphicon-th-list.png">
+        </label>
+        <div class="content">
+            <div class="item window">
+                <div class="image">
+                    <img alt="Washing cat" title="Washing cat" src="./img/01.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-дискомфорт</a>
+                    <em class="category">Коты для людей</em>
+                    <div class="estimation"></div>
+                    <div class="price">$49 <span class="previous-price">$50</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-1-kindness-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-4-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-4" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-3-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-3" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-2-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-2" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-1-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-1" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-1-kindness-0-5" name="cat-1-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Лучший выбор для любителей котов, испытывающих дискомфорт.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Begemot" title="Begemot cat" src="./img/02.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-бегемот</a>
+                    <em class="category">Коты для котов</em>
+                    <div class="estimation"></div>
+                    <div class="price">$66 <span class="previous-price">$666</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-2-kindness-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-4-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-4" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-3-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-3" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-2-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-2" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-1-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-1" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-2-kindness-0-5" name="cat-2-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-2-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Не шалит, никого не трогает, починяет примус.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Patriot" title="Patriot cat" src="./img/03.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-патриот</a>
+                    <em class="category">Коты для государственных органов</em>
+                    <div class="estimation"></div>
+                    <div class="price">$100 <span class="previous-price">$101</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-3-kindness-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-4-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-4" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-3-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-3" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-2-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-2" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-1-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-1" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-3-kindness-0-5" name="cat-3-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-3-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Никогда не променяет свою Родину на зарубежный вискас.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Apperkot" title="Apperkot cat" src="./img/04.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-апперкот</a>
+                    <em class="category">Коты для спорта и отдыха</em>
+                    <div class="estimation"></div>
+                    <div class="price">$50 <span class="previous-price">$51</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-4-kindness-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-4-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-4" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-3-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-3" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-2-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-2" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-1-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-1" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-4-kindness-0-5" name="cat-4-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-4-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Незаменимый помощник в разборках на районе.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Butterbread" title="Butterbread cat" src="./img/05.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-бутерброд</a>
+                    <em class="category">Коты для развлечения</em>
+                    <div class="estimation"></div>
+                    <div class="price">$25 <span class="previous-price">$35</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-5-kindness-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-4-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-4" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-3-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-3" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-2-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-2" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-1-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-1" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-5-kindness-0-5" name="cat-5-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-5-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Лучший выбор для тех, кто любит котов на завтрак, обед и ужин.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Leopold" title="Leopold cat" src="./img/06.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот Леопольд</a>
+                    <em class="category">Широкоэкранные коты</em>
+                    <div class="estimation"></div>
+                    <div class="price">$150 <span class="previous-price">$160</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-6-kindness-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-4-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-4" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-3-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-3" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-2-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-2" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-1-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-1" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-6-kindness-0-5" name="cat-6-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-6-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Считает, что надо жить дружно.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Carbon" title="Carbon cat" src="./img/07.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-углерод</a>
+                    <em class="category">Коты для развития мелкой маторики</em>
+                    <div class="estimation"></div>
+                    <div class="price">$5 <span class="previous-price">$6</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-7-kindness-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-4-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-4" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-3-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-3" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-2-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-2" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-1-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-1" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-7-kindness-0-5" name="cat-7-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-7-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Совсем как настоящий...</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Bankrot" title="Bankrot cat" src="./img/08.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-банкрот</a>
+                    <em class="category">Коты для биржи труда</em>
+                    <div class="estimation"></div>
+                    <div class="price">$0 <span class="previous-price">$150</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-8-kindness-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-4-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-4" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-3-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-3" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-2-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-2" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-1-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-1" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-8-kindness-0-5" name="cat-8-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-8-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>К этому коту экономический кризис был безжалостен.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Vodovorot" title="Vodovorot cat" src="./img/09.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-водоворот</a>
+                    <em class="category">Бытовые коты</em>
+                    <div class="estimation"></div>
+                    <div class="price">$75 <span class="previous-price">$90</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-9-kindness-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-4-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-4" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-3-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-3" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-2-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-2" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-1-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-1" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-9-kindness-0-5" name="cat-9-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-9-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Просто поместите в стиральную машину на 15-20 минут...</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Bergamot" title="Bergamot cat" src="./img/10.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-бергамот</a>
+                    <em class="category">Коты для чаепития</em>
+                    <div class="estimation"></div>
+                    <div class="price">$23 <span class="previous-price">$32</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-10-kindness-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-4-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-4" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-3-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-3" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-2-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-2" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-1-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-1-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-1" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-10-kindness-0-5" name="cat-10-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-10-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Мы бережно собираем лучших котов с южных плантаций Индии.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Zhmot" title="Zhmot cat" src="./img/11.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-жмот</a>
+                    <em class="category">Коты для Ю. Д. Куклачёва</em>
+                    <div class="estimation"></div>
+                    <div class="price">$500 <span class="previous-price">$100</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-11-kindness-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-4-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-4" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-3-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-3" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-2-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-2" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-1-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-1" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-11-kindness-0-5" name="cat-11-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-11-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Никогда не поделится чем-то своим, такой уж у него характер...</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Pilot" title="Pilot cat" src="./img/12.png">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-пилот</a>
+                    <em class="category">Коты для бизнеса</em>
+                    <div class="estimation"></div>
+                    <div class="price">$98 <span class="previous-price">$99</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-12-kindness-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-4-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-4" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-3-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-3" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-2-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-2" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-1-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-1" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-12-kindness-0-5" name="cat-12-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-12-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Большой специалист по прыжкам из окна третьего этажа.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Naoborot" title="Naoborot cat" src="./img/13.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-наоборот</a>
+                    <em class="category">Коты для дома и уюта</em>
+                    <div class="estimation"></div>
+                    <div class="price">$25 <span class="previous-price">$30</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-13-kindness-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-4-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-4" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-3-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-3" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-2-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-2" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-1-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-1" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-13-kindness-0-5" name="cat-13-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-13-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>Кот перевёрнутый обыкновенный.</p>
+                </div>
+            </div>
+            <div class="item window">
+                <div class="image">
+                    <img alt="Robot" title="Robot cat" src="./img/14.jpg">
+                </div>
+                <div class="description">
+                    <a href="#" class="name">Кот-робот</a>
+                    <em class="category">Высокотехнологичные коты</em>
+                    <div class="estimation"></div>
+                    <div class="price">$1500 <span class="previous-price">$2100</span></div>
+                    <div class="kindness-wrapper">
+                        <div class="kindness">
+                            <input id="cat-14-kindness-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-5" title="Доброта 5" class="kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-4-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-4-5" title="Доброта 4,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-4" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-4" title="Доброта 4" class="kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-3-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-3-5" title="Доброта 3,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-3" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-3" title="Доброта 3" class="kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-2-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-2-5" title="Доброта 2,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-2" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-2" title="Доброта 2" class="kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-1-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-1-5" title="Доброта 1,5" class="half kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-1" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-1" title="Доброта 1" class="kindness-label">
+                            </label>
+                            <input id="cat-14-kindness-0-5" name="cat-14-kindness"
+                            class="kindness-input" type="radio">
+                            <label for="cat-14-kindness-0-5" title="Доброта 0,5" class="half kindness-label">
+                            </label>
+                        </div>
+                    </div>
+                    <p>
+                        Ваш новый i-кот со встроенным нана-синхрофазатроном для
+                        экранирования высокочастотной модуляции световых аксонометрических проекций.
+                        Главное не забывать подзаряжать и вовремя устанавливать обновления.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
