@@ -1,0 +1,209 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.list-items
+{
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.truncate
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-container
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    vertical-align: top;
+}
+
+.item-container:hover
+{
+    background-color: #eee;
+}
+
+.row-image
+{
+    min-height: 305px;
+    position: relative;
+}
+
+.item-image
+{
+    max-height: 95%;
+    max-width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 3px solid white;
+    opacity: .8;
+}
+
+.item-image:hover
+{
+    border: 3px solid gray;
+    opacity: 1;
+}
+
+.column-container
+{
+    float: left;
+}
+
+input[type='checkbox']:checked ~ section > div > .center-side,
+input[type='checkbox']:checked ~ section > div > .right-side
+{
+    width: 40%;
+}
+
+input[type='checkbox']:checked ~ section > div > .row-image
+{
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+
+input[type='checkbox']:checked ~ section > .item-container
+{
+    width: 100%;
+}
+
+.category-text
+{
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #eb9d14;
+    padding: 2px;
+    margin: 0;
+}
+
+.category-new
+{
+    background-color: #75f5ae;
+}
+
+.category-text:hover
+{
+    background-color: red;
+}
+
+.new-cost-item
+{
+    color: #b12704;
+    font-size: 1.3em;
+    display: inline;
+}
+
+.old-cost-item
+{
+    color: #555;
+    font-size: .9em;
+    text-decoration: line-through;
+    display: inline;
+}
+
+.cost-item
+{
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+.cost-item:before
+{
+    content: '$';
+}
+
+.delivery-time-item
+{
+    display: block;
+    color: green;
+}
+
+.delivery-time-item:before
+{
+    color: black;
+    text-decoration: underline;
+    content: 'Новые серии:';
+}
+
+.every-time-delivery:after
+{
+    color: green;
+    content: ' уже много лет доступны :)';
+}
+
+.wait-delivery:after
+{
+    color: red;
+    content: ' нужно ждать Рождества(';
+}
+
+.name-text
+{
+    font-size: 1.4em;
+}
+
+.name-text:hover
+{
+    color: red;
+}
+
+.rating
+{
+    border: none;
+    float: left;
+    padding: 0;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: 5px;
+    font-size: 1.25em;
+    display: inline-block;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+.rating > label
+{
+    color: #ddd;
+    position: relative;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #fa0;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #fc0;
+}
+
