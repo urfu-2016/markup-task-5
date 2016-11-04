@@ -1,0 +1,98 @@
+.name,
+.category,
+.cost,
+.description
+{
+    margin: 0;
+}
+
+.display-line:checked ~ .vacancy
+{
+    display: block;
+    width: 100%;
+}
+
+.vacancy:hover
+{
+    box-shadow: .5px .5px .5px .5px #747a5d;
+}
+
+.img-cat:hover
+{
+    width: 100%;
+}
+
+.name:hover
+{
+    font-size: 23px;
+}
+
+.category:hover
+{
+    color: #000;
+}
+
+.display-line:checked ~ .vacancy .wrapper,
+.display-line:checked ~ .vacancy .content,
+.display-line:checked ~ .vacancy .description
+{
+    margin: 10px;
+    vertical-align: middle;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+.content
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.container 
+{
+    max-width: 960px;
+}
+
+.cost 
+{
+    font: bold 18px Arial;
+    color: #900;
+}
+
+.category
+{
+    color: #666;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.name 
+{
+    font-size: 20px;
+}
+
+.img-cat 
+{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+.wrapper
+{
+    min-height: 250px;
+    position: relative;
+}
+
+.vacancy 
+{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
