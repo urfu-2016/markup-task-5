@@ -3,8 +3,7 @@
 @font-face
 {
     font-family: 'Open Sans';
-    src: local('Open Sans'),
-        url('./fonts/OpenSans-Regular.ttf') format('tff');
+    src: local('Open Sans'), url('./fonts/OpenSans-Regular.ttf') format('tff');
 }
 
 .kindness-wrapper
@@ -27,7 +26,7 @@
 .kindness-label
 {
     float: right;
-    color: #D3D3D3;
+    color: #d3d3d3;
 }
 
 .kindness-label:before
@@ -50,7 +49,7 @@
 .kindness:not(:checked) > .kindness-label:hover,
 .kindness:not(:checked) > .kindness-label:hover ~ .kindness-label
 {
-    color: #CEB566;
+    color: #ceb566;
 }
 
 .kindness-input:checked + .kindness-label:hover,
@@ -58,7 +57,7 @@
 .kindness-label:hover ~ .kindness-input:checked ~ .kindness-label,
 .kindness-input:checked ~ .kindness-label:hover ~ .kindness-label
 {
-    color: #F9BE02;
+    color: #f9be02;
 }
 
 body
@@ -68,18 +67,18 @@ body
 
 .window
 {
-    border: 2px solid #E3E3E3;
+    border: 2px solid #e3e3e3;
     padding: 30px;
     margin: 10px;
-    background-color: #F3E2BB;
-    color: #D9431C;
+    background-color: #f3e2bb;
+    color: #d9431c;
 }
 
 .head
 {
     font-size: 32pt;
     text-align: center;
-    text-shadow: 3px 3px #FFF;
+    text-shadow: 3px 3px #fff;
     margin-bottom: 20px;
 }
 
@@ -96,7 +95,7 @@ body
 .item:hover,
 .item > .image > img:hover
 {
-    box-shadow: 5px 5px 10px #D3D3D3;
+    box-shadow: 5px 5px 10px #d3d3d3;
 }
 
 .label-tile:hover,
@@ -118,7 +117,7 @@ body
     text-decoration: none;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 22pt
+    font-size: 22pt;
 }
 
 .name:hover,
@@ -135,7 +134,7 @@ body
 
 .price
 {
-    color: #F00;
+    color: #f00;
     font-weight: bold;
 }
 
