@@ -1,0 +1,111 @@
+h1
+{
+    text-align: center;
+}
+
+label
+{
+    background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+}
+
+a
+{
+    display: block;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+a:hover
+{
+    white-space: normal;
+}
+
+em
+{
+    display: block;
+}
+
+.coast,
+.old_coast
+{
+    display: inline;
+}
+
+em:hover
+{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.cat
+{
+    text-align: center;
+    height: 400px;
+    float: left;
+}
+
+.cat:hover
+{
+    background-color: gray;
+}
+
+div img
+{
+    width: 250px;
+}
+
+div img:hover
+{
+    width: 300px;
+}
+
+.list:checked ~ .cat
+{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.list:checked ~ div img
+{
+    float: left;
+}
+
+.list:checked ~ div label
+{
+    text-align: left;
+}
+
+.old_coast
+{
+    text-decoration: line-through;
+    color: #f00;
+}
+
+.stars
+{
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.stars input
+{
+    opacity: 0;
+    position: absolute;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label
+{
+    background-position: 0 -40px;
+}
+
+.stars label
+{
+    height: 40px;
+    width: 43px;
+    float: right;
+}
+
