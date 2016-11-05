@@ -17,6 +17,7 @@ header h1::first-letter
     height: 300px;
     margin: 10px auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .image img
@@ -124,7 +125,7 @@ header h1::first-letter
 {
     border-radius: 10px;
     box-shadow: inset #bfbfbf 0 -3px 8px
-        , #000 0 3px 8px -10px;
+    , #000 0 3px 8px -10px;
 }
 
 .cat .image img:hover
