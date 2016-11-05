@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+.mode:checked ~ div
+{
+    display: block;
+    width: 100%;
+    column-count: 3;
+    margin-bottom: 20px;
+}
+
+div
+{
+    width: 350px;
+    display: inline-block;
+    font-family: 'Philosopher', cursive;
+    padding: 10px;
+    overflow: hidden;
+}
+
+div:hover
+{
+    box-shadow: 0 0 10px 5px #540a00;
+}
+
+.cat-img
+{
+    width: 100%;
+    transition: all 1s ease-out;
+}
+
+.cat-img:hover
+{
+    transform: scale(1.1);
+}
+
+.rating
+{
+    width: 30%;
+}
+
+.price
+{
+    color: darkred;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+mark
+{
+    text-decoration: line-through;
+    background-color: inherit;
+    font-size: 80%;
+}
+
+.name
+{
+    font-size: 20px;
+    text-overflow: ellipsis;
+}
+
+p,
+h3
+{
+    margin: 0 0 5px;
+}
+
+.category
+{
+    text-decoration: underline;
+}
+
+.category:hover
+{
+    font-style: italic;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
