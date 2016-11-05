@@ -1,0 +1,153 @@
+body
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.header:first-letter
+{
+    color: red;
+}
+
+.string:checked ~ main .notice
+{
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.string:checked ~ main .info
+{
+    display: inline-block;
+    width: 45%;
+}
+
+.string:checked ~ main .picture-part
+{
+    display: inline-block;
+    width: 20%;
+}
+
+.string:checked ~ main .description
+{
+    display: inline-block;
+    width: 33%;
+
+}
+
+.notice
+{
+    width: 250px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+ 
+}
+
+.notice:hover
+{
+    background-color: ivory;
+}
+
+.price
+{
+    font: italic 20px sans-serif;
+    color: red;
+}
+
+.info
+{
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description
+{
+    vertical-align: top;
+}
+
+.picture-part
+{
+    text-align: center;
+    line-height: 210px;
+    padding-bottom: 10px;
+}
+
+.cat-picture:hover
+{
+    border: 5px solid lightsteelblue;
+}
+
+.string:checked ~ main .cat-picture
+{
+    vertical-align: top;
+}
+
+.cat-picture
+{
+    vertical-align: bottom;
+}
+
+.name
+{
+    white-space: nowrap;
+}
+
+.name:hover
+{
+    color: darkred;
+    font-size: 20px;
+}
+
+.category:hover
+{
+    font-size: 16px;
+}
+
+.category
+{
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.rate
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+}
+
+.rate > span
+{
+    width: 1.1em;
+    color: gold;
+}
+
+.rate > span:hover:before,
+.rate > span:hover ~ span:before
+{
+    content: '\2605';
+    position: absolute;
+}
+
+footer
+{
+    padding: 10px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 14px;
+}
