@@ -1,0 +1,456 @@
+@font-face
+{
+    font-family: 'Yandex Sans';
+    font-weight: 600;
+    src: local('Yandex Sans');
+    src: url('fonts/Yandex-Sans-Text-Medium.ttf');
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans';
+    font-weight: 200;
+    src: local('Yandex Sans');
+    src: url('fonts/Yandex-Sans-Text-Thin.ttf');
+}
+
+@font-face
+{
+    font-family: 'Yandex Sans';
+    font-weight: 400;
+    src: local('Yandex Sans');
+    src: url('fonts/Yandex-Sans-Text-Light.ttf');
+}
+
+@font-face
+{
+    font-family: 'Font Awesome';
+    src: local('FontAwesome');
+    src: url('fonts/fontawesome.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    margin: 0;
+    background: #fff;
+    font: 400 16px 'Yandex Sans';
+    min-width: 800px;
+}
+
+.icon
+{
+    font: normal normal normal 14px/1 'Font Awesome';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sliders:before
+{
+    content: '\f1de';
+}
+
+.icon-list:before
+{
+    content: '\f0c9';
+}
+
+.icon-tile:before
+{
+    content: '\f17a';
+}
+
+.may-hidden
+{
+    display: none;
+}
+
+.may-tool,
+.may-header
+{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 0 50px 10px rgba(0,0,0,.05);
+}
+
+.may-header-logo
+{
+    width: 240px;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1.5em;
+    padding: 20px 0 20px 50px;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #111;
+}
+
+.may-header-logo a:first-child
+{
+    font-weight: 600;
+}
+
+.may-header-logo:first-letter
+{
+    color: #f00;
+}
+
+.may-header-tool
+{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: calc(100% - 370px);
+}
+
+figure:hover,
+label:hover
+{
+    color: #f00;
+    cursor: pointer;
+}
+
+.may-tool
+{
+    display: none;
+    background: #fd5;
+    font-size: 1.5em;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+input[id='tools']:checked ~ .may-tool
+{
+    display: block;
+}
+
+input[id='tile']:checked ~ .may-tool figure:first-child,
+input[id='list']:checked ~ .may-tool figure:last-child
+{
+    color: #f00;
+}
+
+.may-tool label
+{
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.may-tool figure
+{
+    display: inline-block;
+    width: calc(100%/2 - 5px);
+    margin: 0;
+    padding: 10px 0;
+}
+
+.may-tool figure figcaption
+{
+    font-size: .7em;
+    text-align: center;
+}
+
+.may-main
+{
+    margin: 0 45px;
+}
+
+.may-content
+{
+    margin: 30px auto;
+    width: 100%;
+}
+
+.may-card
+{
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    margin: 4px;
+    padding: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    vertical-align: top;
+}
+
+.may-card:hover
+{
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.may-card header
+{
+    position: relative;
+    height: 200px;
+    align-content: center;
+    bottom: 0;
+}
+
+.may-card header img
+{
+    max-height: 98%;
+    max-width: 98%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.may-card article
+{
+    position: relative;
+    padding: 0 6px;
+}
+
+.may-card article a
+{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.may-card article a:first-letter
+{
+    color: #f00;
+}
+
+.may-card-character
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+.may-card-character span
+{
+    font-weight: 400;
+}
+
+.may-card-rating
+{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+}
+
+.may-rating-i
+{
+    display: none;
+}
+
+.may-rating-star,
+.may-rating-star:nth-child(2n+1)
+{
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    width: 8px;
+    background: url(img/star1.png) bottom;
+}
+
+.may-rating-star
+{
+    background: url(img/star2.png) bottom;
+}
+
+.may-rating-i:nth-child(1):checked ~ .may-rating-star:nth-child(-n+11),
+.may-rating-i:nth-child(1):hover ~ .may-rating-star:nth-child(-n+11),
+.may-rating-i:nth-child(2):checked ~ .may-rating-star:nth-child(-n+12),
+.may-rating-i:nth-child(2):hover ~ .may-rating-star:nth-child(-n+12),
+.may-rating-i:nth-child(3):checked ~ .may-rating-star:nth-child(-n+13),
+.may-rating-i:nth-child(3):hover ~ .may-rating-star:nth-child(-n+13),
+.may-rating-i:nth-child(4):checked ~ .may-rating-star:nth-child(-n+14),
+.may-rating-i:nth-child(4):hover ~ .may-rating-star:nth-child(-n+14),
+.may-rating-i:nth-child(5):checked ~ .may-rating-star:nth-child(-n+15),
+.may-rating-i:nth-child(5):hover ~ .may-rating-star:nth-child(-n+15),
+.may-rating-i:nth-child(6):checked ~ .may-rating-star:nth-child(-n+16),
+.may-rating-i:nth-child(6):hover ~ .may-rating-star:nth-child(-n+16),
+.may-rating-i:nth-child(7):checked ~ .may-rating-star:nth-child(-n+17),
+.may-rating-i:nth-child(7):hover ~ .may-rating-star:nth-child(-n+17),
+.may-rating-i:nth-child(8):checked ~ .may-rating-star:nth-child(-n+18),
+.may-rating-i:nth-child(8):hover ~ .may-rating-star:nth-child(-n+18),
+.may-rating-i:nth-child(9):checked ~ .may-rating-star:nth-child(-n+19),
+.may-rating-i:nth-child(9):hover ~ .may-rating-star:nth-child(-n+19),
+.may-rating-i:nth-child(10):checked ~ .may-rating-star:nth-child(-n+20),
+.may-rating-i:nth-child(10):hover ~ .may-rating-star:nth-child(-n+20)
+{
+    background-position: top;
+}
+
+.may-rating-i:nth-child(1):hover ~ .may-rating-star:nth-child(n+12),
+.may-rating-i:nth-child(2):hover ~ .may-rating-star:nth-child(n+13),
+.may-rating-i:nth-child(3):hover ~ .may-rating-star:nth-child(n+14),
+.may-rating-i:nth-child(4):hover ~ .may-rating-star:nth-child(n+15),
+.may-rating-i:nth-child(5):hover ~ .may-rating-star:nth-child(n+16),
+.may-rating-i:nth-child(6):hover ~ .may-rating-star:nth-child(n+17),
+.may-rating-i:nth-child(7):hover ~ .may-rating-star:nth-child(n+18),
+.may-rating-i:nth-child(8):hover ~ .may-rating-star:nth-child(n+19),
+.may-rating-i:nth-child(9):hover ~ .may-rating-star:nth-child(n+20)
+{
+    background-position: bottom;
+}
+
+.may-card-price
+{
+    font-size: 1.3em;
+}
+
+.may-card-description
+{
+    position: relative;
+    text-overflow: ellipsis;
+    text-indent: 20px;
+    font-size: .85em;
+}
+
+input[id='list']:checked ~ .may-main .may-card
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+input[id='list']:checked ~ .may-main .may-card header
+{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    bottom: auto;
+}
+
+input[id='list']:checked ~ .may-main .may-card article
+{
+    width: calc(100% - 300px);
+    position: absolute;
+    left: 300px;
+}
+
+input[id='list']:checked ~ .may-main .may-card article a,
+input[id='list']:checked ~ .may-main .may-card article .may-card-character,
+input[id='list']:checked ~ .may-main .may-card article .may-card-rating,
+input[id='list']:checked ~ .may-main .may-card article .may-card-price
+{
+    left: 0;
+    width: 200px;
+    text-align: center;
+}
+
+input[id='list']:checked ~ .may-main .may-card article .may-card-character,
+input[id='list']:checked ~ .may-main .may-card article .may-card-rating,
+input[id='list']:checked ~ .may-main .may-card article .may-card-price
+{
+    padding: 0 20px;
+}
+
+input[id='list']:checked ~ .may-main .may-card article .may-card-description
+{
+    position: absolute;
+    top: 20px;
+    margin-left: 200px;
+    width: calc(100% - 250px);
+}
+
+.may-footer
+{
+    position: relative;
+    background: #f6f5f3;
+    padding: 0 0 20px;
+    color: #2b2b2b;
+}
+
+.may-footer-left
+{
+    display: inline-block;
+    width: 500px;
+    padding: 20px 0 20px 50px;
+}
+
+.may-footer-left h3,
+.may-footer-left a,
+.may-footer-right p
+{
+    font-size: .8em;
+}
+
+.may-footer-right p
+{
+    margin: 0;
+}
+
+.may-footer-left a
+{
+    display: block;
+}
+
+.may-footer-left a:hover
+{
+    color: #f00;
+}
+
+.may-col-2
+{
+    display: inline-block;
+    width: 240px;
+}
+
+.may-footer-right
+{
+    display: inline-block;
+    width: calc(100% - 610px);
+    text-align: right;
+    vertical-align: top;
+    padding: 30px 0;
+}
+
+.may-copyright
+{
+    border-top: 1px solid #eee;
+    position: relative;
+    font-size: .8em;
+    padding: 10px 50px 0;
+    text-align: right;
+    font-weight: 600;
+}
+
+.may-copyright address
+{
+    font-style: normal;
+}
+
+.may-copyright address a
+{
+    color: #8792a8;
+}
+
+.may-copyright address a:hover
+{
+    color: #f00;
+}
+
+.may-old-price
+{
+    text-decoration: line-through;
+    font-size: .5em;
+}

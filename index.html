@@ -2,7 +2,517 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Мяндекс.Муррркет - Online магазин котиков">
+    <meta name="author" content="Мяндекс.Муррркет">
+    <meta name="keywords" content="Мяндекс, Муррркет, котики">
+    <title>Мяндекс.Муррркет - котики для каждого, мяу!</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <input type="checkbox" id="tools" class="may-hidden">
+    <input type="radio" id="tile" name="view" class="may-hidden" checked>
+    <input type="radio" id="list" name="view" class="may-hidden">
+    <header class="may-header">
+        <div class="may-header-logo">
+            <a href="#">Мяндекс</a>
+            <a href="#">Муррркет</a>
+        </div>
+        <div class="may-header-tool">
+            <label class="icon icon-sliders" for="tools"></label>
+        </div>
+    </header>
+    <div class="may-tool">
+        <figure>
+            <label class="icon icon-tile" for="tile"></label>
+            <figcaption>Плитки</figcaption>
+        </figure>
+        <figure>
+            <label class="icon icon-list" for="list"></label>
+            <figcaption>Список</figcaption>
+        </figure>
+    </div>
+    <main class="may-main">
+        <div class="may-content">
+            <section class="may-card">
+                <header>
+                    <img src="img/snow.jpg" alt="Снежка" title="Снежка">
+                </header>
+                <article>
+                    <a href="#">Снежка</a>
+                    <p class="may-card-character">Категория: <span>calm</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="1-1-1" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-1-2" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-2-1" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-2-2" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-3-1" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-3-2" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-4-1" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-4-2" name="cat-1" class="may-rating-i">
+                        <input type="radio" id="1-5-1" name="cat-1" class="may-rating-i" checked>
+                        <input type="radio" id="1-5-2" name="cat-1" class="may-rating-i">
+                        <label for="1-1-1" class="may-rating-star"></label>
+                        <label for="1-1-2" class="may-rating-star"></label>
+                        <label for="1-2-1" class="may-rating-star"></label>
+                        <label for="1-2-2" class="may-rating-star"></label>
+                        <label for="1-3-1" class="may-rating-star"></label>
+                        <label for="1-3-2" class="may-rating-star"></label>
+                        <label for="1-4-1" class="may-rating-star"></label>
+                        <label for="1-4-2" class="may-rating-star"></label>
+                        <label for="1-5-1" class="may-rating-star"></label>
+                        <label for="1-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">9000p</p>
+                    <p class="may-card-description">
+                        Ми&shy;лый, смеш&shy;ной, теп&shy;лый бе&shy;лый ко&shy;те&shy;нок.
+                        На&shy;сто&shy;я&shy;щий до&shy;маш&shy;ний пи&shy;то&shy;мец.
+                        Обя&shy;за&shy;тель&shy;но ста&shy;нет лю&shy;бим&shy;чи&shy;ком в семье.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/bagira.jpg" alt="Багира" title="Багира">
+                </header>
+                <article>
+                    <a href="#">Багира</a>
+                    <p class="may-card-character">Категория: <span>calm</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="2-1-1" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-1-2" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-2-1" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-2-2" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-3-1" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-3-2" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-4-1" name="cat-2" class="may-rating-i" checked>
+                        <input type="radio" id="2-4-2" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-5-1" name="cat-2" class="may-rating-i">
+                        <input type="radio" id="2-5-2" name="cat-2" class="may-rating-i">
+                        <label for="2-1-1" class="may-rating-star"></label>
+                        <label for="2-1-2" class="may-rating-star"></label>
+                        <label for="2-2-1" class="may-rating-star"></label>
+                        <label for="2-2-2" class="may-rating-star"></label>
+                        <label for="2-3-1" class="may-rating-star"></label>
+                        <label for="2-3-2" class="may-rating-star"></label>
+                        <label for="2-4-1" class="may-rating-star"></label>
+                        <label for="2-4-2" class="may-rating-star"></label>
+                        <label for="2-5-1" class="may-rating-star"></label>
+                        <label for="2-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">5000p</p>
+                    <p class="may-card-description">
+                        От&shy;лич&shy;ный ха&shy;рак&shy;тер, руч&shy;ная,
+                        игри&shy;вая, ум&shy;ная, лю&shy;бит ру&shy;ки и
+                        вни&shy;ма&shy;ние. Пре&shy;крас&shy;но
+                        вос&shy;пи&shy;та&shy;на.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/lili.jpg" alt="Лили" title="Лили">
+                </header>
+                <article>
+                    <a href="#">Лили</a>
+                    <p class="may-card-character">Категория: <span>mysterious</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="3-1-1" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-1-2" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-2-1" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-2-2" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-3-1" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-3-2" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-4-1" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-4-2" name="cat-3" class="may-rating-i" checked>
+                        <input type="radio" id="3-5-1" name="cat-3" class="may-rating-i">
+                        <input type="radio" id="3-5-2" name="cat-3" class="may-rating-i">
+                        <label for="3-1-1" class="may-rating-star"></label>
+                        <label for="3-1-2" class="may-rating-star"></label>
+                        <label for="3-2-1" class="may-rating-star"></label>
+                        <label for="3-2-2" class="may-rating-star"></label>
+                        <label for="3-3-1" class="may-rating-star"></label>
+                        <label for="3-3-2" class="may-rating-star"></label>
+                        <label for="3-4-1" class="may-rating-star"></label>
+                        <label for="3-4-2" class="may-rating-star"></label>
+                        <label for="3-5-1" class="may-rating-star"></label>
+                        <label for="3-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">6300p</p>
+                    <p class="may-card-description">
+                        Пу&shy;шис&shy;тая пре&shy;лесть.
+                        Обо&shy;жа&shy;ет ко&shy;роб&shy;ки.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/chii.jpg" alt="Чии" title="Чии">
+                </header>
+                <article>
+                    <a href="#">Чии</a>
+                    <p class="may-card-character">Категория: <span>playful</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="4-1-1" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-1-2" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-2-1" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-2-2" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-3-1" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-3-2" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-4-1" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-4-2" name="cat-4" class="may-rating-i">
+                        <input type="radio" id="4-5-1" name="cat-4" class="may-rating-i" checked>
+                        <input type="radio" id="4-5-2" name="cat-4" class="may-rating-i">
+                        <label for="4-1-1" class="may-rating-star"></label>
+                        <label for="4-1-2" class="may-rating-star"></label>
+                        <label for="4-2-1" class="may-rating-star"></label>
+                        <label for="4-2-2" class="may-rating-star"></label>
+                        <label for="4-3-1" class="may-rating-star"></label>
+                        <label for="4-3-2" class="may-rating-star"></label>
+                        <label for="4-4-1" class="may-rating-star"></label>
+                        <label for="4-4-2" class="may-rating-star"></label>
+                        <label for="4-5-1" class="may-rating-star"></label>
+                        <label for="4-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">10000p</p>
+                    <p class="may-card-description">
+                        Ма&shy;лень&shy;кий бе&shy;же&shy;вый ко&shy;тёнок с
+                        боль&shy;ши&shy;ми гла&shy;за&shy;ми. Она лег&shy;ко
+                        отвле&shy;ка&shy;ет&shy;ся и не име&shy;ет
+                        боль&shy;шо&shy;го опы&shy;та в ми&shy;ре.
+                        Чии осо&shy;бен&shy;но при&shy;вле&shy;ка&shy;ют
+                        не&shy;боль&shy;шие дви&shy;жу&shy;щи&shy;е&shy;ся
+                        объ&shy;ек&shy;ты, но бо&shy;ит&shy;ся боль&shy;ших
+                        жи&shy;вот&shy;ных, осо&shy;бен&shy;но со&shy;бак.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/vasya.jpg" alt="Вася" title="Вася">
+                </header>
+                <article>
+                    <a href="#">Вася</a>
+                    <p class="may-card-character">Категория: <span>playful</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="5-1-1" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-1-2" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-2-1" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-2-2" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-3-1" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-3-2" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-4-1" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-4-2" name="cat-5" class="may-rating-i" checked>
+                        <input type="radio" id="5-5-1" name="cat-5" class="may-rating-i">
+                        <input type="radio" id="5-5-2" name="cat-5" class="may-rating-i">
+                        <label for="5-1-1" class="may-rating-star"></label>
+                        <label for="5-1-2" class="may-rating-star"></label>
+                        <label for="5-2-1" class="may-rating-star"></label>
+                        <label for="5-2-2" class="may-rating-star"></label>
+                        <label for="5-3-1" class="may-rating-star"></label>
+                        <label for="5-3-2" class="may-rating-star"></label>
+                        <label for="5-4-1" class="may-rating-star"></label>
+                        <label for="5-4-2" class="may-rating-star"></label>
+                        <label for="5-5-1" class="may-rating-star"></label>
+                        <label for="5-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">Free <span class="may-old-price">7000p</span></p>
+                    <p class="may-card-description">
+                        Очень ак&shy;тив&shy;ный и шуст&shy;рый. Лю&shy;бит лас&shy;кать&shy;ся
+                        и всег&shy;да рад по&shy;играть. При&shy;учен к лот&shy;ку.
+                        Ку&shy;ша&shy;ет лю&shy;бую вкус&shy;няш&shy;ку. От&shy;да&shy;дам
+                        бес&shy;плат&shy;но в добрые ру&shy;ки.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/kaya.jpg" alt="Кая" title="Кая">
+                </header>
+                <article>
+                    <a href="#">Кая</a>
+                    <p class="may-card-character">Категория: <span>calm</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="6-1-1" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-1-2" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-2-1" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-2-2" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-3-1" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-3-2" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-4-1" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-4-2" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-5-1" name="cat-6" class="may-rating-i">
+                        <input type="radio" id="6-5-2" name="cat-6" class="may-rating-i" checked>
+                        <label for="6-1-1" class="may-rating-star"></label>
+                        <label for="6-1-2" class="may-rating-star"></label>
+                        <label for="6-2-1" class="may-rating-star"></label>
+                        <label for="6-2-2" class="may-rating-star"></label>
+                        <label for="6-3-1" class="may-rating-star"></label>
+                        <label for="6-3-2" class="may-rating-star"></label>
+                        <label for="6-4-1" class="may-rating-star"></label>
+                        <label for="6-4-2" class="may-rating-star"></label>
+                        <label for="6-5-1" class="may-rating-star"></label>
+                        <label for="6-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">12500p</p>
+                    <p class="may-card-description">
+                        Ми&shy;лая де&shy;воч&shy;ка, лас&shy;ко&shy;вая,
+                        игри&shy;вая, иг&shy;руш&shy;ки но&shy;сит в зу&shy;бах,
+                        раз&shy;го&shy;вор&shy;чи&shy;вая, мур&shy;лы&shy;чит, с
+                        ха&shy;рак&shy;тер&shy;ом, лю&shy;боз&shy;на&shy;тель&shy;ная!
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/dany.jpg" alt="Дэни" title="Дэни">
+                </header>
+                <article>
+                    <a href="#">Дэни</a>
+                    <p class="may-card-character">Категория: <span>playful</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="7-1-1" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-1-2" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-2-1" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-2-2" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-3-1" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-3-2" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-4-1" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-4-2" name="cat-7" class="may-rating-i" checked>
+                        <input type="radio" id="7-5-1" name="cat-7" class="may-rating-i">
+                        <input type="radio" id="7-5-2" name="cat-7" class="may-rating-i">
+                        <label for="7-1-1" class="may-rating-star"></label>
+                        <label for="7-1-2" class="may-rating-star"></label>
+                        <label for="7-2-1" class="may-rating-star"></label>
+                        <label for="7-2-2" class="may-rating-star"></label>
+                        <label for="7-3-1" class="may-rating-star"></label>
+                        <label for="7-3-2" class="may-rating-star"></label>
+                        <label for="7-4-1" class="may-rating-star"></label>
+                        <label for="7-4-2" class="may-rating-star"></label>
+                        <label for="7-5-1" class="may-rating-star"></label>
+                        <label for="7-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">8700p</p>
+                    <p class="may-card-description">
+                        По&shy;зи&shy;тив&shy;ный игри&shy;вый ко&shy;тёнок.
+                        Очень лю&shy;боз&shy;на&shy;те&shy;лен.
+                        При&shy;учен к лот&shy;ку.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/max.jpg" alt="Максим" title="Максим">
+                </header>
+                <article>
+                    <a href="#">Максим</a>
+                    <p class="may-card-character">Категория: <span>calm</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="8-1-1" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-1-2" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-2-1" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-2-2" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-3-1" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-3-2" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-4-1" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-4-2" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-5-1" name="cat-8" class="may-rating-i">
+                        <input type="radio" id="8-5-2" name="cat-8" class="may-rating-i" checked>
+                        <label for="8-1-1" class="may-rating-star"></label>
+                        <label for="8-1-2" class="may-rating-star"></label>
+                        <label for="8-2-1" class="may-rating-star"></label>
+                        <label for="8-2-2" class="may-rating-star"></label>
+                        <label for="8-3-1" class="may-rating-star"></label>
+                        <label for="8-3-2" class="may-rating-star"></label>
+                        <label for="8-4-1" class="may-rating-star"></label>
+                        <label for="8-4-2" class="may-rating-star"></label>
+                        <label for="8-5-1" class="may-rating-star"></label>
+                        <label for="8-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">15000p</p>
+                    <p class="may-card-description">
+                        Го&shy;лу&shy;бо&shy;гла&shy;зое чу&shy;до.
+                        Ми&shy;лый шерс&shy;тя&shy;ной ко&shy;мо&shy;чек,
+                        ко&shy;то&shy;рый не оста&shy;вит ни&shy;ко&shy;го
+                        рав&shy;но&shy;душ&shy;ным. Игри&shy;вый.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/largo.jpg" alt="Лагро" title="Лагро">
+                </header>
+                <article>
+                    <a href="#">Лагро</a>
+                    <p class="may-card-character">Категория: <span>calm</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="9-1-1" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-1-2" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-2-1" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-2-2" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-3-1" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-3-2" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-4-1" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-4-2" name="cat-9" class="may-rating-i">
+                        <input type="radio" id="9-5-1" name="cat-9" class="may-rating-i" checked>
+                        <input type="radio" id="9-5-2" name="cat-9" class="may-rating-i">
+                        <label for="9-1-1" class="may-rating-star"></label>
+                        <label for="9-1-2" class="may-rating-star"></label>
+                        <label for="9-2-1" class="may-rating-star"></label>
+                        <label for="9-2-2" class="may-rating-star"></label>
+                        <label for="9-3-1" class="may-rating-star"></label>
+                        <label for="9-3-2" class="may-rating-star"></label>
+                        <label for="9-4-1" class="may-rating-star"></label>
+                        <label for="9-4-2" class="may-rating-star"></label>
+                        <label for="9-5-1" class="may-rating-star"></label>
+                        <label for="9-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">16200p</p>
+                    <p class="may-card-description">
+                        Неж&shy;ней&shy;шее со&shy;зда&shy;ние
+                        не&shy;обык&shy;но&shy;вен&shy;ной кра&shy;со&shy;ты,
+                        яр&shy;кие гла&shy;за, ве&shy;ли&shy;ко&shy;леп&shy;ная
+                        шерсть, мор&shy;дас&shy;тень&shy;кая, ум&shy;нень&shy;кая.
+                        Ко&shy;тёнок из ин&shy;тел&shy;ли&shy;гент&shy;ной семьи.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/mira.jpg" alt="Мира" title="Мира">
+                </header>
+                <article>
+                    <a href="#">Мира</a>
+                    <p class="may-card-character">Категория: <span>mysterious</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="10-1-1" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-1-2" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-2-1" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-2-2" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-3-1" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-3-2" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-4-1" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-4-2" name="cat-10" class="may-rating-i" checked>
+                        <input type="radio" id="10-5-1" name="cat-10" class="may-rating-i">
+                        <input type="radio" id="10-5-2" name="cat-10" class="may-rating-i">
+                        <label for="10-1-1" class="may-rating-star"></label>
+                        <label for="10-1-2" class="may-rating-star"></label>
+                        <label for="10-2-1" class="may-rating-star"></label>
+                        <label for="10-2-2" class="may-rating-star"></label>
+                        <label for="10-3-1" class="may-rating-star"></label>
+                        <label for="10-3-2" class="may-rating-star"></label>
+                        <label for="10-4-1" class="may-rating-star"></label>
+                        <label for="10-4-2" class="may-rating-star"></label>
+                        <label for="10-5-1" class="may-rating-star"></label>
+                        <label for="10-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">Free <span class="may-old-price">5000p</span></p>
+                    <p class="may-card-description">
+                        От&shy;лич&shy;ный ха&shy;рак&shy;тер, руч&shy;ная, игри&shy;вая,
+                        ум&shy;ная, лю&shy;бит ру&shy;ки и вни&shy;ма&shy;ние.
+                        Пре&shy;крас&shy;но вос&shy;пи&shy;та&shy;на. От&shy;да&shy;дам
+                        бес&shy;плат&shy;но в добрые ру&shy;ки.
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/katya.jpg" alt="Катя" title="Катя">
+                </header>
+                <article>
+                    <a href="#">Катя</a>
+                    <p class="may-card-character">Категория: <span>mysterious</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="11-1-1" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-1-2" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-2-1" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-2-2" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-3-1" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-3-2" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-4-1" name="cat-11" class="may-rating-i" checked>
+                        <input type="radio" id="11-4-2" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-5-1" name="cat-11" class="may-rating-i">
+                        <input type="radio" id="11-5-2" name="cat-11" class="may-rating-i">
+                        <label for="11-1-1" class="may-rating-star"></label>
+                        <label for="11-1-2" class="may-rating-star"></label>
+                        <label for="11-2-1" class="may-rating-star"></label>
+                        <label for="11-2-2" class="may-rating-star"></label>
+                        <label for="11-3-1" class="may-rating-star"></label>
+                        <label for="11-3-2" class="may-rating-star"></label>
+                        <label for="11-4-1" class="may-rating-star"></label>
+                        <label for="11-4-2" class="may-rating-star"></label>
+                        <label for="11-5-1" class="may-rating-star"></label>
+                        <label for="11-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">7500p</p>
+                    <p class="may-card-description">
+                        Пре&shy;крас&shy;ная ры&shy;жая кош&shy;ка. Ум&shy;ная.
+                        Обо&shy;жа&shy;ет вы&shy;со&shy;кие тех&shy;но&shy;ло&shy;гии
+                        и лас&shy;ку. К лот&shy;ку при&shy;уче&shy;на. В еде не
+                        при&shy;хот&shy;ли&shy;ва. PHP-про&shy;грам&shy;мис&shy;там
+                        прось&shy;ба не об&shy;ра&shy;щать&shy;ся!
+                    </p>
+                </article>
+            </section>
+            <section class="may-card">
+                <header>
+                    <img src="img/happy.jpg" alt="Хэппи" title="Хэппи">
+                </header>
+                <article>
+                    <a href="#">Хэппи</a>
+                    <p class="may-card-character">Категория: <span>playful</span></p>
+                    <div class="may-card-rating">
+                        <input type="radio" id="12-1-1" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-1-2" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-2-1" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-2-2" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-3-1" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-3-2" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-4-1" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-4-2" name="cat-12" class="may-rating-i" checked>
+                        <input type="radio" id="12-5-1" name="cat-12" class="may-rating-i">
+                        <input type="radio" id="12-5-2" name="cat-12" class="may-rating-i">
+                        <label for="12-1-1" class="may-rating-star"></label>
+                        <label for="12-1-2" class="may-rating-star"></label>
+                        <label for="12-2-1" class="may-rating-star"></label>
+                        <label for="12-2-2" class="may-rating-star"></label>
+                        <label for="12-3-1" class="may-rating-star"></label>
+                        <label for="12-3-2" class="may-rating-star"></label>
+                        <label for="12-4-1" class="may-rating-star"></label>
+                        <label for="12-4-2" class="may-rating-star"></label>
+                        <label for="12-5-1" class="may-rating-star"></label>
+                        <label for="12-5-2" class="may-rating-star"></label>
+                    </div>
+                    <p class="may-card-price">10000p</p>
+                    <p class="may-card-description">
+                        Счастье и этим всё ска&shy;за&shy;но! При&shy;но&shy;сит
+                        уда&shy;чу. Игри&shy;вый. Лю&shy;бит де&shy;тей и лас&shy;ку.
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="may-footer">
+        <div class="may-footer-left">
+            <h3>Пользователям</h3>
+            <div class="may-col-2">
+                <a href="#">Как сделать заказ на Муррркете</a>
+                <a href="#">Оплата</a>
+                <a href="#">Доставка</a>
+            </div>
+            <div class="may-col-2">
+                <a href="#">Помощь по сервису</a>
+                <a href="#">Пользовательское согашение</a>
+                <a href="#">Обратная связь</a>
+            </div>
+        </div>
+        <div class="may-footer-right">
+            <p>12 457 предложений от 312 бабушек</p>
+            <p>Обновлено 05.11.2016 17:53</p>
+        </div>
+        <div class="may-copyright">
+            <address>&copy; 2016  ООО <q><a href="#">Мяндекс.Муррркет</a></q></address>
+        </div>
+    </footer>
 </body>
 </html>
