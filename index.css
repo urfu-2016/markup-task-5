@@ -129,26 +129,34 @@
 {
     position: absolute;
     visibility: hidden;
-    width: 17px;
+    width: 20px;
     margin: 0;
     padding: 0;
 }
 
 .star:checked ~ label:before
 {
+    color: orange;
     content: '●';
-    color: orange;
 }
 
-.rating:hover label:before
+.rating:hover .star:checked ~ label:before
 {
-    content: '○';
     color: black;
+    content: '○';
 }
 
-.star:hover ~ label:before
+/* длинные селекторы сделаны для достижения
+   высокой специфичности, все было посчитано */
+.cat .info .rating .star:hover ~ label:before
 {
     color: orange;
+}
+
+.cat .info .rating .star:hover ~ .star:checked ~ label:before,
+.rating .star:checked:hover ~ label:before
+{
+    content: '●';
 }
 
 .rating label:before
@@ -167,6 +175,15 @@
     -o-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
+    /* padding тут и margin в следующем правиле
+       нужны для того чтобы между звездами не было пустого
+       пространства на котором не работает hover */
+    padding-right: 2px;
+}
+
+.rating label:nth-child(4n+2):before
+{
+    margin-right: -2px;
 }
 
 .category
