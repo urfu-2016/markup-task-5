@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-input[type=checkbox]:checked + section .item
+input[type='checkbox']:checked + section .item
 {
     width: 850px;
     text-align: left;
 }
 
-input[type=checkbox]:checked + section .info-panel
+input[type='checkbox']:checked + section .info-panel
 {
-    margin-left: 30px;
+    margin: 30px;
     width: 270px;
 }
 
@@ -20,7 +20,7 @@ body
 
 div
 {
-    display:inline-block;
+    display: inline-block;
 }
 
 .item
@@ -31,6 +31,7 @@ div
     margin: 20px;
     text-align: center;
     vertical-align: top;
+    box-shadow: 5px 5px 3px gray;
 }
 
 .item div
@@ -38,7 +39,7 @@ div
     width: 230px;
     text-align: left;
     vertical-align: top;
-    display:inline-block;
+    display: inline-block;
 }
 
 .item p
@@ -50,6 +51,7 @@ div
 .item-name
 {
     white-space: nowrap;
+    font-size: 120%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -57,6 +59,7 @@ div
 .item-type
 {
     color: grey;
+    font-size: 90%;
     text-decoration: underline;
 }
 
