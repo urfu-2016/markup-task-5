@@ -1,30 +1,73 @@
-.item
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+input[type=checkbox]:checked + section .item
 {
-    border: 1px solid black;
-    width: 750px;
-    padding: 10px;
-    margin: 20px;
-    display:inline-block;
+    width: 850px;
+    text-align: left;
 }
 
-.item ul
+input[type=checkbox]:checked + section .info-panel
 {
-    display:inline-block;
+    margin-left: 30px;
+    width: 270px;
 }
 
-.item p
+body
 {
-    padding-left: 10px;
-    display:inline-block;
-}
-
-.item img
-{
-    display:inline-block;
-    width: 230;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div
 {
     display:inline-block;
+}
+
+.item
+{
+    border: 1px solid black;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.item div
+{
+    width: 230px;
+    text-align: left;
+    vertical-align: top;
+    display:inline-block;
+}
+
+.item p
+{
+    font-family: 'Merriweather', serif;
+    font-size: 90%;
+}
+
+.item-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-type
+{
+    color: grey;
+    text-decoration: underline;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    color: red;
+}
+
+.price
+{
+    font-size: 110%;
+    font-weight: bold;
 }

@@ -7,100 +7,252 @@
 </head>
 <body>
 <main>
-    <div class="item">
-        <div>
-            <image width=230 src="cat1.jpg"/>
-        </div>
-        <div>
-            <p>
-                Описание товара:
-            </p>
-            <ul>
-                <li>Быстрый</li>
-                <li>Вкусный</li>
-                <li>Храбрый</li>
-                <li>Тупой</li>
-            </ul>
-        </div>
-    </div>
-    <div class="item">
-        <div>
-            <image width=230 src="cat2.jpg"/>
-        </div>
-        <div>
-            <div>
-                Описание товара:
+    <h1>Мяндекс.Муррркет</h1>
+    <label for="content-control">Показать списком</label>
+    <input type="checkbox" name="content-control" id="content-control" value="list">
+    <section class=".content-panel">
+        <h2>Сверхкотики по Ф.Ницше</h2>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat1.jpg"/>
             </div>
-            <ul>
-                <li>Умный</li>
-                <li>Веселый</li>
-                <li>Общительный</li>
-                <li>Холостой</li>
-            </ul>
+            <div class="info-panel">
+                <div class="item-name" title="Gaius Iulius Caesar">
+                    <a href="https://ru.wikipedia.org/wiki/Гай_Юлий_Цезарь">Юлий Цезарь (Gaius Iulius Caesar)</a>
+                </div>
+                <div class="item-type">политический деятель, полководец, писатель</div>
+                <div class="kindness">
+                    <img width="75" height="15" alt="" src="images/5stars.png">
+                </div>
+                <div class="price">299.99$</div>
+                <div class="old-price">369.99$</div>
+            </div>
+            <div>
+                <p>
+                    На Цезаре постоянно был венок из лавровых веток из-за раннего облысения императора.
+                    Самое интересное, что его фамилия «Caesar» в переводе означала «волосатый»,
+                    скорей всего потому, что все предшествующие поколения были известны шикарной шевелюрой.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <image width=230 src="cat3.jpg"/>
-        <div>
-            <p>
-                Описание товара:
-            </p>
-            <ul>
-                <li>Хитрий</li>
-                <li>Грубый</li>
-                <li>Смешной</li>
-                <li>Худой</li>
-            </ul>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat2.jpg" />
+            </div>
+            <div class="info-panel">
+                <div class="item-name" title="Cèsar de Borja i Catanei">
+                    <a href="https://ru.wikipedia.org/wiki/Борджиа,_Чезаре">Чезаре Борджиа (Cèsar de Borja i Catanei)</a>
+                </div>
+                <div class="item-type">политический деятель</div>
+                <div class="kindness">
+                    <img width="75" height="15" alt="" src="images/5stars.png">
+                </div>
+                <div class="price">499.99$</div>
+                <div class="old-price">800.00$</div>
+            </div>
+            <div>
+                <p>
+                    Николло Макиавелли выбрал Чезаре Борджиа за образец своего «Государя».
+                    Его восхищало в Чезаре умение управлять самыми беззастенчивыми методами,
+                    <q>соединяя в себе силу льва и хитрость лисы</q>.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <div>
-            <image width=230 src="cat4.jpg"/>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat3.jpg"/>
+            </div>
+            <div class="info-panel" title="Alexander the Great">
+                <a href="https://ru.wikipedia.org/wiki/Александр_Македонский">Александр Македонский</a>
+                <div class="item-type">царь, полководец</div>
+                <div class="kindness">
+                    <img width="75" height="15" alt="" src="images/5stars.png">
+                </div>
+                <div class="price">399.99$</div>
+                <div class="old-price">400.00$</div>
+            </div>
+            <div>
+                <p>
+                    Главным учителем Македонского был Аристотель, и он обучался у других философов.
+                    За 15 лет военных завоеваний армия Македонского не проиграла ни одной битвы.
+                    Македонский назвал своим именем более 70 городов и один — в честь его коня.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>
-                Описание товара:
-            </p>
-            <ul>
-                <li>Резкий</li>
-                <li>Томный</li>
-                <li>Заразный</li>
-                <li>Пьяный</li>
-            </ul>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat4.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name" title="Leonardo di ser Piero da Vinci">
+                    <a href="https://ru.wikipedia.org/wiki/Леонардо_да_Винчи">Леонардо да Винчи</a>
+                </div>
+                <div class="item-type">художник, живописец, скульптор, архитектор, учёный, изобретатель, писатель, музыкант</div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">199.99$</div>
+                <div class="old-price">220.50$</div>
+            </div>
+            <div>
+                <p>
+                    Интересный факт:<br>
+                    ученые-специалисты из США и Амстердамского университета
+                    с помощью новой программы узнали состав улыбки Джоконды:
+                    83% счастья, 6% страха и 2% злости.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <div>
-            <image width=230 src="cat5.jpg"/>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat5.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Наполеон_I">Наполеон Бонапарт</a>
+                </div>
+                <div class="item-type">император, полководец, государственный деятель</div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">73.00$</div>
+                <div class="old-price">100.00$</div>
+            </div>
+            <div>
+                <p>
+                    Наполеон мог уснуть в самые ответственные минуты,
+                    причем ему хватало 1-2 часов, чтобы проснуться
+                    и снова как ни в чем не бывало продолжить вести сражение.
+                    Так, например, случилось во время Аустерлицкого сражения,
+                    когда он прямо во время огненного шквала и свиста пуль
+                    приказал расстелить медвежью шкуру и погрузился в сон.
+                    Через 20 минут он проснулся и снова продолжил сражение.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>
-                Описание товара:
-            </p>
-            <ul>
-                <li>Живой</li>
-                <li>Вонючий</li>
-                <li>Харизматичный</li>
-                <li>Разносторонний</li>
-            </ul>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat6.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Екатерина_II">Екатерина II</a>
+                </div>
+                <div class="item-type">императрица</div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">1700.00$</div>
+            </div>
+            <div>
+                <p>
+                    При царствовании Екатерины с 1762 по 1796 год
+                    население России возросло с 30 до 44 миллионов.
+                    За все время это время, была совершена всего лишь одна казнь.
+                    Казнили Емельяна Пугачева
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <image width=230 src="cat6.jpg"/>
-        <div>
-            <p>
-                Описание товара:
-            </p>
-            <ul>
-                <li>Харизматичный</li>
-                <li>Отважный</li>
-                <li>Мутный</li>
-                <li>Ссыт в тапки</li>
-            </ul>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat7.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич">Михаил Ломоносов</a>
+                </div>
+                <div class="item-type">
+                    учёный-естествоиспытатель, энциклопедист, химик, физик, астроном,
+                    приборостроитель, географ, металлург, геолог, поэт, филолог, художник, историк
+                </div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">135.00$</div>
+            </div>
+            <div>
+                <p>
+                    Несмотря на свою доброту, веселый нрав и безграничный ум,
+                    Ломоносов был еще и очень сильным.
+                    Был случай, когда 3 человека (моряка) хотели его ограбить.
+                    В итоге двоих он обратил в бегство, а третьего еще повалил на землю
+                    и забрал его одежду в качестве трофея,
+                    намекая на то, что разбойники хотели ограбить его, а в итоге он ограбил их.
+                </p>
+            </div>
         </div>
-    </div>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat8.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Кастро,_Фидель">Фидель Кастро</a>
+                </div>
+                <div class="item-type">революционер, диктатор, государственный, политический и партийный деятель, </div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">45.00$</div>
+            </div>
+            <div>
+                <p>
+                    На жизнь Фиделя Кастро покушались более 630 раз.
+                    Среди организаторов покушений были как кубинские противники,
+                    так и американское правительство и американские мафиозные группировки.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat9.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Линкольн,_Авраам">Авраам Линкольн</a>
+                </div>
+                <div class="item-type">президент, государственный деятель</div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">499.99$</div>
+                <div class="old-price">800.00$</div>
+            </div>
+            <div>
+                <p>
+                    Несмотря на то что семья Линкольна была необразованной,
+                    с 12 лет Авраам пристрастился к чтению.
+                    Он стал первым в семье, кто научился считать и писать,
+                    хотя из-за тяжелого материального положения посещал школу только около года.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-image">
+                <img width=230 alt="" src="images/cat10.jpg"/>
+            </div>
+            <div class="info-panel">
+                <div class="item-name">
+                    <a href="https://ru.wikipedia.org/wiki/Ньютон,_Исаак">Исаак Ньютон</a>
+                </div>
+                <div class="item-type">физик, математик, механик, астроном</div>
+                <div class="kindness">
+                    <img width="75" height="15" src="images/5stars.png">
+                </div>
+                <div class="price">499.99$</div>
+                <div class="old-price">800.00$</div>
+            </div>
+            <div>
+                <p>
+                    Склонности исследователя обозначились у него уже в детстве,
+                    когда будущий великий физик и математик усердно работал
+                    над простейшими техническими приспособлениями.
+                    Он стал первым человеком, которого посвятили в рыцари за научную работу,
+                    а не за государственную или военную службу.
+                </p>
+            </div>
+        </div>
+    </section>
 </main>
-<input type="radio" class="input-list" name="collection" value="list">
-<input type="radio" class="input-grid" name="collection" value="grid" checked>
 </body>
 </html>
