@@ -1,0 +1,175 @@
+header h1::first-letter
+{
+    color: #f00;
+}
+
+.cat
+{
+    display: inline-block;
+    width: 420px;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+.image
+{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.image img
+{
+    height: 300px;
+    width: 300px;
+    opacity: .8;
+}
+
+.cat .about
+{
+    width: 420px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat .about .rating
+{
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    margin: 20px 0 20px 50px;
+    direction: rtl;
+    text-align: left;
+}
+
+.cat .about .price
+{
+    display: inline-block;
+    height: 24px;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.cat .information
+{
+    width: 420px;
+}
+
+.cat .information p
+{
+    color: #eb0c0c;
+    margin-left: 50px;
+}
+
+.cat h4
+{
+    margin: 0 50px;
+    font-size: 12px;
+    color: #0f0;
+    font-weight: normal;
+}
+
+.cat h3
+{
+    display: inline;
+    margin: 0;
+}
+
+.cat h2
+{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.cat h3 + h3
+{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.cat ul
+{
+    margin-left: 50px;
+}
+
+.cat a
+{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.list-mode:checked ~ .cat
+{
+    display: block;
+    width: auto;
+    min-height: 350px;
+}
+
+.list-mode:checked ~ .cat .image
+{
+    display: inline-block;
+    margin: 20px 50px;
+}
+
+.list-mode:checked ~ .cat div
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.cat:hover
+{
+    border-radius: 10px;
+    box-shadow: inset #bfbfbf 0 -3px 8px
+        , #000 0 3px 8px -10px;
+}
+
+.cat .image img:hover
+{
+    opacity: 1;
+}
+
+.cat a:hover
+{
+    color: #f00;
+}
+
+/*Задание на звездочку*/
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    opacity: .4;
+}
+
+.rating label:nth-child(2n)
+{
+    margin-left: -4px;
+}
+
+.rating label:hover
+{
+    opacity: 1;
+}
+
+.rating label:hover ~ label
+{
+    opacity: 1;
+}
+
+.rating input:checked + label
+{
+    opacity: 1;
+}
+
+.rating input:checked ~ label
+{
+    opacity: 1;
+}
