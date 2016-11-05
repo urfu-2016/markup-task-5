@@ -76,7 +76,7 @@ input
     transition: box-shadow .5s linear .1s;
 }
 
-.element
+.element-duration
 {
     display: inline-block;
 }
@@ -199,7 +199,7 @@ input
     margin: auto;
 }
 
-.tile-view:checked ~ .card .element
+.tile-view:checked ~ .card .element-duration
 {
     display: block;
 }
