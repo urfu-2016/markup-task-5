@@ -1,0 +1,276 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.about
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1em;
+    height: 6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.main-header
+{
+    width: 100%;
+    height: 56px;
+    background-color: #263238;
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.header-title
+{
+    color: white;
+    text-align: center;
+}
+
+.page
+{
+    margin-top: 60px;
+}
+
+.objects-list
+{
+    width: 65%;
+    margin: auto;
+}
+
+input
+{
+    display: none;
+}
+
+.icon
+{
+    color: #263238;
+    font-family: FontAwesome;
+    font-size: 2em;
+    margin: 5px;
+}
+
+.list-icon:before
+{
+    content: '\f00b';
+}
+
+.tile-icon:before
+{
+    content: '\f009';
+}
+
+.list:target
+{
+    background-color: aquamarine;
+}
+
+.card
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    min-width: 800px;
+    margin: 15px 0;
+    transition: box-shadow .5s linear .1s;
+}
+
+.element
+{
+    display: inline-block;
+}
+
+.avatar
+{
+    width: 35%;
+    margin: 10px;
+    transition: opacity .8s linear .5s;
+}
+
+.description
+{
+    vertical-align: top;
+    width: 60%;
+    height: 250px;
+    margin: 5px;
+    position: relative;
+}
+
+.title-line
+{
+    margin: 0;
+}
+
+.record-title
+{
+    display: inline-block;
+    width: 45%;
+    font-size: 2em;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stars
+{
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.category
+{
+    margin: 0;
+    color: #ccc;
+    transition: color .1s linear .1s;
+}
+
+.stars > label:before
+{
+    margin: 5px;
+    font-size: 1.5em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.stars > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.stars > label
+{
+    color: #ddd;
+    float: right;
+}
+
+.stars > input:checked ~ label,
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.stars > input:checked + label:hover,
+.stars > input:checked ~ label:hover,
+.stars > label:hover ~ input:checked ~ label,
+.stars > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
+
+.record-footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.old-price
+{
+    color: #ccc;
+    font-size: smaller;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.price
+{
+    font-size: 20px;
+    margin: 0;
+}
+
+.tile-view:checked ~ .card
+{
+    display: inline-block;
+    width: 250px;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.tile-view:checked ~ .card .avatar
+{
+    width: 100%;
+    margin: auto;
+}
+
+.tile-view:checked ~ .card .element
+{
+    display: block;
+}
+
+.tile-view:checked ~ .card .description
+{
+    width: 250px;
+}
+
+.tile-view:checked ~ .card .stars > label:before
+{
+    font-size: 1em;
+}
+
+.tile-view:checked ~ .tile-icon
+{
+    color: yellow;
+}
+
+.list-view:checked ~ .list-icon
+{
+    color: yellow;
+}
+
+.card:hover
+{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
+}
+
+.avatar:hover
+{
+    opacity: .5;
+}
+
+.category:hover
+{
+    color: #ffd700;
+}
+
+.record-title:hover
+{
+    animation: shake .8s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake
+{
+    10%,
+    90%
+    {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80%
+    {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70%
+    {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60%
+    {
+        transform: translate3d(4px, 0, 0);
+    }
+}
