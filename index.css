@@ -174,8 +174,8 @@ body
     vertical-align: top;
 }
 
-.list:checked ~ .content > .cat-card > .description >
-.kindness-wrapper > .kindness > .kindness-label:before
+.list:checked ~ .content > .cat-card > .description > .kindness-wrapper
+                        > .kindness > .kindness-label:before
 {
     font-size: 2em;
 }
