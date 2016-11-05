@@ -31,7 +31,7 @@
 
 .kindness-label:before
 {
-    font-size: 2.5em;
+    font-size: 2em;
     display: inline-block;
     cursor: pointer;
     font-family: 'FontAwesome', fantasy;
@@ -172,12 +172,6 @@ body
 {
     display: inline-block;
     vertical-align: top;
-}
-
-.list:checked ~ .content > .cat-card > .description > .kindness-wrapper
-                        > .kindness > .kindness-label:before
-{
-    font-size: 2em;
 }
 
 .list:checked ~ .content > .cat-card > .description
