@@ -1,17 +1,16 @@
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
 body
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     margin: 0;
     background: #73b0dd;
-
-
 }
 
 header
 {
-    margin: auto auto;
-
+    margin: auto;
 }
 
 header .header-bg
@@ -24,7 +23,7 @@ header .title
     padding: 10px;
     font-size: 3em;
     position: absolute;
-    top:  0;
+    top: 0;
     color: white;
 }
 
@@ -45,10 +44,8 @@ header .slogan
 .content
 {
     padding: 0 30px;
-    margin-top: 0px;
-    background: #73b0dd; 
-    background: -webkit-linear-gradient(#73b0dd 0%, #73b0dd 28%, #ffffff 44%);
-    background: linear-gradient(#73b0dd 0%, #73b0dd 28%, #ffffff 44%); 
+    margin-top: 0;
+    background: linear-gradient(#73b0dd 0%, #73b0dd 28%, #fff 44%);
 }
 
 h1
@@ -57,19 +54,20 @@ h1
     color: white;
     font-variant-caps: small-caps;
 }
+
 .cat-item
 {
     vertical-align: top;
-    background: #fefefe;
+    background: rgba(255, 255, 255, .5);
     border: 1px solid #676767;
     padding: 20px;
     margin: 1em;
     max-width: 300px;
     min-height: 300px;
     display: inline-block;
-    -webkit-box-shadow: inset 0px 3px 20px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 3px 20px -8px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 3px 20px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
+    -moz-box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
+    box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
 }
 
 .cat-item .img-container
@@ -80,22 +78,22 @@ h1
 
 .cat-item:hover
 {
-    -webkit-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 14px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
 }
+
 .cat-item .photo
-{  
+{
     display: block;
     max-height: 180px;
     max-width: 300px;
     position: absolute;
     margin: 0 auto;
-    left: 0; 
+    left: 0;
     bottom: 0;
     right: 0;
 }
-
 
 .cat-item .description-container
 {
@@ -131,7 +129,7 @@ h1
     content: '';
     width: 32px;
     height: 32px;
-    background-image: url("img/breed.png")
+    background-image: url('img/breed.png');
 }
 
 .cat-item .price
@@ -152,7 +150,7 @@ h1
     top: 5px;
     width: 32px;
     height: 32px;
-    background-image: url("img/money.png");
+    background-image: url('img/money.png');
 }
 
 .cat-item .old-price
@@ -161,7 +159,7 @@ h1
     font-size: 12px;
     color: red;
     display: inline;
-    text-decoration: line-through;  
+    text-decoration: line-through;
 }
 
 input.switch
@@ -169,34 +167,34 @@ input.switch
     display: none;
 }
 
-input[type="checkbox"].switch + label span
+input[type='checkbox'].switch + label span
 {
-    display:inline-block;
+    display: inline-block;
     width: 16px;
     height: 16px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
     background-image: url('img/rows.svg');
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-input[type="checkbox"].switch:checked + label span
+input[type='checkbox'].switch:checked + label span
 {
     background-image: url('img/icons.svg');
 }
 
-input[type="checkbox"].switch:checked + label::after
+input[type='checkbox'].switch:checked + label::after
 {
     content: 'Switch to Grid View';
 }
 
-input[type="checkbox"].switch + label::after
+input[type='checkbox'].switch + label::after
 {
     content: 'Switch to List View';
 }
 
-input[type="checkbox"].switch:checked ~ div .cat-item
+input[type='checkbox'].switch:checked ~ div .cat-item
 {
     display: block;
     max-width: 100%;
@@ -205,8 +203,8 @@ input[type="checkbox"].switch:checked ~ div .cat-item
     max-height: 100%;
 }
 
-input[type="checkbox"].switch:checked ~ div .cat-item .photo
-{  
+input[type='checkbox'].switch:checked ~ div .cat-item .photo
+{
     position: inherit;
     margin: auto;
     padding: 25px;
@@ -214,17 +212,16 @@ input[type="checkbox"].switch:checked ~ div .cat-item .photo
     vertical-align: middle;
 }
 
-input[type="checkbox"].switch:checked ~ div .cat-item .img-container
-{  
+input[type='checkbox'].switch:checked ~ div .cat-item .img-container
+{
     display: inline-block;
     position: inherit;
     max-width: 100%;
-    min-width: 0px;
+    min-width: 0;
     vertical-align: middle;
 }
 
-
-input[type="checkbox"].switch:checked ~ div .cat-item .description-container
+input[type='checkbox'].switch:checked ~ div .cat-item .description-container
 {
     display: inline-block;
     position: inherit;
@@ -233,13 +230,87 @@ input[type="checkbox"].switch:checked ~ div .cat-item .description-container
     padding: 30px;
 }
 
-input[type="checkbox"].switch:checked  ~ div .cat-item .description
+input[type='checkbox'].switch:checked ~ div .cat-item .description
 {
     vertical-align: top;
-
 }
 
-input[type="checkbox"].switch:checked ~ div .cat-item  .name
+input[type='checkbox'].switch:checked ~ div .cat-item .name
 {
     font-size: 30px;
 }
+
+input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
+{
+    left: 30px;
+    position: relative;
+}
+
+.rating-container
+{
+    display: inline-block;
+    position: relative;
+    left: 50px;
+}
+
+.rating
+{
+    border: none;
+    float: left;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #000;
+    font-family: 'FontAwesome';
+    margin-bottom: 20px;
+}
+
+.rating:not(:checked) > label:before
+{
+    content: '\f005';
+    display: inline-block;
+}
+
+.rating:not(:checked) > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating input:checked ~ label
+{
+    color: #f70;
+}
+
+.rating input:checked ~ label.full:before
+{
+    content: '\f005';
+}
+
+.rating input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating input:checked + label:hover,
+.rating input:checked ~ label:hover,
+.rating label:hover ~ input:checked ~ label,
+.rating input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
+
