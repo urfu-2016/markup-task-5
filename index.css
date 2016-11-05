@@ -1,26 +1,26 @@
 main
 {
-    width:900;
+    width: 900;
 }
 
 .block
 {
     padding: 10px;
-    display: inline-block; 
-    vertical-align: top; 
-    width: 280px; 
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
 }
 
 .card
 {
     white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .block:hover
 {
-    border: 1px solid #000;	
+    border: 1px solid #000;
 }
 
 .cost
@@ -59,7 +59,7 @@ span.cost
 .rating > span:hover:before,
 .rating > span:hover ~ span:before
 {
-    content: "\2605";
+    content: '\2605';
     position: absolute;
 }
 
