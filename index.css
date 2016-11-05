@@ -1,0 +1,100 @@
+main
+{
+    width:900;
+}
+
+.block
+{
+    padding: 10px;
+    display: inline-block; 
+    vertical-align: top; 
+    width: 280px; 
+}
+
+.card
+{
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.block:hover
+{
+    border: 1px solid #000;	
+}
+
+.cost
+{
+    color: red;
+    font: bold 110% serif;
+}
+
+span.cost
+{
+    color: #000;
+    font: normal;
+    text-decoration: line-through;
+}
+
+.category
+{
+    color: darkgrey;
+}
+
+.rating
+{
+    text-align: left;
+    color: yellow;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 2em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+{
+    content: "\2605";
+    position: absolute;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: #e24486;
+}
+
+.string:checked ~ main .block
+{
+    display: block;
+    width: 100%;
+}
+
+.string:checked ~ main .card,
+.string:checked ~ main .photo
+{
+    margin: 5px;
+    vertical-align: middle;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+.string:checked ~ main .description
+{
+    margin: 5px;
+    vertical-align: middle;
+    width: 20%;
+    display: inline-block;
+}
+
+.description
+{
+    hyphens: manual;
+}
