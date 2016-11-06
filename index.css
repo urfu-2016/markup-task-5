@@ -44,7 +44,6 @@ img
     width: 30%;
 }
 
-
 .list:checked ~ .content .item .options
 {
     vertical-align: top;
