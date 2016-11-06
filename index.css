@@ -12,6 +12,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 300px;
 }
 
 .item-container
@@ -73,6 +74,12 @@ input[type='checkbox']:checked ~ section > div > .row-image
 input[type='checkbox']:checked ~ section > .item-container
 {
     width: 100%;
+}
+
+input[type='checkbox']:checked ~ section > div > div > div > .truncate
+{
+    width: 100%;
+    white-space: normal;
 }
 
 .category-text
