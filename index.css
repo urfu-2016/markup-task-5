@@ -1,0 +1,60 @@
+.item
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 20px;
+    padding: 20px;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 1em gold;
+}
+
+.category:hover
+{
+    text-decoration: underline;
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+img
+{
+    width: 80%;
+    height: 80%;
+}
+
+.list:checked ~ .content .item
+{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.list:checked ~ .content .item .ava
+{
+    display: inline-block;
+    width: 30%;
+}
+
+
+.list:checked ~ .content .item .options
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+}
+
+.list:checked ~ .content .item .description
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 35%;
+}
