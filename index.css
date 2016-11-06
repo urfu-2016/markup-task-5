@@ -21,10 +21,13 @@ a
 body
 {
     background: #f6f8f9;
-    background: -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
-    background: -webkit-linear-gradient(top, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
-    background: linear-gradient(to bottom, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0);
+    background: 
+    -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    background:
+    -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    background:
+    linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9', endColorstr='#f5f7f9', GradientType=0);
 }
 
 img
@@ -66,13 +69,13 @@ img:hover
         0 3px 0 #BBBBBB,
         0 4px 0 #B9B9B9,
         0 5px 0 #AAAAAA,
-        0 6px 1px rgba(0,0,0,.1),
-        0 0 5px rgba(0,0,0,.1),
-        0 1px 3px rgba(0,0,0,.3),
-        0 3px 5px rgba(0,0,0,.2),
-        0 5px 10px rgba(0,0,0,.25),
-        0 10px 10px rgba(0,0,0,.2),
-        0 20px 20px rgba(0,0,0,.15)
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15)
 }
 
 .cat:hover
@@ -105,13 +108,13 @@ p
         0 3px 0 #BBBBBB,
         0 4px 0 #B9B9B9,
         0 5px 0 #AAAAAA,
-        0 6px 1px rgba(0,0,0,.1),
-        0 0 5px rgba(0,0,0,.1),
-        0 1px 3px rgba(0,0,0,.3),
-        0 3px 5px rgba(0,0,0,.2),
-        0 5px 10px rgba(0,0,0,.25),
-        0 10px 10px rgba(0,0,0,.2),
-        0 20px 20px rgba(0,0,0,.15)
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15)
 }
 
 .button
@@ -124,26 +127,26 @@ p
     user-select: none;
     padding: .25em .5em;
     outline: none;
-    border: 1px solid rgb(250,172,17);
+    border: 1px solid rgb(250, 172, 17);
     border-radius: 7px;
-    background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
-    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    background: rgb(255, 212, 3) linear-gradient(rgb(255, 212, 3), rgb(248, 157, 23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0);
     transition: box-shadow .2s, border-color .2s;
     margin: 50px;
 }
 
 .button:hover
 {
-    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0);
-    box-shadow: inset 0 0 0 60px rgba(255,255,0,.5);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 60px rgba(255, 255, 0, .5);
 }
 
 .button:active
 {
     padding: calc(.25em + 1px) .5em calc(.25em - 1px);
-    border-color: rgba(177,159,0,1);
-    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3);
-    box-shadow: inset 0 0 0 60px rgba(255,255,0,.45);
+    border-color: rgba(177, 159, 0, 1);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 0 60px rgba(255, 255, 0, .45);
 }
 
 h3
@@ -156,7 +159,7 @@ h3
 #Stars label:hover,
 #Stars label:hover ~ label
 {
-  background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+  background: url('0.png') no-repeat;
 }
 
 #Stars
@@ -186,7 +189,8 @@ h3
     width: 43px;
 }
 
-#Stars label {
+#Stars label
+{
     background-position: 0 0;
     height: 40px;
     width: 43px;
