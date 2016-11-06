@@ -161,4 +161,5 @@ label:hover ~ input:checked ~ label
 {
     display: inline-block;
     width: 30%;
+    height: 100%;
 }
