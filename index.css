@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 
-.mode:checked ~ div
+.switcher
+{
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.mode:checked ~ div.cart
 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.mode:checked ~ div > .cat-img
+.mode:checked ~ div.cart > .cat-img
 {
     float: left;
     width: 30%;
@@ -15,7 +21,7 @@
     margin-left: auto;
 }
 
-div
+div.cart
 {
     width: 350px;
     display: inline-block;
@@ -25,7 +31,7 @@ div
     text-overflow: ellipsis;
 }
 
-div:hover
+div.cart:hover
 {
     box-shadow: 0 0 10px 5px #540a00;
 }
