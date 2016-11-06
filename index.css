@@ -274,26 +274,26 @@ input[id='list']:checked ~ .may-tool figure:last-child
     background: url(img/star2.png) bottom;
 }
 
+.may-card-rating:hover .may-rating-star:hover ~ .may-rating-star
+{
+    background-position: bottom;
+}
+
+.may-card-rating:hover .may-rating-star
+{
+    background-position: top;
+}
+
 .may-rating-i:nth-child(1):checked ~ .may-rating-star:nth-child(-n+11),
-.may-rating-i:nth-child(1):hover ~ .may-rating-star:nth-child(-n+11),
 .may-rating-i:nth-child(2):checked ~ .may-rating-star:nth-child(-n+12),
-.may-rating-i:nth-child(2):hover ~ .may-rating-star:nth-child(-n+12),
 .may-rating-i:nth-child(3):checked ~ .may-rating-star:nth-child(-n+13),
-.may-rating-i:nth-child(3):hover ~ .may-rating-star:nth-child(-n+13),
 .may-rating-i:nth-child(4):checked ~ .may-rating-star:nth-child(-n+14),
-.may-rating-i:nth-child(4):hover ~ .may-rating-star:nth-child(-n+14),
 .may-rating-i:nth-child(5):checked ~ .may-rating-star:nth-child(-n+15),
-.may-rating-i:nth-child(5):hover ~ .may-rating-star:nth-child(-n+15),
 .may-rating-i:nth-child(6):checked ~ .may-rating-star:nth-child(-n+16),
-.may-rating-i:nth-child(6):hover ~ .may-rating-star:nth-child(-n+16),
 .may-rating-i:nth-child(7):checked ~ .may-rating-star:nth-child(-n+17),
-.may-rating-i:nth-child(7):hover ~ .may-rating-star:nth-child(-n+17),
 .may-rating-i:nth-child(8):checked ~ .may-rating-star:nth-child(-n+18),
-.may-rating-i:nth-child(8):hover ~ .may-rating-star:nth-child(-n+18),
 .may-rating-i:nth-child(9):checked ~ .may-rating-star:nth-child(-n+19),
-.may-rating-i:nth-child(9):hover ~ .may-rating-star:nth-child(-n+19),
-.may-rating-i:nth-child(10):checked ~ .may-rating-star:nth-child(-n+20),
-.may-rating-i:nth-child(10):hover ~ .may-rating-star:nth-child(-n+20)
+.may-rating-i:nth-child(10):checked ~ .may-rating-star:nth-child(-n+20)
 {
     background-position: top;
 }
