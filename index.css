@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+label
+{
+    font: 2em 'Karla', sans-serif;
+    margin-left: .5em;
+}
+
+input[name='tile-view']:checked ~ .cars-catalogue > .car-block
+{
+    display: block;
+    max-width: 10000px;
+    font-size: 3em;
+}
+
+input[name='tile-view']:checked ~ .cars-catalogue > .car-block > img
+{
+    width: 50%;
+}
+
+body
+{
+    font-size: 10px;
+}
+
+h1
+{
+    font: bold 4em 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.cars-catalogue > .car-block
+{
+    display: inline-block;
+}
+
+.cars-catalogue
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.car-block
+{
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 700px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 1em 1em 0;
+    font: 2em 'Karla', sans-serif;
+    padding: 1.5em;
+    border: .15em #85ffaa solid;
+    background-color: #b6bfe8;
+}
+
+.car-block:hover
+{
+    transform: scale(1.1);
+    border: .5em #85ffaa solid;
+}
+
+img
+{
+    width: 100%;
+    opacity: .8;
+}
+
+img:hover
+{
+    opacity: 1;
+}
+
+.car-name
+{
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car-name:hover
+{
+    color: #fff;
+}
+
+.car-type:hover
+{
+    text-transform: uppercase;
+}
+
+.rating > .star:before
+{
+    content: '\2605';
+    position: absolute;
+    color: yellow;
+}
+
+.cost:hover > span
+{
+    color: rgba(0, 150, 0, 1);
+}
