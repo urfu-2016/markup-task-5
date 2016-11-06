@@ -116,6 +116,7 @@ input:checked ~ .cat
 input:checked ~ .cat > .image
 {
     display: inline-block;
+    min-height: inherit;
     width: 25%;
 }
 
@@ -127,7 +128,9 @@ input:checked ~ .cat > .image img
 
 input:checked ~ .cat > .main-info
 {
+    width: 70%;
     display: inline-block;
     position: relative;
-    left: 10%;
+    vertical-align: top;
+    left: 1em;
 }
