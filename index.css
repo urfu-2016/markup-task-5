@@ -1,0 +1,117 @@
+article
+{
+    display: inline-block;
+    width: 400px;
+    margin: 10px;
+}
+
+article:hover
+{
+    background-color: lightgray;
+}
+
+img
+{
+    width: 350px;
+    /*Горизонтально по середине*/
+    display: block;
+    margin: auto;
+}
+
+a.part:hover img
+{
+    width: 400px;
+}
+
+.name
+{
+    font-size: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category
+{
+    font-size: .8em;
+    text-decoration: underline;
+    color: gray;
+}
+
+.name:hover,
+.category:hover
+{
+    font-weight: 600;
+}
+
+.kindness
+{
+    color: orange;
+    font-size: 1.5em;
+}
+
+.price,
+.oldprice
+{
+    display: inline-block;
+}
+
+.price
+{
+    font-size: 2em;
+    color: darkred;
+}
+
+.oldprice
+{
+    color: #404040;
+    text-decoration: line-through;
+}
+
+.infinity
+{
+    font-size: 1.5em;
+}
+
+.hidden
+{
+    display: none;
+    color: white;
+}
+
+.kind:hover div.hidden
+{
+    display: block;
+}
+
+ul li:after
+{
+    content: ';';
+}
+
+.list:checked ~ article
+{
+    display: block;
+    width: 1300px;
+}
+
+.list:checked ~ article .part
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+
+.list:checked ~ article div.part
+{
+    margin: 20px;
+}
+
+.list:checked ~ hr
+{
+    min-width: 1300px;
+}
+
+.table:checked ~ article .hidden
+{
+    display: none;
+}
