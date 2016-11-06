@@ -21,11 +21,8 @@ a
 body
 {
     background: #f6f8f9
-        , linear-gradient(to bottom
-        , #f6f8f9 0%
-        , #e5ebee 50%
-        , #d7dee3 51%
-        , #f5f7f9 100%);
+        ,linear-gradient(to bottom,#f6f8f9 0%, #e5ebee 50%
+        , #d7dee3 51%, #f5f7f9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9',
         endColorstr='#f5f7f9',
         GradientType=0);
@@ -38,7 +35,7 @@ img
     float: left;
     margin: 10px;
     padding: 15px;
-    opacity: 0.8;
+    opacity: .8;
 }
 
 img:hover
@@ -63,8 +60,7 @@ img:hover
     border: thin silver solid;
     float: left;
     margin: 30px;
-    box-shadow:
-        0 1px 0 #ccc
+    box-shadow: 0 1px 0 #ccc
         , 0 2px 0 #c9c9c9
         , 0 3px 0 #bbb
         , 0 4px 0 #b9b9b9
@@ -102,8 +98,7 @@ p
     font-weight: bold;
     text-align: center;
     color: black;
-    text-shadow:
-        0 1px 0 #ccc
+    text-shadow: 0 1px 0 #ccc
         , 0 2px 0 #c9c9c9
         , 0 3px 0 #bbb
         , 0 4px 0 #b9b9b9
@@ -129,15 +124,18 @@ p
     outline: none;
     border: 1px solid rgb(250, 172, 17);
     border-radius: 7px;
-    background: rgb(255, 212, 3) linear-gradient(rgb(255, 212, 3), rgb(248, 157, 23));
-    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0);
+    background: rgb(255, 212, 3) linear-gradient(rgb(255, 212, 3)
+    , rgb(248, 157, 23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0)
+    , inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0);
     transition: box-shadow .2s, border-color .2s;
     margin: 50px;
 }
 
 .button:hover
 {
-    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0), inset 0 1px 2px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0)
+    , inset 0 1px 2px rgba(0, 0, 0, 0);
     box-shadow: inset 0 0 0 60px rgba(255, 255, 0, .5);
 }
 
@@ -145,7 +143,8 @@ p
 {
     padding: calc(.25em + 1px) .5em calc(.25em - 1px);
     border-color: rgba(177, 159, 0, 1);
-    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1), inset 0 1px 2px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1)
+    , inset 0 1px 2px rgba(0, 0, 0, .3);
     box-shadow: inset 0 0 0 60px rgba(255, 255, 0, .45);
 }
 
@@ -159,7 +158,7 @@ h3
 .reviewStars-input label:hover,
 .reviewStars-input label:hover ~ label
 {
-  background: url('0.png') no-repeat;
+    background: url('0.png') no-repeat;
 }
 
 .reviewStars-input
@@ -173,7 +172,7 @@ h3
 
 .reviewStars-input input
 {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
     opacity: 0;
     width: 30px;
     height: 32px;
