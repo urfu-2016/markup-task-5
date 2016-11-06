@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+.description
+{
+    min-height: 110px;
+}
+
 .display-line:checked ~ .vacancy
 {
     display: block;
@@ -24,7 +29,7 @@
 
 .name:hover
 {
-    font-size: 23px;
+    font-size: 1em;
 }
 
 .category:hover
@@ -33,43 +38,44 @@
 }
 
 .display-line:checked ~ .vacancy .wrapper,
-.display-line:checked ~ .vacancy .content,
+.display-line:checked ~ .vacancy .vacancy-content,
 .display-line:checked ~ .vacancy .description
 {
     margin: 10px;
-    vertical-align: middle;
     width: 30%;
-    height: auto;
     display: inline-block;
+    vertical-align: top;
 }
 
-.content
+.display-line:checked ~ .vacancy .wrapper
 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    width: 20%;
 }
 
-.container 
+.display-line:checked ~ .vacancy .wrapper .img-cat
 {
-    max-width: 960px;
+    width: 100%;
+    max-height: 300px;
 }
 
 .cost 
 {
-    font: bold 18px Arial;
+    font: bold 1.1em Arial;
     color: #900;
 }
 
 .category
 {
     color: #666;
-    text-decoration: underline;
     font-size: 15px;
 }
 
 .name 
 {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-size: 20px;
 }
 
@@ -83,7 +89,7 @@
 
 .wrapper
 {
-    min-height: 250px;
+    min-height: 190px;
     position: relative;
 }
 
@@ -91,8 +97,47 @@
 {
     display: inline-block;
     padding: 10px;
-    vertical-align: top;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 200px;
+}
+
+.rating 
+{
+    display: inline-block;
+}
+
+.rating:not(:checked) > input 
+{
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label 
+{
+    float: right;
+    width: 1em;
+    cursor: pointer;
+    font-size: 1.7em;
+    color: #ddd;
+}
+
+.rating > input:checked ~ label 
+{
+    color: gold;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label 
+{
+    color: gold;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label 
+{
+    color: #ea0;
 }
