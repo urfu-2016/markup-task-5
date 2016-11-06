@@ -3,7 +3,6 @@
 .list-items
 {
     width: 100%;
-    display: inline-block;
     font-size: 16px;
 }
 
@@ -53,13 +52,14 @@
     opacity: 1;
 }
 
-.column-container
+.info
 {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
 }
 
-input[type='checkbox']:checked ~ section > div > .center-side,
-input[type='checkbox']:checked ~ section > div > .right-side
+input[type='checkbox']:checked ~ section > div > .center-side1,
+input[type='checkbox']:checked ~ section > div > .description
 {
     width: 40%;
 }
@@ -68,7 +68,6 @@ input[type='checkbox']:checked ~ section > div > .row-image
 {
     width: 20%;
     display: inline-block;
-    float: left;
 }
 
 input[type='checkbox']:checked ~ section > .item-container
@@ -119,7 +118,7 @@ input[type='checkbox']:checked ~ section > div > div > div > .truncate
 
 .cost-item
 {
-    font-family: 'Arial';
+    font-family: 'Arial' sans-serif;
     font-weight: bold;
 }
 
