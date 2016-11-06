@@ -1,0 +1,224 @@
+html
+{
+    font-family: Cambria;
+    background: #ab9acd;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    font-size: 60px;
+    color: white;
+    margin: 15px;
+}
+
+header img
+{
+    width: 150px;
+}
+
+p
+{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.4em;
+}
+
+a
+{
+    font-size: 25px;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+figure
+{
+    background: #dfdef1;
+    width: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #6e797f;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+figure:hover
+{
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+figcaption
+{
+    text-align: center;
+}
+
+.img-horizon
+{
+    margin: 10px;
+    width: 90%;
+}
+
+.img-vertical
+{
+    margin: 2px 22%;
+    width: 54%;
+}
+
+.img-vertical:hover,
+.img-horizon:hover
+{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.about
+{
+    text-align: left;
+}
+
+.price,
+.old-price
+{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.price
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: #991d30;
+}
+
+.old-price
+{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: red;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.productRate
+{
+    background: url(pic/starempty.png);
+    width: 120px;
+    height: 24px;
+    margin-left: 25%;
+}
+
+.productRate div
+{
+    background: url(pic/starfull.png);
+    height: 100%;
+}
+
+.first .productRate div
+{
+    width: 90%;
+}
+
+.second .productRate div
+{
+    width: 70%;
+}
+
+.third .productRate div
+{
+    width: 70%;
+}
+
+.fourth .productRate div
+{
+    width: 90%;
+}
+
+.fifth .productRate div
+{
+    width: 80%;
+}
+
+.sixth .productRate div
+{
+    width: 80%;
+}
+
+.seventh .productRate div
+{
+    width: 65%;
+}
+
+.eight .productRate div
+{
+    width: 70%;
+}
+
+.ninth .productRate div
+{
+    width: 90%;
+}
+
+.tenth .productRate div
+{
+    width: 90%;
+}
+
+.display-line:checked ~ figure
+{
+    display: block;
+    margin-top: 40px;
+    width: 95%;
+}
+
+.display-line:checked ~ figure figcaption
+{
+    min-width: 600px;
+    width: 60%;
+    float: right;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.display-line:checked ~ figure .img-horizon,
+.display-line:checked ~ figure .img-vertical
+{
+    height: auto;
+    position: static;
+    vertical-align: top;
+    width: 30%;
+    margin: 5px;
+}
+
+.display-line:checked ~ figure figcaption .description
+{
+    float: left;
+    width: 200px;
+}
+
+.display-line:checked ~ figure figcaption .about
+{
+    font-size: 18px;
+    float: right;
+    display: block;
+    width: 300px;
+}
+
+footer
+{
+    background: #444a69;
+    display: inline-block;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
