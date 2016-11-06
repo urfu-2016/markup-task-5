@@ -1,0 +1,59 @@
+.list-view:checked ~ .item
+{
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 10px;
+}
+
+.list-view:checked ~ section > img
+{
+    float: left;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.item
+{
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+
+.item:hover
+{
+    border: solid 1px;
+}
+
+.item .name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item img
+{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.description
+{
+    display: table;
+}
+
+.price
+{
+    color: red;
+}
+
+.price .old
+{
+    text-decoration: line-through;
+    color: black;
+}
