@@ -20,13 +20,12 @@ a
 
 body
 {
-    background: #f6f8f9;
-    background:
-        linear-gradient(to bottom,
-        #f6f8f9 0%,
-        #e5ebee 50%,
-        #d7dee3 51%,
-        #f5f7f9 100%);
+    background: #f6f8f9
+        , linear-gradient(to bottom
+        , #f6f8f9 0%
+        , #e5ebee 50%
+        , #d7dee3 51%
+        , #f5f7f9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9',
         endColorstr='#f5f7f9',
         GradientType=0);
@@ -39,14 +38,12 @@ img
     float: left;
     margin: 10px;
     padding: 15px;
-    opacity: 0.96;
+    opacity: 0.8;
 }
 
 img:hover
 {
-    border: 2px solid black;
     opacity: 1;
-    padding: 0;
 }
 
 .block
@@ -54,6 +51,7 @@ img:hover
     width: 500px;
     height: 700px;
 }
+
 .about
 {
     text-align: center;
@@ -156,15 +154,15 @@ h3
     font-size: 30px;
 }
 
-#Stars input:checked ~ label,
-#Stars label,
-#Stars label:hover,
-#Stars label:hover ~ label
+.reviewStars-input input:checked ~ label,
+.reviewStars-input label,
+.reviewStars-input label:hover,
+.reviewStars-input label:hover ~ label
 {
   background: url('0.png') no-repeat;
 }
 
-#Stars
+.reviewStars-input
 {
     overflow: hidden;
     *zoom: 1;
@@ -173,7 +171,7 @@ h3
     margin: 23px;
 }
 
-#Stars input
+.reviewStars-input input
 {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -184,14 +182,14 @@ h3
     z-index: 0;
 }
 
-#Stars input:checked ~ label
+.reviewStars-input input:checked ~ label
 {
     background-position: 0 -40px;
     height: 40px;
     width: 43px;
 }
 
-#Stars label
+.reviewStars-input label
 {
     background-position: 0;
     height: 40px;
@@ -203,40 +201,12 @@ h3
     z-index: 1;
 }
 
-#Stars label:hover,
-#Stars label:hover ~ label
+.reviewStars-input label:hover,
+.reviewStars-input label:hover ~ label
 {
     background-position: 0 -40px;
     height: 40px;
     width: 43px;
-}
-
-#Stars #star-0
-{
-    left: 0px;
-}
-#Stars #star-1
-{
-    left: 53px;
-}
-#Stars #star-2
-
-{
-    left: 106px;
-}
-#Stars #star-3
-{
-    left: 159px;
-}
-
-#Stars #star-4
-{
-    left: 212px;
-}
-
-#Stars #star-5
-{
-    left: 265px;
 }
 
 .line:checked ~ .cat
