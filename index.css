@@ -107,26 +107,26 @@
     color: #ffc613;
 }
 
-input:checked ~ .cat
+input:checked ~ main > .cat
 {
     width: 100%;
     display: block;
 }
 
-input:checked ~ .cat > .image
+input:checked ~ main > .cat > .image
 {
     display: inline-block;
     min-height: inherit;
     width: 25%;
 }
 
-input:checked ~ .cat > .image img
+input:checked ~ main > .cat > .image img
 {
     position: initial;
     height: inherit;
 }
 
-input:checked ~ .cat > .main-info
+input:checked ~ main > .cat > .main-info
 {
     width: 70%;
     display: inline-block;
