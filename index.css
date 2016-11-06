@@ -4,19 +4,19 @@
     src: url('font/fontawesome-webfont.woff') format('woff');
 }
 
-.item
+.cat
 {
     width: 400px;
     padding: 8px;
     display: inline-block;
 }
 
-.item:hover
+.cat:hover
 {
     box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
 }
 
-.item a:hover
+.cat a:hover
 {
     color: red;
 }
@@ -109,7 +109,6 @@ label:hover ~ label
     color: #ffc613;
 }
 
-input:checked + label:hover,
 input:checked ~ label:hover,
 input:checked ~ label:hover ~ label,
 label:hover ~ input:checked ~ label
@@ -123,20 +122,19 @@ label:hover ~ input:checked ~ label
     display: table;
 }
 
-.change:checked ~ .item
+.change:checked ~ .cat
 {
     min-width: 850px;
-    width: 100%;
-    display: block;
+    width: 99.4%;
 }
 
-.change:checked ~ .item > .foto
+.change:checked ~ .cat > .foto
 {
     display: inline-block;
     width: 30%;
 }
 
-.change:checked ~ .item > .info
+.change:checked ~ .cat > .info
 {
     display: inline-block;
     position: relative;
@@ -144,7 +142,7 @@ label:hover ~ input:checked ~ label
     padding-left: 25px;
 }
 
-.change:checked ~ .item > .description
+.change:checked ~ .cat > .description
 {
     display: inline-block;
     position: relative;
