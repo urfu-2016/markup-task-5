@@ -21,13 +21,15 @@ a
 body
 {
     background: #f6f8f9;
-    background: 
-    -moz-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
     background:
-    -webkit-linear-gradient(top, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
-    background:
-    linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9', endColorstr='#f5f7f9', GradientType=0);
+        linear-gradient(to bottom,
+        #f6f8f9 0%,
+        #e5ebee 50%,
+        #d7dee3 51%,
+        #f5f7f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f8f9',
+        endColorstr='#f5f7f9',
+        GradientType=0);
 }
 
 img
@@ -63,24 +65,24 @@ img:hover
     border: thin silver solid;
     float: left;
     margin: 30px;
-    box-shadow: 
-        0 1px 0 #CCCCCC,
-        0 2px 0 #C9C9C9,
-        0 3px 0 #BBBBBB,
-        0 4px 0 #B9B9B9,
-        0 5px 0 #AAAAAA,
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15)
+    box-shadow:
+        0 1px 0 #ccc
+        , 0 2px 0 #c9c9c9
+        , 0 3px 0 #bbb
+        , 0 4px 0 #b9b9b9
+        , 0 5px 0 #aaa
+        , 0 6px 1px rgba(0, 0, 0, .1)
+        , 0 0 5px rgba(0, 0, 0, .1)
+        , 0 1px 3px rgba(0, 0, 0, .3)
+        , 0 3px 5px rgba(0, 0, 0, .2)
+        , 0 5px 10px rgba(0, 0, 0, .25)
+        , 0 10px 10px rgba(0, 0, 0, .2)
+        , 0 20px 20px rgba(0, 0, 0, .15)
 }
 
 .cat:hover
 {
-    background: #DCDCDC;
+    background: #dcdcdc;
 }
 
 strike
@@ -103,18 +105,18 @@ p
     text-align: center;
     color: black;
     text-shadow:
-        0 1px 0 #CCCCCC,
-        0 2px 0 #C9C9C9,
-        0 3px 0 #BBBBBB,
-        0 4px 0 #B9B9B9,
-        0 5px 0 #AAAAAA,
-        0 6px 1px rgba(0, 0, 0, .1),
-        0 0 5px rgba(0, 0, 0, .1),
-        0 1px 3px rgba(0, 0, 0, .3),
-        0 3px 5px rgba(0, 0, 0, .2),
-        0 5px 10px rgba(0, 0, 0, .25),
-        0 10px 10px rgba(0, 0, 0, .2),
-        0 20px 20px rgba(0, 0, 0, .15)
+        0 1px 0 #ccc
+        , 0 2px 0 #c9c9c9
+        , 0 3px 0 #bbb
+        , 0 4px 0 #b9b9b9
+        , 0 5px 0 #aaa
+        , 0 6px 1px rgba(0, 0, 0, .1)
+        , 0 0 5px rgba(0, 0, 0, .1)
+        , 0 1px 3px rgba(0, 0, 0, .3)
+        , 0 3px 5px rgba(0, 0, 0, .2)
+        , 0 5px 10px rgba(0, 0, 0, .25)
+        , 0 10px 10px rgba(0, 0, 0, .2)
+        , 0 20px 20px rgba(0, 0, 0, .15)
 }
 
 .button
@@ -191,7 +193,7 @@ h3
 
 #Stars label
 {
-    background-position: 0 0;
+    background-position: 0;
     height: 40px;
     width: 43px;
     float: right;
@@ -235,14 +237,6 @@ h3
 #Stars #star-5
 {
     left: 265px;
-}
-
-input[type=checkbox] {
-    width: 10%;
-    padding: 6px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    content: ''
 }
 
 .line:checked ~ .cat
