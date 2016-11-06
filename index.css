@@ -28,13 +28,20 @@
 
 .foto
 {
-
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .foto:hover
 {
     opacity: .8;
+}
+
+.fotoContainer
+{
+    position: relative;
+    height: 560px;
 }
 
 a
@@ -128,13 +135,14 @@ label:hover ~ input:checked ~ label
     width: 99.4%;
 }
 
-.change:checked ~ .cat > .foto
+.change:checked ~ .cat .foto
 {
     display: inline-block;
-    width: 30%;
+    position: inherit;
+    width: 100%;
 }
 
-.change:checked ~ .cat > .info
+.change:checked ~ .cat .info
 {
     display: inline-block;
     position: relative;
@@ -142,9 +150,15 @@ label:hover ~ input:checked ~ label
     padding-left: 25px;
 }
 
-.change:checked ~ .cat > .description
+.change:checked ~ .cat .description
 {
     display: inline-block;
     position: relative;
+    width: 30%;
+}
+
+.change:checked ~ .cat .fotoContainer
+{
+    display: inline-block;
     width: 30%;
 }
