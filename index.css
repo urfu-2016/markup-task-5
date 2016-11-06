@@ -1,0 +1,280 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    font: 15px normal sans-serif;
+}
+
+.goods
+{
+    position: relative;
+    display: inline-block;
+    margin: 40px 10px;
+    width: 340px;
+}
+
+.goods:hover
+{
+    box-shadow: 0 0 20px 3px black;
+}
+
+.capture
+{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 310px;
+}
+
+.capture > img
+{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.capture > img:hover
+{
+    cursor: pointer;
+}
+
+.image-scale
+{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 4px;
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.capture:hover .image-scale
+{
+    opacity: 0.6;
+}
+
+.info-wrapper
+{
+    display: block;
+    height: 160px;
+    width: 310px;
+    margin: auto;
+}
+
+.info
+{
+    position: absolute;
+    font-size: 1.5em;
+    width: 300px;
+    height: 120px;
+    text-align: center;
+}
+
+.cat-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-name:hover > a
+{
+    color: red;
+}
+
+.category > ul
+{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.category li
+{
+    padding: 0 4px;
+    display: inline-block;
+}
+
+.category li:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.price
+{
+    color: black;
+    font-weight: 600;
+}
+
+.price:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.prev-price
+{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.cat-scale
+{
+    display: block;
+    margin: 0 70px auto;
+    width: 300px;
+    height: 30px;
+}
+.cat-scale-img
+{
+    width: 15px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.cat-checkbox
+{
+    display: none;
+}
+
+.cat-checkbox:checked ~ .cat-scale-label
+{
+    opacity: 0.3;
+}
+.cat-checkbox:checked
+{
+    pointer-events: none;
+}
+
+.cat-scale-label
+{
+    float: left;
+    width: 15px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cat-scale:hover .cat-scale-label
+{
+    opacity: 1;
+}
+
+.cat-scale-label:hover ~ .cat-scale-label
+{
+    opacity: 0.3;
+}
+
+.description-wrapper
+{
+    display: block;
+    height: 210px;
+    margin: auto;
+    width: 310px;
+}
+
+.description
+{
+    position: absolute;
+    text-align: left;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description:hover
+{
+    overflow: visible;
+    background: white;
+    height: auto;
+    box-shadow: 0 0 10px black;
+}
+
+.change-checkbox
+{
+    position: absolute;
+    top: -999px;
+    left: -999px;
+}
+
+.change-checkbox + label
+{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    border: 1px solid black;
+    padding: 4px;
+    box-shadow: inset 0 0 6px black;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #edebeb;
+}
+
+.change-checkbox + label:active
+{
+    box-shadow: inset 0 0 15px 2px black;
+}
+
+.change-checkbox:checked ~ .goods
+{
+    width: 1100px;
+    display: block;
+    margin: 50px auto;
+}
+
+.change-checkbox:checked ~ .goods > .capture
+{
+    display: inline-block;
+    width: 25%;
+}
+
+.change-checkbox:checked ~ .goods > .capture > img
+{
+    display: block;
+    max-width: 100%;
+}
+
+.change-checkbox:checked ~ .goods > .info-wrapper
+{
+    display: inline-block;
+    width: 45%;
+    height: 200px;
+}
+
+.change-checkbox:checked ~ .goods > .info-wrapper > .info
+{
+    width: 40%;
+    text-align: left;
+}
+
+.change-checkbox:checked ~ .goods > .info-wrapper > .info > .cat-scale
+{
+    margin-left: 10px;
+}
+
+
+.change-checkbox:checked ~ .goods > .description-wrapper
+{
+    display: inline-block;
+    width: 25%;
+    height: 210px;
+}
+
+.change-checkbox:checked ~ .goods > .description-wrapper > .description
+{
+    width: 24%;
+}
+
+
