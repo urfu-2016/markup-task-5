@@ -13,10 +13,8 @@
     width: 70%;
     max-width: 200px;
     margin: 5px auto;
-    box-shadow: 0.6px 0.6px 0.6px 0.6px #808080
+    box-shadow:.6px .6px .6px .6px #808080;
 }
-
-
 
 .list:checked ~ .catblock
 {
@@ -59,7 +57,7 @@
 {
     color: grey;
     text-decoration: line-through;
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
 .name
@@ -73,7 +71,7 @@
 
 .name:hover
 {
-    color:#f00
+    color :#f00;
 }
 
 .category
