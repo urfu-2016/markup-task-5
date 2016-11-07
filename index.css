@@ -1,0 +1,52 @@
+div
+{
+    margin: 2%;
+    width: 20%;
+    display: inline-block;
+    border: 2px dashed black;
+    vertical-align: top;
+    min-height: 300px;
+    min-width: 380px;
+}
+
+img
+{
+    min-height: 200px;
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+}
+
+a
+{
+    text-align: center;
+    color: #f85c37;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 24px;
+}
+
+span
+{
+    text-decoration: line-through;
+}
+
+div:hover
+{
+    border: 2px solid black;
+}
+
+.night-mode:checked ~ main
+{
+    background: #333;
+}
+
+.night-mode:checked ~ main > div
+{
+    background: #494949;
+    color: #f9faff;
+}
