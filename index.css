@@ -6,11 +6,6 @@ input[value='list'].radio:checked ~ main figcaption
     margin: 0 3%;
 }
 
-input[value='list'].radio:checked ~ main .name
-{
-    display: inline;
-}
-
 input[value='list'].radio:checked ~ main img
 {
     display: inline-block;
@@ -29,7 +24,7 @@ input[value='list'].radio:checked ~ main .features
 {
     vertical-align: top;
     display: inline-block;
-    width: 30%;
+    width: 45%;
 }
 
 input[value='list'].radio:checked ~ main .description
