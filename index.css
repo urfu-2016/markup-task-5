@@ -1,0 +1,239 @@
+body,
+html
+{
+    padding: 0;
+    margin: 0;
+}
+
+.group
+{
+    width: 21%;
+    display: inline-block;
+    margin: 1%;
+    position: relative;
+    font-family: sans-serif;
+    vertical-align: top;
+    -webkit-transition: transform .1s ease-out .01s;
+    -moz-transition: transform .1s ease-out .01s;
+    -o-transition: transform .1s ease-out .01s;
+    transition: transform .1s ease-out .01s;
+}
+
+.group:hover
+{
+    transform: scale(1.1, 1.1);
+}
+
+.group-img
+{
+    -webkit-transition: transform .1s ease-out .01s;
+    -moz-transition: transform .1s ease-out .01s;
+    -o-transition: transform .1s ease-out .01s;
+    transition: transform .1s ease-out .01s;
+
+}
+
+.group-img:hover
+{
+    transform: rotate(10deg);
+}
+
+.group .group-img img
+{
+    width: 100%;
+    padding: 0;
+}
+
+.group-info .name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.group-info .name a:hover
+{
+    color: #111;
+}
+
+.group-info .category
+{
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+}
+
+.group-info .category:hover
+{
+    text-shadow: 0 0 4px #aaa;
+    cursor: pointer;
+}
+
+.group-info .price-new
+{
+    font-size: 25px;
+    display: inline-block;
+    color: #a10000;
+    font-weight: bold;
+}
+
+.group-info .price-old
+{
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.description-header
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    margin: 5px 0;
+}
+
+.group-description
+{
+    word-wrap: break-word;
+}
+
+#switch + label
+{
+    display: inline-block;
+    width: 80%;
+}
+
+#switch:checked ~ .group
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#switch:checked ~ .group .group-img,
+#switch:checked ~ .group .group-info,
+#switch:checked ~ .group .group-description
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: .5%;
+}
+
+#switch:checked ~ .group .group-img
+{
+    width: 28%;
+}
+
+#switch:checked ~ .group .group-description
+{
+    width: 28%;
+}
+
+#switch:checked ~ .group .description-header
+{
+    margin: 0;
+}
+
+#switch:checked ~ .group .group-info
+{
+    min-width: 150px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .group
+    {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .group
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .group-img,
+    .group-info,
+    .group-description
+    {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin: .5%;
+    }
+
+    .group-img
+    {
+        width: 28%;
+    }
+
+    .group-description
+    {
+        width: 28%;
+    }
+
+    .description-header
+    {
+        margin: 0;
+    }
+
+    .group-info
+    {
+        min-width: 150px;
+    }
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: 5px;
+    margin-left: -.5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+    margin-right: -.7em;
+}
+
+.rating > .half:last-child
+{
+    margin-right: .4px;
+}
+
+.rating > label
+{
+    color: #aaa;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > input:checked ~ label,
+.rating > label:hover,
+.rating > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
