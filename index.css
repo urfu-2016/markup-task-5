@@ -1,0 +1,141 @@
+@font-face
+{
+    font-family: Russo One;
+    src: local('Russo One')
+        , url(fonts/RussoOne-Regular.ttf)
+        , url(fonts/RussoOne-Regular.woff);
+}
+@font-face
+{
+    font-family: Lobster;
+    src: local('Lobster')
+        , url(fonts/Lobster-Regular.ttf)
+        , url(fonts/Lobster-Regular.woff);
+}
+
+.cat
+{
+    margin: 30px;
+    padding: 10px;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 20px 10px #0570f2;
+    background-color: #6eadfa;
+}
+
+.cat-name
+{
+    font: bold 25px Lobster;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+.cat-name:hover
+{
+    text-shadow: 2px 2px 6px #fc8700;
+}
+
+.typical-cat:hover
+{
+    text-shadow: 2px 2px 8px #15ff00;
+}
+
+.fashion-cat:hover
+{
+    text-shadow: 2px 2px 8px #ff00c3;
+}
+
+.sporty-cat:hover
+{
+    text-shadow: 2px 2px 8px #f00;
+}
+
+.stars
+{
+    width: 150px;
+    height: 30px;
+}
+
+.cat-category
+{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.price
+{
+    font: bold 19px Russo One;
+    color: #9e0b0b;
+    margin-right: 5px;
+}
+
+.previous-price
+{
+    text-decoration: line-through;
+}
+
+.assortment
+{
+    margin: 20px;
+}
+
+.cat-image
+{
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.cat-image:hover
+{
+    box-shadow: 0 0 10px 5px #f74b0c;
+}
+
+.new
+{
+    color: #fff200;
+}
+
+.list:checked ~ .assortment .cat-description
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 120px;
+    width: 800px;
+}
+
+header
+{
+    font: bold 100px Times New Roman;
+    text-align: center;
+}
+
+.tiles:checked ~ .assortment .cat
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+}
+
+.tiles:checked ~ .assortment .cat-image
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.cat-description
+{
+    font-size: 20px;
+}
+
+.list:checked ~ .assortment .info
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 80px;
+    width: 250px;
+}
