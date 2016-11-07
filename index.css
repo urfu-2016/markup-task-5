@@ -1,0 +1,167 @@
+input[name='style-switcher']:checked ~ .products .products-item
+{
+    display: block;
+    width: 100%;
+}
+
+input[name='style-switcher']:checked ~ .products .products-item-image
+{
+    display: inline-block;
+    width: 20%;
+    margin-right: 5%;
+    vertical-align: top;
+}
+
+input[name='style-switcher']:checked ~ .products .products-item-info
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+    width: 30%;
+}
+
+input[name='style-switcher']:checked ~ .products .products-item-description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.products
+{
+    font-size: 0;
+}
+
+.products-item
+{
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1%;
+    vertical-align: top;
+    width: 31%;
+}
+
+.products-item .products-item-image img
+{
+    width: 100%;
+    height: 200px;
+}
+
+.products-item-info .title a
+{
+    font-size: 1.3rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.products-item-info .categories
+{
+    margin: .31rem 0;
+    padding: 0;
+    color: #555;
+}
+
+.products-item-info .categories li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.products-item-info .categories li + li:before
+{
+    content: '-';
+    margin-right: 3px;
+}
+
+.products-item-info .rank
+{
+    margin: .31rem 0;
+}
+
+.products-item-info .price
+{
+    margin: .31rem 0;
+}
+
+.products-item-info .price .current-price
+{
+    color: #d60004;
+    font-size: 1.3rem;
+}
+
+.products-item-info .price .old-price
+{
+    color: #555;
+    text-decoration: line-through;
+    margin-left: .31rem;
+}
+
+.rank
+{
+    border: 0;
+    direction: rtl;
+    font-size: 0;
+    text-align: left;
+}
+
+.rank input
+{
+    display: none;
+}
+
+.rank legend
+{
+    overflow: hidden;
+    height: 0;
+}
+
+.rank label
+{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 1rem;
+    line-height: 1.3rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-indent: 100%;
+    width: 1.2rem;
+}
+
+.rank label:before
+{
+    bottom: 0;
+    color: #d69d00;
+    content: '☆';
+    left: 0;
+    line-height: 1rem;
+    position: absolute;
+    right: 0;
+    text-indent: 0;
+    top: 0;
+}
+
+.rank label:hover:before,
+.rank label:hover ~ label:before,
+.rank input:checked ~ label:before
+{
+    color: #ffbb04;
+    content: '★';
+}
+
+.rank label:active
+{
+    position: relative;
+    top: 1px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .products-item
+    {
+        width: 23%;
+    }
+}
