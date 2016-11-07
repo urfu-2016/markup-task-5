@@ -2,12 +2,17 @@ article
 {
     display: inline-block;
     width: 400px;
-    margin: 10px;
+    margin: 30px 10px;
 }
 
 article:hover
 {
-    background-color: lightgray;
+    background-color: #d3d3d3;
+}
+
+.img
+{
+    overflow: hidden;
 }
 
 img
@@ -18,15 +23,16 @@ img
     margin: auto;
 }
 
-a.part:hover img
+.img.view-block:hover img
 {
-    width: 400px;
+    transform: scale(1.15);
 }
 
 .name
 {
     font-size: 2em;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 
@@ -34,18 +40,22 @@ a.part:hover img
 {
     font-size: .8em;
     text-decoration: underline;
-    color: gray;
+    color: #808080;
 }
 
-.name:hover,
-.category:hover
+.name:hover
 {
     font-weight: 600;
 }
 
+.category:hover
+{
+    text-shadow: 1px 1px 1px #a9a9a9;
+}
+
 .kindness
 {
-    color: orange;
+    color: #ffa500;
     font-size: 1.5em;
 }
 
@@ -58,7 +68,7 @@ a.part:hover img
 .price
 {
     font-size: 2em;
-    color: darkred;
+    color: #8b0000;
 }
 
 .oldprice
@@ -75,7 +85,7 @@ a.part:hover img
 .hidden
 {
     display: none;
-    color: white;
+    color: #fff;
 }
 
 .kind:hover div.hidden
@@ -94,14 +104,14 @@ ul li:after
     width: 1300px;
 }
 
-.list:checked ~ article .part
+.list:checked ~ article .view-block
 {
     display: inline-block;
     vertical-align: top;
     width: 400px;
 }
 
-.list:checked ~ article div.part
+.list:checked ~ article .view-block.text
 {
     margin: 20px;
 }
