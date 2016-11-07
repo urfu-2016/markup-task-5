@@ -1,0 +1,98 @@
+.catblock
+{
+    width: 200px;
+    vertical-align: top;
+    height: 460px;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 20px;
+}
+
+.head:hover
+{
+    width: 70%;
+    max-width: 200px;
+    margin: 5px auto;
+    box-shadow: 0.6px 0.6px 0.6px 0.6px #808080
+}
+
+
+
+.list:checked ~ .catblock
+{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.list:checked ~ .catblock .head
+{
+    width: 20%;
+}
+
+.list:checked ~ .catblock .content
+{
+    width: 20%;
+}
+
+.list:checked ~ .catblock .description
+{
+    width: 50%;
+}
+
+.list:checked ~ .catblock .head,
+.list:checked ~ .catblock .content,
+.list:checked ~ .catblock .description
+{
+    display: inline-block;
+    margin: 15px;
+}
+
+.price
+{
+    color: red;
+    font-size: 2em;
+    margin: 2px 2px auto;
+}
+
+.price span
+{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.name
+{
+    text-decoration: underline;
+    color: #00f;
+    font-size: 1.8em;
+    margin: 1px 1px auto;
+    overflow: hidden;
+}
+
+.name:hover
+{
+    color:#f00
+}
+
+.category
+{
+    margin: 0;
+}
+
+.category:hover
+{
+    font-size: 1.2em;
+}
+
+.level
+{
+    margin: 1px;
+}
+
+.head
+{
+    margin: 0;
+    height: 200px;
+}
