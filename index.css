@@ -12,7 +12,7 @@ img
     height: auto;
 }
 
-input[value='list']:checked ~ .kitty
+input[value="list"]:checked ~ .kitty
 {
     width: 100%;
 }
