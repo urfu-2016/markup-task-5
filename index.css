@@ -1,7 +1,7 @@
 .cat-block
 {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .2);
     margin: 10px;
 }
 
@@ -52,7 +52,7 @@
 .actual-price
 {
     font-size: 25px;
-    color: #ff0000;
+    color: #f00;
 }
 
 .old-price
@@ -64,7 +64,7 @@
 .description:before
 {
     display: block;
-    content: "Описание:";
+    content: 'Описание:';
     font-weight: bold;
 }
 
@@ -75,7 +75,7 @@
 
 .name a:hover
 {
-    color: #ff0000;
+    color: #f00;
 }
 
 .photo:hover
@@ -85,5 +85,5 @@
 
 .category:hover
 {
-    color: #000000;
+    color: #000;
 }
