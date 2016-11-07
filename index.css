@@ -1,0 +1,83 @@
+input[value='list'].radio:checked ~ main figcaption
+{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    margin: 0 3%;
+}
+input[value='list'].radio:checked ~ main .name
+{
+    display: inline;
+}
+
+input[value='list'].radio:checked ~ main img
+{
+    display: inline-block;
+    width: 20%;
+}
+input[value='list'].radio:checked ~ main figure
+{
+    width: 100%;
+    margin-left: 0;
+    padding: 40px;
+    display: block;
+}
+input[value='list'].radio:checked ~ main .features
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+}
+input[value='list'].radio:checked ~ main .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+img
+{
+    width: 290px;
+}
+figure
+{
+    width: 300px;
+    display: inline-block;
+}
+.name
+{
+    padding: 3px;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 30px;
+    width: 275px;
+    display: block;
+}
+.category
+{
+    font-size: 13px;
+    color: #888;
+    text-decoration: underline;
+    padding: 3px;
+}
+.price
+{
+    font-size: 22px;
+    color: #8b0000;
+    font-weight: bold;
+    padding: 3px;
+}
+.description
+{
+    padding: 3px;
+}
+.kind
+{
+    display: inline-block;
+    color: #ff0000;
+}
+.evil
+{
+    display: inline-block;
+    color: #000000;
+}
