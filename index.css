@@ -30,11 +30,6 @@ h1
     text-align: center;
 }
 
-.cars-catalogue > .car-block
-{
-    display: inline-block;
-}
-
 .cars-catalogue
 {
     margin-left: 3%;
@@ -43,6 +38,7 @@ h1
 
 .car-block
 {
+    display: inline-block;
     min-width: 100px;
     max-width: 200px;
     min-height: 700px;
@@ -91,7 +87,7 @@ img:hover
     text-transform: uppercase;
 }
 
-.rating > .star:before
+.star:before
 {
     content: '\2605';
     position: absolute;
