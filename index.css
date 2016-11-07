@@ -1,0 +1,161 @@
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 20;
+    padding: 0;
+}
+
+header
+{
+    font: 30px 'Indie Flower', cursive;
+    text-align: center;
+}
+
+h1 span
+{
+    color: #f00;
+}
+
+span
+{
+    color: red;
+}
+
+label
+{
+    font: bold 30px Marck Script;
+}
+
+img
+{
+    width: 90%;
+}
+
+a
+{
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 0;
+}
+
+.cross-out
+{
+    text-decoration: line-through;
+}
+
+.cat
+{
+    display: inline-block;
+    width: 250pt;
+    vertical-align: top;
+    margin: 30px;
+    padding: 20px;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 3em red;
+    background-color: yellow;
+}
+
+.categoryCats:hover,
+a:hover
+{
+    color: red;
+}
+
+.text
+{
+    width: 100%;
+    vertical-align: top;
+    font: 15px 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+
+.price
+{
+    font: bold 30px 'Pacifico', cursive;
+    color: black;
+}
+
+img
+{
+    width: 90%;
+    height: 90%;
+    align-self: center;
+}
+
+input[value='inline']:checked ~ main
+{
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+}
+
+input[value='inline']:checked ~ main div.cat
+{
+    display: table-row;
+    width: 100%;
+    margin-top: 20px;
+    height: 70px;
+    padding: 2px;
+}
+
+input[value='inline']:checked ~ main div.cat a
+{
+    display: table-cell;
+    width: 25%;
+    height: 25%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[value='inline']:checked ~ main div.cat a img
+{
+    display: table-cell;
+    width: 250pt;
+    text-align: left;
+}
+
+input[value='inline']:checked ~ main div.cat div
+{
+    width: 50%;
+    height: 50%;
+    display: table-cell;
+    padding: 0;
+    text-align: left;
+}
+
+input[value='inline']:checked ~ main div.cat div a
+{
+    display: block;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+input[value='inline']:checked ~ main div.cat div div
+{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+input[value='inline']:checked ~ main div.cat div div p
+{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
