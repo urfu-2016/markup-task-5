@@ -109,9 +109,45 @@ input[id='list']:checked ~ .cat > .description
 .rating
 {
     margin: 10px 0;
-    background: url('rating.png');
+    background: url('rating-gray.png');
     height: 32px;
     width: 170px;
+}
+
+.rating > .rating-five,
+.rating > .rating-four,
+.rating > .rating-three,
+.rating > .rating-two,
+.rating > .rating-one
+{
+    margin: 10px 0;
+    background: url('rating.png');
+    height: 32px;
+}
+
+.rating > .rating-five
+{
+    width: 100%;
+}
+
+.rating > .rating-four
+{
+    width: 80%;
+}
+
+.rating > .rating-three
+{
+    width: 60%;
+}
+
+.rating > .rating-two
+{
+    width: 40%;
+}
+
+.rating > .rating-one
+{
+    width: 20%;
 }
 
 .performance
