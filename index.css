@@ -18,6 +18,11 @@ img
     margin: 5% auto;
 }
 
+span
+{
+    text-decoration: line-through;
+}
+
 a
 {
     text-align: center;
@@ -28,11 +33,6 @@ a
     white-space: nowrap;
     display: inline-block;
     font-size: 24px;
-}
-
-span
-{
-    text-decoration: line-through;
 }
 
 div:hover
