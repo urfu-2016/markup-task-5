@@ -90,6 +90,10 @@ header
     text-decoration: none;
     text-transform: uppercase;
     transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
 }
 
 .header-nav a:hover
@@ -202,6 +206,8 @@ input[name='switcher']:checked ~ .entries .about
     background: url('img/grid.svg') no-repeat 6px 6px;
     border: 2px solid #b0bec5;
     border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     color: #78909c;
     cursor: pointer;
     display: inline-block;
@@ -209,6 +215,10 @@ input[name='switcher']:checked ~ .entries .about
     margin-bottom: 24px;
     padding: 10px 12px 10px 36px;
     transition: border-color .2s, color .2s;
+    -o-transition: border-color .2s, color .2s;
+    -ms-transition: border-color .2s, color .2s;
+    -moz-transition: border-color .2s, color .2s;
+    -webkit-transition: border-color .2s, color .2s;
 }
 
 .switcher-text:hover
@@ -231,6 +241,10 @@ input[name='switcher']:checked ~ .entries .about
     padding: 16px;
     text-align: left;
     transition: box-shadow .2s;
+    -o-transition: box-shadow .2s;
+    -ms-transition: box-shadow .2s;
+    -moz-transition: box-shadow .2s;
+    -webkit-transition: box-shadow .2s;
     vertical-align: top;
     width: 300px;
 }
