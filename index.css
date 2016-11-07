@@ -1,0 +1,171 @@
+.content
+{
+    position: absolute;
+    left: 15%;
+    width: 80%;
+}
+
+.tabled .card
+{
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+}
+
+.tabled .card-image
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.listed
+{
+    display: none;
+}
+
+.listed .card
+{
+    display: block;
+    width: 100%;
+}
+
+.listed .card-image
+{
+    display: inline;
+    width: 30%;
+}
+
+.listed .card-block
+{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 40px;
+    
+}
+
+.listed .card-price
+{
+    margin-top: 50px;
+}
+
+.listed .card-description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.card-title
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    display: block;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.tabled .card-categories
+{
+    margin: 0;
+}
+
+.card-category:after
+{
+    content: ', ';
+}
+
+.card-category:last-child:after
+{
+    content: '';
+}
+
+.card-price
+{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.card-description
+{
+    margin: 2px;
+}
+
+.card-rating
+{
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.card-rating .star-part
+{
+    margin: 0;
+    padding: 0;
+}
+
+.card-rating input
+{
+    display: none;
+}
+
+.card-rating > .star-part:before
+{
+    margin: 0 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline=block;
+    content: '\f005';
+}
+
+.card-rating > .half-star:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.card-rating > .star-part
+{
+    color: #dddddd;
+    float: right;
+}
+
+.card-rating > input:checked ~ .star-part, 
+.card-rating:not(:checked) > .star-part:hover, 
+.card-rating:not(:checked) > .star-part:hover ~ .star-part
+{
+    color: #ffd700;
+}
+
+.card-rating > input:checked + .star-part:hover, 
+.card-rating > input:checked ~ .star-part:hover, 
+.card-rating > .star-part:hover ~ input:checked ~ .star-part, 
+.card-rating > input:checked ~ .star-part:hover ~ .star-part
+{
+    color: #ffed85;
+}
+
+.switch-table:checked ~ .tabled
+{
+    display: block;
+}
+
+.switch-list:checked ~ .listed
+{
+    display: block;
+}
+
+.switch-table:checked ~ .listed
+{
+    display: none;
+}
+
+.switch-list:checked ~ .tabled
+{
+    display: none;
+}
