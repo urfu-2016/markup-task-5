@@ -1,4 +1,70 @@
-body 
+@media screen
 {
-    font: 34px Arial;
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    figure {
+        margin: 1px;
+        float: left;
+        text-align: center;
+        border: 1px solid black;
+    }
+    nav {
+        margin: 1px;
+        width: 100%;
+    }
+    img {
+        max-height: 25vh;
+        max-width: 20vw;
+        border-radius: 50px;
+    }
+    figcaption {
+        font: 30px Arial;
+    }
+    p.img {
+        height: 50%;
+
+    }
+    div.data
+    {
+        height: 50%;
+    }
+    div.rating img {
+        width: 20px;
+    }
+}
+
+@media screen and (min-width: 501px)
+{
+    figure {
+        width: 24%;
+        height: 50vh;
+        float: left;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    figure {
+        width: 100%;
+        float: bottom;
+        text-align: left;
+    }
+    img {
+        max-width: 100%;
+    }
+    p.img {
+        height: 100%;
+        width: 50%;
+        float: left;
+    }
+    div.data
+    {
+        padding: 1%;
+        width: 45%;
+        float: left;
+        text-align: center;
+    }
 }
