@@ -1,0 +1,110 @@
+.card
+{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 300px;
+    height: 600px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.card:hover
+{
+    background-color: #d7d7d7;
+}
+
+.image-container
+{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.image
+{
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.image:hover
+{
+    border: 2px solid black;
+}
+
+.name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name:hover
+{
+    font-size: 105%;
+}
+
+.category:hover
+{
+    font-size: 105%;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.star,
+.empty-star
+{
+    font-size: 45px;
+    margin: 3px;
+}
+
+.star::after
+{
+    content: '★';
+}
+
+.empty-star::after
+{
+    content: '☆';
+}
+
+.switch-listview
+{
+    display: block;
+}
+
+/*List view styles*/
+
+.switch-listview:checked ~ .card
+{
+    display: block;
+    width: 800px;
+    height: 300px;
+    margin: 20px;
+}
+
+.switch-listview:checked ~ .card .image-container
+{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+.switch-listview:checked ~ .card .property-container
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 100%;
+}
+
+.switch-listview:checked ~ .card .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 37%;
+}
