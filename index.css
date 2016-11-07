@@ -1,0 +1,89 @@
+.cat-block
+{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+
+.table-view-type:checked ~ .cat-block
+{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-view-type:checked ~ .cat-block
+{
+    width: auto;
+    height: auto;
+    display: block;
+    min-width: 500px;
+}
+
+.list-view-type:checked ~ .cat-block > .photo,
+.list-view-type:checked ~ .cat-block > .general-info,
+.list-view-type:checked ~ .cat-block > .description
+{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    margin: 0;
+}
+
+.name
+{
+    font-size: 20px;
+}
+
+.category
+{
+    color: #4f4f4f;
+    text-decoration: underline;
+}
+
+.photo
+{
+    width: 300px;
+    height: auto;
+}
+
+.actual-price
+{
+    font-size: 25px;
+    color: #ff0000;
+}
+
+.old-price
+{
+    color: #4f4f4f;
+    text-decoration: line-through;
+}
+
+.description:before
+{
+    display: block;
+    content: "Описание:";
+    font-weight: bold;
+}
+
+.cat-block:hover
+{
+    box-shadow: 0 0 3px 3px #bb180d;
+}
+
+.name a:hover
+{
+    color: #ff0000;
+}
+
+.photo:hover
+{
+    border-radius: 80px;
+}
+
+.category:hover
+{
+    color: #000000;
+}
