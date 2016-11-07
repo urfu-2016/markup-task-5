@@ -1,0 +1,186 @@
+body
+{
+    background: url('fon.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.list
+{
+    vertical-align: top;
+    display: block;
+}
+
+.cat
+{
+    display: inline-block;
+    width: 20.5%;
+    font: 14px Arial serif;
+    border: .1em solid #946b54;
+    margin-left: 3.3%;
+    margin-top: 4%;
+}
+
+.photo img
+{
+    width: 100%;
+}
+
+.cat-name a,
+.cat-breed a
+{
+    margin-left: .5em;
+    color: #36170c;
+}
+
+.cat-name,
+.cat-breed
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-name a,
+.cat-breed a
+{
+    text-decoration: none;
+}
+
+.cat-name a
+{
+    font-size: 2em;
+}
+
+.cat-breed a
+{
+    font-size: .9em;
+    font-style: italic;
+}
+
+.price
+{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+.current-price,
+.old-price
+
+{
+    color: #f80000;
+}
+
+.rating
+{
+    unicode-bidi: embed;
+    direction: rtl;
+    text-align: left;
+}
+
+.rating input
+{
+    visibility: hidden;
+}
+
+.rating input:before
+{
+    visibility: visible;
+    position: relative;
+    content: '✰';
+    font-size: 2.2em;
+    margin-right: -.5em;
+    color: #000;
+}
+
+.rating input:hover:before,
+.rating input:hover ~ input:before,
+.rating input:checked:before,
+.rating input:checked ~ input:before
+{
+    content: '★';
+    color: #ffdf00;
+}
+
+.description p
+{
+    font: 1.5em;
+    text-align: center;
+    margin: 1em;
+}
+
+.list:checked ~ .cat
+{
+    margin: 1%;
+    width: 98%;
+    display: block;
+}
+
+.list:checked ~ .cat .photo
+{
+    width: 30%;
+}
+
+.list:checked ~ .cat .photo,
+.list:checked ~ .cat .information,
+.list:checked ~ .cat .description
+{
+    vertical-align: top;
+    width: 30%;
+    margin: 0;
+    display: inline-block;
+}
+
+.list:checked ~ .cat .description p
+{
+    margin: 0;
+}
+
+.list:checked ~ .cat .photo img
+{
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .cat
+    {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .cat .photo,
+    .cat .information,
+    .cat .description
+    {
+        vertical-align: top;
+        width: 30%;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .cat
+    {
+        margin: 1%;
+        width: 98%;
+        display: block;
+    }
+
+    .cat .photo
+    {
+        width: 30%;
+    }
+    .description p
+    {
+        margin: 0;
+    }
+
+    .cat .photo img
+    {
+        width: 100%;
+    }
+}
