@@ -59,7 +59,8 @@ header
     height: 50px;
 }
 
-img {
+img
+{
     width: 80%;
     filter: saturate(100%);
     border-radius: 10px;
@@ -67,7 +68,7 @@ img {
 
 img:hover
 {
-    filter: saturate(150%)
+    filter: saturate(150%);
 }
 
 .name_cat
