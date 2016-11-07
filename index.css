@@ -1,0 +1,159 @@
+.card
+{
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    margin-bottom: 10px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card:hover
+{
+    box-shadow: 1px 4px 8px 0 rgba(0,0,0,.3), 0 6px 20px 0 rgba(0,0,0,.29);
+    transition: all 400ms ease-out;
+}
+
+.card-list
+{
+    width: 100%;
+    text-align: justify;
+}
+
+.info,
+.description
+{
+    font-size: 16px;
+    text-align: left;
+    padding: 5px;
+    padding-top: 0;
+}
+
+.link
+{
+    font-size: 1.5em;
+    display: block;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.link:hover
+{
+    text-shadow: 1px 1px 5px rgba(0, 0, 238, .5);
+}
+
+.category
+{
+    font-size: .8em;
+    color: #000;
+}
+
+.category a
+{
+    color: inherit;
+    opacity: .7;
+}
+
+.category a:hover
+{
+    opacity: 1;
+}
+
+.goodness
+{
+    font-size: 1.5em;
+}
+
+.star
+{
+    color: gray;
+}
+
+.star:before
+{
+    content: '\2605';
+}
+
+.current-price
+{
+    color: #a52a2a;
+    font-size: 1.5em;
+    margin-right: 4px;
+}
+
+.previous-price
+{
+    color: #919192;
+    font-size: 1.1em;
+    text-decoration: line-through;
+}
+
+.photo
+{
+    display: block;
+    filter: grayscale(.4) brightness(.8);
+}
+
+.photo:hover
+{
+    filter: grayscale(0) brightness(1);
+    transition: all 400ms ease-out;
+}
+
+.fake-checkbox
+{
+    display: none;
+}
+
+.fake-checkbox:checked ~ .card
+{
+    display: block;
+    width: 100%;
+
+    text-align: left;
+}
+
+.fake-checkbox:checked ~ .card > .photo,
+.fake-checkbox:checked ~ .card > .info,
+.fake-checkbox:checked ~ .card > .description
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fake-checkbox:checked ~ .card > .photo
+{
+    width: 19%;
+}
+
+.fake-checkbox:checked ~ .card > .info
+{
+    width: 29%;
+}
+
+.fake-checkbox:checked ~ .card > .description
+{
+    width: 49%;
+}
+
+.fake-button
+{
+    display: block;
+    padding: 2px 6px;
+    margin: 10px 0;
+    width: 250px;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    /* edge fallback */
+    background: #dddddd;
+}
