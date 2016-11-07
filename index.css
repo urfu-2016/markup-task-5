@@ -9,19 +9,21 @@
 
 .output-switch
 {
-    float:left;
+    float: left;
 }
 
 .cat
 {
-    padding: 0 20px 15px 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
     width: 250px;
     display: inline-block;
     vertical-align: top;
     overflow: hidden;
     margin-left: 2%;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
     -webkit-transform: translateZ(0);
@@ -35,8 +37,8 @@
     overflow: hidden;
     margin: 20px 10px 20px 30px;
     padding: 10px 0 10px 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
     -webkit-transform: translateZ(0);
@@ -67,12 +69,12 @@
     right: 10%;
     width: 80%;
     top: 0;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 
 .output-switch:checked ~ .cat .description
@@ -104,7 +106,7 @@
 .cat:focus,
 .cat:active
 {
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .6);
 }
 
 .cat-photo
@@ -120,12 +122,12 @@ img
     width: inherit;
     position: absolute;
     bottom: 0;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 
 img:hover
@@ -157,16 +159,16 @@ p
 .current-price
 {
     font-weight: bold;
-    display:inline-block;
+    display: inline-block;
     font-size: 150%;
-    color: #E84A5F;
+    color: #e84a5f;
 }
 
 .old-price
 {
     font-size: 120%;
-    display:inline-block;
-    color: #88304E;
+    display: inline-block;
+    color: #88304e;
     font-weight: bold;
     text-decoration: line-through;
 }
@@ -174,15 +176,13 @@ p
 .name-effect
 {
     display: inline;
-    width: inherit;
-    margin-top: 10px;
     text-align: left;
-    margin-bottom: -7px;
 }
 
 .name-effect a
 {
-    color: #00B8A9;
+    width: 100%;
+    color: #00b8a9;
     font-size: 150%;
     font-weight: bold;
     text-decoration: none;
@@ -192,21 +192,22 @@ p
 a
 {
     text-align: left;
+    width: inherit;
 }
 
 .name-effect a::after
 {
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 0;
-    width: 100%;
+    width: inherit;
     height: 1px;
-    background: #00B8A9;
+    background: #00b8a9;
     content: '';
     opacity: 0;
-    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+    -moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+    transition: height .3s, opacity .3s, transform .3s;
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -217,32 +218,31 @@ a
 {
     height: 5px;
     opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
 }
-
 
 a.category
 {
     font-size: 90%;
-    -moz-transition: color 0.2s 0.02s ease;
-    -o-transition: color 0.2s 0.02s ease;
-    -webkit-transition: color 0.2s 0.02s ease;
+    -moz-transition: color .2s .02s ease;
+    -o-transition: color .2s .02s ease;
+    -webkit-transition: color .2s .02s ease;
     color:#222;
 }
 
-a.category:hover
+a.category :hover
 {
     color: #1FA2E1;
 }
 
-.cat-stars input:checked ~ label,
+.cat-stars input :checked ~ label,
 .cat-stars label,
-.cat-stars label:hover,
-.cat-stars label:hover ~ label
+.cat-stars label :hover,
+.cat-stars label :hover ~ label
 {
-    background: url("images/cat-star.png") no-repeat;
+    background: url('images/cat-star.png') no-repeat;
 }
 
 .cat-stars
@@ -263,16 +263,16 @@ a.category:hover
     z-index: 0;
 }
 
-.cat-stars input:checked ~ label.left-star
+.cat-stars input :checked ~ label.left-star
 {
     background-position: 0 -40px;
     height: 37px;
     width: 19px;
 }
 
-.cat-stars input:checked ~ label.right-star
+.cat-stars input :checked ~ label.right-star
 {
-    background-position: 0 -120.0px;
+    background-position: 0 -120px;
     height: 37px;
     width: 19px;
 }
@@ -303,15 +303,15 @@ a.category:hover
 }
 
 .cat-stars label.left-star:hover,
-.cat-stars label:hover ~ label.left-star
+.cat-stars label :hover ~ label.left-star
 {
     background-position: 0 -40px;
     height: 37px;
     width: 19px;
 }
 
-.cat-stars label:hover,
-.cat-stars label:hover ~ label.right-star
+.cat-stars label :hover,
+.cat-stars label :hover ~ label.right-star
 {
     background-position: 0 -120px;
     height: 37px;
