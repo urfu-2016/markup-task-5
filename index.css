@@ -60,7 +60,6 @@ input[id='list']:checked ~ .cat
     cursor: pointer;
 }
 
-
 input[id='list']:checked ~ .cat > img
 {
     display: inline-block;
