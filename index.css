@@ -54,8 +54,6 @@
     box-sizing: border-box;
     padding: 10px;
     vertical-align: top;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 400px;
 }
 
@@ -74,6 +72,9 @@
 .name,
 .name:visited
 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
     white-space: nowrap;
     color: blue;
 }
