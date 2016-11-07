@@ -87,8 +87,6 @@ p
     text-decoration: line-through;
 }
 
-
-
 .listShow:checked ~ section
 {
     display: block;
@@ -110,7 +108,7 @@ p
 }
 
 .star,
-div[class|="ball"]
+div[class|='ball']
 {
     background: url('Images/stars.png');
 }
@@ -121,7 +119,7 @@ div[class|="ball"]
     transition: .5s;
 }
 
-div[class|="ball"]
+div[class|='ball']
 {
     background-color: #ff0;
     height: 20px;
