@@ -2,7 +2,529 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Мяндекс Муррркет</title>
 </head>
 <body>
+    <input type="checkbox" class="output-switch">
+    <p>Включить отображение списком</p>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_01.jpg" alt="Мурзик">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_01.jpg" data-hover="Сэм">Сэм</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_01.jpg" class="category">Кошки для сна</a></p>
+            <div class="cat-stars">
+                <input id="star1-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star1-5"></label>
+
+                <input id="star1-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star1-4.5"></label>
+
+                <input id="star1-4" type="radio" title="good"/>
+                <label class="right-star" for="star1-4"></label>
+
+                <input id="star1-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star1-3.5"></label>
+
+                <input id="star1-3" type="radio" title="regular"/>
+                <label class="right-star" for="star1-3"></label>
+
+                <input id="star1-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star1-2.5"></label>
+
+                <input id="star1-2" type="radio" title="bad"/>
+                <label class="right-star" for="star1-2"></label>
+
+                <input id="star1-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star1-1.5"></label>
+
+                <input id="star1-1" type="radio" title="poor"/>
+                <label class="right-star" for="star1-1"></label>
+
+                <input id="star1-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star1-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">5 000 руб.</div>
+                <div class="old-price">5 900 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Мягкий пушистый проводник в Царство снов. Согреет в любую, даже самую холодную
+            ночь. Поможет уснуть, если Вам не спится. Любит рыбку.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+        <img src="images/cat_02.jpg" alt="Тоня">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_02.jpg" data-hover="Тоня">Тоня</a>
+                </p>
+            </nav>
+                <p>
+                    <a href="images/cat_02.jpg" class="category">Кошки для настроения</a>
+                </p>
+            <div class="cat-stars">
+                <input id="star2-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star2-5"></label>
+
+                <input id="star2-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star2-4.5"></label>
+
+                <input id="star2-4" type="radio" title="good"/>
+                <label class="right-star" for="star2-4"></label>
+
+                <input id="star2-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star2-3.5"></label>
+
+                <input id="star2-3" type="radio" title="regular"/>
+                <label class="right-star" for="star2-3"></label>
+
+                <input id="star2-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star2-2.5"></label>
+
+                <input id="star2-2" type="radio" title="bad"/>
+                <label class="right-star" for="star2-2"></label>
+
+                <input id="star2-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star2-1.5"></label>
+
+                <input id="star2-1" type="radio" title="poor"/>
+                <label class="right-star" for="star2-1"></label>
+
+                <input id="star2-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star2-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">3 200 руб.</div>
+            </div>
+
+        </div>
+        <div class="description">
+            Очень весёлая и задорная любительница молока. Постоянно бегает и играет с попавшимися
+            под лапу вещами. Не оставляйте Ваши носки на видном месте, иначе она их найдёт.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_03.jpg" alt="Сима">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_03.jpg" data-hover="Сима">Сима</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_03.jpg" class="category">Лечебные кошки</a></p>
+            <div class="cat-stars">
+                <input id="star3-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star3-5"></label>
+
+                <input id="star3-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star3-4.5"></label>
+
+                <input id="star3-4" type="radio" title="good"/>
+                <label class="right-star" for="star3-4"></label>
+
+                <input id="star3-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star3-3.5"></label>
+
+                <input id="star3-3" type="radio" title="regular"/>
+                <label class="right-star" for="star3-3"></label>
+
+                <input id="star3-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star3-2.5"></label>
+
+                <input id="star3-2" type="radio" title="bad"/>
+                <label class="right-star" for="star3-2"></label>
+
+                <input id="star3-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star3-1.5"></label>
+
+                <input id="star3-1" type="radio" title="poor"/>
+                <label class="right-star" for="star3-1"></label>
+
+                <input id="star3-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star3-0.5"></label>
+            </div>
+            <br>
+            <div class="price">
+                <div class="current-price">7 800 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Может часами лежать на Ваших коленях, пока вы работаете за компьютером. Помиотрит
+            с Вами хоть всю "Игру престолов". Правда, может уснуть в процессе.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_04.jpg" alt="Яша">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_04.jpg" data-hover="Яша">Яша</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_04.jpg" class="category">Кошки для походов</a></p>
+            <div class="cat-stars">
+                <input id="star4-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star4-5"></label>
+
+                <input id="star4-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star4-4.5"></label>
+
+                <input id="star4-4" type="radio" title="good"/>
+                <label class="right-star" for="star4-4"></label>
+
+                <input id="star4-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star4-3.5"></label>
+
+                <input id="star4-3" type="radio" title="regular"/>
+                <label class="right-star" for="star4-3"></label>
+
+                <input id="star4-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star4-2.5"></label>
+
+                <input id="star4-2" type="radio" title="bad"/>
+                <label class="right-star" for="star4-2"></label>
+
+                <input id="star4-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star4-1.5"></label>
+
+                <input id="star4-1" type="radio" title="poor"/>
+                <label class="right-star" for="star4-1"></label>
+
+                <input id="star4-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star4-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">5 400 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Озорной милый котик. Очень любит путешествия. Куда бы ни пошёл хозяин, везде
+            стремится пойти за ним. Внимательно проверьте свои сумки перед отъехдом в командировку!
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_05.jpg" alt="Викки">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_05.jpg" data-hover="Викки">Викки</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_05.jpg" class="category">Лечебные кошки</a></p>
+            <div class="cat-stars">
+                <input id="star5-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star5-5"></label>
+
+                <input id="star5-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star5-4.5"></label>
+
+                <input id="star5-4" type="radio" title="good"/>
+                <label class="right-star" for="star5-4"></label>
+
+                <input id="star5-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star5-3.5"></label>
+
+                <input id="star5-3" type="radio" title="regular"/>
+                <label class="right-star" for="star5-3"></label>
+
+                <input id="star5-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star5-2.5"></label>
+
+                <input id="star5-2" type="radio" title="bad"/>
+                <label class="right-star" for="star5-2"></label>
+
+                <input id="star5-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star5-1.5"></label>
+
+                <input id="star5-1" type="radio" title="poor"/>
+                <label class="right-star" for="star5-1"></label>
+
+                <input id="star5-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star5-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">2 900 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Ещё с детства она любила подолгу лежать на людях. Когда Викки лежит на
+            коленях, головные боли и прочие недуги словно рукой снимает.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_06.jpg" alt="Сэм">
+        </div>
+        <div class="cat-details">
+
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_06.jpg" data-hover="Валерий длинношёрстный">Валерий длинношёрстный</a>
+                </p>
+            </nav>
+
+            <p><a href="images/cat_06.jpg" class="category">Кошки для настроения</a></p>
+            <div class="cat-stars">
+                <input id="star6-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star6-5"></label>
+
+                <input id="star6-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star6-4.5"></label>
+
+                <input id="star6-4" type="radio" title="good"/>
+                <label class="right-star" for="star6-4"></label>
+
+                <input id="star6-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star6-3.5"></label>
+
+                <input id="star6-3" type="radio" title="regular"/>
+                <label class="right-star" for="star6-3"></label>
+
+                <input id="star6-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star6-2.5"></label>
+
+                <input id="star6-2" type="radio" title="bad"/>
+                <label class="right-star" for="star6-2"></label>
+
+                <input id="star6-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star6-1.5"></label>
+
+                <input id="star6-1" type="radio" title="poor"/>
+                <label class="right-star" for="star6-1"></label>
+
+                <input id="star6-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star6-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">8 300 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Любит играть так, что сносит всё на своём пути. Очень добродушный котик,
+            но иногда может покапризничать. Скучать с ним точно не придётся.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_07.jpg" alt="Марфа">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_07.jpg" data-hover="Марфа">Марфа</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_07.jpg" class="category">Кошки для детей</a></p>
+            <div class="cat-stars">
+                <input id="star7-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star7-5"></label>
+
+                <input id="star7-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star7-4.5"></label>
+
+                <input id="star7-4" type="radio" title="good"/>
+                <label class="right-star" for="star7-4"></label>
+
+                <input id="star7-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star7-3.5"></label>
+
+                <input id="star7-3" type="radio" title="regular"/>
+                <label class="right-star" for="star7-3"></label>
+
+                <input id="star7-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star7-2.5"></label>
+
+                <input id="star7-2" type="radio" title="bad"/>
+                <label class="right-star" for="star7-2"></label>
+
+                <input id="star7-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star7-1.5"></label>
+
+                <input id="star7-1" type="radio" title="poor"/>
+                <label class="right-star" for="star7-1"></label>
+
+                <input id="star7-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star7-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">4 800 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Очень терпеливая и спокойная кошка. Готова терпеть любые тискания. Способна
+            вытерпеть любого ребёнка.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_08.jpg" alt="Рима">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_08.jpg" data-hover="Рима">Рима</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_08.jpg" class="category">Кошки для сна</a></p>
+            <div class="cat-stars">
+                <input id="star8-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star8-5"></label>
+
+                <input id="star8-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star8-4.5"></label>
+
+                <input id="star8-4" type="radio" title="good"/>
+                <label class="right-star" for="star8-4"></label>
+
+                <input id="star8-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star8-3.5"></label>
+
+                <input id="star8-3" type="radio" title="regular"/>
+                <label class="right-star" for="star8-3"></label>
+
+                <input id="star8-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star8-2.5"></label>
+
+                <input id="star8-2" type="radio" title="bad"/>
+                <label class="right-star" for="star8-2"></label>
+
+                <input id="star8-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star8-1.5"></label>
+
+                <input id="star8-1" type="radio" title="poor"/>
+                <label class="right-star" for="star8-1"></label>
+
+                <input id="star8-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star8-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">5 900 руб.</div>
+                <div class="old-price">6 300 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Будет с Вами везде и всегда, как только Вы приляжете на диван. Из-за неё
+            может быть очень трудно вставать на работу/учёбу рано утром.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_09.jpg" alt="Рэй">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_09.jpg" data-hover="Рэй">Рэй</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_09.jpg" class="category">Кошки для походов</a></p>
+            <div class="cat-stars">
+                <input id="star9-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star9-5"></label>
+
+                <input id="star9-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star8-4.5"></label>
+
+                <input id="star9-4" type="radio" title="good"/>
+                <label class="right-star" for="star9-4"></label>
+
+                <input id="star9-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star9-3.5"></label>
+
+                <input id="star9-3" type="radio" title="regular"/>
+                <label class="right-star" for="star9-3"></label>
+
+                <input id="star9-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star9-2.5"></label>
+
+                <input id="star9-2" type="radio" title="bad"/>
+                <label class="right-star" for="star9-2"></label>
+
+                <input id="star9-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star9-1.5"></label>
+
+                <input id="star9-1" type="radio" title="poor"/>
+                <label class="right-star" for="star9-1"></label>
+
+                <input id="star9-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star9-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">4 100 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Этот малыш родился и привык к улице. Не может постоянно сидеть дома, поэтому несказанно
+            радуется, когда его берут на прогулку.
+        </div>
+    </div>
+    <div class="cat">
+        <div class="cat-photo">
+            <img src="images/cat_10.jpg" alt="Федя">
+        </div>
+        <div class="cat-details">
+            <nav class="name-effect">
+                <p>
+                    <a href="images/cat_10.jpg" data-hover="Федя">Федя</a>
+                </p>
+            </nav>
+            <p><a href="images/cat_10.jpg" class="category">Кошки для настроения</a></p>
+            <div class="cat-stars">
+                <input id="star10-5" type="radio" title="excellent"/>
+                <label class="right-star" for="star10-5"></label>
+
+                <input id="star10-4.5" type="radio" title="excellent"/>
+                <label class="left-star" for="star10-4.5"></label>
+
+                <input id="star10-4" type="radio" title="good"/>
+                <label class="right-star" for="star10-4"></label>
+
+                <input id="star10-3.5" type="radio" title="good"/>
+                <label class="left-star" for="star10-3.5"></label>
+
+                <input id="star10-3" type="radio" title="regular"/>
+                <label class="right-star" for="star10-3"></label>
+
+                <input id="star10-2.5" type="radio" title="regular"/>
+                <label class="left-star" for="star10-2.5"></label>
+
+                <input id="star10-2" type="radio" title="bad"/>
+                <label class="right-star" for="star10-2"></label>
+
+                <input id="star10-1.5" type="radio" title="bad"/>
+                <label class="left-star" for="star10-1.5"></label>
+
+                <input id="star10-1" type="radio" title="poor"/>
+                <label class="right-star" for="star10-1"></label>
+
+                <input id="star10-0.5" type="radio" title="poor"/>
+                <label class="left-star" for="star10-0.5"></label>
+            </div>
+            <div class="price">
+                <div class="current-price">5 800 руб.</div>
+            </div>
+        </div>
+        <div class="description">
+            Этот кот только кажется спокойным милый домоседом. На самом деле он постоянно
+            ищет приключения... И находит их. Его жизнерадостность заразит кого угодно.
+        </div>
+    </div>
 </body>
 </html>
