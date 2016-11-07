@@ -5,6 +5,7 @@ input[value='list'].radio:checked ~ main figcaption
     vertical-align: top;
     margin: 0 3%;
 }
+
 input[value='list'].radio:checked ~ main .name
 {
     display: inline;
@@ -15,6 +16,7 @@ input[value='list'].radio:checked ~ main img
     display: inline-block;
     width: 20%;
 }
+
 input[value='list'].radio:checked ~ main figure
 {
     width: 100%;
@@ -22,27 +24,32 @@ input[value='list'].radio:checked ~ main figure
     padding: 40px;
     display: block;
 }
+
 input[value='list'].radio:checked ~ main .features
 {
     vertical-align: top;
     display: inline-block;
     width: 30%;
 }
+
 input[value='list'].radio:checked ~ main .description
 {
     display: inline-block;
     vertical-align: top;
     width: 30%;
 }
+
 img
 {
     width: 290px;
 }
+
 figure
 {
     width: 300px;
     display: inline-block;
 }
+
 .name
 {
     padding: 3px;
@@ -53,6 +60,7 @@ figure
     width: 275px;
     display: block;
 }
+
 .category
 {
     font-size: 13px;
@@ -60,6 +68,7 @@ figure
     text-decoration: underline;
     padding: 3px;
 }
+
 .price
 {
     font-size: 22px;
@@ -67,17 +76,20 @@ figure
     font-weight: bold;
     padding: 3px;
 }
+
 .description
 {
     padding: 3px;
 }
+
 .kind
 {
     display: inline-block;
-    color: #ff0000;
+    color: #f00;
 }
+
 .evil
 {
     display: inline-block;
-    color: #000000;
+    color: #000;
 }
