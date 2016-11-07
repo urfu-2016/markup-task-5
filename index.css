@@ -1,0 +1,149 @@
+@font-face
+{
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.woff') format('woff')
+        , url('fonts/fontawesome-webfont.woff2') format('woff2')
+        , url('fonts/fontawesome-webfont.eot') format('eot');
+}
+
+.content
+{
+    width: 100%;
+}
+
+.item
+{
+    width: 350px;
+    border: 2px solid #5c2f55;
+    display: inline-block;
+    padding: 8px;
+    vertical-align: top;
+    margin-bottom: 8px;
+}
+
+.price
+{
+    margin-top: 40px;
+}
+
+.old-price
+{
+    font-size: .7em;
+    text-decoration: line-through;
+}
+
+.old-price,
+.new-price
+{
+    display: inline-block;
+}
+
+.main-header
+{
+    text-align: center;
+    font-family: Ebrima, Arial, sans-serif;
+    color: #5c0339;
+}
+
+.name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+img
+{
+    max-width: 100%;
+    height: 80%;
+}
+
+.rating
+{
+    margin: 0 100px 0 0;
+}
+
+.picture
+{
+    height: 200px;
+    text-align: center;
+}
+
+.items-view:checked ~ .content .item
+{
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+
+.items-view:checked ~ .content .item > div
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.items-view:checked ~ .content .item .picture
+{
+    height: 100%;
+}
+
+img:hover
+{
+    height: 100%;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 10px 5px rgb(195, 167, 202);
+}
+
+.name:hover
+{
+    font-style: italic;
+}
+
+.race:hover
+{
+    color: dimgrey;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
