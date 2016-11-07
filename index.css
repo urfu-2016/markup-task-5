@@ -1,82 +1,83 @@
 body
 {
-	padding: 5px;
-	min-width: 320px;
+    padding: 5px;
+    min-width: 320px;
 }
 
 header
 {
-	text-align: center;
-	font-size: 2em;
+    text-align: center;
+    font-size: 2em;
     margin: 0;
     padding: 0;
 }
 
 h1::first-letter
 {
-	color: #f00;
+    color: #f00;
 }
 
 h3
 {
-	white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-	margin: 0;
-	padding: 0;	
-	text-align: center;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
 }
 
 .oldCost
 {
-	text-align: right;
-	text-decoration: line-through;
-	color: #c0c0c0;
-	font-size: .80em;
+    text-align: right;
+    text-decoration: line-through;
+    color: #c0c0c0;
+    font-size: .8em;
 }
 
 .newCost
 {
-	text-align: right;
-	font-size: 1em;
-	color: #f00;
+    text-align: right;
+    font-size: 1em;
+    color: #f00;
 }
 
 .сost
 {
-	text-align: right;
-	font-size: 1em;
+    text-align: right;
+    font-size: 1em;
 }
 
 .cat
 {
-	width: 300px;
-	padding: 10px;
-	display: inline-block;
-	vertical-align: top;
+    width: 300px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.cat p{
-	padding: 0;
-	margin: 0;
+.cat p
+{
+    padding: 0;
+    margin: 0;
 }
 
 .cat img
 {
-	width: 100%;
+    width: 100%;
 }
 
 .list-view:checked ~ .market .cat
 {
-	width: 90%;
+    width: 90%;
 }
 
 .list-view:checked ~ .market .cat img
 {
-	margin: 4px;
-	width: 20%;
-	float: left;
-	text-align: left;
-	display: inline-block;
+    margin: 4px;
+    width: 20%;
+    float: left;
+    text-align: left;
+    display: inline-block;
 }
 
 .star:before
@@ -94,10 +95,10 @@ h3
 
 img:hover
 {
-	border: 3px solid #000080;
+    border: 3px solid #000080;
 }
 
 .cat:hover
 {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
