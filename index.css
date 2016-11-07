@@ -1,0 +1,279 @@
+.photo > img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.photo
+{
+    position: relative;
+    min-height: 300px;
+    background: #ebe3e3;
+}
+
+.info
+{
+    height: 400px;
+}
+
+.cat
+{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 0 5px;
+    padding: 5px;
+    min-height: 600px;
+    transition: box-shadow ease-in-out .3s;
+    border-radius: 10px;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    transition: box-shadow ease-in-out .3s;
+}
+
+.price:after,
+.old-price:after
+{
+    content: '₽';
+}
+
+.category
+{
+    text-decoration: underline;
+}
+
+.price
+{
+    font-size: 1.2em;
+    color: #951d1d;
+}
+
+.price,
+.old-price
+{
+    display: inline-block;
+    margin: 0;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.star-rating
+{
+    font-size: 0;
+    white-space: nowrap;
+    width: 250px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><polygon fill="#DDDDDD" points="10,0 13.09,6.583 20,7.639 15,12.764 16.18,20 10,16.583 3.82,20 5,12.764 0,7.639 6.91,6.583 "/></svg>');
+    background-size: contain;
+}
+
+.star-rating span
+{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    z-index: 1;
+    background: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"><polygon fill="#FFDF88" points="10,0 13.09,6.583 20,7.639 15,12.764 16.18,20 10,16.583 3.82,20 5,12.764 0,7.639 6.91,6.583 "/></svg>');
+    background-size: contain;
+}
+
+.star-rating input:first-child + span
+{
+    background-size: cover;
+}
+
+.star-rating input
+{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.star-rating input:hover + span,
+.star-rating input:checked + span
+{
+    opacity: 1;
+}
+
+.star-rating span ~ span
+{
+    width: 20%;
+}
+
+.star-rating span ~ span ~ span
+{
+    width: 30%;
+}
+
+.star-rating span ~ span ~ span ~ span
+{
+    width: 40%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span
+{
+    width: 50%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span ~ span
+{
+    width: 60%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span ~ span ~ span
+{
+    width: 70%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span ~ span ~ span ~ span
+{
+    width: 80%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span
+{
+    width: 90%;
+}
+
+.star-rating span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span ~ span
+{
+    width: 100%;
+}
+
+fieldset
+{
+    border: none;
+    margin-bottom: 10px;
+}
+
+label
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+input.switch
+{
+    display: none;
+}
+
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before
+{
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input.switch:checked + label .slider
+{
+    background-color: #2196f3;
+}
+
+input.switch:focus + label .slider
+{
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input.switch:checked + label .slider:before
+{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round
+{
+    border-radius: 34px;
+}
+
+.slider.round:before
+{
+    border-radius: 50%;
+}
+
+.switch:checked ~ .cat
+{
+    display: block;
+    width: 100%;
+    min-height: 300px;
+}
+
+.switch:checked ~ .cat .photo,
+.switch:checked ~ .cat .info,
+.switch:checked ~ .cat .info .main,
+.switch:checked ~ .cat .info .description
+{
+    display: inline-block;
+    height: unset;
+    min-height: unset;
+}
+
+.switch:checked ~ .cat .photo
+{
+    width: 30%;
+    background: none;
+    vertical-align: top;
+}
+
+.switch:checked ~ .cat .info .main,
+.switch:checked ~ .cat .info .description
+{
+    width: 49%;
+}
+
+.switch:checked ~ .cat .info .description
+{
+    vertical-align: top;
+}
+
+.switch:checked ~ .cat .info
+{
+    width: 68%;
+}
+
+.switch:checked ~ .cat .photo img
+{
+    width: 100%;
+    position: static;
+}
