@@ -2,35 +2,26 @@ body
 {
     background: url('fon.jpg') no-repeat;
     background-size: cover;
-    width: 100%;
 }
 
 .list
 {
-    vertical-align: top;
     display: block;
+    vertical-align: top;
 }
 
 .cat
 {
+    font: 16px Arial serif;
     display: inline-block;
-    width: 20.5%;
-    font: 14px Arial serif;
+    width: 22.5%;
     border: .1em solid #946b54;
-    margin-left: 3.3%;
-    margin-top: 4%;
+    margin: 1%;
 }
 
 .photo img
 {
     width: 100%;
-}
-
-.cat-name a,
-.cat-breed a
-{
-    margin-left: .5em;
-    color: #36170c;
 }
 
 .cat-name,
@@ -46,31 +37,20 @@ body
 .cat-breed a
 {
     text-decoration: none;
+    color: #36170c;
 }
 
 .cat-name a
 {
     font-size: 2em;
+    margin-left: 1em;
 }
 
 .cat-breed a
 {
-    font-size: .9em;
+    font-size: 1em;
     font-style: italic;
-}
-
-.price
-{
-    font-size: 1.5em;
-    margin-top: 1.5em;
-    margin-left: .5em;
-}
-
-.current-price,
-.old-price
-
-{
-    color: #f80000;
+    margin-left: 2em;
 }
 
 .rating
@@ -78,6 +58,14 @@ body
     unicode-bidi: embed;
     direction: rtl;
     text-align: left;
+    margin-left: 2em;
+}
+
+.price
+{
+    font-size: 1.3em;
+    margin-top: 1.3em;
+    margin-left: 1.7em;
 }
 
 .rating input
@@ -90,8 +78,7 @@ body
     visibility: visible;
     position: relative;
     content: '✰';
-    font-size: 2.2em;
-    margin-right: -.5em;
+    font-size: 2em;
     color: #000;
 }
 
@@ -104,23 +91,29 @@ body
     color: #ffdf00;
 }
 
+.current-price,
+.old-price
+{
+    color: #f80000;
+}
+
+.description
+{
+    margin: 0 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .description p
 {
-    font: 1.5em;
-    text-align: center;
-    margin: 1em;
+    font-size: 1.1em;
 }
 
 .list:checked ~ .cat
 {
-    margin: 1%;
-    width: 98%;
+    width: 100%;
+    border: none;
     display: block;
-}
-
-.list:checked ~ .cat .photo
-{
-    width: 30%;
 }
 
 .list:checked ~ .cat .photo,
@@ -128,59 +121,65 @@ body
 .list:checked ~ .cat .description
 {
     vertical-align: top;
-    width: 30%;
-    margin: 0;
     display: inline-block;
 }
 
-.list:checked ~ .cat .description p
+.list:checked ~ .cat .photo,
+.list:checked ~ .cat .information
 {
-    margin: 0;
+    width: 30%;
 }
 
-.list:checked ~ .cat .photo img
+.list:checked ~ .cat .description
 {
-    width: 100%;
+    width: 35%;
 }
 
 @media screen and (max-width: 1200px)
 {
     .cat
     {
-        width: 25%;
+        width: 30%;
+        /*margin-left: 1.6%;*/
     }
 }
 
 @media screen and (max-width: 600px)
 {
-    .cat .photo,
-    .cat .information,
-    .cat .description
-    {
-        vertical-align: top;
-        width: 30%;
-        margin: 0;
-        display: inline-block;
-    }
-
     .cat
     {
-        margin: 1%;
-        width: 98%;
+        width: 100%;
+        border: none;
         display: block;
     }
 
-    .cat .photo
+    .photo,
+    .information,
+    .description
+    {
+        vertical-align: top;
+        display: inline-block;
+    }
+
+    .information,
+    .description
+    {
+        font-size: .5em;
+    }
+
+    .photo,
+    .information
     {
         width: 30%;
     }
-    .description p
+
+    .rating input:before
     {
-        margin: 0;
+        font-size: 1.5em;
     }
 
-    .cat .photo img
+    .description
     {
-        width: 100%;
+        width: 30%;
     }
 }
