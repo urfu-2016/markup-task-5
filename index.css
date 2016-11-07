@@ -23,19 +23,19 @@
     display: none;
 }
 
-.listed .card
+.switch-list:checked ~ .tabled .card
 {
     display: block;
     width: 100%;
 }
 
-.listed .card-image
+.switch-list:checked ~ .tabled .card .card-image
 {
     display: inline;
     width: 30%;
 }
 
-.listed .card-block
+.switch-list:checked ~ .tabled .card .card-block
 {
     display: inline-block;
     width: 30%;
@@ -44,16 +44,16 @@
     
 }
 
-.listed .card-price
+.switch-list:checked ~ .tabled .card .card-block .card-price
 {
     margin-top: 50px;
 }
 
-.listed .card-description
+.switch-list:checked ~ .tabled .card .card-description
 {
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 20%;
 }
 
 .card-title
@@ -150,22 +150,3 @@
     color: #ffed85;
 }
 
-.switch-table:checked ~ .tabled
-{
-    display: block;
-}
-
-.switch-list:checked ~ .listed
-{
-    display: block;
-}
-
-.switch-table:checked ~ .listed
-{
-    display: none;
-}
-
-.switch-list:checked ~ .tabled
-{
-    display: none;
-}
