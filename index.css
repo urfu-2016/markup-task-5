@@ -1,4 +1,6 @@
-div
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
+main > div
 {
     margin: 2%;
     width: 20%;
@@ -7,6 +9,11 @@ div
     vertical-align: top;
     min-height: 300px;
     min-width: 380px;
+}
+
+.info
+{
+    margin: 0 2%;
 }
 
 img
@@ -35,18 +42,57 @@ a
     font-size: 24px;
 }
 
-div:hover
+p > input
+{
+    display: none;
+}
+
+p > label:nth-child(2n):before
+{
+    font-family: FontAwesome, fantasy;
+    font-size: 40px;
+    content: '\f006';
+}
+
+.stars
+{
+    text-align: center;
+}
+
+.fa-star-o
+{
+    font-size: 40px !important;
+}
+
+main > div:hover
 {
     border: 2px solid black;
 }
 
-.night-mode:checked ~ main
+.line-mode:checked ~ main > div
 {
-    background: #333;
+    display: block;
+    width: 96%;
 }
 
-.night-mode:checked ~ main > div
+.line-mode:checked ~ main > div > img
 {
-    background: #494949;
-    color: #f9faff;
+    display: inline-block;
+    margin: 2%;
+    width: 33%;
+}
+
+.line-mode:checked ~ main > div > .info
+{
+    margin: 0;
+    margin-top: 2%;
+    font-size: 24px;
+    vertical-align: top;
+    display: inline-block;
+    width: 60%;
+}
+
+.line-mode:checked ~ main > div > .info > a
+{
+    font-size: 34px;
 }
