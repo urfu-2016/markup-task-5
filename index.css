@@ -12,6 +12,11 @@
     display: inline-block;
 }
 
+.tabled .card:hover
+{
+    background: rgba(229, 221, 221, 0.8);
+}
+
 .tabled .card-image
 {
     max-width: 100%;
@@ -80,6 +85,11 @@
 .card-category:last-child:after
 {
     content: '';
+}
+
+.card-category:hover
+{
+    border: 1px solid black;
 }
 
 .card-price
