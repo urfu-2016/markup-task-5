@@ -1,0 +1,153 @@
+html
+{
+    width: 100%;
+    height: auto;
+}
+
+body
+{
+    width: 100%;
+    min-width: 890px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header,
+main
+{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+
+header
+{
+    background-color: #fd5;
+    font-size: 50px;
+    text-align: center;
+}
+
+header:first-letter
+{
+    color: #f00;
+}
+
+main
+{
+    font-size: 16px;
+}
+
+.photoCat
+{
+    width: 250px;
+    height: 250px;
+}
+
+section
+{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    transition: .5s;
+}
+
+.name
+{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div[class|='block']
+{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+p
+{
+    hyphens: manual;
+}
+
+.price
+{
+    font-size: 18px;
+    color: #f00;
+    font-weight: 600;
+}
+
+.old_price
+{
+    text-decoration: line-through;
+}
+
+
+
+.listShow:checked ~ section
+{
+    display: block;
+    box-sizing: border-box;
+    width: 96%;
+}
+
+.listShow:checked ~ section > div[class|='block']
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.listShow:checked ~ section > .photo
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.star,
+div[class|="ball"]
+{
+    background: url('Images/stars.png');
+}
+
+.star
+{
+    width: 105px;
+    transition: .5s;
+}
+
+div[class|="ball"]
+{
+    background-color: #ff0;
+    height: 20px;
+}
+
+.ball-1
+{
+    width: 20px;
+}
+
+.ball-2
+{
+    width: 41px;
+}
+
+.ball-3
+{
+    width: 62px;
+}
+
+.ball-4
+{
+    width: 83px;
+}
+
+.ball-5
+{
+    width: 105px;
+}
