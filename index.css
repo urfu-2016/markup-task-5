@@ -76,6 +76,10 @@ body
     position: absolute;
     bottom: 0;
     width: 100%;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 
 .item-name
@@ -138,8 +142,24 @@ body
     text-decoration: none;
 }
 
+.market-item:hover
+{
+    -webkit-box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+    -moz-box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+    box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+}
+
 .link:hover,
 .item-tags span:hover
 {
     color: #ec008c;
+}
+
+.cat-img:hover
+{
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: .8;
 }
