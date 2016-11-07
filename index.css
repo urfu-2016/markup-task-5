@@ -1,0 +1,102 @@
+img
+{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.kitty
+{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+input[value='list']:checked ~ .kitty
+{
+    width: 100%;
+}
+
+.kitty:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+img:hover
+{
+    border-radius: 50%;
+}
+
+.name
+{
+    white-space: nowrap;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+a:hover
+{
+    color: green;
+}
+
+.type:hover
+{
+    visibility: hidden;
+}
+
+.rating
+{
+    float: left;
+}
+
+.rating:not(:checked) > input
+{
+    position: absolute;
+    top: -9999px;
+}
+
+.rating:not(:checked) > label
+{
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 150%;
+    line-height: 1.2;
+    color: #ddd;
+}
+
+.rating:not(:checked) > label:before
+{
+    content: '★ ';
+}
+
+.rating > input:checked ~ label
+{
+    color: #f70;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: gold;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label
+{
+    color: #ea0;
+}
+
+.rating > label:active
+{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
