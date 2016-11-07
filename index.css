@@ -1,0 +1,156 @@
+body
+{
+    background: #f5fcf9;
+}
+
+header
+{
+    text-align: center;
+}
+
+.red
+{
+    color: #f00;
+}
+
+main
+{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.cat
+{
+    margin: 15px;
+    padding: 10px;
+    background: #ebfaf3;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+input[id='tiles']:checked ~ .cat
+{
+    display: inline-block;
+    width: 270px;
+    text-align: center;
+    vertical-align: top;
+}
+
+input[id='list']:checked ~ .cat
+{
+    width: 95%;
+}
+
+.cat:hover
+{
+    background: white;
+    box-shadow: 0 0 10px #808080;
+}
+
+.cat > img
+{
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 90%;
+}
+
+.cat > img:hover
+{
+    box-shadow: 0 0 5px #808080;
+    cursor: pointer;
+}
+
+
+input[id='list']:checked ~ .cat > img
+{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.info,
+.description
+{
+    text-align: left;
+}
+
+input[id='list']:checked ~ .cat > .info,
+input[id='list']:checked ~ .cat > .description
+{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.name
+{
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 0;
+}
+
+.name:hover
+{
+    font-size: 30px;
+}
+
+.category
+{
+    color: #808080;
+}
+
+.price
+{
+    color: #f00;
+    font-size: 20px;
+}
+
+.rating
+{
+    margin: 10px 0;
+    background: url('rating.png');
+    height: 32px;
+    width: 170px;
+}
+
+.performance
+{
+    padding: 5px 20px;
+    width: 95%;
+    text-align: right;
+}
+
+.list,
+.tiles
+{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.list
+{
+    background: url(performance.png) 0 0;
+    width: 25px;
+    height: 20px;
+}
+
+.tiles
+{
+    background: url(performance.png) -25px 0;
+    width: 21px;
+    height: 20px;
+}
+
+input
+{
+    display: none;
+}
+
+header,
+main,
+footer
+{
+    padding: 10px;
+}
