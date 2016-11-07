@@ -18,6 +18,7 @@
 .card-list
 {
     width: 100%;
+    min-width: 360px;
     text-align: justify;
 }
 
@@ -65,16 +66,6 @@
 .goodness
 {
     font-size: 1.5em;
-}
-
-.star
-{
-    color: gray;
-}
-
-.star:before
-{
-    content: '\2605';
 }
 
 .current-price
@@ -155,5 +146,5 @@
     -webkit-appearance: button;
     -moz-appearance: button;
     /* edge fallback */
-    background: #dddddd;
+    background: #ddd;
 }
