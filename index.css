@@ -1,0 +1,78 @@
+body
+{
+    background: #feece3;
+}
+
+.class div
+{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: 20px 10px;
+    border: solid 3px black;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.class div:hover
+{
+    background: #ffd700;
+}
+
+.name
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+.name:hover
+{
+    color: blue;
+}
+
+.price
+{
+    display: inline;
+    font-weight: 900;
+    color: #ff0;
+}
+
+.old-price
+{
+    display: inline;
+    font-weight: 900;
+    text-decoration: line-through;
+}
+
+.section
+{
+    margin: 0;
+}
+
+.section a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.section a:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
+
+.description
+{
+    margin: 0;
+}
+
+.class img
+{
+    width: 150px;
+    height: auto;
+}
+
+.class img:hover
+{
+    transform: scale(1.1);
+}
