@@ -139,7 +139,6 @@ label:hover ~ input:checked ~ label
 {
     display: inline-block;
     position: inherit;
-    width: 100%;
 }
 
 .change:checked ~ .cat .info
