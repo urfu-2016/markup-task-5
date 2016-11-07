@@ -1,0 +1,102 @@
+main
+{
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+div.cat
+{
+    display: inline-block;
+    width: 400px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+div.img
+{
+    min-height: 350px;
+}
+
+img
+{
+    width: 350px
+}
+
+img.rating
+{
+    width: 20px;
+}
+
+.switcher-list:checked ~ .cat
+{
+    display: block;
+    width: 100%;
+}
+
+.switcher-list:checked ~ .cat > div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.switcher-list:checked ~ .cat > div.description
+{
+    width: 50%;
+}
+
+.switcher-list:checked ~ .cat > div.column
+{
+    width: 20%;
+}
+
+.img
+{
+    vertical-align: baseline;
+}
+
+.name
+{
+    font-size: 2em;
+}
+
+.category
+{
+    color: gray;
+    text-decoration: underline;
+}
+
+.category:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.name
+{
+    color: blue;
+}
+
+.name:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.description
+{
+    margin-top: 5px;
+}
+
+.price
+{
+    font-size: 20px;
+}
+
+main div
+{
+    text-align: left;
+}
