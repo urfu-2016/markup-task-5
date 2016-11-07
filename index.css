@@ -1,0 +1,48 @@
+img
+{
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.List
+{
+    display: block;
+}
+
+.column
+{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f0dc82;
+    color: #007fff;
+    height: 800px;
+    vertical-align: top;
+    min-width: 200px;
+    max-width: 280px;
+    border: thick solid #ffdab9;
+}
+
+div div:hover
+{
+    color: #ff033e;
+}
+
+body
+{
+    background-color: #faebd7;
+}
+
+input[class='List']:checked ~ .column
+{
+    margin: 20px;
+    min-width: 1000px;
+    max-height: 250px;
+}
+
+input[class='List']:checked ~ div div
+{
+    margin-top: -137px;
+    margin-left: 240px;
+}
