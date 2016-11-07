@@ -1,0 +1,81 @@
+.img-position
+{
+    margin: 20px 10px 0 20px;
+}
+
+div
+{
+    display: inline-block;
+    width: 400px;
+    line-height: 14px;
+}
+
+div:hover
+{
+    border: 6px solid blue;
+    background: #fc3;
+    padding: 10px;
+}
+
+.star-size
+{
+    font-size: 20px;
+}
+
+.img-position
+{
+    text-align: center;
+}
+
+.block-width
+{
+    width: 400px;
+}
+
+.cat-name
+{
+    font-size: 30px;
+}
+
+.cat-category
+{
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.new-price
+{
+    color: rgb(220, 20, 60);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.long-cat-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.current-price
+{
+    font-size: 20px;
+}
+
+.img-size:hover
+{
+    width: 200%;
+    height: 200%;
+    position: relative;
+}
+
+.cat-name:hover
+{
+    background: rgb(255, 160, 122);
+}
