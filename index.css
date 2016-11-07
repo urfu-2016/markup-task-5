@@ -131,20 +131,20 @@
 
 .card-rating > .star-part
 {
-    color: #dddddd;
+    color: #ddd;
     float: right;
 }
 
-.card-rating > input:checked ~ .star-part, 
-.card-rating:not(:checked) > .star-part:hover, 
+.card-rating > input:checked ~ .star-part,
+.card-rating:not(:checked) > .star-part:hover,
 .card-rating:not(:checked) > .star-part:hover ~ .star-part
 {
     color: #ffd700;
 }
 
-.card-rating > input:checked + .star-part:hover, 
-.card-rating > input:checked ~ .star-part:hover, 
-.card-rating > .star-part:hover ~ input:checked ~ .star-part, 
+.card-rating > input:checked + .star-part:hover,
+.card-rating > input:checked ~ .star-part:hover,
+.card-rating > .star-part:hover ~ input:checked ~ .star-part,
 .card-rating > input:checked ~ .star-part:hover ~ .star-part
 {
     color: #ffed85;
