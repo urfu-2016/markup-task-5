@@ -264,14 +264,14 @@ a.category :hover
     z-index: 0;
 }
 
-.cat-stars input :checked ~ label.left-star
+.cat-stars input:checked ~ label.left-star
 {
     background-position: 0 -40px;
     height: 37px;
     width: 19px;
 }
 
-.cat-stars input :checked ~ label.right-star
+.cat-stars input:checked ~ label.right-star
 {
     background-position: 0 -120px;
     height: 37px;
@@ -304,15 +304,15 @@ a.category :hover
 }
 
 .cat-stars label.left-star:hover,
-.cat-stars label :hover ~ label.left-star
+.cat-stars label:hover ~ label.left-star
 {
     background-position: 0 -40px;
     height: 37px;
     width: 19px;
 }
 
-.cat-stars label :hover,
-.cat-stars label :hover ~ label.right-star
+.cat-stars label:hover,
+.cat-stars label:hover ~ label.right-star
 {
     background-position: 0 -120px;
     height: 37px;
