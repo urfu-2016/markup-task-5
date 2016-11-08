@@ -1,0 +1,119 @@
+.view-type
+{
+    width: 100%;
+}
+
+.main-kun
+{
+    width: 100%;
+
+}
+
+.cat
+{
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid skyblue;
+    width: 300px;
+    padding: 4px;
+
+}
+
+.cat-image
+{
+    display: inline-block;
+    vertical-align: bottom;
+    position: inherit;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.category
+{
+    font-size: .8em;
+    color: gray;
+    text-decoration: underline;
+
+}
+
+.property
+{
+    color: black;
+    font-weight: 800;
+
+}
+
+.current-cost
+{
+    color: #b22222;
+    font-weight: 900;
+
+}
+
+.old-cost
+{
+    color: grey;
+    font-size: .9em;
+    text-decoration: line-through;
+
+}
+
+.image,
+.main-info,
+.description-info
+{
+    margin: 3%;
+
+}
+
+.view-type:checked ~ .cat
+{
+    display: inline-block;
+    border: 2px solid royalblue;
+    width: 98%;
+    height: 100%;
+
+}
+
+input.change-view
+{
+    display: block;
+
+}
+
+.change-view:checked ~ .cat .image,
+.change-view:checked ~ .cat .main-info,
+.change-view:checked ~ .cat .description-info
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.change-view:checked ~ .cat
+{
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.image :hover,
+.name :hover,
+.category :hover
+{
+    border: 2px solid royalblue;
+
+}
+
+.yellow-star
+{
+    color: yellow;
+
+}
