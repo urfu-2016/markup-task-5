@@ -4,17 +4,18 @@ body{
 }
 .note{
     width: 250px;
-    min-height: 550px;
+    height: 550px;
     display: inline-block;
-    margin: 0px;
+    vertical-align: top;
 }
 .cat{
     min-width: 250px;
     height: 340px;
+    position:relative;
 }
 
 .cat img{
-    position: relative;
+    position: absolute;
     bottom: 0px;
 }
 
@@ -36,20 +37,16 @@ body{
     font-size: 1.5em;
 }
 
-span{
-    position: static;
-}
 .description
 {
     max-width: 100%;
     padding: 0;
     margin: 0;
-    
 }
 
 .note section
 {
-    height: 240px;
+
 }
 
 
