@@ -1,6 +1,8 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 .cat
 {
-    width: 200px;
+    width: 400px;
     display: inline-block;
     vertical-align: top;
 }
@@ -28,7 +30,7 @@
 .image
 {
     position: relative;
-    min-height: 300px;
+    min-height: 600px;
     overflow: hidden;
 }
 
@@ -75,36 +77,53 @@
 {
     unicode-bidi: bidi-override;
     direction: rtl;
+    white-space: nowrap;
+    font-size: 0;
 }
 
 .rating > input
 {
+    font-family: FontAwesome;
+    position: relative;
     display: inline-block;
-    visibility: hidden;
+    height: 2.5em;
+    width: 1.2em;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
 }
 
 .rating > input:before
 {
-    visibility: visible;
-    position: relative;
-    top: -20px;
-    left: 10px;
-    content: '☆';
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
     font-size: 2.5em;
-    color: #000;
-}
-
-.rating > input:hover:before,
-.rating > input:hover ~ input:before
-{
     color: #ffc613;
 }
 
-.rating > input:checked:before,
-.rating > input:checked ~ input:before
+.rating > input:nth-child(2n+1):before
 {
-    content: '★';
-    color: #ffc613;
+    left: -.5em;
+    content: '\f006';
+}
+
+.rating > input:nth-child(2n+1):hover:before,
+.rating > input:nth-child(2n+1):hover ~ input:nth-child(2n+1):before,
+.rating > input:nth-child(2n):hover ~ input:nth-child(2n+1):before,
+
+.rating > input:nth-child(2n+1):checked:before,
+.rating > input:nth-child(2n+1):checked ~ input:nth-child(2n+1):before,
+.rating > input:nth-child(2n):checked ~ input:nth-child(2n+1):before
+{
+    content: '\f005';
+}
+
+.rating > input:nth-child(2n):hover:before,
+.rating > input:nth-child(2n):checked:before
+{
+    content: '\f089';
 }
 
 input:checked ~ main > .cat
