@@ -3,25 +3,31 @@ body
     background: #feece3;
 }
 
-.class div
+.content .item
 {
     display: inline-block;
-    width: 200px;
+    width: 17%;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 0;
     border: solid 3px black;
     margin: 10px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
-.class div:hover
+.item .about
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.content div:hover
 {
     background: #ffd700;
 }
 
 .name
 {
-    margin: 0;
+    margin: 4px;
     overflow: hidden;
 }
 
@@ -32,13 +38,15 @@ body
 
 .price
 {
+    margin: 4px;
     display: inline;
     font-weight: 900;
-    color: #ff0;
+    color: #f00;
 }
 
 .old-price
 {
+    margin: 4px;
     display: inline;
     font-weight: 900;
     text-decoration: line-through;
@@ -46,7 +54,7 @@ body
 
 .section
 {
-    margin: 0;
+    margin: 4px;
 }
 
 .section a
@@ -63,16 +71,37 @@ body
 
 .description
 {
-    margin: 0;
+    margin: 4px;
 }
 
-.class img
+.content .item img
 {
-    width: 150px;
-    height: auto;
+    width: 90%;
 }
 
-.class img:hover
+.content img:hover
 {
     transform: scale(1.1);
+}
+
+.list:checked ~ .content .item
+{
+    text-align: left;
+    width: 90%;
+    display: block;
+    font-size: 20px;
+}
+
+.list:checked ~ .content .item img
+{
+    vertical-align: top;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.list:checked ~ .content .item .about
+{
+    width: 60%;
+    display: inline-block;
+    text-align: center;
 }
