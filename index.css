@@ -1,0 +1,196 @@
+.title
+{
+    text-align: center;
+    font-size: 14px;
+}
+
+.title h1
+{
+    font: 300 42px sans-serif;
+}
+
+.switcherStyle
+{
+    margin-left: 50px;
+}
+
+.title h1:first-letter
+{
+    color: red;
+}
+
+.catalog
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.product
+{
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.product:hover
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.productImage
+{
+    position: relative;
+    height: 250px;
+    vertical-align: bottom;
+}
+
+.productImage img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.productImage img:hover
+{
+    left: -2%;
+    width: 104%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.productName
+{
+    margin: 5px 0;
+    font: 22px sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.productName:hover
+{
+    background-color: thistle;
+}
+
+.category
+{
+    color: #58585a;
+    font: 600 13px sans-serif;
+}
+
+.category:hover
+{
+    background-color: #58585a;
+    color: aliceblue;
+}
+
+.productRating
+{
+    margin: 10px 0;
+    font-size: 0;
+}
+
+.star
+{
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.star:hover
+{
+    box-shadow: 0 0 10px rgba(207, 198, 3, 1);
+}
+
+.fullStar
+{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    top: -40px;
+}
+
+.halfStar
+{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    top: -21px;
+}
+
+.emptyStar
+{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    top: -2px;
+}
+
+.currentPrice
+{
+    display: inline-block;
+    color: #96070a;
+    font: 600 18px sans-serif;
+}
+
+.oldPrice
+{
+    display: inline-block;
+    color: #474749;
+    text-decoration: line-through;
+}
+
+.productDescription
+{
+    margin: 10px 0;
+    color: #3a3a3c;
+}
+
+.switcherStyle:checked ~ .catalog
+{
+    padding: 100px;
+}
+
+.switcherStyle:checked ~ .catalog .product
+{
+    display: block;
+    width: 1000px;
+    white-space: nowrap;
+}
+
+.switcherStyle:checked ~ .catalog .product .productImage
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    position: relative;
+}
+
+.switcherStyle:checked ~ .catalog .product .productImage img
+{
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: 0;
+}
+
+.switcherStyle:checked ~ .catalog .product .productParameters
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 50px;
+    width: 250px;
+}
+
+.switcherStyle:checked ~ .catalog .product .productDescription
+{
+    display: inline-block;
+    white-space: normal;
+    width: 250px;
+}
