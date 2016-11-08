@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    
+}
+.note{
+    width: 250px;
+    min-height: 550px;
+    display: inline-block;
+    margin: 0px;
+}
+.cat{
+    min-width: 250px;
+    height: 340px;
+}
+
+.cat img{
+    position: relative;
+    bottom: 0px;
+}
+
+.note a{
+    font-size: 2.2em;
+}
+
+.note small{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.price
+{
+    color: #b00000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+span{
+    position: static;
+}
+.description
+{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.note section
+{
+    height: 240px;
+}
+
+
+
+.raz {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+}
+
+
+
+.list:checked ~ .raz
+{
+    background-color: green;
+}
