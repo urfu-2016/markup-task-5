@@ -1,0 +1,156 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id='cell-view']:checked ~ .item-card
+{
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+input[id='cell-view']:checked ~ .item-card .item-pic
+{
+    display: block;
+    width: 100%;
+}
+
+input[id='list-view']:checked ~ .item-card
+{
+    width: 90%;
+    min-height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+}
+
+input[id='list-view']:checked ~ .item-card .card-top,
+input[id='list-view']:checked ~ .item-card .card-middle,
+input[id='list-view']:checked ~ .item-card .card-bottom
+{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    margin: 0 10px;
+}
+
+input[id='list-view']:checked ~ .item-card .card-top
+{
+    width: 20%;
+}
+
+input[id='list-view']:checked ~ .item-card .card-middle
+{
+    width: 40%;
+}
+
+input[id='list-view']:checked ~ .item-card .card-bottom
+{
+    width: 30%;
+}
+
+input[id='list-view']:checked ~ .item-card .item-pic
+{
+    display: block;
+    max-height: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.item-title
+{
+    margin: 5px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
+}
+
+.item-categories
+{
+    margin: 5px auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.item-category
+{
+    display: inline-block;
+    color: #666;
+}
+
+.item-category:not(:first-child):before
+{
+    content: '- ';
+}
+
+.item-category > a
+{
+    color: #666;
+    font-size: 14px;
+}
+
+.item-stars
+{
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    color: #eee;
+}
+
+.star-input
+{
+    display: none;
+}
+
+.star-label
+{
+    float: right;
+}
+
+.star-label:before
+{
+    content: '\f005';
+    display: inline-block;
+    margin: 0;
+    padding: .3rem .2rem;
+    font: 1.1rem FontAwesome;
+    cursor: pointer;
+}
+
+.half-star:before
+{
+    content: '\f089';
+    position: absolute;
+    padding-right: 0;
+}
+
+.star-input:checked ~ .star-label,
+.star-label:hover,
+.star-label:hover ~ .star-label
+{
+    color: #ffcd08;
+}
+
+.star-input:checked + .star-label:hover,
+.star-input:checked ~ .star-label:hover,
+.star-input:checked ~ .star-label:hover ~ .star-label,
+.star-label:hover ~ .star-input:checked ~ .star-label
+{
+    color: #ff9408;
+}
+
+.item-price .current-price
+{
+    display: inline;
+    color: #a33;
+}
+
+.item-price .old-price
+{
+    display: inline;
+    color: #555;
+    text-decoration: line-through;
+}
