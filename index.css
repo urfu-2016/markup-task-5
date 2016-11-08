@@ -3,20 +3,50 @@
 
 label
 {
-    font: 2em 'Karla', sans-serif;
-    margin-left: .5em;
+    font: 3em 'Karla', sans-serif;
+    margin-left: 2em;
+    margin-top: 1em;
+    display: inline-block;
 }
 
-input[name='tile-view']:checked ~ .cars-catalogue > .car-block
+input
+{
+    transform: scale(1.5);
+    margin-left: 1em;
+}
+
+input[name='tile-view']:checked ~ .cars-catalogue .car-block
 {
     display: block;
-    max-width: 10000px;
-    font-size: 3em;
+    max-width: 70%;
+    min-height: 0;
+    margin: 1em auto;
+    font-size: 2em;
 }
 
-input[name='tile-view']:checked ~ .cars-catalogue > .car-block > img
+input[name='tile-view']:checked ~ .cars-catalogue .car-main-info
 {
-    width: 50%;
+    display: inline-block;
+    margin-left: 7%;
+    margin-right: 7%;
+    vertical-align: middle;
+}
+
+input[name='tile-view']:checked ~ .cars-catalogue .car-name
+{
+    width: 5em;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input[name='tile-view']:checked ~ .cars-catalogue .car-description,
+input[name='tile-view']:checked ~ .cars-catalogue img
+{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
 
 body
@@ -26,7 +56,7 @@ body
 
 h1
 {
-    font: bold 4em 'Raleway', sans-serif;
+    font: bold 7em 'Raleway', sans-serif;
     text-align: center;
 }
 
@@ -46,14 +76,13 @@ h1
     text-align: center;
     margin: 1em 1em 0;
     font: 2em 'Karla', sans-serif;
-    padding: 1.5em;
     border: .15em #85ffaa solid;
     background-color: #b6bfe8;
 }
 
 .car-block:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: .5em #85ffaa solid;
 }
 
@@ -94,7 +123,12 @@ img:hover
     color: yellow;
 }
 
-.cost:hover > span
+.old-cost
 {
-    color: rgba(0, 150, 0, 1);
+    text-decoration: line-through;
+}
+
+.cost:hover .dollar-sign
+{
+    color: #009700;
 }
