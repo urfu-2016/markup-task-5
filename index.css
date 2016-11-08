@@ -16,13 +16,13 @@ body
 {
     min-width: 250px;
     height: 340px;
-    position:relative;
+    position: relative;
 }
 
 .cat img
 {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .note a
@@ -35,7 +35,6 @@ body
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 .price
 {
@@ -52,19 +51,12 @@ body
     margin: 0;
 }
 
-.note section
-{
-
-}
-
 .raz 
 {
     height: 500px;
     width: 500px;
     background-color: red;
 }
-
-
 
 .list:checked ~ .raz
 {
