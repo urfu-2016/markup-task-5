@@ -1,0 +1,129 @@
+@font-face
+{
+    font-family: Karton;
+    src: local('Karton'), url('fonts/Karton.eot');
+    src: local('Karton'), url('fonts/Karton.woff') format('woff'), url('fonts/Karton.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Refale BG';
+    src: local('Refale BG'), url('fonts/Refale BG.eot');
+    src: local('Refale BG'), url('fonts/Refale BG.woff') format('woff'), url('fonts/Refale BG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font: 16px 'Refale BG', sans-serif;
+    min-width: 500px;
+}
+
+header
+{
+    text-align: center;
+    font: 3.75em Karton, serif;
+}
+
+.cat
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 30px;
+    text-align: center;
+}
+
+.cat:hover
+{
+    border: 1px solid #a9a9a9;
+    margin: 29px;
+}
+
+.image
+{
+    width: 250px;
+    margin-top: 5px;
+}
+
+.image:hover
+{
+    opacity: .7;
+}
+
+.info,
+.description
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.description
+{
+    margin-top: 8px;
+}
+
+.name
+{
+    font-size: 1.25em;
+}
+
+.name:hover
+{
+    color: #000;
+    font-weight: 800;
+}
+
+.categories
+{
+    font-size: .9em;
+    color: #505050;
+    margin: 5px 0;
+}
+
+.categories:hover
+{
+    color: #000;
+    font-weight: 800;
+}
+
+.grade
+{
+    height: 30px;
+    margin: 5px 0;
+}
+
+.price
+{
+    margin: 5px 0;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.list:checked ~ main .cat
+{
+    width: 90%;
+}
+
+.list:checked ~ main .info,
+.list:checked ~ main .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 5px 0 0 80px;
+}
+
+.list:checked ~ main
+{
+    min-width: 1000px;
+    font-size: 20px;
+}
