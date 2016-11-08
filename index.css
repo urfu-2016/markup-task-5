@@ -3,7 +3,8 @@
 @font-face
 {
     font-family: 'Open Sans';
-    src: local('Open Sans'), url('./fonts/OpenSans-Regular.ttf') format('tff');
+    src: local('Open Sans'), url('./fonts/OpenSans-Regular.ttf')
+            format('tff'), url('./fonts/OpenSans.woff') format('woff');
 }
 
 .kindness-wrapper
@@ -31,10 +32,9 @@
 
 .kindness-label:before
 {
-    font-size: 2em;
     display: inline-block;
     cursor: pointer;
-    font-family: 'FontAwesome', fantasy;
+    font: 2em 'FontAwesome', fantasy;
     content: '\f005';
     margin: 0;
 }
@@ -63,6 +63,7 @@
 body
 {
     font: 18pt 'Open Sans', sans-serif;
+    min-width: 512px;
 }
 
 .card
@@ -89,7 +90,7 @@ body
 
 .label-tile
 {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .cat-card:hover,
@@ -147,12 +148,17 @@ body
     text-decoration: line-through;
 }
 
+.tile:checked ~ .content
+{
+    text-align: center;
+}
+
 .summary
 {
     font-size: 14pt;
 }
 
-.list:checked ~ .content > .cat-card > .summary
+.list:checked ~ .content .summary
 {
     max-width: 30%;
 }
@@ -165,16 +171,22 @@ body
     display: block;
 }
 
-.list:checked ~ .content > .cat-card > .image,
-.list:checked ~ .content > .cat-card > .description,
-.tile:checked ~ .content > .cat-card,
+.description,
+.summary
+{
+    text-align: left;
+}
+
+.list:checked ~ .content .image,
+.list:checked ~ .content .description,
+.tile:checked ~ .content .cat-card,
 .summary
 {
     display: inline-block;
     vertical-align: top;
 }
 
-.list:checked ~ .content > .cat-card > .description
+.list:checked ~ .content .description
 {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -182,26 +194,31 @@ body
     margin-right: 10px;
 }
 
-.list:checked ~ .content > .cat-card > .image > img
+.list:checked ~ .content .cat-card
+{
+    min-width: 950px;
+}
+
+.list:checked ~ .content .image > img
 {
     width: 300px;
     margin-right: 10px;
 }
 
-.tile:checked ~ .content > .cat-card
+.tile:checked ~ .content .cat-card
 {
     width: 300px;
-    height: 650px;
+    height: 570px;
 }
 
-.tile:checked ~ .content > .cat-card > .image
+.tile:checked ~ .content .image
 {
     min-height: 300px;
     margin-bottom: 20px;
     position: relative;
 }
 
-.tile:checked ~ .content > .cat-card > .image > img
+.tile:checked ~ .content .image > img
 {
     max-width: 100%;
     max-height: 100%;
