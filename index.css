@@ -4,7 +4,7 @@
 {
     font-family: 'Open Sans';
     src: local('Open Sans'), url('./fonts/OpenSans-Regular.ttf')
-            format('tff'), url('./fonts/OpenSans.woff') format('woff');
+        format('tff'), url('./fonts/OpenSans.woff') format('woff');
 }
 
 .kindness-wrapper
