@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-input[type='checkbox']:checked + section .item
+input[type='checkbox']:checked + section .uberkitten
 {
-    width: 850px;
+    width: 1000px;
     text-align: left;
+    display: block;
 }
 
-input[type='checkbox']:checked + section .info-panel
+input[type='checkbox']:checked + section .uberkitten-info
 {
-    margin: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
     width: 270px;
+}
+
+input[type='checkbox']:checked + section article
+{
+    width: 300px;
+}
+
+input[type='checkbox']:checked + section .uberkitten-image img
+{
+    width: 350px;
 }
 
 body
@@ -18,23 +30,32 @@ body
     font-family: 'Ubuntu', sans-serif;
 }
 
-div
+h3
 {
-    display: inline-block;
+    font-family: 'Merriweather', serif;
+    font-size: 90%;
 }
 
-.item
+.uberkitten
 {
-    border: 1px solid black;
+    border: 1px solid #000;
     width: 250px;
     padding: 10px;
     margin: 20px;
     text-align: center;
     vertical-align: top;
-    box-shadow: 5px 5px 3px gray;
+    box-shadow: 5px 5px 3px #808080;
+    display: inline-block;
 }
 
-.item div
+.uberkitten .uberkitten-image
+{
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.uberkitten .uberkitten-info
 {
     width: 230px;
     text-align: left;
@@ -42,13 +63,16 @@ div
     display: inline-block;
 }
 
-.item p
+.uberkitten article
 {
     font-family: 'Merriweather', serif;
     font-size: 90%;
+    text-align: left;
+    display: inline-block;
+    width: 230px;
 }
 
-.item-name
+.uberkitten-name
 {
     white-space: nowrap;
     font-size: 120%;
@@ -56,17 +80,24 @@ div
     text-overflow: ellipsis;
 }
 
-.item-type
+.uberkitten-type
 {
-    color: grey;
+    color: #808080;
     font-size: 90%;
     text-decoration: underline;
+}
+
+.uberkitten:hover
+{
+    box-shadow: 9px 9px 4px #808080;
+    margin-bottom: 21px;
+    margin-top: 19px;
 }
 
 .old-price
 {
     text-decoration: line-through;
-    color: red;
+    color: #f00;
 }
 
 .price
