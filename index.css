@@ -21,14 +21,6 @@ header img
     width: 150px;
 }
 
-p
-{
-    font-size: 15px;
-    padding: 5px;
-    margin: 5px;
-    line-height: 1.4em;
-}
-
 a
 {
     font-size: 25px;
@@ -39,10 +31,11 @@ a:hover
     text-decoration: none;
 }
 
-figure
+.item
 {
     background: #dfdef1;
     width: 300px;
+    height: 550px;
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid #6e797f;
@@ -51,14 +44,9 @@ figure
     vertical-align: top;
 }
 
-figure:hover
+.item:hover
 {
     box-shadow: 0 0 30px rgba(0,0,0,1);
-}
-
-figcaption
-{
-    text-align: center;
 }
 
 .img-horizon
@@ -83,9 +71,18 @@ figcaption
     transform: scale(1.1);
 }
 
-.about
+.item .about
 {
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.4em;
     text-align: left;
+}
+
+.item .description
+{
+    text-align: center;
 }
 
 .price,
@@ -116,7 +113,7 @@ figcaption
     background: url(pic/starempty.png);
     width: 120px;
     height: 24px;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .productRate div
@@ -125,74 +122,75 @@ figcaption
     height: 100%;
 }
 
-.first .productRate div
+.first div
 {
     width: 90%;
 }
 
-.second .productRate div
+.second div
 {
     width: 70%;
 }
 
-.third .productRate div
+.third div
 {
     width: 70%;
 }
 
-.fourth .productRate div
+.fourth div
 {
     width: 90%;
 }
 
-.fifth .productRate div
+.fifth div
 {
     width: 80%;
 }
 
-.sixth .productRate div
+.sixth div
 {
     width: 80%;
 }
 
-.seventh .productRate div
+.seventh div
 {
-    width: 65%;
+    width: 60%;
 }
 
-.eight .productRate div
+.eighth div
 {
     width: 70%;
 }
 
-.ninth .productRate div
+.ninth div
 {
     width: 90%;
 }
 
-.tenth .productRate div
+.tenth div
 {
-    width: 90%;
+    width: 80%;
 }
 
-.display-line:checked ~ figure
+.display-line:checked ~ .item
 {
     display: block;
     margin-top: 40px;
     width: 95%;
+    height: auto;
 }
 
-.display-line:checked ~ figure figcaption
+.display-line:checked ~ .item .description,
+.display-line:checked ~ .item .about
 {
-    min-width: 600px;
-    width: 60%;
-    float: right;
+    width: 30%;
     padding: 10px;
     margin-top: 3%;
+    display: inline-block;
 }
 
-.display-line:checked ~ figure .img-horizon,
-.display-line:checked ~ figure .img-vertical
+.display-line:checked ~ .item .img-horizon,
+.display-line:checked ~ .item .img-vertical
 {
     height: auto;
     position: static;
@@ -201,18 +199,9 @@ figcaption
     margin: 5px;
 }
 
-.display-line:checked ~ figure figcaption .description
-{
-    float: left;
-    width: 200px;
-}
-
-.display-line:checked ~ figure figcaption .about
+.display-line:checked ~ .item .about
 {
     font-size: 18px;
-    float: right;
-    display: block;
-    width: 300px;
 }
 
 footer
