@@ -25,7 +25,7 @@ a:hover
 .category:hover,
 .description:hover
 {
-    color: LightCyan;
+    color: #20B2AA;
 }
 
 .coast,
@@ -43,7 +43,7 @@ a:hover
 
 .cat:hover
 {
-    background-color: MediumSeaGreen;
+    background-color: #3CB371;
 }
 
 div img
