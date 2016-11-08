@@ -22,20 +22,16 @@ a:hover
     white-space: normal;
 }
 
-em
+.category:hover,
+.description:hover
 {
-    display: block;
+    color: LightCyan;
 }
 
 .coast,
 .old_coast
 {
     display: inline;
-}
-
-em:hover
-{
-    font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 .cat
@@ -47,17 +43,19 @@ em:hover
 
 .cat:hover
 {
-    background-color: gray;
+    background-color: MediumSeaGreen;
 }
 
 div img
 {
-    width: 250px;
+    margin: 2px;
+    width: 270px;
 }
 
 div img:hover
 {
-    width: 300px;
+    margin: 0;
+    border: 2px solid gray;
 }
 
 .list:checked ~ .cat
