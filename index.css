@@ -281,7 +281,7 @@ body
     display: block;
     height: auto;
     position: static;
-    width: 100%
+    width: 100%;
 }
 
 .change-checkbox:checked ~ .goods > .description-wrapper > .description:hover
