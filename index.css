@@ -10,7 +10,7 @@ body
 {
     position: relative;
     display: inline-block;
-    margin: 40px 10px;
+    margin: 50px 10px;
     width: 340px;
 }
 
@@ -126,15 +126,15 @@ body
     font-size: .8em;
 }
 
-.cat-scale
+.cat-rating
 {
     display: block;
-    margin: 0 70px auto;
+    margin: 0;
     width: 300px;
     height: 30px;
 }
 
-.cat-scale-img
+.cat-rating__label__img
 {
     width: 15px;
     margin: 0;
@@ -142,66 +142,69 @@ body
     padding: 0;
 }
 
-.cat-checkbox
+.cat-rating__radio
 {
     display: none;
 }
 
-.cat-checkbox:checked ~ .cat-scale-label
+.cat-rating__radio:checked ~ .cat-rating__label
 {
     opacity: .3;
 }
 
-.cat-checkbox:checked
+.cat-rating__radio:checked
 {
     pointer-events: none;
 }
 
-.cat-scale-label
+.cat-rating__label
 {
-    float: left;
+    display: inline-block;
     width: 15px;
     border: 0;
-    margin: 0;
+    margin-left: -6px;
     padding: 0;
     opacity: 1;
     cursor: pointer;
 }
 
-.cat-scale:hover .cat-scale-label
+.cat-rating:hover .cat-rating__label
 {
     opacity: 1;
 }
 
-.cat-scale-label:hover ~ .cat-scale-label
+.cat-rating__label:hover ~ .cat-rating__label
 {
     opacity: .3;
 }
 
 .description-wrapper
 {
+    position: relative;
     display: block;
-    height: 210px;
-    margin: auto;
     width: 310px;
+    height: 230px;
 }
 
 .description
 {
     position: absolute;
+    display: block;
     text-align: left;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
     text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px 10px auto;
+    height: 200px;
+    padding: 5px;
 }
 
 .description:hover
 {
+    height: auto;
     overflow: visible;
     background: white;
-    height: auto;
     box-shadow: 0 0 10px black;
+    z-index: 3;
 }
 
 .change-checkbox
@@ -261,19 +264,28 @@ body
     text-align: left;
 }
 
-.change-checkbox:checked ~ .goods > .info-wrapper > .info > .cat-scale
+.change-checkbox:checked ~ .goods > .info-wrapper > .info > .cat-rating
 {
     margin-left: 10px;
 }
 
 .change-checkbox:checked ~ .goods > .description-wrapper
 {
+    height: auto;
     display: inline-block;
     width: 25%;
-    height: 210px;
 }
 
 .change-checkbox:checked ~ .goods > .description-wrapper > .description
 {
-    width: 24%;
+    display: block;
+    height: auto;
+    position: static;
+    width: 100%
+}
+
+.change-checkbox:checked ~ .goods > .description-wrapper > .description:hover
+{
+    overflow: auto;
+    box-shadow: 0 0 10px black;
 }
