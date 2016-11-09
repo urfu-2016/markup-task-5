@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=cyrillic');
+
 html,
 body
 {
@@ -13,10 +16,16 @@ body
     font-size: 14px;
 }
 
+h1,
+h2,
+.shop-descr
+{
+    font-weight: 300;
+}
+
 h2
 {
     font-size: 2.5em;
-    font-weight: 400;
 }
 
 img
@@ -64,7 +73,6 @@ header
     color: #fff;
     display: inline-block;
     font-size: 28px;
-    font-weight: 400;
     margin: 0;
     padding: 4px 0 4px 52px;
     text-transform: uppercase;
@@ -89,11 +97,11 @@ header
     padding: 10px 8px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: opacity .2s;
     -o-transition: opacity .2s;
     -ms-transition: opacity .2s;
     -moz-transition: opacity .2s;
     -webkit-transition: opacity .2s;
+    transition: opacity .2s;
 }
 
 .header-nav a:hover
@@ -187,7 +195,6 @@ input[name='switcher']:checked ~ .entries .entry-img-contaner
 input[name='switcher']:checked ~ .entries .entry-img-contaner img
 {
     position: static;
-    max-height: none;
 }
 
 input[name='switcher']:checked ~ .entries .description
@@ -205,20 +212,20 @@ input[name='switcher']:checked ~ .entries .about
 {
     background: url('img/grid.svg') no-repeat 6px 6px;
     border: 2px solid #b0bec5;
-    border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
+    border-radius: 3px;
     color: #78909c;
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
     margin-bottom: 24px;
     padding: 10px 12px 10px 36px;
-    transition: border-color .2s, color .2s;
     -o-transition: border-color .2s, color .2s;
     -ms-transition: border-color .2s, color .2s;
     -moz-transition: border-color .2s, color .2s;
     -webkit-transition: border-color .2s, color .2s;
+    transition: border-color .2s, color .2s;
 }
 
 .switcher-text:hover
@@ -240,13 +247,13 @@ input[name='switcher']:checked ~ .entries .about
     margin: 0 10px 36px;
     padding: 16px;
     text-align: left;
-    transition: box-shadow .2s;
     -o-transition: box-shadow .2s;
     -ms-transition: box-shadow .2s;
     -moz-transition: box-shadow .2s;
     -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
     vertical-align: top;
-    width: 300px;
+    width: 280px;
 }
 
 .entry:hover
@@ -257,14 +264,14 @@ input[name='switcher']:checked ~ .entries .about
 
 .entry-img-contaner
 {
-    height: 190px;
+    height: 175px;
+    overflow: hidden;
     position: relative;
 }
 
 .entry-img-contaner img
 {
     bottom: 0;
-    max-height: 190px;
     position: absolute;
     width: 100%;
 }
@@ -328,6 +335,7 @@ input[name='switcher']:checked ~ .entries .about
 {
     background-color: #fff;
     background-image: url('img/star.svg');
+    background-repeat: reapeat-x;
 }
 
 .value-0
