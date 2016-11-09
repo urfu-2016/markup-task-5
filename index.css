@@ -63,11 +63,6 @@ input
     content: '\f009';
 }
 
-.list:target
-{
-    background-color: aquamarine;
-}
-
 .card
 {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -76,14 +71,14 @@ input
     transition: box-shadow .5s linear .1s;
 }
 
-.element-duration
+.element-description
 {
     display: inline-block;
 }
 
-.avatar
+.photo
 {
-    width: 35%;
+    width: 250px;
     margin: 10px;
     transition: opacity .8s linear .5s;
 }
@@ -97,12 +92,7 @@ input
     position: relative;
 }
 
-.title-line
-{
-    margin: 0;
-}
-
-.record-title
+.card-title
 {
     display: inline-block;
     width: 45%;
@@ -137,7 +127,7 @@ input
     content: '\f005';
 }
 
-.stars > .half:before
+.stars > .half-star:before
 {
     content: '\f089';
     position: absolute;
@@ -164,11 +154,12 @@ input
     color: #ffed85;
 }
 
-.record-footer
+.card-footer
 {
     position: absolute;
     bottom: 0;
     width: 100%;
+    text-align: end;
 }
 
 .old-price
@@ -193,13 +184,13 @@ input
     padding: 10px;
 }
 
-.tile-view:checked ~ .card .avatar
+.tile-view:checked ~ .card .photo
 {
     width: 100%;
     margin: auto;
 }
 
-.tile-view:checked ~ .card .element-duration
+.tile-view:checked ~ .card .element-description
 {
     display: block;
 }
@@ -229,7 +220,7 @@ input
     box-shadow: 0 3px 10px rgba(0, 0, 0, .8);
 }
 
-.avatar:hover
+.photo:hover
 {
     opacity: .5;
 }
@@ -239,7 +230,7 @@ input
     color: #ffd700;
 }
 
-.record-title:hover
+.card-title:hover
 {
     animation: shake .8s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
