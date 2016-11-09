@@ -5,7 +5,6 @@
     vertical-align: top;
     margin-right: 12px;
     margin-bottom: 10px;
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -35,7 +34,6 @@
 {
     font-size: 1.5em;
     display: block;
-
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -72,7 +70,7 @@
 {
     color: #a52a2a;
     font-size: 1.5em;
-    margin-right: 4px;
+    margin-right: .2em;
 }
 
 .previous-price
@@ -84,7 +82,6 @@
 
 .photo
 {
-    display: block;
     filter: grayscale(.4) brightness(.8);
 }
 
@@ -103,7 +100,6 @@
 {
     display: block;
     width: 100%;
-
     text-align: left;
 }
 
@@ -137,12 +133,10 @@
     margin: 10px 0;
     width: 250px;
     text-align: center;
-
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
     -webkit-appearance: button;
     -moz-appearance: button;
     /* edge fallback */
