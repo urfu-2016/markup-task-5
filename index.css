@@ -14,26 +14,27 @@ body
     padding: 20px;
 }
 
-.display-type
+.display-type-select
 {
     height: 40px;
     width: 100%;
 }
 
-input
+.not-displayed
 {
     display: none;
 }
 
-.display-type label img
+.display-type-select label img
 {
     margin: 0 20px;
     float: right;
     display: inline-block;
     width: 2%;
+    height: auto;
 }
 
-.kisa
+.cat
 {
     font-size: .7rem;
     vertical-align: top;
@@ -42,33 +43,35 @@ input
     border: 5px ridge #d3e2ed;
 }
 
-input[id='tile']:checked ~ .kisa
+input[id='tile']:checked ~ .cat
 {
     width: 250px;
     display: inline-block;
 }
 
-.kisa:hover
+.cat:hover
 {
     box-shadow: 0 0 10px
         #a9a2ed, 0 0 25px #80ed90;
 }
 
-input[id='tile']:checked ~ .kisa > :nth-child(n)
+input[id='tile']:checked ~ .cat > :nth-child(n)
 {
     text-align: left;
     margin: auto;
     width: 95%;
+    height: auto;
 }
 
-input[id='list']:checked ~ .kisa > :nth-child(n)
+input[id='list']:checked ~ .cat > :nth-child(n)
 {
     display: inline-block;
     width: 31%;
+    height: auto;
     vertical-align: top;
 }
 
-.kisa > img:hover
+.cat > img:hover
 {
     box-shadow: 0 0 3px
         #a9a2ed, 0 0 10px #80ed90;
@@ -98,9 +101,10 @@ input[id='list']:checked ~ .kisa > :nth-child(n)
     font-size: .9rem;
 }
 
-.kisa .kindness img
+.cat .kindness img
 {
     width: 10%;
+    height: auto;
     display: inline-block;
 }
 
