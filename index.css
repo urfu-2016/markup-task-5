@@ -4,48 +4,57 @@ body
     margin: 0 auto;
 }
 
-.header
+.logo 
 {
     display: inline-block;
     vertical-align: middle;
-    font-size: 30px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+}
+
+.title 
+{
+    display: inline-block;
+    vertical-align: middle;
+    font: bold 30px Arial, sans-serif;
     margin: 0 auto;
 }
 
-.header:first-letter
+.title:first-letter
 {
-    color: red;
+    color: #f00;
 }
 
-.string:checked ~ main .notice
+.to-list:checked ~ main 
+{
+    min-width: 800px;
+}
+
+.to-list:checked ~ main .card-product
 {
     display: block;
     padding: 10px 0;
     width: 100%;
 }
 
-.string:checked ~ main .info
+.to-list:checked ~ main .info
 {
     display: inline-block;
     width: 45%;
 }
 
-.string:checked ~ main .picture-part
+.to-list:checked ~ main .photo
 {
     display: inline-block;
     width: 20%;
 }
 
-.string:checked ~ main .description
+.to-list:checked ~ main .description
 {
     display: inline-block;
     width: 33%;
 
 }
 
-.notice
+.card-product
 {
     width: 250px;
     display: inline-block;
@@ -54,9 +63,9 @@ body
  
 }
 
-.notice:hover
+.card-product:hover
 {
-    background-color: ivory;
+    background-color: #fffff0;
 }
 
 .price
@@ -77,7 +86,7 @@ body
     vertical-align: top;
 }
 
-.picture-part
+.photo
 {
     text-align: center;
     line-height: 210px;
@@ -86,39 +95,53 @@ body
 
 .cat-picture:hover
 {
-    border: 5px solid lightsteelblue;
+    border: 5px solid #b0c4de;
 }
 
-.string:checked ~ main .cat-picture
+.to-list:checked ~ main .cat-picture
 {
     vertical-align: top;
 }
 
 .cat-picture
 {
+    border: 5px solid rgba(255, 255, 255, 0);
     vertical-align: bottom;
+}
+
+.link-name:hover 
+{
+    color: #8b0000;
 }
 
 .name
 {
+    padding: 1px 0;
     white-space: nowrap;
 }
 
 .name:hover
 {
-    color: darkred;
-    font-size: 20px;
+    padding: 0;
+    font-size: 1.1em;
 }
 
 .category:hover
 {
-    font-size: 16px;
+    padding: 0;
+    font-size: 1.2em;
 }
 
 .category
 {
+    padding: 4px 0;
     font-size: 12px;
-    color: darkgrey;
+}
+
+.link-category
+{
+    
+    color: #a9a9a9;
 }
 
 .rate
@@ -131,7 +154,7 @@ body
 .rate > span
 {
     width: 1.1em;
-    color: gold;
+    color: #ffd700;
 }
 
 .rate > span:hover:before,
