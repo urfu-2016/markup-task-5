@@ -122,54 +122,19 @@ a:hover
     height: 100%;
 }
 
-.first div
-{
-    width: 90%;
-}
-
-.second div
-{
-    width: 70%;
-}
-
-.third div
-{
-    width: 70%;
-}
-
-.fourth div
-{
-    width: 90%;
-}
-
-.fifth div
+.fourStars div
 {
     width: 80%;
 }
 
-.sixth div
-{
-    width: 80%;
-}
-
-.seventh div
-{
-    width: 60%;
-}
-
-.eighth div
-{
-    width: 70%;
-}
-
-.ninth div
+.fourPlusStars div
 {
     width: 90%;
 }
 
-.tenth div
+.threePlusStars div
 {
-    width: 80%;
+    width: 70%;
 }
 
 .display-line:checked ~ .item
