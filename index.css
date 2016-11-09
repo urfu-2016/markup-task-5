@@ -1,0 +1,98 @@
+.list-view-checkbox:checked ~ main .cat-photo
+{
+    width: 25%;
+    display: inline-block;
+}
+
+.list-view-checkbox:checked ~ main .information
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.list-view-checkbox:checked ~ main .information .name
+{
+    width: 100%;
+}
+
+.list-view-checkbox:checked ~ main .card
+{
+    width: 100%;
+}
+
+.name-of-market
+{
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+}
+
+.name-of-market header:first-letter
+{
+    color: red;
+}
+
+.card
+{
+    margin: 5px 0;
+    display: inline-table;
+    width: 250px;
+    text-overflow: ellipsed;
+}
+
+.name a:hover
+{
+    color: red;
+}
+
+.category:hover
+{
+    color: gray;
+    text-decoration: underline;
+}
+
+.cat-photo:hover
+{
+    border: 1px solid red;
+}
+
+.card:hover
+{
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.cat-photo
+{
+    max-width: 100%;
+}
+
+body 
+{
+    background-color: #ff6;
+}
+
+.name
+{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a 
+{
+    color: black;
+}
+
+.price .current-price
+    {
+    color: red;
+    font-size: larger;
+}
+
+.list-icon
+    {
+    width: 30px;
+}
