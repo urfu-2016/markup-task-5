@@ -21,6 +21,15 @@
     text-align: justify;
 }
 
+.card-list:after
+{
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    content: '';
+    display: inline-block;
+}
+
 .info,
 .description
 {
