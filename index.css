@@ -52,6 +52,11 @@
     text-decoration: underline;
 }
 
+.cat-photo:hover
+{
+    border: 1px solid red;
+}
+
 .card:hover
 {
     background-color: lightgray;
