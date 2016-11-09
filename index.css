@@ -39,14 +39,20 @@ header
 
 .cat:hover
 {
-    border: 1px solid #a9a9a9;
-    margin: 29px;
+    outline: 1px solid #a9a9a9;
+}
+
+.container
+{
+    line-height: 260px;
 }
 
 .image
 {
-    width: 250px;
-    margin-top: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    max-height: 250px;
+    max-width: 95%;
 }
 
 .image:hover
@@ -57,6 +63,7 @@ header
 .info,
 .description
 {
+    margin-top: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     padding-left: 5px;
@@ -113,17 +120,29 @@ header
     width: 90%;
 }
 
+.list:checked ~ main .container
+{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+}
+
+.list:checked ~ main .container .image
+{
+    vertical-align: middle;
+}
+
 .list:checked ~ main .info,
 .list:checked ~ main .description
 {
     display: inline-block;
     vertical-align: top;
-    width: 30%;
-    margin: 5px 0 0 80px;
+    width: 27%;
+    margin: 10px 0 0 80px;
 }
 
 .list:checked ~ main
 {
-    min-width: 1000px;
+    min-width: 1200px;
     font-size: 20px;
 }
