@@ -2,6 +2,7 @@
 {
     font-family: 'FontAwesome';
     src: url('font/fontawesome-webfont.woff') format('woff');
+    src: url('font/fontawesome-webfont.ttf') format('ttf');
 }
 
 .cat
@@ -21,11 +22,6 @@
     color: red;
 }
 
-.item .category:hover
-{
-    font-weight: bold;
-}
-
 .foto
 {
     width: 100%;
@@ -38,18 +34,23 @@
     opacity: .8;
 }
 
-.fotoContainer
+.foto-container
 {
     position: relative;
     height: 560px;
 }
 
-a
+.info a
 {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.cat .category:hover
+{
+    font-weight: bold;
 }
 
 .category
@@ -125,7 +126,6 @@ label:hover ~ input:checked ~ label
 
 .description
 {
-    width: 200px;
     display: table;
 }
 
@@ -156,7 +156,7 @@ label:hover ~ input:checked ~ label
     width: 30%;
 }
 
-.change:checked ~ .cat .fotoContainer
+.change:checked ~ .cat .foto-container
 {
     display: inline-block;
     width: 30%;
