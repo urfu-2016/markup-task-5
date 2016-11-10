@@ -3,12 +3,35 @@
     position: absolute;
     left: 15%;
     width: 80%;
+    line-height: auto;
+}
+
+.switch-list, .switch-table
+{
+    display: none;
+}
+
+.switch-list-i, .switch-table-i
+{
+    margin: 0 3px;
+    padding: 2px;
+}
+
+.switch-table:checked ~ .switch-table-i
+{
+    border: 2px solid red;
+}
+
+.switch-list:checked ~ .switch-list-i
+{
+    border: 2px solid red;
 }
 
 .tabled .card
 {
-    margin: 10px;
+    margin: 40px 10px;
     width: 250px;
+    position: relative;
     display: inline-block;
 }
 
@@ -21,11 +44,6 @@
 {
     max-width: 100%;
     height: auto;
-}
-
-.listed
-{
-    display: none;
 }
 
 .switch-list:checked ~ .tabled .card
@@ -43,6 +61,7 @@
 .switch-list:checked ~ .tabled .card .card-block
 {
     display: inline-block;
+    height: auto;
     width: 30%;
     vertical-align: top;
     margin: 0 40px;
@@ -65,8 +84,8 @@
 {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
     display: block;
     font-size: 30px;
     margin: 5px;
@@ -75,6 +94,7 @@
 .tabled .card-categories
 {
     margin: 0;
+    height: 20%;
 }
 
 .card-category:after
@@ -92,24 +112,36 @@
     border: 1px solid black;
 }
 
+.card-block
+{
+    height: 30%;
+}
+
 .card-price
 {
     color: red;
+    margin: 40px 6px;
     font-weight: bold;
     font-size: 1.5em;
+}
+.card-price:hover
+{
+    color: #600;
 }
 
 .card-description
 {
     margin: 2px;
+    position: absolute;
+    
 }
 
 .card-rating
 {
     display: block;
     border: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 4px;
+    padding-top: 4px;
     float: left;
 }
 
