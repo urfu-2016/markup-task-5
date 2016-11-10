@@ -6,306 +6,335 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <input type="checkbox" class="one-in-row">Строки<br>
+    <input type="checkbox" class="one-in-row" id="one-in-row-checkbox">
+    <label for="one-in-row-checkbox">Строки</label>
     <main>
         <article class="cat">
-            <div class="image-wrapper">
-                <img src="white.jpg"
-                     alt="Котенок Пушок" title="Пушок" class="cat-image">
-            </div>
+            <section class="cat-main">
+                <a href="#" title="Пушок" class="cat-link">
+                    <img src="white.jpg"
+                         alt="Котенок Пушок" title="Пушок">
+                    <span>Пушок</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Пушок">Пушок</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating1" id="rating1-1"
-                    ><label for="rating1-1"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-2"
-                    ><label for="rating1-2"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-3"
-                    ><label for="rating1-3"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-4"
-                    ><label for="rating1-4"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-5"
-                    ><label for="rating1-5"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-6"
-                    ><label for="rating1-6"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-7"
-                    ><label for="rating1-7"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-8"
-                    ><label for="rating1-8"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-9"
-                    ><label for="rating1-9"></label
-                    ><input type="radio" class="star" name="rating1" id="rating1-10"
-                    ><label for="rating1-10"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-1">
+                    <label for="rating1-1"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-2">
+                    <label for="rating1-2"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-3">
+                    <label for="rating1-3"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-4">
+                    <label for="rating1-4"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-5">
+                    <label for="rating1-5"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-6">
+                    <label for="rating1-6"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-7">
+                    <label for="rating1-7"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-8">
+                    <label for="rating1-8"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-9">
+                    <label for="rating1-9"></label>
+                    <input type="radio" class="star" name="rating1" id="rating1-10">
+                    <label for="rating1-10"></label>
                     <input type="radio" name="rating1" class="default-star" checked>
                 </div>
                 <span class="current-price">10р</span>
                 <span class="old-price">11р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Мягкий</li>
                     <li>Пушистый</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="katze.jpg"
-                     alt="Котенок Мякиш" title="Мякиш" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Мякиш" class="cat-link">
+                    <img src="katze.jpg"
+                         alt="Котенок Мякиш" title="Мякиш">
+                    <span>Мякиш</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Мякиш">Мякиш</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating2" id="rating2-1"
-                    ><label for="rating2-1"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-2"
-                    ><label for="rating2-2"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-3"
-                    ><label for="rating2-3"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-4"
-                    ><label for="rating2-4"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-5"
-                    ><label for="rating2-5"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-6"
-                    ><label for="rating2-6"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-7"
-                    ><label for="rating2-7"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-8"
-                    ><label for="rating2-8"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-9"
-                    ><label for="rating2-9"></label
-                    ><input type="radio" class="star" name="rating2" id="rating2-10"
-                    ><label for="rating2-10"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-1">
+                    <label for="rating2-1"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-2">
+                    <label for="rating2-2"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-3">
+                    <label for="rating2-3"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-4">
+                    <label for="rating2-4"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-5">
+                    <label for="rating2-5"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-6">
+                    <label for="rating2-6"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-7">
+                    <label for="rating2-7"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-8">
+                    <label for="rating2-8"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-9">
+                    <label for="rating2-9"></label>
+                    <input type="radio" class="star" name="rating2" id="rating2-10">
+                    <label for="rating2-10"></label>
                     <input type="radio" name="rating2" class="default-star" checked>
                 </div>
                 <span class="current-price">10р</span>
                 <span class="old-price">11р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Пушистый</li>
                     <li>Мягкий</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="http://www.sunny-cat.ru/datas/users/1-filadelfia009.jpg"
-                     alt="Котенок Тормоз" title="Тормоз" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Тормоз" class="cat-link">
+                    <img src="http://www.sunny-cat.ru/datas/users/1-filadelfia009.jpg"
+                         alt="Котенок Тормоз" title="Тормоз">
+                    <span>Тормоз</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Тормоз">Тормоз</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating3" id="rating3-1"
-                    ><label for="rating3-1"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-2"
-                    ><label for="rating3-2"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-3"
-                    ><label for="rating3-3"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-4"
-                    ><label for="rating3-4"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-5"
-                    ><label for="rating3-5"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-6"
-                    ><label for="rating3-6"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-7"
-                    ><label for="rating3-7"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-8"
-                    ><label for="rating3-8"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-9"
-                    ><label for="rating3-9"></label
-                    ><input type="radio" class="star" name="rating3" id="rating3-10"
-                    ><label for="rating3-10"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-1">
+                    <label for="rating3-1"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-2">
+                    <label for="rating3-2"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-3">
+                    <label for="rating3-3"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-4">
+                    <label for="rating3-4"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-5">
+                    <label for="rating3-5"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-6">
+                    <label for="rating3-6"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-7">
+                    <label for="rating3-7"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-8">
+                    <label for="rating3-8"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-9">
+                    <label for="rating3-9"></label>
+                    <input type="radio" class="star" name="rating3" id="rating3-10">
+                    <label for="rating3-10"></label>
                     <input type="radio" name="rating3" class="default-star" checked>
                 </div>
                 <span class="current-price">10р</span>
                 <span class="old-price">11р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Приучен к лотку</li>
                     <li>Мягкий</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="http://kotyata.net/wp-content/uploads/2013/02/wpid-kak_ryzhij_kotenok.jpg"
-                     alt="Котенок Кирпич" title="Кирпич" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Кирпич" class="cat-link">
+                    <img src="http://kotyata.net/wp-content/uploads/2013/02/wpid-kak_ryzhij_kotenok.jpg"
+                         alt="Котенок Кирпич" title="Кирпич">
+                    <span>Кирпич</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Кирпич">Кирпич</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating4" id="rating4-1"
-                    ><label for="rating4-1"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-2"
-                    ><label for="rating4-2"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-3"
-                    ><label for="rating4-3"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-4"
-                    ><label for="rating4-4"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-5"
-                    ><label for="rating4-5"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-6"
-                    ><label for="rating4-6"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-7"
-                    ><label for="rating4-7"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-8"
-                    ><label for="rating4-8"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-9"
-                    ><label for="rating4-9"></label
-                    ><input type="radio" class="star" name="rating4" id="rating4-10"
-                    ><label for="rating4-10"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-1">
+                    <label for="rating4-1"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-2">
+                    <label for="rating4-2"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-3">
+                    <label for="rating4-3"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-4">
+                    <label for="rating4-4"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-5">
+                    <label for="rating4-5"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-6">
+                    <label for="rating4-6"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-7">
+                    <label for="rating4-7"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-8">
+                    <label for="rating4-8"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-9">
+                    <label for="rating4-9"></label>
+                    <input type="radio" class="star" name="rating4" id="rating4-10">
+                    <label for="rating4-10"></label>
                     <input type="radio" name="rating4" class="default-star" checked>
                 </div>
                 <span class="current-price">10р</span>
                 <span class="old-price">11р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Пушистый</li>
                     <li>Любит играть</li>
                     <li>Выбор редакции!</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="http://www.cats-british.ru/files/breeds/scotish-fold.jpg"
-                         alt="Котенок Королева" title="Королева" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Королева" class="cat-link">
+                    <img src="http://www.cats-british.ru/files/breeds/scotish-fold.jpg"
+                         alt="Котенок Королева" title="Королева">
+                    <span>Королева</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Королева">Королева</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating5" id="rating5-1"
-                    ><label for="rating5-1"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-2"
-                    ><label for="rating5-2"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-3"
-                    ><label for="rating5-3"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-4"
-                    ><label for="rating5-4"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-5"
-                    ><label for="rating5-5"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-6"
-                    ><label for="rating5-6"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-7"
-                    ><label for="rating5-7"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-8"
-                    ><label for="rating5-8"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-9"
-                    ><label for="rating5-9"></label
-                    ><input type="radio" class="star" name="rating5" id="rating5-10"
-                    ><label for="rating5-10"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-1">
+                    <label for="rating5-1"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-2">
+                    <label for="rating5-2"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-3">
+                    <label for="rating5-3"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-4">
+                    <label for="rating5-4"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-5">
+                    <label for="rating5-5"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-6">
+                    <label for="rating5-6"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-7">
+                    <label for="rating5-7"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-8">
+                    <label for="rating5-8"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-9">
+                    <label for="rating5-9"></label>
+                    <input type="radio" class="star" name="rating5" id="rating5-10">
+                    <label for="rating5-10"></label>
                     <input type="radio" name="rating5" class="default-star" checked>
                 </div>
                 <span class="current-price">10р</span>
                 <span class="old-price">11р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Знает 7 языков</li>
                     <li>Мягкая</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="http://vladguard.ru/wp-content/uploads/2013/05/34037949_1.jpg"
-                         alt="Гараж на Химмаше" title="Гараж на Химмаше" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Гараж на Химмаше" class="cat-link">
+                    <img src="http://vladguard.ru/wp-content/uploads/2013/05/34037949_1.jpg"
+                         alt="Гараж на Химмаше" title="Гараж на Химмаше">
+                    <span>Гараж на Химмаше</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Гараж на Химмаше">Гараж на Химмаше</a>
                 <span class="category">Самое необходимое</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating6" id="rating6-1"
-                    ><label for="rating6-1"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-2"
-                    ><label for="rating6-2"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-3"
-                    ><label for="rating6-3"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-4"
-                    ><label for="rating6-4"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-5"
-                    ><label for="rating6-5"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-6"
-                    ><label for="rating6-6"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-7"
-                    ><label for="rating6-7"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-8"
-                    ><label for="rating6-8"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-9"
-                    ><label for="rating6-9"></label
-                    ><input type="radio" class="star" name="rating6" id="rating6-10"
-                    ><label for="rating6-10"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-1">
+                    <label for="rating6-1"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-2">
+                    <label for="rating6-2"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-3">
+                    <label for="rating6-3"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-4">
+                    <label for="rating6-4"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-5">
+                    <label for="rating6-5"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-6">
+                    <label for="rating6-6"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-7">
+                    <label for="rating6-7"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-8">
+                    <label for="rating6-8"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-9">
+                    <label for="rating6-9"></label>
+                    <input type="radio" class="star" name="rating6" id="rating6-10">
+                    <label for="rating6-10"></label>
                     <input type="radio" name="rating6" class="default-star" checked>
                 </div>
                 <span class="current-price">10000р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<sup>[?????]</sup><br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка<sup>[?????]</sup>
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Чистый</li>
                     <li>Хороший район</li>
                     <li>Рядом со школой</li>
                     <li>15 минут до метро(на ракете)</li>
                 </ul>
             </section>
-        </article
-        ><article class="cat">
-            <div class="image-wrapper">
-                <img src="http://dreempics.com/img/picture/Apr/12/60edb09ba4c9492f769a0f17fe3e63c1/5.jpg"
-                     alt="Котята Фихтенгольц и Лагранж" title="Фихтенгольц и Лагранж" class="cat-image">
-            </div>
+        </article>
+        <article class="cat">
+            <section class="cat-main">
+                <a href="#" title="Фихтенгольц и Лагранж" class="cat-link">
+                    <img src="http://dreempics.com/img/picture/Apr/12/60edb09ba4c9492f769a0f17fe3e63c1/5.jpg"
+                         alt="Котята Фихтенгольц и Лагранж" title="Фихтенгольц и Лагранж">
+                    <span>Фихтенгольц и Лагранж</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Фихтенгольц и Лагранж">Фихтенгольц и Лагранж</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating7" id="rating7-1"
-                    ><label for="rating7-1"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-2"
-                    ><label for="rating7-2"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-3"
-                    ><label for="rating7-3"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-4"
-                    ><label for="rating7-4"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-5"
-                    ><label for="rating7-5"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-6"
-                    ><label for="rating7-6"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-7"
-                    ><label for="rating7-7"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-8"
-                    ><label for="rating7-8"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-9"
-                    ><label for="rating7-9"></label
-                    ><input type="radio" class="star" name="rating7" id="rating7-10"
-                    ><label for="rating7-10"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-1">
+                    <label for="rating7-1"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-2">
+                    <label for="rating7-2"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-3">
+                    <label for="rating7-3"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-4">
+                    <label for="rating7-4"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-5">
+                    <label for="rating7-5"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-6">
+                    <label for="rating7-6"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-7">
+                    <label for="rating7-7"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-8">
+                    <label for="rating7-8"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-9">
+                    <label for="rating7-9"></label>
+                    <input type="radio" class="star" name="rating7" id="rating7-10">
+                    <label for="rating7-10"></label>
                     <input type="radio" name="rating7" class="default-star" checked>
                 </div>
-                <span class="current-price">21</span>
+                <span class="current-price">21р</span>
                 <span class="old-price">22р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Мягкие</li>
                     <li>??????</li>
                     <li>Пушистые</li>
@@ -313,171 +342,185 @@
             </section>
         </article>
         <article class="cat">
-            <div class="image-wrapper">
-                <img src="http://ru.fishki.net/picsw/062011/08/bonus/kotita/tn.jpg"
-                     alt="Котенок Клубок" title="Клубок" class="cat-image">
-            </div>
+            <section class="cat-main">
+                <a href="#" title="Клубок" class="cat-link">
+                    <img src="http://ru.fishki.net/picsw/062011/08/bonus/kotita/tn.jpg"
+                         alt="Котенок Клубок" title="Клубок">
+                    <span>Клубок</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Клубок">Клубок</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating8" id="rating8-1"
-                    ><label for="rating8-1"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-2"
-                    ><label for="rating8-2"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-3"
-                    ><label for="rating8-3"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-4"
-                    ><label for="rating8-4"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-5"
-                    ><label for="rating8-5"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-6"
-                    ><label for="rating8-6"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-7"
-                    ><label for="rating8-7"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-8"
-                    ><label for="rating8-8"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-9"
-                    ><label for="rating8-9"></label
-                    ><input type="radio" class="star" name="rating8" id="rating8-10"
-                    ><label for="rating8-10"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-1">
+                    <label for="rating8-1"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-2">
+                    <label for="rating8-2"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-3">
+                    <label for="rating8-3"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-4">
+                    <label for="rating8-4"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-5">
+                    <label for="rating8-5"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-6">
+                    <label for="rating8-6"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-7">
+                    <label for="rating8-7"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-8">
+                    <label for="rating8-8"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-9">
+                    <label for="rating8-9"></label>
+                    <input type="radio" class="star" name="rating8" id="rating8-10">
+                    <label for="rating8-10"></label>
                     <input type="radio" name="rating8" class="default-star" checked>
                 </div>
-                <span class="current-price">21</span>
+                <span class="current-price">21р</span>
                 <span class="old-price">22р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Мурчит</li>
                     <li>Ходит в тапки</li>
                 </ul>
             </section>
         </article>
         <article class="cat">
-            <div class="image-wrapper">
-                <img src="graph.jpg"
-                     alt="Котенок Граф" title="Граф" class="cat-image">
-            </div>
+            <section class="cat-main">
+                <a href="#" title="Граф" class="cat-link">
+                    <img src="graph.jpg"
+                         alt="Котенок Граф" title="Граф">
+                    <span>Граф</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Граф">Граф</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating9" id="rating9-1"
-                    ><label for="rating9-1"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-2"
-                    ><label for="rating9-2"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-3"
-                    ><label for="rating9-3"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-4"
-                    ><label for="rating9-4"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-5"
-                    ><label for="rating9-5"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-6"
-                    ><label for="rating9-6"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-7"
-                    ><label for="rating9-7"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-8"
-                    ><label for="rating9-8"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-9"
-                    ><label for="rating9-9"></label
-                    ><input type="radio" class="star" name="rating9" id="rating9-10"
-                    ><label for="rating9-10"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-1">
+                    <label for="rating9-1"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-2">
+                    <label for="rating9-2"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-3">
+                    <label for="rating9-3"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-4">
+                    <label for="rating9-4"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-5">
+                    <label for="rating9-5"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-6">
+                    <label for="rating9-6"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-7">
+                    <label for="rating9-7"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-8">
+                    <label for="rating9-8"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-9">
+                    <label for="rating9-9"></label>
+                    <input type="radio" class="star" name="rating9" id="rating9-10">
+                    <label for="rating9-10"></label>
                     <input type="radio" name="rating9" class="default-star" checked>
                 </div>
-                <span class="current-price">21</span>
+                <span class="current-price">21р</span>
                 <span class="old-price">22р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Знает о вашем существовании</li>
                     <li>Обожает рыбку</li>
                 </ul>
             </section>
         </article>
         <article class="cat">
-            <div class="image-wrapper">
-                <img src="http://www.vivacat.ru/kiten/ssitemDSC_5819.jpg"
-                     alt="Котенок Борис" title="Борис" class="cat-image">
-            </div>
+            <section class="cat-main">
+                <a href="#" title="Борис" class="cat-link">
+                    <img src="http://www.vivacat.ru/kiten/ssitemDSC_5819.jpg"
+                         alt="Котенок Борис" title="Борис">
+                    <span>Борис</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Борис">Борис</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating10" id="rating10-1"
-                    ><label for="rating10-1"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-2"
-                    ><label for="rating10-2"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-3"
-                    ><label for="rating10-3"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-4"
-                    ><label for="rating10-4"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-5"
-                    ><label for="rating10-5"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-6"
-                    ><label for="rating10-6"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-7"
-                    ><label for="rating10-7"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-8"
-                    ><label for="rating10-8"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-9"
-                    ><label for="rating10-9"></label
-                    ><input type="radio" class="star" name="rating10" id="rating10-10"
-                    ><label for="rating10-10"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-1">
+                    <label for="rating10-1"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-2">
+                    <label for="rating10-2"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-3">
+                    <label for="rating10-3"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-4">
+                    <label for="rating10-4"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-5">
+                    <label for="rating10-5"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-6">
+                    <label for="rating10-6"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-7">
+                    <label for="rating10-7"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-8">
+                    <label for="rating10-8"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-9">
+                    <label for="rating10-9"></label>
+                    <input type="radio" class="star" name="rating10" id="rating10-10">
+                    <label for="rating10-10"></label>
                     <input type="radio" name="rating10" class="default-star" checked>
                 </div>
-                <span class="current-price">21</span>
+                <span class="current-price">21р</span>
                 <span class="old-price">22р</span>
             </section>
             <section class="description">
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Отличает гамильтонов цикл от эйлерова</li>
                     <li>Царапается</li>
                 </ul>
             </section>
         </article>
         <article class="cat">
-            <div class="image-wrapper">
-                <img src="http://ic.pics.livejournal.com/peshehod22/22004868/66657/66657_900.jpg"
-                     alt="Котенок Чуча" title="Чуча" class="cat-image">
-            </div>
+            <section class="cat-main">
+                <a href="#" title="Чуча" class="cat-link">
+                    <img src="http://ic.pics.livejournal.com/peshehod22/22004868/66657/66657_900.jpg"
+                         alt="Котенок Чуча" title="Чуча">
+                    <span>Чуча</span>
+                </a>
+            </section>
             <section class="info">
-                <a class="name" href="#" title="Чуча">Чуча</a>
                 <span class="category">Котята</span>
                 <div class="rating">
-                    <input type="radio" class="star" name="rating11" id="rating11-1"
-                    ><label for="rating11-1"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-2"
-                    ><label for="rating11-2"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-3"
-                    ><label for="rating11-3"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-4"
-                    ><label for="rating11-4"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-5"
-                    ><label for="rating11-5"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-6"
-                    ><label for="rating11-6"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-7"
-                    ><label for="rating11-7"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-8"
-                    ><label for="rating11-8"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-9"
-                    ><label for="rating11-9"></label
-                    ><input type="radio" class="star" name="rating11" id="rating11-10"
-                    ><label for="rating11-10"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-1">
+                    <label for="rating11-1"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-2">
+                    <label for="rating11-2"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-3">
+                    <label for="rating11-3"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-4">
+                    <label for="rating11-4"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-5">
+                    <label for="rating11-5"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-6">
+                    <label for="rating11-6"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-7">
+                    <label for="rating11-7"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-8">
+                    <label for="rating11-8"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-9">
+                    <label for="rating11-9"></label>
+                    <input type="radio" class="star" name="rating11" id="rating11-10">
+                    <label for="rating11-10"></label>
                     <input type="radio" name="rating11" class="default-star" checked>
                 </div>
-                <span class="current-price">21</span>
+                <span class="current-price">21р</span>
                 <span class="old-price">22р</span>
             </section>
             <section class="description">
-                <strong>БЕСПЛАТНАЯ</strong> доставка<br>
+                <div>
+                    <strong>БЕСПЛАТНАЯ</strong> доставка
+                </div>
                 <strong>Описание</strong>
-                <ul class="feautures">
+                <ul>
                     <li>Любит музыку</li>
                     <li>Ласковый</li>
                 </ul>

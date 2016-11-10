@@ -6,9 +6,14 @@
     font-style: normal;
 }
 
+body
+{
+    font-size: 16px;
+}
+
 .cat sup
 {
-    font-size: 10px;
+    font-size: .6em;
 }
 
 .cat ul
@@ -16,16 +21,25 @@
     margin: 5px 0 0;
 }
 
-.one-in-row:checked ~ main .image-wrapper
+.one-in-row:checked ~ main .cat-main
 {
     display: inline-block;
     min-height: 0;
     width: 30%;
 }
 
-.one-in-row:checked ~ main .cat-image
+.one-in-row:checked ~ main .cat-link img
 {
     position: static;
+}
+
+.one-in-row:checked ~ main .cat-link span
+{
+    position: absolute;
+    top: 0;
+    bottom: initial;
+    margin-left: 100%;
+    padding-left: 24px;
 }
 
 .one-in-row:checked ~ main .info
@@ -33,7 +47,7 @@
     display: inline-block;
     vertical-align: top;
     width: 30%;
-    margin-left: 20px;
+    margin: 1.15em 0 0 20px;
 }
 
 .one-in-row:checked ~ main .description
@@ -57,51 +71,45 @@
     width: 400px;
 }
 
-.cat:hover
-{
-    border: 1px solid black;
-    padding: 9px;
-}
-
-.image-wrapper
+.cat-main
 {
     min-height: 305px;
     position: relative;
 }
 
-.name,
-.name:visited
+.cat-link span
 {
     overflow: hidden;
     text-overflow: ellipsis;
-    display: block;
     white-space: nowrap;
-    color: blue;
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    color: #00f;
 }
 
-.name:hover
+.cat-link:hover span
 {
-    color: red;
+    color: #f00;
 }
 
-.cat-image
+.cat-link img
 {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    display: block;
+    bottom: 1.5em;
     opacity: .9;
 }
 
-.cat-image:hover
+.cat-link:hover img
 {
     opacity: 1;
 }
 
 .current-price
 {
-    color: red;
-    font-size: larger;
+    color: #f00;
+    font-size: 1.2em;
 }
 
 .old-price
@@ -114,6 +122,7 @@
     direction: rtl;
     text-align: left;
     width: 200px;
+    font-size: 0;
 }
 
 .rating label:before
@@ -137,13 +146,13 @@
 
 .star:checked ~ label:before
 {
-    color: orange;
+    color: #ffa500;
     content: '●';
 }
 
 .rating:hover .star:checked ~ label:before
 {
-    color: black;
+    color: #000;
     content: '○';
 }
 
@@ -152,7 +161,7 @@
 
 .cat .info .rating .star:hover ~ label:before
 {
-    color: orange;
+    color: #ffa500;
 }
 
 .cat .info .rating .star:hover ~ .star:checked ~ label:before,
