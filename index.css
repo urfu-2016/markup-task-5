@@ -1,0 +1,166 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.cat
+{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cat:hover
+{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+}
+
+.cat a:hover
+{
+    color: #f00;
+}
+
+.cat img:hover
+{
+    filter: contrast(175%);
+}
+
+.cat .category:hover
+{
+    font-weight: bold;
+}
+
+.image
+{
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.image > img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.main-info > a
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category
+{
+    color: #58585a;
+    text-decoration: underline;
+}
+
+.price > span:first-child
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #96070a;
+}
+
+.price > span:nth-child(2)
+{
+    color: #3a3a3c;
+    text-decoration: line-through;
+}
+
+.price > span:after
+{
+    content: '₽';
+}
+
+.rating
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.rating > span
+{
+    font-family: FontAwesome;
+    position: relative;
+    display: inline-block;
+    font-size: initial;
+    height: 2.5em;
+    margin: 0;
+}
+
+.rating > input
+{
+    font-family: FontAwesome;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    height: 2.5em;
+    width: 1.2em;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.rating > span:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    font-size: 2.5em;
+    color: #ffc613;
+}
+
+.rating > span:nth-of-type(2n+1):before
+{
+    left: -.4em;
+    content: '\f006';
+}
+
+.rating > input:nth-of-type(2n+1):hover + span:before,
+.rating > input:nth-of-type(2n+1):hover ~ span:nth-of-type(2n+1):before,
+.rating > input:nth-of-type(2n):hover ~ span:nth-of-type(2n+1):before,
+
+.rating > input:nth-of-type(2n+1):checked + span:before,
+.rating > input:nth-of-type(2n+1):checked ~ span:nth-of-type(2n+1):before,
+.rating > input:nth-of-type(2n):checked ~ span:nth-of-type(2n+1):before
+{
+    content: '\f005';
+}
+
+.rating > input:nth-of-type(2n):hover + span:before,
+.rating > input:nth-of-type(2n):checked + span:before
+{
+    content: '\f089';
+}
+
+input:checked ~ main > .cat
+{
+    width: 100%;
+    display: block;
+}
+
+input:checked ~ main > .cat > .image
+{
+    display: inline-block;
+    min-height: inherit;
+    width: 25%;
+}
+
+input:checked ~ main > .cat > .image img
+{
+    position: initial;
+    height: inherit;
+}
+
+input:checked ~ main > .cat > .main-info
+{
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    left: 1em;
+}
