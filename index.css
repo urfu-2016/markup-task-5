@@ -4,10 +4,30 @@
     src: local(lombardina), url(Lombardina.ttf);
 }
 
-a
+a,
+h3
 {
+    display: block;
+
     font-size: 18px;
-    padding: 10px;
+
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+.line
+{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+.line-1
+{
+    position: absolute;
+    top: 40px;
+    right: 120px;
 }
 
 .description
@@ -17,7 +37,7 @@ a
     text-align: center;
 }
 
-img
+.cat-image
 {
     width: 230px;
 
@@ -26,7 +46,7 @@ img
     opacity: .8;
 }
 
-img:hover
+.cat-image:hover
 {
     opacity: 1;
 }
@@ -35,9 +55,10 @@ img:hover
 {
     width: 300px;
     height: 550px;
+
 }
 
-.cat
+.grannys-cat
 {
     border: thin #c0c0c0 solid;
     float: left;
@@ -56,7 +77,7 @@ img:hover
         , 0 20px 20px #d9d9d9;
 }
 
-.cat:hover
+.grannys-cat:hover
 {
     background: #dcdcdc;
 }
@@ -99,11 +120,6 @@ p
         , 0 5px 10px #bfbfbf
         , 0 10px 10px #ccc
         , 0 20px 20px #d9d9d9;
-}
-
-h3
-{
-    font-size: 13px;
 }
 
 .rating
