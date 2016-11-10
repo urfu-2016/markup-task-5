@@ -6,12 +6,14 @@
     line-height: auto;
 }
 
-.switch-list, .switch-table
+.switch-list,
+.switch-table
 {
     display: none;
 }
 
-.switch-list-i, .switch-table-i
+.switch-list-i,
+.switch-table-i
 {
     margin: 0 3px;
     padding: 2px;
@@ -37,7 +39,7 @@
 
 .tabled .card:hover
 {
-    background: rgba(229, 221, 221, 0.8);
+    background: rgba(229, 221, 221, .8);
 }
 
 .tabled .card-image
@@ -124,6 +126,7 @@
     font-weight: bold;
     font-size: 1.5em;
 }
+
 .card-price:hover
 {
     color: #600;
