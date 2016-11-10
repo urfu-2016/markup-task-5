@@ -81,19 +81,30 @@
     font-size: 0;
 }
 
-.rating > input
+.rating > span
 {
     font-family: FontAwesome;
     position: relative;
     display: inline-block;
+    font-size: initial;
+    height: 2.5em;
+    margin: 0;
+}
+
+.rating > input
+{
+    font-family: FontAwesome;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
     height: 2.5em;
     width: 1.2em;
     margin: 0;
-    -webkit-appearance: none;
-    outline: none;
+    opacity: 0;
+    z-index: 1;
 }
 
-.rating > input:before
+.rating > span:before
 {
     position: absolute;
     top: 0;
@@ -103,25 +114,25 @@
     color: #ffc613;
 }
 
-.rating > input:nth-child(2n+1):before
+.rating > span:nth-of-type(2n+1):before
 {
-    left: -.5em;
+    left: -.4em;
     content: '\f006';
 }
 
-.rating > input:nth-child(2n+1):hover:before,
-.rating > input:nth-child(2n+1):hover ~ input:nth-child(2n+1):before,
-.rating > input:nth-child(2n):hover ~ input:nth-child(2n+1):before,
+.rating > input:nth-of-type(2n+1):hover + span:before,
+.rating > input:nth-of-type(2n+1):hover ~ span:nth-of-type(2n+1):before,
+.rating > input:nth-of-type(2n):hover ~ span:nth-of-type(2n+1):before,
 
-.rating > input:nth-child(2n+1):checked:before,
-.rating > input:nth-child(2n+1):checked ~ input:nth-child(2n+1):before,
-.rating > input:nth-child(2n):checked ~ input:nth-child(2n+1):before
+.rating > input:nth-of-type(2n+1):checked + span:before,
+.rating > input:nth-of-type(2n+1):checked ~ span:nth-of-type(2n+1):before,
+.rating > input:nth-of-type(2n):checked ~ span:nth-of-type(2n+1):before
 {
     content: '\f005';
 }
 
-.rating > input:nth-child(2n):hover:before,
-.rating > input:nth-child(2n):checked:before
+.rating > input:nth-of-type(2n):hover + span:before,
+.rating > input:nth-of-type(2n):checked + span:before
 {
     content: '\f089';
 }
