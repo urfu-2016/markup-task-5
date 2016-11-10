@@ -43,7 +43,7 @@ input[id='list']:checked ~ .cat
 
 .cat:hover
 {
-    background: white;
+    background: #fff;
     box-shadow: 0 0 10px #808080;
 }
 
@@ -88,6 +88,7 @@ input[id='list']:checked ~ .cat > .description
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10px 0;
+    color: #0000ff;
 }
 
 .name:hover
@@ -109,7 +110,7 @@ input[id='list']:checked ~ .cat > .description
 .rating
 {
     margin: 10px 0;
-    background: url('rating-gray.png');
+    background: url(rating-gray.png);
     height: 32px;
     width: 170px;
 }
@@ -121,7 +122,7 @@ input[id='list']:checked ~ .cat > .description
 .rating > .rating-one
 {
     margin: 10px 0;
-    background: url('rating.png');
+    background: url(rating.png);
     height: 32px;
 }
 
