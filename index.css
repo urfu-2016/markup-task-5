@@ -1,8 +1,8 @@
 @font-face
 {
     font-family: 'FontAwesome';
-    src: url('font/fontawesome-webfont.woff') format('woff');
     src: url('font/fontawesome-webfont.ttf') format('ttf');
+    src: url('font/fontawesome-webfont.woff') format('woff');
 }
 
 .cat
