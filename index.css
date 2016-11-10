@@ -14,7 +14,6 @@
 .item
 {
     width: 350px;
-    border: 2px solid #5c2f55;
     display: inline-block;
     padding: 8px;
     vertical-align: top;
@@ -42,24 +41,34 @@
 {
     text-align: center;
     font-family: Ebrima, Arial, sans-serif;
-    color: #5c0339;
+    color: #5c2f55;
+}
+
+.main-information a
+{
+    text-decoration: none;
+    color: #5c2f55;
 }
 
 .name
 {
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
-img
+.cat-photo
 {
     max-width: 100%;
     height: 80%;
 }
 
+
 .rating
 {
-    margin: 0 100px 0 0;
+    margin: 0 180px 0 0;
+    padding: 0;
+    border: none;
 }
 
 .picture
@@ -70,6 +79,7 @@ img
 
 .items-view:checked ~ .content .item
 {
+    border: 2px solid #5c2f55;
     display: block;
     width: 100%;
     height: 250px;
@@ -80,14 +90,19 @@ img
     display: inline-block;
     vertical-align: top;
     width: 30%;
+    text-align: center;
 }
 
 .items-view:checked ~ .content .item .picture
 {
     height: 100%;
 }
+.items-view:checked ~ .content .item .main-information .rating {
+    margin-right: 30%;
+    padding: 0;
+}
 
-img:hover
+.cat-photo:hover
 {
     height: 100%;
 }
