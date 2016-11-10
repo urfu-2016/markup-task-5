@@ -1,44 +1,43 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-/* For stars (COPY-PASTE FROM GOOGLE) */
+/* For stars (almost COPY-PASTE FROM GOOGLE) */
 
-.rating > .rating-input
+.rating-input
 {
     display: none;
 }
 
-.rating > .star-label:before
+.star-label:before
 {
-    margin: 5px;
+    margin: 1px;
     font-size: 2vw;
     font-family: FontAwesome, fantasy;
     display: inline-block;
     content: '\f005';
 }
 
-.rating > .half:before
+.half:before
 {
     content: '\f089';
     position: absolute;
 }
 
-.rating > .star-label
+.star-label
 {
     color: #ddd;
     float: right;
 }
 
-.rating > .rating-input:checked ~ .star-label,
-.rating:not(:checked) > .star-label:hover,
-.rating:not(:checked) > .star-label:hover ~ .star-label
+.rating-input:checked ~ .star-label,
+.rating > .star-label:hover,
+.rating > .star-label:hover ~ .star-label
 {
     color: #ffed85;
 }
 
-.rating > .rating-input:checked + .star-label:hover,
-.rating > .rating-input:checked ~ .star-label:hover,
-.rating > .star-label:hover ~ .rating-input:checked ~ .star-label,
-.rating > .rating-input:checked ~ .star-label:hover ~ .star-label
+.rating-input:checked ~ .star-label:hover,
+.rating-input:checked ~ .star-label:hover ~ .star-label,
+.star-label:hover ~ .rating-input:checked ~ .star-label
 {
     color: #ffd700;
 }
@@ -82,20 +81,37 @@
     border: #00f solid 3px;
 }
 
-.display-type-checkbox:checked ~ .content .cat-card .cat-img-div,
 .display-type-checkbox:checked ~ .content .cat-card .cat-description,
 .display-type-checkbox:checked ~ .content .cat-card .cat-caption
 {
     margin: 5px;
     vertical-align: middle;
     height: 100%;
-    width: 30%;
+    width: 25%;
     display: inline-block;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card .cat-img-div
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .display-type-checkbox:checked ~ .content .cat-card .cat-img
 {
-    vertical-align: top;
+    height: 100%;
+    width: auto;
+}
+
+.cat-name,
+.rating,
+.cat-cost,
+.cat-description
+{
+    width: 100%;
+    display: inline-block;
 }
 
 .cat-name
@@ -140,8 +156,13 @@
     padding: 3px;
     width: 100%;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     display: block;
+}
+
+.cat-description
+{
+    padding-top: 30px;
 }
 
 .uncommon
