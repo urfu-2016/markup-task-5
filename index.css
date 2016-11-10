@@ -37,6 +37,7 @@ body
 {
     position: absolute;
     top: 0;
+    left: 0;
     bottom: initial;
     margin-left: 100%;
     padding-left: 24px;
