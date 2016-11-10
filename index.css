@@ -193,7 +193,7 @@ body
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin: 10px 10px;
+    margin: 10px;
     /*height: 200px;*/
     padding: 5px;
     vertical-align: top;
