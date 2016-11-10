@@ -8,20 +8,22 @@ h1
     text-align: center;
 }
 
-div.cat
+.cat
 {
     display: inline-block;
     width: 400px;
     margin: 10px;
     vertical-align: top;
+    text-align: left;
 }
 
 div.img
 {
     min-height: 350px;
+    text-align: center;
 }
 
-img
+.cat_img
 {
     width: 350px;
 }
@@ -43,14 +45,26 @@ img.rating
     vertical-align: top;
 }
 
-.switcher-list:checked ~ .cat > div.description
+.switcher-list:checked ~ .cat > .description
 {
-    width: 50%;
+    width: 58%;
 }
 
-.switcher-list:checked ~ .cat > div.column
+.switcher-list:checked ~ .cat > .information
+{
+    width: 10%;
+    padding: 2%;
+}
+
+.switcher-list:checked ~ .cat > .img
 {
     width: 20%;
+    min-height: 200px;
+}
+
+.switcher-list:checked ~ .cat > .img .cat_img
+{
+    max-width: 100%;
 }
 
 .img
@@ -61,6 +75,8 @@ img.rating
 .name
 {
     font-size: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .category
@@ -75,17 +91,6 @@ img.rating
     cursor: pointer;
 }
 
-.name
-{
-    color: blue;
-}
-
-.name:hover
-{
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 .description
 {
     margin-top: 5px;
@@ -96,7 +101,17 @@ img.rating
     font-size: 20px;
 }
 
-main div
+.switcher-table:checked ~ .cat
 {
-    text-align: left;
+    min-height: 700px;
+}
+
+article:hover
+{
+    border: 1px #aaa solid;
+}
+
+a:visited
+{
+    color: blue;
 }
