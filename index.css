@@ -64,6 +64,7 @@ body
     padding: 0 10px;
     box-sizing: border-box;
     height: 800px;
+    overflow: auto;
 }
 
 .item-img
@@ -81,6 +82,13 @@ body
     transition-duration: 1s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+}
+
+.choose-me
+{
+    display: none;
+    position: absolute;
+    left: 30%;
 }
 
 .item-name
@@ -163,4 +171,9 @@ body
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     opacity: .8;
+}
+
+.cat-img:hover + .choose-me
+{
+    display: block;
 }
