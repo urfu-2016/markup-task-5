@@ -15,10 +15,9 @@
 
 .list-view-type:checked ~ .cat-block
 {
-    width: auto;
-    height: auto;
     display: block;
-    min-width: 500px;
+    margin: 10px auto;
+    width: 1000px;
 }
 
 .list-view-type:checked ~ .cat-block > .photo,
@@ -29,24 +28,24 @@
     width: 30%;
     vertical-align: top;
     text-align: center;
-    margin: 0;
 }
 
 .name
 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 20px;
 }
 
 .category
 {
-    color: #4f4f4f;
     text-decoration: underline;
 }
 
 .photo
 {
-    width: 300px;
-    height: auto;
+    max-width: 300px;
 }
 
 .actual-price
@@ -55,9 +54,13 @@
     color: #f00;
 }
 
-.old-price
+.general-info
 {
     color: #4f4f4f;
+}
+
+.old-price
+{
     text-decoration: line-through;
 }
 
