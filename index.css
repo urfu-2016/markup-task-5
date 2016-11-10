@@ -181,21 +181,22 @@ body
 .description-wrapper
 {
     position: relative;
-    display: block;
+    display: inline-block;
     width: 310px;
-    height: 230px;
+    /*height: 230px;*/
 }
 
 .description
 {
-    position: absolute;
-    display: block;
+    /*position: absolute;*/
+    display: inline-block;
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin: 10px 10px auto;
-    height: 200px;
+    margin: 10px 10px;
+    /*height: 200px;*/
     padding: 5px;
+    vertical-align: top;
 }
 
 .description:hover
