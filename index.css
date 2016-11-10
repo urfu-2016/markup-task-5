@@ -32,7 +32,7 @@ header .slogan
     position: absolute;
     top: 400px;
     right: 50px;
-    color: white;
+    color: #fff;
 }
 
 .content
@@ -45,7 +45,7 @@ header .slogan
 h1
 {
     font-size: 4em;
-    color: white;
+    color: #fff;
     font-variant-caps: small-caps;
 }
 
@@ -151,7 +151,7 @@ h1
 {
     padding-left: 20px;
     font-size: 12px;
-    color: red;
+    color: #f00;
     display: inline;
     text-decoration: line-through;
 }
