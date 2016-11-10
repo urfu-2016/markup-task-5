@@ -1,4 +1,4 @@
-.catBlock
+.cat
 {
     display: inline-block;
     margin: 20px 10px;
@@ -9,7 +9,19 @@
     padding: 5px;
 }
 
+.cat:hover 
+{
+    border: 1px solid;
+    border-color: #cfb0d5;
+    box-shadow: 0 0 30px;
+}
+
 main p
+{
+    text-align: left;
+}
+
+.description
 {
     text-align: left;
 }
@@ -26,18 +38,16 @@ main p
     text-overflow: ellipsis;
 }
 
+.name:hover
+{
+    background-color: #cfb0d5;
+}
+
 .price
 {
     color: #b5030f;
     font-weight: 600;
     font-size: 110%;
-}
-
-.catBlock:hover 
-{
-    border: 1px solid;
-    border-color: #cfb0d5;
-    box-shadow: 0 0 30px;
 }
 
 .mainPicture
@@ -50,17 +60,12 @@ main p
     opacity: 1;
 }
 
-.name:hover
-{
-    background-color: #cfb0d5;
-}
-
 .breed:hover
 {
     color: #8d369e;
 }
 
-.changeLook:checked ~ .catBlock 
+.changeLook:checked ~ .cat 
 {
     width: 1000px;
     height: 100%;
@@ -69,7 +74,7 @@ main p
 
 }
 
-.changeLook:checked ~ .catBlock div
+.changeLook:checked ~ .cat div
 {
     display: inline-block;
     width: 300px;
