@@ -1,0 +1,128 @@
+.display-line:checked ~ .vacancy
+{
+    display: block;
+    width: 100%;
+}
+
+.vacancy:hover
+{
+    box-shadow: .5px .5px .5px .5px #747a5d;
+}
+
+.img-cat:hover
+{
+    width: 100%;
+}
+
+.name:hover
+{
+    font-size: 1em;
+}
+
+.category:hover
+{
+    color: #000;
+}
+
+.display-line:checked ~ .vacancy .wrapper,
+.display-line:checked ~ .vacancy .characteristic,
+.display-line:checked ~ .vacancy .description
+{
+    margin: 10px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.display-line:checked ~ .vacancy .wrapper
+{
+    width: 20%;
+}
+
+.display-line:checked ~ .vacancy .wrapper .img-cat
+{
+    width: 100%;
+    position: relative;
+}
+
+.cost 
+{
+    font: bold 1.1em Arial;
+    color: #900;
+}
+
+.category
+{
+    color: #666;
+    font-size: 15px;
+}
+
+.name 
+{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.img-cat 
+{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+.wrapper
+{
+    min-height: 190px;
+    position: relative;
+}
+
+.vacancy 
+{
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.rating 
+{
+    direction: rtl;
+    display: inline-block;
+}
+
+.rating > input 
+{
+    display: none;
+}
+
+.rating > label 
+{
+    width: 1em;
+    cursor: pointer;
+    font-size: 1.7em;
+    color: #ddd;
+}
+
+.rating > input:checked ~ label 
+{
+    color: #ffd700;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label 
+{
+    color: #ffd700;
+}
+
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label 
+{
+    color: #ea0;
+}
