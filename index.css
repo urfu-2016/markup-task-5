@@ -1,16 +1,3 @@
-.name,
-.category,
-.cost,
-.description
-{
-    margin: 0;
-}
-
-.description
-{
-    min-height: 110px;
-}
-
 .display-line:checked ~ .vacancy
 {
     display: block;
@@ -95,6 +82,7 @@
 
 .vacancy 
 {
+    vertical-align: top;
     display: inline-block;
     padding: 10px;
     overflow: hidden;
@@ -108,13 +96,12 @@
     display: inline-block;
 }
 
-.rating:not(:checked) > input 
+.rating > input 
 {
-    position: absolute;
-    clip: rect(0,0,0,0);
+    display: none;
 }
 
-.rating:not(:checked) > label 
+.rating > label 
 {
     width: 1em;
     cursor: pointer;
@@ -127,14 +114,12 @@
     color: #ffd700;
 }
 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label 
+.rating > label:hover,
+.rating > label:hover ~ label 
 {
     color: #ffd700;
 }
 
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label 
