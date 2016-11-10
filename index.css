@@ -1,0 +1,209 @@
+@font-face
+{
+    font-family: 'star-rating';
+    src: url(data:application/x-font-ttf;base64,AAEAAAALAIAAAwAwT1MvMigiLIYAAAC8AAAAYGNtYXAmCyZNAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5ZlNxiKoAAAF4AAABFGhlYWQBHDApAAACjAAAADZoaGVhA+IB6AAAAsQAAAAkaG10eAcAAAAAAALoAAAAHGxvY2EAjADoAAADBAAAABBtYXhwAAoAGAAAAxQAAAAgbmFtZYWP6p0AAAM0AAABaXBvc3QAAwAAAAAEoAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAABAAAAl0AHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEAEAAAAAMAAgAAgAEAAEAICXLJdD//f//AAAAAAAgJcslz//9//8AAf/j2jnaNgADAAEAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAACAAD/7QIAAdMACgAVAAABLwEPARcHNxcnNwUHNyc/AR8BBxcnAgCxT0+xgB6enh6A/wBwFlt9ODh9WxZwARkaoKAafLBTU7B8sjp8WBJxcRJYfDoAAAAAAQAA/+0CAAHTAAoAAAEvAQ8BFwc3Fyc3AgCxT0+xgB6enh6AARkaoKAafLBTU7B8AAAAAAIAAP/tAgAB0wAKABIAAAEvAQ8BFwc3Fyc3BTERHwEHFycCALFPT7GAHp6eHoD/ADh9WxZwARkaoKAafLBTU7B8sgEdcRJYfDoAAAABAAAAAQAA1qooUl8PPPUACwIAAAAAAM/+d7YAAAAAz/53tgAA/+0CAAHTAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAQAAAAIAAAACAAAAAgAAAAAAAAAACgAUAB4ASgBkAIoAAQAAAAcAFgACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABABYAAAABAAAAAAACAA4AYwABAAAAAAADABYALAABAAAAAAAEABYAcQABAAAAAAAFABYAFgABAAAAAAAGAAsAQgABAAAAAAAKADQAhwADAAEECQABABYAAAADAAEECQACAA4AYwADAAEECQADABYALAADAAEECQAEABYAcQADAAEECQAFABYAFgADAAEECQAGABYATQADAAEECQAKADQAhwBzAHQAYQByAC0AcgBhAHQAaQBuAGcAVgBlAHIAcwBpAG8AbgAgADEALgAwAHMAdABhAHIALQByAGEAdABpAG4AZ3N0YXItcmF0aW5nAHMAdABhAHIALQByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHMAdABhAHIALQByAGEAdABpAG4AZwBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('truetype'),url(data:application/font-woff;base64,d09GRk9UVE8AAAUgAAoAAAAABNgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAWMAAAFjbsVsoU9TLzIAAAJYAAAAYAAAAGAoIiyGY21hcAAAArgAAABUAAAAVCYLJk1nYXNwAAADDAAAAAgAAAAIAAAAEGhlYWQAAAMUAAAANgAAADYBHDApaGhlYQAAA0wAAAAkAAAAJAPiAehobXR4AAADcAAAABwAAAAcBwAAAG1heHAAAAOMAAAABgAAAAYAB1AAbmFtZQAAA5QAAAFpAAABaYWP6p1wb3N0AAAFAAAAACAAAAAgAAMAAAEABAQAAQEBDHN0YXItcmF0aW5nAAECAAEAOvgcAvgbA/gYBB4KABlT/4uLHgoAGVP/i4sMB4tr+JT4dAUdAAAAjg8dAAAAkxEdAAAACR0AAAFaEgAIAQEMFxkbHiMoLXN0YXItcmF0aW5nc3Rhci1yYXRpbmd1MHUxdTIwdTI1Q0J1MjVDRnUyNUQwAAACAYkABQAHAQEEBwoNVn29/JQO/JQO/JQO+5QO+JT3rRX7RaU89zQ8+zT7RXH3FPsQbftE9zLe9zI4bfdE9xT3EAX7lPtGFfsEUaH3EDDj9xGdw/cFw/sF9xF5MDOh+xD7BMUFDviU960V+0WlPPc0PPs0+0Vx9xT7EG37RPcy3vcyOG33RPcU9xAFDviU960V+0WlPPc0PPs0+0Vx9xT7EG37RPcy3vcyOG33RPcU9xAF+5T7RhWLi4v3scP7BfcReTAzofsQ+wTFBQ74lBT4lBWLDAoAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAQAAAJdAB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABABAAAAADAAIAAIABAABACAlyyXQ//3//wAAAAAAICXLJc///f//AAH/49o52jYAAwABAAAAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAAOJjA1tfDzz1AAsCAAAAAADP/ne2AAAAAM/+d7YAAP/tAgAB0wAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAACAAABAAAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAAAEAAAACAAAAAgAAAAIAAAAAAFAAAAcAAAAAAA4ArgABAAAAAAABABYAAAABAAAAAAACAA4AYwABAAAAAAADABYALAABAAAAAAAEABYAcQABAAAAAAAFABYAFgABAAAAAAAGAAsAQgABAAAAAAAKADQAhwADAAEECQABABYAAAADAAEECQACAA4AYwADAAEECQADABYALAADAAEECQAEABYAcQADAAEECQAFABYAFgADAAEECQAGABYATQADAAEECQAKADQAhwBzAHQAYQByAC0AcgBhAHQAaQBuAGcAVgBlAHIAcwBpAG8AbgAgADEALgAwAHMAdABhAHIALQByAGEAdABpAG4AZ3N0YXItcmF0aW5nAHMAdABhAHIALQByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHMAdABhAHIALQByAGEAdABpAG4AZwBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-size: 16px;
+}
+
+.cat sup
+{
+    font-size: .6em;
+}
+
+.cat ul
+{
+    margin: 5px 0 0;
+}
+
+.one-in-row:checked ~ main .cat-main
+{
+    display: inline-block;
+    min-height: 0;
+    width: 30%;
+}
+
+.one-in-row:checked ~ main .cat-link img
+{
+    position: static;
+}
+
+.one-in-row:checked ~ main .cat-link span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: initial;
+    margin-left: 100%;
+    padding-left: 24px;
+}
+
+.one-in-row:checked ~ main .info
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1.15em 0 0 20px;
+}
+
+.one-in-row:checked ~ main .description
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.one-in-row:checked ~ main .cat
+{
+    width: 100%;
+}
+
+.cat
+{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    vertical-align: top;
+    width: 400px;
+}
+
+.cat-main
+{
+    min-height: 305px;
+    position: relative;
+}
+
+.cat-link span
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    color: #00f;
+}
+
+.cat-link:hover span
+{
+    color: #f00;
+}
+
+.cat-link img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 1.5em;
+    opacity: .9;
+}
+
+.cat-link:hover img
+{
+    opacity: 1;
+}
+
+.current-price
+{
+    color: #f00;
+    font-size: 1.2em;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.rating
+{
+    direction: rtl;
+    text-align: left;
+    width: 200px;
+    font-size: 0;
+}
+
+.rating label:before
+{
+    font-family: 'star-rating';
+}
+
+.default-star
+{
+    display: none;
+}
+
+.star
+{
+    position: absolute;
+    visibility: hidden;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.star:checked ~ label:before
+{
+    color: #ffa500;
+    content: '●';
+}
+
+.rating:hover .star:checked ~ label:before
+{
+    color: #000;
+    content: '○';
+}
+
+/* длинные селекторы сделаны для достижения
+   высокой специфичности, все было посчитано */
+
+.cat .info .rating .star:hover ~ label:before
+{
+    color: #ffa500;
+}
+
+.cat .info .rating .star:hover ~ .star:checked ~ label:before,
+.rating .star:checked:hover ~ label:before
+{
+    content: '●';
+}
+
+.rating label:before
+{
+    content: '○';
+    font-size: 40px;
+    width: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.rating label:nth-child(4n):before
+{
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    /* padding тут и margin в следующем правиле
+       нужны для того чтобы между звездами не было пустого
+       пространства на котором не работает hover */
+    padding-right: 2px;
+}
+
+.rating label:nth-child(4n+2):before
+{
+    margin-right: -2px;
+}
+
+.category
+{
+    color: #666;
+}
+
+.category:hover
+{
+    text-decoration: underline;
+}
