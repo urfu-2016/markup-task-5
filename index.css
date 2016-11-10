@@ -146,3 +146,30 @@ header
     min-width: 1200px;
     font-size: 20px;
 }
+
+input
+{
+    display: none;
+}
+
+.icon-list,
+.icon-table
+{
+    width: 35px;
+    margin-left: 40px;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.icon-table
+{
+    margin-left: 10px;
+}
+
+.icon-list:hover,
+.icon-table:hover,
+.list:checked + label .icon-list,
+.table:checked + label .icon-table
+{
+    opacity: 1;
+}
