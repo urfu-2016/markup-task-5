@@ -90,7 +90,7 @@ a.logo
 {
     color: #fff;
     display: inline-block;
-    font-size: .9285714285714286em;
+    font-size: .93em;
     line-height: 20px;
     opacity: .7;
     padding: 0 8px;
@@ -128,7 +128,7 @@ a.logo
 
 .shop-descr
 {
-    font-size: 2.285714285714286em;
+    font-size: 2.29em;
     opacity: .8;
     margin-top: 16px;
 }
@@ -324,7 +324,7 @@ input[name='switcher']
 
 .breed
 {
-    font-size: .9285714285714286em;
+    font-size: .93em;
     margin-bottom: 12px;
 }
 
@@ -514,14 +514,14 @@ input[name='switcher']
 
 .current-price
 {
-    font-size: 1.142857142857143em;
+    font-size: 1.14em;
     font-weight: 700;
 }
 
 .old-price
 {
     color: #f44336;
-    font-size: .9285714285714286em;
+    font-size: .93em;
     text-decoration: line-through;
 }
 
