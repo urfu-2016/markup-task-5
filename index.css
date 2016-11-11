@@ -15,7 +15,6 @@ main
 {
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
     padding: 10px;
 }
 
@@ -36,7 +35,7 @@ main
     font-size: 16px;
 }
 
-.photoCat
+.photo-cat
 {
     width: 250px;
 }
@@ -60,7 +59,8 @@ section
     white-space: nowrap;
 }
 
-div[class|='block']
+.block-name,
+.block-description
 {
     width: 100%;
     height: auto;
@@ -84,29 +84,35 @@ p
     text-decoration: line-through;
 }
 
-.listShow:checked ~ section
+#list-show:checked ~ section
 {
     display: block;
     box-sizing: border-box;
     width: 96%;
 }
 
-.listShow:checked ~ section > div[class|='block']
+#list-show:checked ~ section > .block-name,
+#list-show:checked ~ section > .block-description
 {
     display: inline-block;
     width: 33%;
     vertical-align: top;
 }
 
-.listShow:checked ~ section > .photo
+#list-show:checked ~ section > .photo
 {
     display: inline-block;
     vertical-align: top;
 }
 
 .star,
-span[class|='ball']
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5
 {
+    height: 20px;
     background: url('Images/stars.png');
 }
 
@@ -116,7 +122,12 @@ span[class|='ball']
     transition: .5s;
 }
 
-span[class|='ball']
+.star,
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5
 {
     background-color: #ff0;
     height: 20px;
@@ -145,4 +156,9 @@ span[class|='ball']
 .ball-5
 {
     width: 105px;
+}
+
+section:hover
+{
+    box-shadow: 0 0 10px 5px #00bfff;
 }
