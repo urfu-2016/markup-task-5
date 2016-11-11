@@ -1,0 +1,176 @@
+body
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo 
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title 
+{
+    display: inline-block;
+    vertical-align: middle;
+    font: bold 30px Arial, sans-serif;
+    margin: 0 auto;
+}
+
+.title:first-letter
+{
+    color: #f00;
+}
+
+.to-list:checked ~ main 
+{
+    min-width: 800px;
+}
+
+.to-list:checked ~ main .card-product
+{
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.to-list:checked ~ main .info
+{
+    display: inline-block;
+    width: 45%;
+}
+
+.to-list:checked ~ main .photo
+{
+    display: inline-block;
+    width: 20%;
+}
+
+.to-list:checked ~ main .description
+{
+    display: inline-block;
+    width: 33%;
+
+}
+
+.card-product
+{
+    width: 250px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+ 
+}
+
+.card-product:hover
+{
+    background-color: #fffff0;
+}
+
+.price
+{
+    font: italic 20px sans-serif;
+    color: red;
+}
+
+.info
+{
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description
+{
+    vertical-align: top;
+}
+
+.photo
+{
+    text-align: center;
+    line-height: 210px;
+    padding-bottom: 10px;
+}
+
+.cat-picture:hover
+{
+    border: 5px solid #b0c4de;
+}
+
+.to-list:checked ~ main .cat-picture
+{
+    vertical-align: top;
+}
+
+.cat-picture
+{
+    border: 5px solid rgba(255, 255, 255, 0);
+    vertical-align: bottom;
+}
+
+.link-name:hover 
+{
+    color: #8b0000;
+}
+
+.name
+{
+    padding: 1px 0;
+    white-space: nowrap;
+}
+
+.name:hover
+{
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.category:hover
+{
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.category
+{
+    padding: 4px 0;
+    font-size: 12px;
+}
+
+.link-category
+{
+    
+    color: #a9a9a9;
+}
+
+.rate
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+}
+
+.rate > span
+{
+    width: 1.1em;
+    color: #ffd700;
+}
+
+.rate > span:hover:before,
+.rate > span:hover ~ span:before
+{
+    content: '\2605';
+    position: absolute;
+}
+
+footer
+{
+    padding: 10px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    font-size: 14px;
+}
