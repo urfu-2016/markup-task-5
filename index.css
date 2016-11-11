@@ -84,22 +84,22 @@ p
     text-decoration: line-through;
 }
 
-#list-show:checked ~ section
+.list-show:checked ~ section
 {
     display: block;
     box-sizing: border-box;
     width: 96%;
 }
 
-#list-show:checked ~ section > .block-name,
-#list-show:checked ~ section > .block-description
+.list-show:checked ~ section > .block-name,
+.list-show:checked ~ section > .block-description
 {
     display: inline-block;
     width: 33%;
     vertical-align: top;
 }
 
-#list-show:checked ~ section > .photo
+.list-show:checked ~ section > .photo
 {
     display: inline-block;
     vertical-align: top;
