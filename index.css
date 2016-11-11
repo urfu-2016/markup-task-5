@@ -1,0 +1,163 @@
+html
+{
+    width: 100%;
+}
+
+body
+{
+    width: 100%;
+    min-width: 890px;
+    margin: 0 auto;
+}
+
+header,
+main
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+header
+{
+    background-color: #fd5;
+    font-size: 50px;
+    text-align: center;
+}
+
+header:first-letter
+{
+    color: #f00;
+}
+
+main
+{
+    font-size: 16px;
+}
+
+.photo-cat
+{
+    width: 250px;
+}
+
+section
+{
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    transition: .5s;
+}
+
+.name
+{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.block-name,
+.block-description
+{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+p
+{
+    hyphens: manual;
+}
+
+.price
+{
+    font-size: 18px;
+    color: #f00;
+    font-weight: 600;
+}
+
+.old_price
+{
+    text-decoration: line-through;
+}
+
+.list-show:checked ~ section
+{
+    display: block;
+    box-sizing: border-box;
+    width: 96%;
+}
+
+.list-show:checked ~ section > .block-name,
+.list-show:checked ~ section > .block-description
+{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.list-show:checked ~ section > .photo
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.star,
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5
+{
+    height: 20px;
+    background: url('Images/stars.png');
+}
+
+.star
+{
+    width: 105px;
+    transition: .5s;
+}
+
+.ball-1,
+.ball-2,
+.ball-3,
+.ball-4,
+.ball-5
+{
+    background-color: #ff0;
+    height: 20px;
+}
+
+.ball-1
+{
+    width: 20px;
+}
+
+.ball-2
+{
+    width: 41px;
+}
+
+.ball-3
+{
+    width: 62px;
+}
+
+.ball-4
+{
+    width: 83px;
+}
+
+.ball-5
+{
+    width: 105px;
+}
+
+section:hover
+{
+    box-shadow: 0 0 10px 5px #00bfff;
+}
