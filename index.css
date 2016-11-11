@@ -160,65 +160,65 @@ input[name='switcher']
     display: none;
 }
 
-#asGrid:checked ~ .switcher-text[for='asList']
+.as-grid:checked ~ .switcher-text[for='asList']
 {
     display: inline-block;
 }
 
-#asGrid:checked ~ .switcher-text[for='asGrid']
+.as-grid:checked ~ .switcher-text[for='asGrid']
 {
     display: none;
 }
 
-#asList:checked ~ .entries .entry
+.as-list:checked ~ .entries .entry
 {
     display: block;
     margin-right: 0;
     width: 100%;
 }
 
-#asList:checked ~ .entries .entry-img-contaner,
-#asList:checked ~ .entries .description,
-#asList:checked ~ .entries .about
+.as-list:checked ~ .entries .entry-img-contaner,
+.as-list:checked ~ .entries .description,
+.as-list:checked ~ .entries .about
 {
     display: inline-block;
     vertical-align: top;
 }
 
-#asList:checked ~ .entries .entry-img-contaner
+.as-list:checked ~ .entries .entry-img-contaner
 {
     height: auto;
     overflow: visible;
     width: 25%;
 }
 
-#asList:checked ~ .entries .entry-img-contaner img
+.as-list:checked ~ .entries .entry-img-contaner img
 {
     height: auto;
     position: static;
     width: 100%;
 }
 
-#asList:checked ~ .entries .entry-img-contaner h3
+.as-list:checked ~ .entries .entry-img-contaner h3
 {
     bottom: auto;
     left: 100%;
     top: 0;
 }
 
-#asList:checked ~ .entries .description,
-#asList:checked ~ .entries .entry-img-contaner h3
+.as-list:checked ~ .entries .description,
+.as-list:checked ~ .entries .entry-img-contaner h3
 {
     padding-left: 24px;
 }
 
-#asList:checked ~ .entries .description
+.as-list:checked ~ .entries .description
 {
     padding-top: 38px;
     width: 28%;
 }
 
-#asList:checked ~ .entries .about
+.as-list:checked ~ .entries .about
 {
     width: 44%;
 }
