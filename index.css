@@ -5,11 +5,12 @@
     margin: 0;
 }
 
-.photo > img
+.photo img
 {
     width: 100%;
     position: absolute;
     bottom: 0;
+    transition: .3s;
 }
 
 .photo
@@ -17,6 +18,16 @@
     position: relative;
     min-height: 250px;
     background: #ebe3e3;
+}
+
+.photo img:hover
+{
+    filter: contrast(150%);
+}
+
+.name:hover
+{
+    color: #f00;
 }
 
 .info
