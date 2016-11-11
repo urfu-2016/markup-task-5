@@ -1,0 +1,203 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* For stars (almost COPY-PASTE FROM GOOGLE) */
+
+.rating-input
+{
+    display: none;
+}
+
+.star-label:before
+{
+    margin: 1px;
+    font-size: 2vw;
+    font-family: FontAwesome, fantasy;
+    display: inline-block;
+    content: '\f005';
+}
+
+.half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.star-label
+{
+    color: #ddd;
+    float: right;
+}
+
+.rating-input:checked ~ .star-label,
+.rating > .star-label:hover,
+.rating > .star-label:hover ~ .star-label
+{
+    color: #ffed85;
+}
+
+.rating-input:checked ~ .star-label:hover,
+.rating-input:checked ~ .star-label:hover ~ .star-label,
+.star-label:hover ~ .rating-input:checked ~ .star-label
+{
+    color: #ffd700;
+}
+
+/* Ctrl+C / Ctrl+V end */
+
+/* My own css */
+
+.cat-card
+{
+    min-height: 600px;
+    border: #00f dotted 4px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.display-type-checkbox
+{
+    display: none;
+}
+
+.display-type-checkbox-label:after
+{
+    content: 'Плитки';
+}
+
+.display-type-checkbox:checked ~ .display-type-checkbox-label:after
+{
+    content: 'Список';
+}
+
+.display-type-checkbox:checked ~ .content .cat-card
+{
+    width: 95%;
+    padding: 0;
+    min-height: 300px;
+    border: #00f solid 3px;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card .cat-description,
+.display-type-checkbox:checked ~ .content .cat-card .cat-caption
+{
+    margin: 5px;
+    vertical-align: middle;
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card .cat-img-div
+{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.display-type-checkbox:checked ~ .content .cat-card .cat-img
+{
+    height: 100%;
+    width: auto;
+}
+
+.cat-name,
+.rating,
+.cat-cost,
+.cat-description
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.cat-name
+{
+    width: 100%;
+    font-size: 4vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.cat-name:hover
+{
+    color: #f00;
+}
+
+.cat-img:hover
+{
+    border: #0f0 dotted 3px;
+    padding: 0;
+}
+
+.cat-img-div
+{
+    min-height: 300px;
+    position: relative;
+}
+
+.cat-card:hover
+{
+    border-color: #0f0;
+}
+
+.cat-category:hover
+{
+    text-decoration: underline;
+}
+
+.cat-img
+{
+    padding: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+.cat-description
+{
+    padding-top: 30px;
+}
+
+.uncommon
+{
+    color: #73cf33;
+}
+
+.rare
+{
+    color: #00f;
+}
+
+.epic
+{
+    color: #80f;
+}
+
+.legendary
+{
+    color: #ffa500;
+}
+
+.old-cost
+{
+    text-decoration: line-through;
+}
+
+.display-type-checkbox-label,
+.display-type-checkbox:checked ~ .display-type-checkbox-label:hover
+{
+    border: #00f dotted 2px;
+}
+
+.display-type-checkbox:checked ~ .display-type-checkbox-label,
+.display-type-checkbox-label:hover
+{
+    border: #00f solid 2px;
+}
