@@ -68,13 +68,13 @@
 
 .price
 {
-    color: #ff0000;
+    color: #f00;
 }
 
 .old-price
 {
     text-decoration: line-through;
-    color: #000000;
+    color: #000;
 }
 
 .rating
