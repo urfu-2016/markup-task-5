@@ -15,7 +15,7 @@ body
     font-size: 14px;
 }
 
-h1,
+.logo,
 h2,
 .shop-descr
 {
@@ -61,26 +61,27 @@ header
 
 .header-container
 {
-    padding-bottom: 24px;
     padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.logo
+a.logo
 {
     background: url('img/git.svg') no-repeat 0 50%;
     background-size: 40px 40px;
     color: #fff;
     display: inline-block;
-    font-size: 28px;
+    font-size: 2em;
     margin: 0;
     padding: 4px 0 4px 52px;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
 .header-nav
 {
     display: inline-block;
-    margin-left: 24px;
+    margin: 10px 0 10px 24px;
     vertical-align: top;
     white-space: nowrap;
 }
@@ -89,11 +90,10 @@ header
 {
     color: #fff;
     display: inline-block;
-    font-size: 13px;
-    height: 20px;
+    font-size: .9285714285714286em;
     line-height: 20px;
     opacity: .7;
-    padding: 10px 8px;
+    padding: 0 8px;
     text-decoration: none;
     text-transform: uppercase;
     -o-transition: opacity .2s;
@@ -118,17 +118,19 @@ header
     text-align: center;
 }
 
-.header-descr q
+.header-descr h1
 {
-    font-size: 14px;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .shop-descr
 {
-    font-size: 32px;
+    font-size: 2.285714285714286em;
     opacity: .8;
-    padding-top: 16px;
+    margin-top: 16px;
 }
 
 .entries-section
@@ -189,21 +191,23 @@ input[name='switcher']
 {
     height: auto;
     overflow: visible;
+    text-align: center;
     width: 25%;
 }
 
 .as-list:checked ~ .entries .entry-img-contaner img
 {
-    height: auto;
+    height: 224px;
+    max-height: none;
     position: static;
-    width: 100%;
+    width: auto;
 }
 
 .as-list:checked ~ .entries .entry-img-contaner h3
 {
     bottom: auto;
     left: 100%;
-    top: 0;
+    top: 12px;
 }
 
 .as-list:checked ~ .entries .description,
@@ -287,8 +291,13 @@ input[name='switcher']
 
 .entry-img-contaner img
 {
+    right: 0;
     bottom: 38px;
+    left: 0;
+    margin: 0 auto;
+    max-height: 175px;
     position: absolute;
+    width: auto;
 }
 
 .entry-img-contaner a:hover h3
@@ -298,12 +307,10 @@ input[name='switcher']
 
 .entry h3
 {
-    bottom: 0;
-    height: 18px;
+    bottom: 4px;
     line-height: 18px;
     margin: 0;
     max-width: 100%;
-    padding: 16px 0 4px;
     position: absolute;
 }
 
@@ -317,8 +324,8 @@ input[name='switcher']
 
 .breed
 {
-    font-size: 13px;
-    padding-bottom: 12px;
+    font-size: .9285714285714286em;
+    margin-bottom: 12px;
 }
 
 .breed a
@@ -507,14 +514,14 @@ input[name='switcher']
 
 .current-price
 {
-    font-size: 16px;
+    font-size: 1.142857142857143em;
     font-weight: 700;
 }
 
 .old-price
 {
     color: #f44336;
-    font-size: 13px;
+    font-size: .9285714285714286em;
     text-decoration: line-through;
 }
 
