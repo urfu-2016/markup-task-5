@@ -1,12 +1,12 @@
-.list-view:checked ~ .item
+.list-view:checked ~ .items-container .item
 {
     display: block;
-    width: 100%;
+    width: 90%;
     min-height: 300px;
     margin-top: 10px;
 }
 
-.list-view:checked ~ .item img
+.list-view:checked ~ .items-container .item img
 {
     float: left;
     margin-right: 30px;
@@ -17,14 +17,17 @@
 {
     width: 300px;
     display: inline-block;
-    text-align: left;
     margin: 20px;
+}
+
+.item:hover
+{
+    border: 3px solid;
 }
 
 .item:hover .description
 {
-    border: solid 3px;
-    text-align: center;
+    font: 20px 'Bookman Old Style', serif;
 }
 
 .name
@@ -47,8 +50,6 @@
 
 .item img
 {
-    height: auto;
-    width: auto;
     max-width: 300px;
     max-height: 300px;
     display: block;
@@ -67,17 +68,26 @@
 
 .price
 {
-    color: red;
+    color: #ff0000;
 }
 
-.price .old
+.old-price
 {
     text-decoration: line-through;
-    color: black;
+    color: #000000;
 }
 
 .rating
 {
     font-size: 24px;
-    color: gold;
+    color: #ffd700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1
+{
+    text-align: center;
 }
