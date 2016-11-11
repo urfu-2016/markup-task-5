@@ -42,12 +42,14 @@
 .link
 {
     font-size: 1.5em;
-    display: block;
+    display: inline-block;
+    max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
+.photo:hover + .info .link,
 .link:hover
 {
     text-shadow: 1px 1px 5px rgba(0, 0, 238, .5);
@@ -92,6 +94,7 @@
 .photo
 {
     filter: grayscale(.4) brightness(.8);
+    cursor: pointer;
 }
 
 .photo:hover
