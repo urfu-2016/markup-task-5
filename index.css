@@ -7,17 +7,13 @@ body
 .cat
 {
     width: 350px;
+    height: 450px;
     padding: 15px;
     margin-bottom: 10px;
     display: inline-block;
     margin-right: 20px;
     vertical-align: top;
     text-align: center;
-}
-
-.cat img
-{
-    vertical-align: bottom;
 }
 
 .category_cat a
@@ -33,6 +29,7 @@ body
 .cat:hover
 {
     background-color: #ffdb4d;
+    box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
 }
 
 .description_cat
@@ -64,6 +61,7 @@ img
     width: 80%;
     filter: saturate(100%);
     border-radius: 10px;
+    vertical-align: bottom;
 }
 
 img:hover
@@ -98,10 +96,11 @@ img:hover
 {
     display: block;
     padding: 10px 0;
-    width: 90%;
+    width: 100%;
+    height: 100%;
 }
 
-.list-mode:checked ~ .cat .middle
+.list-mode:checked ~ .cat .info
 {
     display: inline-block;
     width: 33%;
@@ -112,7 +111,7 @@ img:hover
 .list-mode:checked ~ .cat img
 {
     display: inline-block;
-    width: 25%;
+    width: 23%;
     vertical-align: top;
     margin-right: 30px;
 }
@@ -122,5 +121,4 @@ img:hover
     display: inline-block;
     width: 33%;
     vertical-align: top;
-
 }
