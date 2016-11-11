@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic');
+
+html,
+body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.logo,
+h2,
+.shop-descr
+{
+    font-weight: 300;
+}
+
+h2
+{
+    font-size: 2.5em;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+a,
+a:link,
+a:visited
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+header
+{
+    background: #494056 url('img/wallpaper.jpg') no-repeat 50% 0;
+    color: #fff;
+    height: 600px;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 16px;
+}
+
+.header-container
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+a.logo
+{
+    background: url('img/git.svg') no-repeat 0 50%;
+    background-size: 40px 40px;
+    color: #fff;
+    display: inline-block;
+    font-size: 2em;
+    margin: 0;
+    padding: 4px 0 4px 52px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-nav
+{
+    display: inline-block;
+    margin: 10px 0 10px 24px;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.header-nav a
+{
+    color: #fff;
+    display: inline-block;
+    font-size: .93em;
+    line-height: 20px;
+    opacity: .7;
+    padding: 0 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -o-transition: opacity .2s;
+    -ms-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.header-nav a:hover
+{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.header-descr
+{
+    background: url('img/git.svg') no-repeat 50% 0;
+    background-size: 192px 192px;
+    margin-top: 92px;
+    padding: 216px 0 0;
+    text-align: center;
+}
+
+.header-descr h1
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.shop-descr
+{
+    font-size: 2.29em;
+    opacity: .8;
+    margin-top: 16px;
+}
+
+.entries-section
+{
+    padding: 0 24px;
+}
+
+.entries-section,
+.entries
+{
+    text-align: center;
+}
+
+.entries-section h2
+{
+    display: inline-block;
+    padding-right: 24px;
+}
+
+.entries-section h2,
+.switcher-text
+{
+    margin: 30px 0;
+    vertical-align: top;
+}
+
+input[name='switcher']
+{
+    display: none;
+}
+
+.as-grid:checked ~ .switcher-text[for='asList']
+{
+    display: inline-block;
+}
+
+.as-grid:checked ~ .switcher-text[for='asGrid']
+{
+    display: none;
+}
+
+.as-list:checked ~ .entries .entry
+{
+    display: block;
+    margin-right: 0;
+    width: 100%;
+}
+
+.as-list:checked ~ .entries .entry-img-contaner,
+.as-list:checked ~ .entries .description,
+.as-list:checked ~ .entries .about
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.as-list:checked ~ .entries .entry-img-contaner
+{
+    height: auto;
+    overflow: visible;
+    text-align: center;
+    width: 25%;
+}
+
+.as-list:checked ~ .entries .entry-img-contaner img
+{
+    height: 224px;
+    max-height: none;
+    position: static;
+    width: auto;
+}
+
+.as-list:checked ~ .entries .entry-img-contaner h3
+{
+    bottom: auto;
+    left: 100%;
+    top: 12px;
+}
+
+.as-list:checked ~ .entries .description,
+.as-list:checked ~ .entries .entry-img-contaner h3
+{
+    padding-left: 24px;
+}
+
+.as-list:checked ~ .entries .description
+{
+    padding-top: 38px;
+    width: 28%;
+}
+
+.as-list:checked ~ .entries .about
+{
+    width: 44%;
+}
+
+.switcher-text
+{
+    background: url('img/list.svg') no-repeat 6px 6px;
+    border: 2px solid #b0bec5;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #78909c;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 24px;
+    padding: 10px 12px 10px 36px;
+    -o-transition: border-color .2s, color .2s;
+    -ms-transition: border-color .2s, color .2s;
+    -moz-transition: border-color .2s, color .2s;
+    -webkit-transition: border-color .2s, color .2s;
+    transition: border-color .2s, color .2s;
+}
+
+.switcher-text[for='asList']
+{
+    background-image: url('img/grid.svg');
+    display: none;
+}
+
+.switcher-text:hover
+{
+    border-color: #695b7b;
+    color: #494056;
+}
+
+.entry
+{
+    border: 1px solid #cfd8dc;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 10px 36px;
+    padding: 16px;
+    text-align: left;
+    -o-transition: box-shadow .2s;
+    -ms-transition: box-shadow .2s;
+    -moz-transition: box-shadow .2s;
+    -webkit-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    vertical-align: top;
+    width: 280px;
+}
+
+.entry:hover
+{
+    border-color: #b0bec5;
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, .35);
+}
+
+.entry-img-contaner
+{
+    height: 213px;
+    overflow: hidden;
+    position: relative;
+}
+
+.entry-img-contaner img
+{
+    right: 0;
+    bottom: 38px;
+    left: 0;
+    margin: 0 auto;
+    max-height: 175px;
+    position: absolute;
+    width: auto;
+}
+
+.entry-img-contaner a:hover h3
+{
+    text-decoration: underline;
+}
+
+.entry h3
+{
+    bottom: 4px;
+    line-height: 18px;
+    margin: 0;
+    max-width: 100%;
+    position: absolute;
+}
+
+.entry h3,
+.single-line
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.breed
+{
+    font-size: .93em;
+    margin-bottom: 12px;
+}
+
+.breed a
+{
+    color: #78909c;
+    text-decoration: none;
+}
+
+.breed a:hover
+{
+    color: #546e7a;
+    text-decoration: underline;
+}
+
+.rating,
+.rating .value,
+.rating label
+{
+    height: 24px;
+}
+
+.rating,
+.rating .value
+{
+    background-repeat: repeat-x;
+}
+
+.rating
+{
+    background-image: url('img/star-outline.svg');
+    margin-left: -3px;
+    position: relative;
+    width: 120px;
+}
+
+.rating .value
+{
+    background-color: #fff;
+    background-image: url('img/star.svg');
+    background-repeat: repeat-x;
+    -o-transition: width .2s;
+    -ms-transition: width .2s;
+    -moz-transition: width .2s;
+    -webkit-transition: width .2s;
+    transition: width .2s;
+}
+
+.rating input[type='radio']
+{
+    display: none;
+}
+
+.rating label
+{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    width: 10%;
+}
+
+.rating label:hover ~ .value
+{
+    background-image: url('img/star-orange.svg');
+}
+
+.rating input:nth-child(1):checked ~ .value,
+.rating label.rating-item.rating-item-1:hover ~ .value
+{
+    width: 10%;
+}
+
+.rating input:nth-child(2):checked ~ .value,
+.rating label.rating-item.rating-item-2:hover ~ .value
+{
+    width: 20%;
+}
+
+.rating input:nth-child(3):checked ~ .value,
+.rating label.rating-item.rating-item-3:hover ~ .value
+{
+    width: 30%;
+}
+
+.rating input:nth-child(4):checked ~ .value,
+.rating label.rating-item.rating-item-4:hover ~ .value
+{
+    width: 40%;
+}
+
+.rating input:nth-child(5):checked ~ .value,
+.rating label.rating-item.rating-item-5:hover ~ .value
+{
+    width: 50%;
+}
+
+.rating input:nth-child(6):checked ~ .value,
+.rating label.rating-item.rating-item-6:hover ~ .value
+{
+    width: 60%;
+}
+
+.rating input:nth-child(7):checked ~ .value,
+.rating label.rating-item.rating-item-7:hover ~ .value
+{
+    width: 70%;
+}
+
+.rating input:nth-child(8):checked ~ .value,
+.rating label.rating-item.rating-item-8:hover ~ .value
+{
+    width: 80%;
+}
+
+.rating input:nth-child(9):checked ~ .value,
+.rating label.rating-item.rating-item-9:hover ~ .value
+{
+    width: 90%;
+}
+
+.rating input:nth-child(10):checked ~ .value,
+.rating label.rating-item.rating-item-10:hover ~ .value
+{
+    width: 100%;
+}
+
+.rating-item-2
+{
+    left: 10%;
+}
+
+.rating-item-3
+{
+    left: 20%;
+}
+
+.rating-item-4
+{
+    left: 30%;
+}
+
+.rating-item-5
+{
+    left: 40%;
+}
+
+.rating-item-6
+{
+    left: 50%;
+}
+
+.rating-item-7
+{
+    left: 60%;
+}
+
+.rating-item-8
+{
+    left: 70%;
+}
+
+.rating-item-9
+{
+    left: 80%;
+}
+
+.rating-item-10
+{
+    left: 90%;
+}
+
+.rating-item-2
+{
+    left: 10%;
+}
+
+.price
+{
+    padding: 4px 0;
+}
+
+.current-price,
+.old-price
+{
+    display: inline-block;
+}
+
+.current-price
+{
+    font-size: 1.14em;
+    font-weight: 700;
+}
+
+.old-price
+{
+    color: #f44336;
+    font-size: .93em;
+    text-decoration: line-through;
+}
+
+footer
+{
+    border-top: 1px solid #b0bec5;
+    padding: 24px;
+    text-align: center;
+}
