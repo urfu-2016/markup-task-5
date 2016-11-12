@@ -1,0 +1,156 @@
+@font-face
+{
+    font-family: Russo One, sans-serif;
+    src: local('Russo One')
+        , url(fonts/RussoOne-Regular.ttf)
+        , url(fonts/RussoOne-Regular.woff);
+}
+@font-face
+{
+    font-family: Lobster, cursive;
+    src: local('Lobster')
+        , url(fonts/Lobster-Regular.ttf)
+        , url(fonts/Lobster-Regular.woff);
+}
+
+.cat
+{
+    margin: 30px;
+    padding: 10px;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 20px 5px #d6d6d6;
+}
+
+.cat-name
+{
+    font: bold 25px Lobster;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+}
+
+.cat-name:hover
+{
+    text-shadow: 2px 2px 6px #fc8700;
+}
+
+.typical-cat:hover
+{
+    text-shadow: 2px 2px 8px #15ff00;
+}
+
+.fashion-cat:hover
+{
+    text-shadow: 2px 2px 8px #ff00c3;
+}
+
+.sporty-cat:hover
+{
+    text-shadow: 2px 2px 8px #f00;
+}
+
+.stars
+{
+    color: #ffd000;
+    font-size: 30px;
+}
+
+.cat-category
+{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.price
+{
+    font: bold 19px Russo One;
+    color: #9e0b0b;
+    margin-right: 5px;
+}
+
+.previous-price
+{
+    text-decoration: line-through;
+}
+
+.assortment
+{
+    margin: 20px;
+}
+
+.cat-image
+{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.cat-image:hover
+{
+    box-shadow: 0 0 10px 5px #6eadfa;
+}
+
+.list:checked ~ .assortment .cat-description
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 3%;
+    width: 35%;
+    min-width: 250px;
+}
+
+header
+{
+    font: italic bold 350% Times New Roman;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tiles:checked ~ .assortment .cat
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}
+
+.tiles:checked ~ .assortment .cat-image
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.cat-description
+{
+    font-size: 20px;
+}
+
+.list:checked ~ .assortment .info
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    width: 20%;
+    min-width: 100px;
+}
+
+.list:checked ~ .assortment .cat
+{
+    min-width: 700px;
+}
+
+.list:checked ~ .assortment .cat-image
+{
+    width: 16%;
+    min-width: 250px;
+}
+
+.contacts
+{
+    text-align: center;
+    font: bold 18px monospace;
+}
