@@ -1,14 +1,16 @@
-main
-{
-    width: 900;
-}
-
 .block
 {
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
     display: inline-block;
     vertical-align: top;
-    width: 280px;
+    width: 270px;
+}
+
+.cat-photo
+{
+    width: 270px;
+    height: auto;
 }
 
 .card
@@ -20,7 +22,7 @@ main
 
 .block:hover
 {
-    border: 1px solid #000;
+    box-shadow: 0 0 10px #0078ff;
 }
 
 .cost
@@ -38,13 +40,13 @@ span.cost
 
 .category
 {
-    color: darkgrey;
+    color: #a9a9a9;
 }
 
 .rating
 {
     text-align: left;
-    color: yellow;
+    color: blue;
     unicode-bidi: bidi-override;
     direction: rtl;
 }
