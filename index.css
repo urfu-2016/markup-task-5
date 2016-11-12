@@ -1,34 +1,20 @@
 .cat
 {
+    border: 1px solid;
+    border-color: white;
     display: inline-block;
     margin: 20px 10px;
-    text-align: center;
     vertical-align: top;
     width: 250px;
-    height: 500px;
     padding: 5px;
+    text-align: left;
 }
 
-.cat:hover 
+.cat:hover
 {
     border: 1px solid;
     border-color: #cfb0d5;
     box-shadow: 0 0 30px;
-}
-
-main p
-{
-    text-align: left;
-}
-
-.description
-{
-    text-align: left;
-}
-
-.strikeout
-{
-    text-decoration: line-through;
 }
 
 .name
@@ -47,11 +33,19 @@ main p
 {
     color: #b5030f;
     font-weight: 600;
-    font-size: 110%;
+    font-size: 1.1em;
+}
+
+.oldprice
+{
+    text-decoration: line-through;
+    color: #b36565;
+    font-size: .8em;
 }
 
 .mainPicture
 {
+    text-align: center;
     opacity: .8;
 }
 
@@ -60,21 +54,24 @@ main p
     opacity: 1;
 }
 
-.breed:hover
+.breed a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.breed a:hover
 {
     color: #8d369e;
 }
 
-.changeLook:checked ~ .cat 
+.changeLook:checked ~ main > .cat
 {
-    width: 1000px;
-    height: 100%;
-    min-width: 700px;
-    text-align: left;
-
+    width: 97%;
+    height: auto;
 }
 
-.changeLook:checked ~ .cat div
+.changeLook:checked ~ main > .cat div
 {
     display: inline-block;
     width: 300px;
