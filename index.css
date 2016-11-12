@@ -44,6 +44,7 @@ h3
     margin: 10px;
     padding: 15px;
     opacity: .8;
+    margin: 0 20px 0 20px;
 }
 
 .cat-image:hover
@@ -51,17 +52,11 @@ h3
     opacity: 1;
 }
 
-.block
+.grannys-cat
 {
     width: 300px;
     height: 550px;
-
-}
-
-.grannys-cat
-{
     border: thin #c0c0c0 solid;
-    float: left;
     margin: 30px;
     box-shadow: 0 1px 0 #ccc
         , 0 2px 0 #c9c9c9
@@ -75,6 +70,8 @@ h3
         , 0 5px 10px #bfbfbf
         , 0 10px 10px #ccc
         , 0 20px 20px #d9d9d9;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .grannys-cat:hover
@@ -127,8 +124,8 @@ p
     position: relative;
     height: 48px;
     width: 240px;
-    font-size: 0;
     display: table;
+    margin: 0 30px 0 30px;
 }
 
 .stars_off,
@@ -237,7 +234,7 @@ p
 .line:checked ~ .cat
 {
     display: block;
-    width: 100%;
+    width: 94%;
 }
 
 .line:checked ~ .description
