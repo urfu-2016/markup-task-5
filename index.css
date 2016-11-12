@@ -115,7 +115,7 @@ body
     min-width: 1100px;
 }
 
-.list:checked ~ .image
+.list:checked ~ .content .item .image
 {
     vertical-align: middle;
     width: 30%;
