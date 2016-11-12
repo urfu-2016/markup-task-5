@@ -70,6 +70,11 @@
     text-overflow: ellipsis;
 }
 
+.name-ref
+{
+    color: #00f;
+}
+
 .name:hover
 {
     color: #f00;
