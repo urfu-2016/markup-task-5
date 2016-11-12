@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-input[type='checkbox']:checked + section .uberkitten
+input[type='checkbox']:checked + main .content-panel .uberkitten
 {
     width: 1000px;
     text-align: left;
     display: block;
 }
 
-input[type='checkbox']:checked + section .uberkitten-info
+input[type='checkbox']:checked + main .content-panel .uberkitten-info
 {
     margin-left: 30px;
     margin-top: 15px;
     width: 270px;
 }
 
-input[type='checkbox']:checked + section article
+input[type='checkbox']:checked + main .content-panel .uberkitten-description
 {
     width: 300px;
 }
 
-input[type='checkbox']:checked + section .uberkitten-image img
+input[type='checkbox']:checked + main .content-panel .uberkitten-image img
 {
     width: 350px;
 }
@@ -48,14 +48,14 @@ h3
     display: inline-block;
 }
 
-.uberkitten .uberkitten-image
+.uberkitten-image
 {
     margin: 0;
     display: inline-block;
     vertical-align: top;
 }
 
-.uberkitten .uberkitten-info
+.uberkitten-info
 {
     width: 230px;
     text-align: left;
@@ -63,7 +63,7 @@ h3
     display: inline-block;
 }
 
-.uberkitten article
+.uberkitten-description
 {
     font-family: 'Merriweather', serif;
     font-size: 90%;

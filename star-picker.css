@@ -19,18 +19,25 @@
     width: 80px;
 }
 
-.full-star
+.stars-image div
 {
+    background-size: 75px 15px;
     overflow: hidden;
     display: inline-block;
+}
+
+.full-star
+{
+    background: url('images/5stars.png');
+    height: 15px;
     width: 0;
 }
 
 .empty-star
 {
-    overflow: hidden;
-    display: inline-block;
+    background: url('images/5-empty-stars.png');
     width: 75px;
+    height: 15px;
     margin-left: -3px;
 }
 
