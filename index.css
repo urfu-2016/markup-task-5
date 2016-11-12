@@ -192,7 +192,6 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
     display: inline-block;
     font-family: FontAwesome;
     content: '\f089';
-    color: red;
 }
 
 .rating > .half:after,
@@ -213,3 +212,9 @@ input[type='checkbox']:checked ~ section > article > div > div > .truncate
 {
     color: #ddd;
 }
+
+.rating > input:checked + label:after
+{
+    color: #fc0;
+}
+
