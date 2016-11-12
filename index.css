@@ -1,13 +1,13 @@
 @font-face
 {
-    font-family: Russo One;
+    font-family: Russo One, sans-serif;
     src: local('Russo One')
         , url(fonts/RussoOne-Regular.ttf)
         , url(fonts/RussoOne-Regular.woff);
 }
 @font-face
 {
-    font-family: Lobster;
+    font-family: Lobster, cursive;
     src: local('Lobster')
         , url(fonts/Lobster-Regular.ttf)
         , url(fonts/Lobster-Regular.woff);
@@ -21,8 +21,7 @@
 
 .cat:hover
 {
-    box-shadow: 0 0 20px 10px #0570f2;
-    background-color: #6eadfa;
+    box-shadow: 0 0 20px 5px #d6d6d6;
 }
 
 .cat-name
@@ -31,7 +30,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .cat-name:hover
@@ -56,8 +55,8 @@
 
 .stars
 {
-    width: 150px;
-    height: 30px;
+    color: #ffd000;
+    font-size: 30px;
 }
 
 .cat-category
@@ -85,32 +84,29 @@
 
 .cat-image
 {
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     border-radius: 20px;
 }
 
 .cat-image:hover
 {
-    box-shadow: 0 0 10px 5px #f74b0c;
-}
-
-.new
-{
-    color: #fff200;
+    box-shadow: 0 0 10px 5px #6eadfa;
 }
 
 .list:checked ~ .assortment .cat-description
 {
     display: inline-block;
     vertical-align: top;
-    margin: 20px 0 0 120px;
-    width: 800px;
+    margin-top: 20px;
+    margin-left: 3%;
+    width: 35%;
+    min-width: 250px;
 }
 
 header
 {
-    font: bold 100px Times New Roman;
+    font: bold 400% Times New Roman;
     text-align: center;
 }
 
@@ -118,7 +114,7 @@ header
 {
     display: inline-block;
     vertical-align: top;
-    width: 500px;
+    width: 350px;
 }
 
 .tiles:checked ~ .assortment .cat-image
@@ -136,6 +132,24 @@ header
 {
     display: inline-block;
     vertical-align: top;
-    margin-left: 80px;
-    width: 250px;
+    margin-left: 3%;
+    width: 20%;
+    min-width: 100px;
+}
+
+.list:checked ~ .assortment .cat
+{
+    min-width: 700px;
+}
+
+.list:checked ~ .assortment .cat-image
+{
+    width: 16%;
+    min-width: 250px;
+}
+
+.contacts
+{
+    text-align: center;
+    font: bold 18px monospace;
 }
