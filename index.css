@@ -12,7 +12,7 @@
 
     max-width: 200px;
     width: 100%;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
 
 }
 
@@ -50,7 +50,7 @@
 {
     color: #f00;
     font-size: 2em;
-    margin: 2px 2px;
+    margin: 2px;
 }
 
 .price span
@@ -65,7 +65,7 @@
     text-decoration: underline;
     color: #00f;
     font-size: 1.8em;
-    margin: 1px 1px;
+    margin: 1px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
