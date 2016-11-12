@@ -1,0 +1,92 @@
+.rank
+{
+    display: inline-block;
+    tab-size: 15px;
+    margin: -1px;
+    opacity: 0;
+    width: 14px;
+}
+
+.kindness
+{
+    padding-left: 2px;
+}
+
+.stars-image
+{
+    margin: -2px;
+    margin-top: -17px;
+    width: 80px;
+}
+
+.stars-image div
+{
+    background-size: 75px 15px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.full-star
+{
+    background: url('images/5stars.png');
+    height: 15px;
+    width: 0;
+}
+
+.empty-star
+{
+    background: url('images/5-empty-stars.png');
+    width: 75px;
+    height: 15px;
+    margin-left: -3px;
+}
+
+input[class='rank star1']:checked ~ .stars-image > .full-star
+{
+    width: 15px;
+}
+
+input[class='rank star1']:checked ~ .stars-image > .empty-star
+{
+    width: 60px;
+}
+
+input[class='rank star2']:checked ~ .stars-image > .full-star
+{
+    width: 30px;
+}
+
+input[class='rank star2']:checked ~ .stars-image > .empty-star
+{
+    width: 45px;
+}
+
+input[class='rank star3']:checked ~ .stars-image > .full-star
+{
+    width: 45px;
+}
+
+input[class='rank star3']:checked ~ .stars-image > .empty-star
+{
+    width: 30px;
+}
+
+input[class='rank star4']:checked ~ .stars-image > .full-star
+{
+    width: 60px;
+}
+
+input[class='rank star4']:checked ~ .stars-image > .empty-star
+{
+    width: 15px;
+}
+
+input[class='rank star5']:checked ~ .stars-image > .full-star
+{
+    width: 75px;
+}
+
+input[class='rank star5']:checked ~ .stars-image > .empty-star
+{
+    width: 0;
+}

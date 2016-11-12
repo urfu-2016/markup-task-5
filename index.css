@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+input[type='checkbox']:checked + main .content-panel .uberkitten
+{
+    width: 1000px;
+    text-align: left;
+    display: block;
+}
+
+input[type='checkbox']:checked + main .content-panel .uberkitten-info
+{
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 270px;
+}
+
+input[type='checkbox']:checked + main .content-panel .uberkitten-description
+{
+    width: 300px;
+}
+
+input[type='checkbox']:checked + main .content-panel .uberkitten-image img
+{
+    width: 350px;
+}
+
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3
+{
+    font-family: 'Merriweather', serif;
+    font-size: 90%;
+}
+
+.uberkitten
+{
+    border: 1px solid #000;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 5px 5px 3px #808080;
+    display: inline-block;
+}
+
+.uberkitten-image
+{
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.uberkitten-info
+{
+    width: 230px;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.uberkitten-description
+{
+    font-family: 'Merriweather', serif;
+    font-size: 90%;
+    text-align: left;
+    display: inline-block;
+    width: 230px;
+}
+
+.uberkitten-name
+{
+    white-space: nowrap;
+    font-size: 120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uberkitten-type
+{
+    color: #808080;
+    font-size: 90%;
+    text-decoration: underline;
+}
+
+.uberkitten:hover
+{
+    box-shadow: 9px 9px 4px #808080;
+    margin-bottom: 21px;
+    margin-top: 19px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    color: #f00;
+}
+
+.price
+{
+    font-size: 110%;
+    font-weight: bold;
+}
