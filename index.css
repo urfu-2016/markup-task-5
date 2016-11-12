@@ -106,8 +106,9 @@
 
 header
 {
-    font: bold 400% Times New Roman;
+    font: italic bold 350% Times New Roman;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .tiles:checked ~ .assortment .cat
