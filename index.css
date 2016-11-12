@@ -4,16 +4,16 @@
     vertical-align: top;
     height: 460px;
     display: inline-block;
-    margin: 15px;
-    margin-top: 20px;
+    margin: 20px 15px 15px;
 }
 
 .head:hover
 {
-    width: 70%;
+
     max-width: 200px;
-    margin: 5px auto;
-    box-shadow: .6px .6px .6px .6px #808080;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
 }
 
 .list:checked ~ .catblock
@@ -48,14 +48,14 @@
 
 .price
 {
-    color: red;
+    color: #f00;
     font-size: 2em;
-    margin: 2px 2px auto;
+    margin: 2px 2px;
 }
 
 .price span
 {
-    color: grey;
+    color: #808080;
     text-decoration: line-through;
     font-size: .8em;
 }
@@ -65,8 +65,9 @@
     text-decoration: underline;
     color: #00f;
     font-size: 1.8em;
-    margin: 1px 1px auto;
+    margin: 1px 1px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .name:hover
