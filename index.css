@@ -11,7 +11,6 @@ label
 
 input
 {
-    transform: scale(1.5);
     margin-left: 1em;
 }
 
@@ -27,8 +26,8 @@ input[name='tile-view']:checked ~ .cars-catalogue .car-block
 input[name='tile-view']:checked ~ .cars-catalogue .car-main-info
 {
     display: inline-block;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 1em;
+    margin-right: 1em;
     vertical-align: middle;
     font-size: .7em;
 }
@@ -101,7 +100,7 @@ img:hover
 }
 
 .car-main-info > p,
-.car-main-info > header h2
+.car-main-info > h2
 {
     margin: .3em 0;
 }
