@@ -115,6 +115,11 @@
     box-shadow: 0 0 10px 5px rgb(195, 167, 202);
 }
 
+.race
+{
+    margin: 0;
+}
+
 .name:hover
 {
     font-style: italic;
@@ -134,7 +139,6 @@
 {
     font-size: 1.25em;
     font-family: FontAwesome;
-    display: inline-block;
     content: '\f005';
 }
 
