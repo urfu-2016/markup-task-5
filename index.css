@@ -6,7 +6,24 @@ body
     font: 15px normal sans-serif;
 }
 
-.goods
+header
+{
+    background: #f386b7;
+    height: 50px;
+    font: 2em bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+footer
+{
+    background: #f386b7;
+    height: 50px;
+}
+
+.product
 {
     position: relative;
     display: inline-block;
@@ -14,7 +31,7 @@ body
     width: 340px;
 }
 
-.goods:hover
+.product:hover
 {
     box-shadow: 0 0 20px 3px black;
 }
@@ -30,7 +47,6 @@ body
 .capture > img
 {
     max-width: 300px;
-    max-height: 300px;
 }
 
 .capture > img:hover
@@ -38,29 +54,8 @@ body
     cursor: pointer;
 }
 
-.image-scale
-{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 4px;
-    background: black;
-    color: white;
-    opacity: 0;
-    transition: opacity .5s;
-    cursor: pointer;
-}
-
-.capture:hover .image-scale
-{
-    opacity: .6;
-}
-
 .info-wrapper
 {
-    display: block;
     height: 160px;
     width: 310px;
     margin: auto;
@@ -82,11 +77,6 @@ body
     text-overflow: ellipsis;
 }
 
-.cat-name:hover > a
-{
-    color: red;
-}
-
 .category > ul
 {
     font-size: .8em;
@@ -100,21 +90,17 @@ body
     display: inline-block;
 }
 
-.category li:hover
-{
-    color: red;
-    cursor: pointer;
-}
-
 .price
 {
-    color: black;
+    color: #000;
     font-weight: 600;
 }
 
-.price:hover
+.price:hover,
+.category li:hover,
+.cat-name:hover > a
 {
-    color: red;
+    color: #c00000;
     cursor: pointer;
 }
 
@@ -128,7 +114,6 @@ body
 
 .cat-rating
 {
-    display: block;
     margin: 0;
     width: 300px;
     height: 30px;
@@ -137,9 +122,6 @@ body
 .cat-rating__label__img
 {
     width: 15px;
-    margin: 0;
-    border: 0;
-    padding: 0;
 }
 
 .cat-rating__radio
@@ -183,49 +165,40 @@ body
     position: relative;
     display: inline-block;
     width: 310px;
-    /*height: 230px;*/
 }
 
 .description
 {
-    /*position: absolute;*/
     display: inline-block;
     text-align: left;
-    text-overflow: ellipsis;
-    overflow: hidden;
     margin: 10px;
-    /*height: 200px;*/
     padding: 5px;
     vertical-align: top;
 }
 
 .description:hover
 {
-    height: auto;
-    overflow: visible;
-    background: white;
     box-shadow: 0 0 10px black;
-    z-index: 3;
 }
 
 .change-checkbox
 {
     position: absolute;
-    top: -999px;
-    left: -999px;
+    display: none;
 }
 
 .change-checkbox + label
 {
-    position: absolute;
-    top: 20px;
-    left: 40px;
+    display: block;
+    position: relative;
+    width: 150px;
     border: 1px solid black;
     padding: 4px;
     box-shadow: inset 0 0 6px black;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     background: #edebeb;
+    text-align: center;
 }
 
 .change-checkbox + label:active
@@ -233,60 +206,51 @@ body
     box-shadow: inset 0 0 15px 2px black;
 }
 
-.change-checkbox:checked ~ .goods
+.change-checkbox:checked ~ .product
 {
-    width: 1100px;
+    width: 90%;
+    min-width: 850px;
     display: block;
     margin: 50px auto;
 }
 
-.change-checkbox:checked ~ .goods > .capture
+.change-checkbox:checked ~ .product > .capture
 {
     display: inline-block;
     width: 25%;
 }
 
-.change-checkbox:checked ~ .goods > .capture > img
+.change-checkbox:checked ~ .product > .capture > img
 {
-    display: block;
-    max-width: 100%;
+    max-width: none;
+    width: 100%;
 }
 
-.change-checkbox:checked ~ .goods > .info-wrapper
+.change-checkbox:checked ~ .product > .info-wrapper
 {
     display: inline-block;
     width: 45%;
-    height: 200px;
 }
 
-.change-checkbox:checked ~ .goods > .info-wrapper > .info
+.change-checkbox:checked ~ .product > .info-wrapper > .info
 {
-    width: 40%;
     text-align: left;
+    width: 40%;
+    margin-left: 10px;
 }
 
-.change-checkbox:checked ~ .goods > .info-wrapper > .info > .cat-rating
+.change-checkbox:checked ~ .product > .info-wrapper > .info > .cat-rating
 {
     margin-left: 10px;
 }
 
-.change-checkbox:checked ~ .goods > .description-wrapper
+.change-checkbox:checked ~ .product > .description-wrapper
 {
-    height: auto;
-    display: inline-block;
+    vertical-align: bottom;
     width: 25%;
 }
 
-.change-checkbox:checked ~ .goods > .description-wrapper > .description
+.change-checkbox:checked ~ .product > .description-wrapper > .description
 {
-    display: block;
-    height: auto;
-    position: static;
     width: 100%;
-}
-
-.change-checkbox:checked ~ .goods > .description-wrapper > .description:hover
-{
-    overflow: auto;
-    box-shadow: 0 0 10px black;
 }
