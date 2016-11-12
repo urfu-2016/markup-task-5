@@ -47,6 +47,12 @@ header
     line-height: 260px;
 }
 
+.container:hover + .info .name
+{
+    color: #000;
+    font-weight: 800;
+}
+
 .image
 {
     display: inline-block;
@@ -78,6 +84,12 @@ header
 .name
 {
     font-size: 1.25em;
+    color: #363a85;
+}
+
+.name:visited
+{
+    color: #5a1e75;
 }
 
 .name:hover
@@ -107,7 +119,7 @@ header
 
 .price
 {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .old-price
@@ -156,20 +168,60 @@ input
 .icon-table
 {
     width: 35px;
-    margin-left: 40px;
+    margin-left: 10px;
     cursor: pointer;
     opacity: .4;
-}
-
-.icon-table
-{
-    margin-left: 10px;
 }
 
 .icon-list:hover,
 .icon-table:hover,
 .list:checked + label .icon-list,
 .table:checked + label .icon-table
+{
+    opacity: 1;
+}
+
+.list + label
+{
+    margin-left: 30px;
+}
+
+.rating
+{
+    direction: rtl;
+    font-size: 0;
+}
+
+.rating label:nth-of-type(2n),
+.rating label:nth-of-type(2n-1)
+{
+    width: 13px;
+    height: 26px;
+    display: inline-block;
+    background: url(images/rating1.jpg);
+    opacity: .3;
+}
+
+.rating label:nth-of-type(2n-1)
+{
+    background: url(images/rating2.jpg);
+}
+
+.rating label:nth-of-type(1)
+{
+    margin-left: 0;
+}
+
+.rating label:hover ~ label,
+.rating label:hover,
+.rating input:checked ~ label
+{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label:hover ~ label,
+.rating input:checked ~ label:hover
 {
     opacity: 1;
 }
