@@ -1,0 +1,220 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.list-items
+{
+    width: 100%;
+    font-size: 16px;
+}
+
+.truncate
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+.item-container
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 300px;
+    vertical-align: top;
+}
+
+.item-container:hover
+{
+    background-color: #eee;
+}
+
+.row-image
+{
+    min-height: 305px;
+    position: relative;
+}
+
+.item-image
+{
+    max-height: 95%;
+    max-width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 3px solid #fff;
+    opacity: .8;
+}
+
+.item-image:hover
+{
+    border: 3px solid #888;
+    opacity: 1;
+}
+
+.info
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type='checkbox']:checked ~ section > article > .description
+{
+    width: 40%;
+}
+
+input[type='checkbox']:checked ~ section > article > .row-image
+{
+    width: 20%;
+    display: inline-block;
+}
+
+input[type='checkbox']:checked ~ section > article
+{
+    width: 100%;
+}
+
+input[type='checkbox']:checked ~ section > article > div > div > .truncate
+{
+    width: 100%;
+    white-space: normal;
+}
+
+.category-text
+{
+    border: 2px solid #888;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #eb9d14;
+    padding: 2px;
+    margin: 0;
+}
+
+.category-new
+{
+    background-color: #75f5ae;
+}
+
+.category-text:hover
+{
+    background-color: #f00;
+}
+
+.new-cost-item
+{
+    color: #b12704;
+    font-size: 1.3em;
+    display: inline;
+}
+
+.old-cost-item
+{
+    color: #555;
+    font-size: .9em;
+    text-decoration: line-through;
+    display: inline;
+}
+
+.cost-item
+{
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.cost-item:before
+{
+    content: '$';
+}
+
+.delivery-time-item
+{
+    display: block;
+    color: #008000;
+}
+
+.delivery-time-item:before
+{
+    color: #000;
+    text-decoration: underline;
+    content: 'Новые серии:';
+}
+
+.every-time-delivery:after
+{
+    color: #008000;
+    content: ' уже много лет доступны :)';
+}
+
+.wait-delivery:after
+{
+    color: #f00;
+    content: ' нужно ждать Рождества(';
+}
+
+.name-text
+{
+    font-size: 1.4em;
+}
+
+.name-text:hover
+{
+    color: #f00;
+}
+
+.rating
+{
+    margin: 10px;
+    padding: 0;
+    width: 200px;
+    font-size: 2.25em;
+    border: none;
+}
+
+.raiting > label
+{
+    color: gray;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label
+{
+    position: relative;
+}
+
+.rating > label:after,
+.rating:hover > label:after
+{
+    margin: -3.1%;
+    display: inline-block;
+    font-family: FontAwesome;
+    content: '\f089';
+}
+
+.rating > .half:after,
+.rating:hover > .half:after
+{
+    color: #fc0;
+    transform: scaleX(-1);
+}
+
+.rating > .full:after,
+.rating:hover > .full:after
+{
+    color: #fc0;
+}
+
+.rating > input:checked ~ label:after,
+.rating:hover > label:hover ~ label:after
+{
+    color: #ddd;
+}
+
+.rating > input:checked + label:after
+{
+    color: #fc0;
+}
+
