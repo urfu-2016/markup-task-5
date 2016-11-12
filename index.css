@@ -20,7 +20,7 @@ input[name='tile-view']:checked ~ .cars-catalogue .car-block
     display: block;
     max-width: 70%;
     min-height: 0;
-    margin: 1em auto;
+    margin: 0 auto;
     font-size: 2em;
 }
 
@@ -30,6 +30,7 @@ input[name='tile-view']:checked ~ .cars-catalogue .car-main-info
     margin-left: 7%;
     margin-right: 7%;
     vertical-align: middle;
+    font-size: .7em;
 }
 
 input[name='tile-view']:checked ~ .cars-catalogue .car-name
@@ -49,6 +50,11 @@ input[name='tile-view']:checked ~ .cars-catalogue img
     vertical-align: middle;
 }
 
+input[name='tile-view']:checked ~ .cars-catalogue .car-description
+{
+    font-size: .8em;
+}
+
 body
 {
     font-size: 10px;
@@ -62,39 +68,42 @@ h1
 
 .cars-catalogue
 {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
 }
 
 .car-block
 {
     display: inline-block;
-    min-width: 100px;
-    max-width: 200px;
-    min-height: 700px;
+    min-width: 10%;
+    max-width: 15%;
+    min-height: 400px;
     vertical-align: middle;
-    text-align: center;
-    margin: 1em 1em 0;
-    font: 2em 'Karla', sans-serif;
-    border: .15em #85ffaa solid;
-    background-color: #b6bfe8;
+    text-align: left;
+    font: 1.5em 'Karla', sans-serif;
+    padding: 1em;
 }
 
 .car-block:hover
 {
-    transform: scale(1.05);
-    border: .5em #85ffaa solid;
+    background-color: rgba(161, 161, 161, .3);
 }
 
 img
 {
     width: 100%;
-    opacity: .8;
 }
 
 img:hover
 {
-    opacity: 1;
+    -webkit-filter: brightness(1.1);
+}
+
+.car-main-info > p,
+.car-main-info > header h2
+{
+    margin: .3em 0;
 }
 
 .car-name
@@ -108,7 +117,7 @@ img:hover
 
 .car-name:hover
 {
-    color: #fff;
+    color: #000;
 }
 
 .car-type:hover
@@ -126,9 +135,16 @@ img:hover
 .old-cost
 {
     text-decoration: line-through;
+    color: #5e5e5f;
+    font-size: .8em;
 }
 
-.cost:hover .dollar-sign
+.cost
 {
-    color: #009700;
+    color: #970a0d;
+}
+
+.cost:hover
+{
+    color: #0f0;
 }
