@@ -1,9 +1,18 @@
+img:hover
+{
+    width: 90%;
+    margin: 10px 10px 0;
+}
+
 img
 {
-    max-width: 200px;
-    margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 75%;
+    margin: 10px 35px 30px;
+}
+
+.category
+{
+    font-size: 13px;
 }
 
 .List
@@ -11,38 +20,84 @@ img
     display: block;
 }
 
+.column:hover
+{
+    box-shadow: 0 0 20px #8b4513;
+}
+
 .column
 {
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px 18px 0 0;
     background-color: #f0dc82;
-    color: #007fff;
-    height: 800px;
+    height: 600px;
     vertical-align: top;
-    min-width: 200px;
-    max-width: 280px;
+    color: #8b4513;
+    min-width: 240px;
+    width: 22%;
     border: thick solid #ffdab9;
 }
 
-div div:hover
+.stars
+{
+    font-size: 20px;
+}
+
+.cost:hover
+{
+    color: #007fff;
+}
+
+.cost
 {
     color: #ff033e;
+    font-size: 22px;
+}
+
+.name:hover
+{
+    color: #ff033e;
+}
+
+.name
+{
+    color: #007fff;
 }
 
 body
 {
     background-color: #faebd7;
+    line-height: 15px;
+
 }
 
 input[class='List']:checked ~ .column
 {
-    margin: 20px;
-    min-width: 1000px;
-    max-height: 250px;
+    display: block;
+    margin: 20px 0 20px -10px;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+
 }
 
-input[class='List']:checked ~ div div
+input[class='List']:checked ~ .column .main-information
 {
-    margin-top: -137px;
-    margin-left: 240px;
+    text-align: center;
+    margin: -250px 0 10px -150px;
+}
+
+input[class='List']:checked ~ .column img:hover,
+input[class='List']:checked ~ .column img
+{
+    height: 250px;
+    width: auto;
+    margin: 30px 35px;
+}
+
+input[class='List']:checked ~ .column .description
+{
+    font-size: 20px;
+    line-height: 22px;
+    margin: -150px 0 10px 700px;
 }
