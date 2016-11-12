@@ -13,15 +13,15 @@ body
     height: 290px;
 }
 
-.items-list:checked ~ .market .left-block,
-.items-list:checked ~ .market .middle-block,
-.items-list:checked ~ .market .right-block
+.items-list:checked ~ .market .item-img-wrap,
+.items-list:checked ~ .market .item-short-info-wrap,
+.items-list:checked ~ .market .item-info-wrap
 {
     display: inline-block;
     vertical-align: middle;
 }
 
-.items-list:checked ~ .market .left-block
+.items-list:checked ~ .market .item-img-wrap
 {
     width: 23%;
 }
@@ -31,12 +31,12 @@ body
     top: 17%;
 }
 
-.items-list:checked ~ .market .middle-block
+.items-list:checked ~ .market .item-short-info-wrap
 {
     width: 25%;
 }
 
-.items-list:checked ~ .market .right-block
+.items-list:checked ~ .market .item-info-wrap
 {
     width: 50%;
 }
