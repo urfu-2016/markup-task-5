@@ -13,7 +13,6 @@ p
     padding: 0;
 }
 
-
 header
 {
     text-align: center;
@@ -50,7 +49,7 @@ h4
 {
     text-align: right;
     font-size: 1em;
-    color: #f00; 
+    color: #f00;
     display: inline-block;
 }
 
@@ -119,5 +118,5 @@ img:hover
 
 .cat:hover
 {
-    background: #E6FFFF;
+    background: #e6ffff;
 }
