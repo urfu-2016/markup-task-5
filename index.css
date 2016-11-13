@@ -45,28 +45,52 @@ body
     min-width: 800px;
 }
 
-.icon
+a
 {
-    font: normal normal normal 14px/1 'Font Awesome';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    color: #111;
 }
 
-.icon-sliders:before
+a:hover
 {
-    content: '\f1de';
+    color: #f00;
+}
+
+.icon-tile:before,
+.icon-list:before
+{
+    width: 13px;
+    height: 13px;
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIiBmaWxsPSIjYjJiMmIyIj48cGF0aCBkPSJNMCAwaDZ2NmgtNnpNNyAwaDZ2NmgtNnpNNyA3aDZ2NmgtNnpNMCA3aDZ2NmgtNnoiLz48L3N2Zz4K);
 }
 
 .icon-list:before
 {
-    content: '\f0c9';
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIiBmaWxsPSIjYjJiMmIyIj48cGF0aCBkPSJNMCAxMGgzdjNoLTN6TTUgMTBoOHYzaC04ek0wIDVoM3YzaC0zek01IDVoOHYzaC04ek0wIDBoM3YzaC0zek01IDBoOHYzaC04eiIvPjwvc3ZnPgo=);
 }
 
-.icon-tile:before
+input[id='list']:checked ~ .may-main .icon-list:before
 {
-    content: '\f17a';
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIiBmaWxsPSIjMmIyYjJiIj48cGF0aCBkPSJNMCAxMGgzdjNoLTN6TTUgMTBoOHYzaC04ek0wIDVoM3YzaC0zek01IDVoOHYzaC04ek0wIDBoM3YzaC0zek01IDBoOHYzaC04eiIvPjwvc3ZnPgo=);
+}
+
+input[id='tile']:checked ~ .may-main .icon-tile:before
+{
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIiBmaWxsPSIjMmIyYjJiIj48cGF0aCBkPSJNMCAwaDZ2NmgtNnpNNyAwaDZ2NmgtNnpNNyA3aDZ2NmgtNnpNMCA3aDZ2NmgtNnoiLz48L3N2Zz4K);
+}
+
+.icon-basket:before
+{
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNNSAzTDQgMEgwdjJoMmwzIDkgOC45LTIuNlMxNSA4LjIgMTUgNi44VjNINXoiIGZpbGw9IiMzNjdCRjIiLz48Y2lyY2xlIGZpbGw9IiMyMDIwMjAiIGN4PSIxMS43IiBjeT0iMTMuNyIgcj0iMS4zIi8+PGNpcmNsZSBmaWxsPSIjMjAyMDIwIiBjeD0iNC43IiBjeT0iMTMuNyIgcj0iMS4zIi8+PC9nPjwvc3ZnPg==);
+}
+
+.icon-text
+{
+    font-size: 16px;
+    line-height: 15px;
 }
 
 .may-hidden
@@ -74,7 +98,6 @@ body
     display: none;
 }
 
-.may-tool,
 .may-header
 {
     width: 100%;
@@ -93,9 +116,8 @@ body
     margin: 0;
 }
 
-a
+.may-header-logo a
 {
-    text-decoration: none;
     color: #111;
 }
 
@@ -113,65 +135,63 @@ a
 {
     display: inline-block;
     font-size: 1.5em;
-    margin-left: calc(100% - 370px);
+    margin-left: calc(100% - 450px);
 }
 
-figure:hover,
 label:hover
 {
     color: #f00;
     cursor: pointer;
 }
 
-.may-tool
+.may-main
 {
-    display: none;
-    background: #fd5;
-    font-size: 1.5em;
-    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    margin: 30px 45px;
+    text-align: center;
 }
 
-input[id='tools']:checked ~ .may-tool
+.may-nav
 {
-    display: block;
+    text-align: left;
 }
 
-input[id='tile']:checked ~ .may-tool figure:first-child,
-input[id='list']:checked ~ .may-tool figure:last-child
+.may-nav-filter
+{
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
+
+.may-nav-filter div
+{
+    display: inline-block;
+}
+
+.may-nav-filter div:nth-child(n+2)
+{
+    margin-left: 15px;
+}
+
+.may-nav-filter div a
+{
+    color: #33c;
+}
+
+.may-nav-filter div a:hover
 {
     color: #f00;
 }
 
-.may-tool label
-{
-    display: block;
-    font-size: 1.3em;
-    text-align: center;
-}
-
-.may-tool figure
+.may-nav-tool
 {
     display: inline-block;
-    width: calc(100%/2 - 5px);
-    margin: 0;
-    padding: 10px 0;
+    margin-left: calc(100% - 570px);
 }
 
-.may-tool figure figcaption
+.may-nav-tool label
 {
-    font-size: .7em;
-    text-align: center;
-}
-
-.may-main
-{
-    margin: 0 45px;
-}
-
-.may-content
-{
-    margin: 30px auto;
-    width: 100%;
+    margin: 0 6px;
 }
 
 .may-card
@@ -190,7 +210,7 @@ input[id='list']:checked ~ .may-tool figure:last-child
     box-shadow: 0 0 20px rgba(0,0,0,.5);
 }
 
-.may-card header
+.may-card .may-card-image
 {
     position: relative;
     height: 200px;
@@ -198,7 +218,7 @@ input[id='list']:checked ~ .may-tool figure:last-child
     bottom: 0;
 }
 
-.may-card header img
+.may-card .may-card-image img
 {
     max-height: 98%;
     max-width: 98%;
@@ -210,13 +230,15 @@ input[id='list']:checked ~ .may-tool figure:last-child
     margin: 0 auto;
 }
 
-.may-card article
+.may-card .may-card-description,
+.may-card .may-card-info
 {
     position: relative;
     padding: 0 6px;
+    text-align: left;
 }
 
-.may-card article a
+.may-card .may-card-info a
 {
     display: block;
     padding: 20px;
@@ -228,12 +250,12 @@ input[id='list']:checked ~ .may-tool figure:last-child
     text-overflow: ellipsis;
 }
 
-.may-card article a:first-letter
+.may-card .may-card-info a:first-letter
 {
     color: #f00;
 }
 
-.may-card-character
+.may-card-info .may-card-character
 {
     padding: 0;
     margin: 0;
@@ -241,12 +263,12 @@ input[id='list']:checked ~ .may-tool figure:last-child
     font-size: .8em;
 }
 
-.may-card-character span
+.may-card-info .may-card-character span
 {
     font-weight: 400;
 }
 
-.may-card-rating
+.may-card-info .may-card-rating
 {
     overflow: hidden;
     display: inline-block;
@@ -254,24 +276,24 @@ input[id='list']:checked ~ .may-tool figure:last-child
     position: relative;
 }
 
-.may-rating-i
+.may-card-info .may-rating-i
 {
     display: none;
 }
 
 .may-rating-star,
-.may-rating-star:nth-child(2n+1)
+.may-rating-star:nth-child(4n+2)
 {
     position: relative;
     display: inline-block;
     height: 16px;
     width: 8px;
-    background: url(img/star1.png) bottom;
+    background: url(img/star1.png) top;
 }
 
 .may-rating-star
 {
-    background: url(img/star2.png) bottom;
+    background: url(img/star2.png) top;
 }
 
 .may-card-rating:hover .may-rating-star:hover ~ .may-rating-star
@@ -279,46 +301,34 @@ input[id='list']:checked ~ .may-tool figure:last-child
     background-position: bottom;
 }
 
+.may-rating-i:checked ~ .may-rating-star
+{
+    background-position: bottom;
+}
+
+input[id$='-1-1']:checked ~ label[for$='-1-1'],
+input[id$='-1-2']:checked ~ label[for$='-1-2'],
+input[id$='-2-1']:checked ~ label[for$='-2-1'],
+input[id$='-2-2']:checked ~ label[for$='-2-2'],
+input[id$='-3-1']:checked ~ label[for$='-3-1'],
+input[id$='-3-2']:checked ~ label[for$='-3-2'],
+input[id$='-4-1']:checked ~ label[for$='-4-1'],
+input[id$='-4-2']:checked ~ label[for$='-4-2'],
+input[id$='-5-1']:checked ~ label[for$='-5-1'],
+input[id$='-5-2']:checked ~ label[for$='-5-2'],
 .may-card-rating:hover .may-rating-star
 {
     background-position: top;
 }
 
-.may-rating-i:nth-child(1):checked ~ .may-rating-star:nth-child(-n+11),
-.may-rating-i:nth-child(2):checked ~ .may-rating-star:nth-child(-n+12),
-.may-rating-i:nth-child(3):checked ~ .may-rating-star:nth-child(-n+13),
-.may-rating-i:nth-child(4):checked ~ .may-rating-star:nth-child(-n+14),
-.may-rating-i:nth-child(5):checked ~ .may-rating-star:nth-child(-n+15),
-.may-rating-i:nth-child(6):checked ~ .may-rating-star:nth-child(-n+16),
-.may-rating-i:nth-child(7):checked ~ .may-rating-star:nth-child(-n+17),
-.may-rating-i:nth-child(8):checked ~ .may-rating-star:nth-child(-n+18),
-.may-rating-i:nth-child(9):checked ~ .may-rating-star:nth-child(-n+19),
-.may-rating-i:nth-child(10):checked ~ .may-rating-star:nth-child(-n+20)
-{
-    background-position: top;
-}
-
-.may-rating-i:nth-child(1):hover ~ .may-rating-star:nth-child(n+12),
-.may-rating-i:nth-child(2):hover ~ .may-rating-star:nth-child(n+13),
-.may-rating-i:nth-child(3):hover ~ .may-rating-star:nth-child(n+14),
-.may-rating-i:nth-child(4):hover ~ .may-rating-star:nth-child(n+15),
-.may-rating-i:nth-child(5):hover ~ .may-rating-star:nth-child(n+16),
-.may-rating-i:nth-child(6):hover ~ .may-rating-star:nth-child(n+17),
-.may-rating-i:nth-child(7):hover ~ .may-rating-star:nth-child(n+18),
-.may-rating-i:nth-child(8):hover ~ .may-rating-star:nth-child(n+19),
-.may-rating-i:nth-child(9):hover ~ .may-rating-star:nth-child(n+20)
-{
-    background-position: bottom;
-}
-
-.may-card-price
+.may-card-info .may-card-price
 {
     font-size: 1.3em;
 }
 
-.may-card-description
+.may-card-text
 {
-    position: relative;
+    text-align: left;
     text-overflow: ellipsis;
     text-indent: 20px;
     font-size: .85em;
@@ -330,127 +340,127 @@ input[id='list']:checked ~ .may-main .may-card
     position: relative;
     width: 100%;
     height: 200px;
+    text-align: left;
 }
 
-input[id='list']:checked ~ .may-main .may-card header
+input[id='list']:checked ~ .may-main .may-card .may-card-image,
+input[id='list']:checked ~ .may-main .may-card .may-card-info,
+input[id='list']:checked ~ .may-main .may-card .may-card-description
 {
-    position: absolute;
+    display: inline-block;
     height: 200px;
     width: 300px;
     bottom: auto;
+    text-align: left;
+    vertical-align: top;
 }
 
-input[id='list']:checked ~ .may-main .may-card article
+input[id='list']:checked ~ .may-main .may-card .may-card-info
 {
-    width: calc(100% - 300px);
-    position: absolute;
-    left: 300px;
-}
-
-input[id='list']:checked ~ .may-main .may-card article a,
-input[id='list']:checked ~ .may-main .may-card article .may-card-character,
-input[id='list']:checked ~ .may-main .may-card article .may-card-rating,
-input[id='list']:checked ~ .may-main .may-card article .may-card-price
-{
-    left: 0;
     width: 200px;
     text-align: center;
 }
 
-input[id='list']:checked ~ .may-main .may-card article .may-card-character,
-input[id='list']:checked ~ .may-main .may-card article .may-card-rating,
-input[id='list']:checked ~ .may-main .may-card article .may-card-price
+input[id='list']:checked ~ .may-main .may-card .may-card-description
 {
-    padding: 0 20px;
-}
-
-input[id='list']:checked ~ .may-main .may-card article .may-card-description
-{
-    position: absolute;
-    top: 20px;
-    margin-left: 200px;
-    width: calc(100% - 250px);
-}
-
-.may-footer
-{
-    position: relative;
-    background: #f6f5f3;
-    padding: 0 0 20px;
-    color: #2b2b2b;
-}
-
-.may-footer-left
-{
-    display: inline-block;
-    width: 500px;
-    padding: 20px 0 20px 50px;
-}
-
-.may-footer-left h3,
-.may-footer-left a,
-.may-footer-right p
-{
-    font-size: .8em;
-}
-
-.may-footer-right p
-{
-    margin: 0;
-}
-
-.may-footer-left a
-{
-    display: block;
-}
-
-.may-footer-left a:hover
-{
-    color: #f00;
-}
-
-.may-col-2
-{
-    display: inline-block;
-    width: 240px;
-}
-
-.may-footer-right
-{
-    display: inline-block;
-    width: calc(100% - 610px);
-    text-align: right;
-    vertical-align: top;
-    padding: 30px 0;
-}
-
-.may-copyright
-{
-    border-top: 1px solid #eee;
-    position: relative;
-    font-size: .8em;
-    padding: 10px 50px 0;
-    text-align: right;
-    font-weight: 600;
-}
-
-.may-copyright address
-{
-    font-style: normal;
-}
-
-.may-copyright address a
-{
-    color: #8792a8;
-}
-
-.may-copyright address a:hover
-{
-    color: #f00;
+    width: calc(100% - 550px);
 }
 
 .may-old-price
 {
     text-decoration: line-through;
     font-size: .5em;
+}
+
+.may-footer
+{
+    background: #f6f5f3;
+    font-size: .8em;
+}
+
+.may-footer h3
+{
+    color: #000;
+}
+
+.may-footer-info
+{
+    padding: 33px 50px 36px;
+}
+
+.may-footer-content
+{
+    position: relative;
+    width: 100%;
+}
+
+.may-footer-list,
+.may-footer-col-left,
+.may-footer-col-right,
+.may-footer-col-center
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.may-right-text
+{
+    text-align: right;
+}
+
+.may-footer-col-left
+{
+    width: 39%;
+}
+
+.may-footer-col-center
+{
+    width: 30%;
+}
+
+.may-col-2
+{
+    width: 49%;
+}
+
+.may-footer-stat,
+.may-footer-update,
+.may-footer-list a
+{
+    display: block;
+    color: #666;
+}
+
+.may-footer-list a:hover
+{
+    color: #f00;
+}
+
+.may-footer-col-right
+{
+    width: 30%;
+}
+
+.may-footer-copyright
+{
+    border-top: 1px solid #eee;
+    padding: 13px 50px 12px;
+    color: #8792a8;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.may-footer-copyright a
+{
+    color: #8792a8;
+}
+
+.may-footer-copyright a:hover
+{
+    color: #f00;
+}
+
+.may-copyright
+{
+    color: #000;
 }
