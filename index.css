@@ -1,3 +1,10 @@
+h1
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 article
 {
     display: inline-block;
@@ -10,17 +17,23 @@ article:hover
     background-color: #d3d3d3;
 }
 
+hr
+{
+    min-width: 390px;
+}
+
 .img
 {
+    display: block;
+    margin: auto;
     overflow: hidden;
+    width: 400px;
 }
 
 img
 {
-    width: 350px;
-    /*Горизонтально по середине*/
-    display: block;
-    margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 .img.view-block:hover img
@@ -34,6 +47,8 @@ img
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 0;
+    font-weight: 500;
 }
 
 .category
@@ -101,24 +116,25 @@ ul li:after
 .list:checked ~ article
 {
     display: block;
-    width: 1300px;
+    width: 100%;
+    margin: 30px .5%;
 }
 
 .list:checked ~ article .view-block
 {
     display: inline-block;
     vertical-align: top;
-    width: 400px;
+    width: 30%;
 }
 
 .list:checked ~ article .view-block.text
 {
-    margin: 20px;
+    margin: 1%;
 }
 
 .list:checked ~ hr
 {
-    min-width: 1300px;
+    min-width: 100%;
 }
 
 .table:checked ~ article .hidden
