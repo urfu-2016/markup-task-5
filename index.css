@@ -58,8 +58,7 @@
 
 .name:hover
 {
-    box-shadow: 0 0 20px #b6b6b6;
-    background-color: #e5e5e5;
+    text-shadow: 0 0 20px #b6b6b6;
     color: #2555fa;
 }
 
@@ -73,8 +72,7 @@
 
 .category:hover
 {
-    box-shadow: 0 0 20px #b6b6b6;
-    background-color: #e5e5e5;
+    text-shadow: 0 0 10px #b6b6b6;
 }
 
 .price
@@ -143,6 +141,16 @@
     top: 0;
     max-width: 200px;
     max-height: 100%;
+}
+
+.switch-listview:checked ~ .card .name
+{
+    text-align: left;
+}
+
+.switch-listview:checked ~ .card .category
+{
+    text-align: left;
 }
 
 .switch-listview:checked ~ .card .property-container
