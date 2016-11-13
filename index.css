@@ -5,120 +5,115 @@ header h1::first-letter
 
 .cat
 {
-    display: inline-block;
-    width: 420px;
-    margin-top: 50px;
     vertical-align: top;
+    display: inline-block;
+    width: 430px;
+    margin-top: 50px;
 }
 
-.image
+.cat > div
 {
-    width: 300px;
-    height: 300px;
-    margin: 10px auto;
-    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.cat-photo
+{
+    position: relative;
+    height: 430px;
+}
+
+.cat-photo .photo-wrapper
+{
+    position: absolute;
+    bottom: 0;
     overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
 }
 
-.image img
+.cat-photo img
 {
-    height: 300px;
-    width: 300px;
     opacity: .8;
+    vertical-align: bottom;
+    max-width: 100%;
 }
 
-.cat .about
+.cat .about .name
 {
-    width: 420px;
+    margin-top: 10px;
+    font-size: 1.4em;
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.cat .about .rating
+.cat .about .category
+{
+    font-size: .8em;
+    color: #0f0;
+    display: block;
+}
+
+.cat .rating
 {
     display: inline-block;
     width: 200px;
     height: 24px;
-    margin: 20px 0 20px 50px;
+    margin: 20px 0 20px 10px;
     direction: rtl;
     text-align: left;
 }
 
-.cat .about .price
+.cat .price
 {
     display: inline-block;
     height: 24px;
     vertical-align: top;
     margin-top: 20px;
-}
-
-.cat .information
-{
-    width: 420px;
 }
 
 .cat .information p
 {
     color: #eb0c0c;
-    margin-left: 50px;
 }
 
-.cat h4
-{
-    margin: 0 50px;
-    font-size: 12px;
-    color: #0f0;
-    font-weight: normal;
-}
-
-.cat h3
+.cat .about .price p
 {
     display: inline;
-    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .cat h2
 {
-    font-size: 20px;
-    margin-left: 50px;
+    font-size: 1.2em;
 }
 
-.cat h3 + h3
+.price p + p
 {
     text-decoration: line-through;
     opacity: .5;
 }
 
-.cat ul
-{
-    margin-left: 50px;
-}
-
-.cat a
-{
-    margin-top: 10px;
-    margin-left: 50px;
-    font-size: 20px;
-}
-
-.list-mode:checked ~ .cat
+.list-mode:checked ~ section .cat
 {
     display: block;
     width: auto;
-    min-height: 350px;
 }
 
-.list-mode:checked ~ .cat .image
+.list-mode:checked ~ section .cat > div
 {
-    display: inline-block;
-    margin: 20px 50px;
-}
-
-.list-mode:checked ~ .cat div
-{
-    display: inline-block;
-    vertical-align: top;
+    width: 400px;
     margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.list-mode:checked ~ section .cat .cat-photo .photo-wrapper
+{
+    position: relative;
+    margin-top: 0;
+    display: inline-block;
 }
 
 .cat:hover
@@ -128,14 +123,19 @@ header h1::first-letter
         , #000 0 3px 8px -10px;
 }
 
-.cat .image img:hover
+.cat .cat-photo img:hover
 {
     opacity: 1;
 }
 
-.cat a:hover
+.cat .about .name:hover
 {
     color: #f00;
+}
+
+.cat .about .category:hover
+{
+    color: #000;
 }
 
 /*Задание на звездочку*/
