@@ -22,15 +22,6 @@
     src: url('fonts/Yandex-Sans-Text-Light.ttf');
 }
 
-@font-face
-{
-    font-family: 'Font Awesome';
-    src: local('FontAwesome');
-    src: url('fonts/fontawesome.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html
 {
     height: 100%;
@@ -236,6 +227,7 @@ label:hover
     position: relative;
     padding: 0 6px;
     text-align: left;
+    overflow: hidden;
 }
 
 .may-card .may-card-info a
