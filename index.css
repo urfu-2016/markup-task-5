@@ -48,6 +48,7 @@ body
 {
     margin: 2%;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .name:hover
