@@ -1,0 +1,149 @@
+.img:hover img
+{
+    height: 170px;
+}
+
+img
+{
+    height: 150px;
+    margin: 10px 0 0;
+}
+
+.img
+{
+    text-align: center;
+}
+
+.category:hover
+{
+    color: #c1876b;
+}
+
+.category
+{
+    font-size: 15px;
+}
+
+.List
+{
+    display: block;
+}
+
+.column:hover
+{
+    box-shadow: 0 0 20px #8b4513;
+}
+
+.column
+{
+    display: inline-block;
+    margin: 10px 18px 0 0;
+    background-color: #f0dc82;
+    height: 650px;
+    vertical-align: top;
+    color: #8b4513;
+    min-width: 240px;
+    width: 22%;
+    border: thick solid #ffdab9;
+}
+
+.stars
+{
+    font-size: 20px;
+}
+
+.cost:hover
+{
+    color: #007fff;
+}
+
+.cost
+{
+    color: #ff033e;
+    font-size: 22px;
+}
+
+a:hover
+{
+    color: #ff033e;
+}
+
+.name h2
+{
+    color: #007fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 22px;
+
+}
+
+body
+{
+    background-color: #faebd7;
+    line-height: 15px;
+
+}
+
+.description
+{
+    margin: 0 10px;
+}
+
+.main-information
+{
+    margin: 50px 10px 10px;
+    line-height: 24px;
+}
+
+.img:hover ~ .main-information
+{
+    margin: 30px 10px;
+}
+
+.img:hover ~ .description
+{
+    margin: -8px 10px;
+}
+
+input.List:checked ~ .column
+{
+    display: block;
+    margin: 20px 0 20px -10px;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+
+}
+
+input.List:checked ~ .column .main-information
+{
+    text-align: center;
+    margin: -250px 0 10px -150px;
+}
+
+input.List:checked ~ .column a:hover
+{
+    color: #ff033e;
+}
+
+input.List:checked ~ .column .img 
+{
+    text-align: left;
+}
+
+input.List:checked ~ .column img:hover,
+input.List:checked ~ .column img
+{
+    text-align: left;
+    height: 250px;
+    width: auto;
+    margin: 30px 35px;
+}
+
+input.List:checked ~ .column .description
+{
+    font-size: 20px;
+    line-height: 22px;
+    margin: -150px 0 10px 700px;
+}
