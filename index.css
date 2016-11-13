@@ -4,12 +4,20 @@ body
     min-width: 320px;
 }
 
+header,
+h3,
+h4,
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+
 header
 {
     text-align: center;
     font-size: 2em;
-    margin: 0;
-    padding: 0;
 }
 
 h1::first-letter
@@ -22,9 +30,11 @@ h3
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    margin: 0;
-    padding: 0;
+}
 
+h4
+{
+    font-weight: 600;
 }
 
 .oldCost
@@ -33,19 +43,21 @@ h3
     text-decoration: line-through;
     color: #c0c0c0;
     font-size: .8em;
+    display: inline-block;
 }
 
 .newCost
 {
     text-align: right;
     font-size: 1em;
-    color: #f00;
+    color: #f00; 
+    display: inline-block;
 }
 
 .сost
 {
-    text-align: right;
     font-size: 1em;
+    display: inline-block;
 }
 
 .cat
@@ -58,12 +70,12 @@ h3
 
 .cat p
 {
-    padding: 0;
-    margin: 0;
+    display: inline-block;
 }
 
 .cat img
 {
+    display: block;
     width: 100%;
 }
 
@@ -76,9 +88,15 @@ h3
 {
     margin: 4px;
     width: 20%;
-    float: left;
     text-align: left;
     display: inline-block;
+}
+
+.list-view:checked ~ .market .cat .comment
+{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
 }
 
 .star:before
@@ -96,10 +114,10 @@ h3
 
 img:hover
 {
-    border: 3px solid #000080;
+    -webkit-filter: contrast(185%);
 }
 
 .cat:hover
 {
-    font-size: 1.2em;
+    background: #E6FFFF;
 }
