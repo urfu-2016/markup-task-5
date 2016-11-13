@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
 
-main > div
+article
 {
     margin: 2%;
     width: 20%;
@@ -16,7 +16,7 @@ main > div
     margin: 0 2%;
 }
 
-img
+a[href^='http://www.zoopicture.ru']
 {
     min-height: 200px;
     display: block;
@@ -25,12 +25,17 @@ img
     margin: 5% auto;
 }
 
-span
+img
+{
+    width: 100%;
+}
+
+.price span
 {
     text-decoration: line-through;
 }
 
-a
+a[href='#']
 {
     text-align: center;
     color: #f85c37;
@@ -47,42 +52,79 @@ p > input
     display: none;
 }
 
-p > label:nth-child(2n):before
+.stars
+{
+    float: right;
+    direction: rtl;
+    margin-right: 25%;
+}
+
+.half
+{
+    position: absolute;
+}
+
+.stars > label
+{
+    display: inline-block;
+}
+
+.full:before
 {
     font-family: FontAwesome, fantasy;
     font-size: 40px;
     content: '\f006';
 }
 
-.stars
+.half:before
 {
-    text-align: center;
+    font-family: FontAwesome, fantasy;
+    font-size: 40px;
+    content: '\f089';
+    opacity: 0;
 }
 
-.fa-star-o
+.full:hover ~ .half:before
 {
-    font-size: 40px !important;
+    opacity: 1;
 }
 
-main > div:hover
+.half:hover ~ .full:before
+{
+    opacity: 1;
+}
+
+p > input:checked ~ label:before,
+p > label:hover ~ label:before
+{
+    content: '\f005';
+}
+
+article:hover
 {
     border: 2px solid black;
 }
 
-.line-mode:checked ~ main > div
+a[href^='http://www.zoopicture.ru']:hover ~ .info a[href='#']
+{
+    color: black;
+    text-transform: uppercase;
+}
+
+.line-mode:checked ~ main > article
 {
     display: block;
     width: 96%;
 }
 
-.line-mode:checked ~ main > div > img
+.line-mode:checked ~ main a[href^='http://www.zoopicture.ru']
 {
     display: inline-block;
     margin: 2%;
     width: 33%;
 }
 
-.line-mode:checked ~ main > div > .info
+.line-mode:checked ~ main .info
 {
     margin: 0;
     margin-top: 2%;
@@ -92,7 +134,12 @@ main > div:hover
     width: 60%;
 }
 
-.line-mode:checked ~ main > div > .info > a
+.line-mode:checked ~ main a[href='#']
 {
     font-size: 34px;
+}
+
+.line-mode:checked ~ main .stars
+{
+    margin-right: 40%;
 }
