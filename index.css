@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 
-.switcher
+.hr
 {
     border-bottom: 2px solid #000;
     margin-bottom: 20px;
 }
 
-.mode:checked ~ div.cart
+.mode:checked ~ .cart
 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.mode:checked ~ div.cart > .cat-img
+.mode:checked ~ .cart > .cat-img
 {
     float: left;
     width: 30%;
     margin-right: 20px;
-    margin-left: auto;
 }
 
-div.cart
+.cart
 {
     width: 350px;
     display: inline-block;
@@ -30,8 +29,7 @@ div.cart
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-div.cart:hover
+.cart:hover
 {
     box-shadow: 0 0 10px 5px #540a00;
 }
@@ -39,11 +37,13 @@ div.cart:hover
 .cat-img
 {
     width: 100%;
+    -moz-transition: all 1s ease-out;
     transition: all 1s ease-out;
 }
 
 .cat-img:hover
 {
+    -moz-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -63,7 +63,7 @@ mark
 {
     text-decoration: line-through;
     background-color: inherit;
-    font-size: 80%;
+    font-size: 0.8em;
 }
 
 .name
