@@ -29,7 +29,7 @@ main
     border-radius: 10px;
 }
 
-#tiles:checked ~ .cat
+input[id='tiles']:checked ~ .cat
 {
     display: inline-block;
     width: 270px;
@@ -37,7 +37,7 @@ main
     vertical-align: top;
 }
 
-#list:checked ~ .cat
+input[id='list']:checked ~ .cat
 {
     width: 95%;
 }
@@ -61,7 +61,7 @@ main
     cursor: pointer;
 }
 
-#list:checked ~ .cat > img
+input[id='list']:checked ~ .cat > img
 {
     display: inline-block;
     width: 20%;
