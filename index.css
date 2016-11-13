@@ -8,6 +8,7 @@ header
     text-align: center;
 }
 
+h1:first-letter,
 .red
 {
     color: #f00;
@@ -28,7 +29,7 @@ main
     border-radius: 10px;
 }
 
-input[id='tiles']:checked ~ .cat
+#tiles:checked ~ .cat
 {
     display: inline-block;
     width: 270px;
@@ -36,7 +37,7 @@ input[id='tiles']:checked ~ .cat
     vertical-align: top;
 }
 
-input[id='list']:checked ~ .cat
+#list:checked ~ .cat
 {
     width: 95%;
 }
@@ -60,7 +61,7 @@ input[id='list']:checked ~ .cat
     cursor: pointer;
 }
 
-input[id='list']:checked ~ .cat > img
+#list:checked ~ .cat > img
 {
     display: inline-block;
     width: 20%;
