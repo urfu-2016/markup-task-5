@@ -11,40 +11,44 @@ article
     min-width: 380px;
 }
 
-.info
+section
 {
-    margin: 0 2%;
+    min-height: 310px;
+    position: relative;
 }
 
-a[href^='http://www.zoopicture.ru']
+a > p
 {
-    min-height: 200px;
-    display: block;
+    position: absolute;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    bottom: 0;
+    margin-bottom: 0;
     text-align: center;
-    width: 70%;
-    margin: 5% auto;
+    color: #f85c37;
+    font-size: 24px;
 }
 
 img
 {
     width: 100%;
+    position: absolute;
+    bottom: 8%;
+}
+
+.info
+{
+    margin: 0 2%;
+    min-height: 270px;
+    vertical-align: bottom;
+    font-size: 20px;
 }
 
 .price span
 {
     text-decoration: line-through;
-}
-
-a[href='#']
-{
-    text-align: center;
-    color: #f85c37;
-    width: 100%;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    font-size: 24px;
 }
 
 p > input
@@ -54,46 +58,32 @@ p > input
 
 .stars
 {
-    float: right;
     direction: rtl;
-    margin-right: 25%;
+    text-align: center;
 }
 
-.half
-{
-    position: absolute;
-}
-
-.stars > label
-{
-    display: inline-block;
-}
-
-.full:before
+.stars label:before
 {
     font-family: FontAwesome, fantasy;
-    font-size: 40px;
     content: '\f006';
+    font-size: 40px;
+    width: 19px;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .half:before
 {
-    font-family: FontAwesome, fantasy;
-    font-size: 40px;
-    content: '\f089';
-    opacity: 0;
+    transform: scale(-1, 1);
 }
 
-.full:hover ~ .half:before
+p > label:hover:before,
+p > label:hover ~ label:before
 {
-    opacity: 1;
+    opacity: .8;
 }
 
-.half:hover ~ .full:before
-{
-    opacity: 1;
-}
-
+p > label:hover:before,
 p > input:checked ~ label:before,
 p > label:hover ~ label:before
 {
@@ -105,7 +95,7 @@ article:hover
     border: 2px solid black;
 }
 
-a[href^='http://www.zoopicture.ru']:hover ~ .info a[href='#']
+a[href^='http://www.zoopicture.ru']:hover p
 {
     color: black;
     text-transform: uppercase;
@@ -117,25 +107,36 @@ a[href^='http://www.zoopicture.ru']:hover ~ .info a[href='#']
     width: 96%;
 }
 
-.line-mode:checked ~ main a[href^='http://www.zoopicture.ru']
+.line-mode:checked ~ main section
 {
     display: inline-block;
     margin: 2%;
     width: 33%;
 }
 
+.line-mode:checked ~ main img
+{
+    position: static;
+}
+
 .line-mode:checked ~ main .info
 {
     margin: 0;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-left: 10%;
     font-size: 24px;
     vertical-align: top;
     display: inline-block;
-    width: 60%;
+    width: 50%;
 }
 
-.line-mode:checked ~ main a[href='#']
+.line-mode:checked ~ main a p
 {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    padding-left: 10%;
+    margin-left: 100%;
     font-size: 34px;
 }
 
