@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css">
         <title>Мяндекс.Муррркет</title>
-        <meta charset="utf-8">
     </head>
     <body>
         <header>
@@ -12,8 +12,10 @@
         <main>
             
             <div class="cats">
-                <input class="tile" type="radio" name="view"><span>Плитка:</span>
-                <input class="list" type="radio" name="view"><span>Список:</span>
+                <input class="tile" id="tile" type="radio" name="view" checked="checked">
+                <label for="tile">Плитка:</label>
+                <input class="list" id="list" type="radio" name="view">
+                <label for="list">Список:</label>
                 <br>
                 <div class="cat">
                     <img src="images/1.jpg" alt="Васька и Петька" title="Васька и Петька">
@@ -31,8 +33,8 @@
                         <input id="star-0" type="radio" name="group_1">
                         <label title="1" for="star-0"></label>
                     </div>
-                    <div class="coast">10$</div>
-                    <div class="old_coast">15$</div>
+                    <div class="cost">10$ <span class="old_cost">15$</span></div>
+                    
                     <div class="description">Поющие космические коты!</div>
                 </div>
                 <div class="cat">
@@ -53,8 +55,7 @@
                         <input id="star-9" type="radio" name="group_2">
                         <label title="1" for="star-9"></label>
                     </div>
-                    <div class="coast">15$</div>
-                    <div class="old_coast">17$</div>
+                    <div class="cost">15$ <span class="old_cost">17$</span></div>
                     <div class="description">Маленький няшный котик!</div>
                 </div>
                 <div class="cat">
@@ -73,8 +74,7 @@
                         <input id="star-14" type="radio" name="group_3">
                         <label title="1" for="star-14"></label>
                     </div>
-                    <div class="coast">25$</div>
-                    <div class="old_coast">25$</div>
+                    <div class="cost">25$ <span class="old_cost">25$</span></div>
                     <div class="description">Котик, который помещается в кармане</div>
                 </div>
                 <div class="cat">
@@ -93,8 +93,7 @@
                         <input id="star-19" type="radio" name="group_4">
                         <label title="1" for="star-19"></label>
                     </div>
-                    <div class="coast">10$</div>
-                    <div class="old_coast">15$</div>
+                    <div class="cost">10$ <span class="old_cost">15$</span></div>
                     <div class="description">Кот, который живет в джинсах</div>
                 </div>
                 <div class="cat">
@@ -113,8 +112,7 @@
                         <input id="star-24" type="radio" name="group_5">
                         <label title="1" for="star-24"></label>
                     </div>
-                    <div class="coast">19$</div>
-                    <div class="old_coast">13$</div>
+                    <div class="cost">19$ <span class="old_cost">13$</span></div>
                     <div class="description">Кот, пьющий молочко</div>
                 </div>
                 <div class="cat">
@@ -136,8 +134,7 @@
                         <input id="star-29" type="radio" name="group_6">
                         <label title="1" for="star-29"></label>
                     </div>
-                    <div class="coast">100$</div>
-                    <div class="old_coast">150$</div>
+                    <div class="cost">100$ <span class="old_cost">150$</span></div>
                     <div class="description">Чтобы не было скучно!</div>
                 </div>
                 <div class="cat">
@@ -156,8 +153,7 @@
                         <input id="star-34" type="radio" name="group_7">
                         <label title="1" for="star-34"></label>
                     </div>
-                    <div class="coast">Даром</div>
-                    <div class="old_coast">1$</div>
+                    <div class="cost">Даром <span class="old_cost">1$</span></div>
                     <div class="description">Мама и её сынишка</div>
                 </div>
                 <div class="cat">
@@ -176,8 +172,7 @@
                         <input id="star-39" type="radio" name="group_8">
                         <label title="1" for="star-39"></label>
                     </div>
-                    <div class="coast">13$</div>
-                    <div class="old_coast">15$</div>
+                    <div class="cost">13$ <span class="old_cost">15$</span></div>
                     <div class="description">Рыжий кот!</div>
                 </div>
                 <div class="cat">
@@ -196,8 +191,7 @@
                         <input id="star-44" type="radio" name="group_9">
                         <label title="1" for="star-44"></label>
                     </div>
-                    <div class="coast">9$</div>
-                    <div class="old_coast">15$</div>
+                    <div class="cost">9$ <span class="old_cost">15$</span></div>
                     <div class="description">Хитрый рыжий котяра</div>
                 </div>
                 <div class="cat">
@@ -216,8 +210,7 @@
                         <input id="star-49" type="radio" name="group_10">
                         <label title="1" for="star-49"></label>
                     </div>
-                    <div class="coast">25$</div>
-                    <div class="old_coast">35$</div>
+                    <div class="cost">25$ <span class="old_cost">35$</span></div>
                     <div class="description">Белый пушистый котик!</div>
                 </div>
             </div>
