@@ -4,7 +4,7 @@
     src: local(lombardina), url(Lombardina.ttf);
 }
 
-a,
+.name,
 h3
 {
     display: block;
@@ -23,7 +23,7 @@ h3
     right: 100px;
 }
 
-.line-1
+.text-mode
 {
     position: absolute;
     top: 40px;
@@ -37,8 +37,17 @@ h3
     text-align: center;
 }
 
+.image
+{
+    position: relative;
+    height: 210px;
+}
+
 .cat-image
 {
+    position: absolute;
+    bottom: 0;
+
     width: 230px;
 
     padding: 15px;
@@ -54,7 +63,7 @@ h3
 .grannys-cat
 {
     width: 300px;
-    height: 550px;
+    height: 570px;
     border: thin #c0c0c0 solid;
     margin: 30px;
     box-shadow: 0 1px 0 #ccc
@@ -92,7 +101,7 @@ h3
     color: #ff0;
 }
 
-p
+.breed
 {
     text-align: center;
 }
@@ -124,6 +133,7 @@ p
     height: 48px;
     width: 240px;
     display: table;
+    font-size: 0;
     margin: 0 30px;
 }
 
@@ -160,7 +170,7 @@ p
     z-index: 2;
 }
 
-.starRadio
+.star-radio
 {
     display: inline-block;
     margin: 0;
@@ -230,16 +240,30 @@ p
     width: 100%;
 }
 
-.line:checked ~ .cat
+.line:checked ~ .grannys-cat
 {
     display: block;
-    width: 94%;
+    width: 95%;
 }
 
-.line:checked ~ .description
+.line:checked ~ .grannys-cat .description,
+.line:checked ~ .grannys-cat .description
 {
-    margin: 15px;
-    vertical-align: center;
-    width: 20%;
     display: inline-block;
+    position: relative;
+    width: 30%;
+    padding-left: 25px;
+}
+
+.line:checked ~ .grannys-cat .cat-image
+{
+    display: inline-block;
+    position: inherit;
+    vertical-align: top;
+    width: 400px;
+}
+
+.line:checked ~ .grannys-cat .rating
+{
+    margin: 0 90px;
 }
