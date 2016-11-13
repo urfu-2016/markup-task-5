@@ -112,6 +112,7 @@ input[id='displayTile']
     display: none;
     position: absolute;
     left: 0;
+    top: 0;
     width: 100%;
     margin: 0;
     padding: .5rem 0;
@@ -171,9 +172,29 @@ input[id='displayTile']
 
 .muzzle
 {
+    display: inline-block;
     width: .85rem;
+    height: .85rem;
     margin: 0;
     padding: 0;
+}
+
+.muzzle-select,
+.muzzle-half-select,
+.muzzle-no-select
+{
+    background: url(images/catSelect.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.muzzle-half-select
+{
+    background-image: url(images/catHalfSelect.png);
+}
+
+.muzzle-no-select
+{
+    background-image: url(images/catNoSelect.png);
 }
 
 .price
@@ -196,7 +217,6 @@ input[id='displayTile']
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-weight: bold;
 }
 
 .description
