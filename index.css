@@ -1,0 +1,251 @@
+html
+{
+    margin: 0;
+    background-color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #333;
+    cursor: default;
+}
+
+body
+{
+    margin: 0;
+}
+
+nav
+{
+    position: relative;
+    margin: 0;
+    padding: 1rem 2rem;
+    background: #f0f0f0;
+}
+
+.project-icon
+{
+    margin-right: 1rem;
+    color: #420;
+}
+
+.project-name
+{
+    display: inline-block;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.red-letter
+{
+    color: #a00;
+}
+
+.displayCats
+{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.switchDisplay
+{
+    margin: 0 0 0 2rem;
+    width: 1rem;
+    cursor: pointer;
+}
+
+.section-header
+{
+    margin: 0 0 1rem 1rem;
+}
+
+.cats
+{
+    margin: 0;
+    padding: 2rem;
+}
+
+input[id='displayList'],
+input[id='displayTile']
+{
+    display: none;
+}
+
+.cat
+{
+    display: inline-block;
+    width: 320px;
+    height: 470px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #eee;
+    vertical-align: top;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 5px rgba(0,0,0, .4);
+}
+
+.cat-photo,
+.cat-info,
+.cat-description
+{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.cat-info
+{
+    margin: 1rem 0;
+}
+
+.photo
+{
+    max-width: 100%;
+    max-height: 256px;
+    margin: 0 auto;
+}
+
+.add-to-bucket
+{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: .5rem 0;
+    background: rgba(0,0,0, .5);
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.cat-photo:hover > .add-to-bucket
+{
+    display: block;
+}
+
+.name
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name a
+{
+    color: #a00;
+    text-decoration: none;
+}
+
+.name a:hover,
+.name a:active
+{
+    color: #d00;
+    text-decoration: none;
+}
+
+.category
+{
+    margin: 0;
+    padding: 0;
+    font-size: .75rem;
+}
+
+.maybe-link-on-category:hover
+{
+    color: #a00;
+    cursor: pointer;
+}
+
+.rating
+{
+    margin: 0;
+    padding: .5rem 0;
+}
+
+.muzzle
+{
+    display: inline-block;
+    width: .85rem;
+    height: .85rem;
+    margin: 0;
+    padding: 0;
+}
+
+.muzzle-select,
+.muzzle-half-select,
+.muzzle-no-select
+{
+    background: url(images/catSelect.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.muzzle-half-select
+{
+    background-image: url(images/catHalfSelect.png);
+}
+
+.muzzle-no-select
+{
+    background-image: url(images/catNoSelect.png);
+}
+
+.price
+{
+    margin: 0;
+    padding: 0;
+    color: #085;
+    font-size: 1.25rem;
+}
+
+.old-price
+{
+    color: #000;
+    font-size: .75rem;
+    text-decoration: line-through;
+}
+
+.description-header
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.description
+{
+    margin: 0;
+    padding: .5rem 0 0;
+}
+
+input[id='displayList']:checked ~ .cat
+{
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #eee;
+}
+
+input[id='displayList']:checked ~ .cat .cat-photo,
+input[id='displayList']:checked ~ .cat .cat-info,
+input[id='displayList']:checked ~ .cat .cat-description
+{
+    display: inline-block;
+    position: relative;
+    width: calc((100% - 2rem) / 3 - 1rem);
+    margin: 0;
+    vertical-align: top;
+}
+
+input[id='displayList']:checked ~ .cat .cat-info
+{
+    margin: 0 1rem;
+}
