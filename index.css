@@ -2,6 +2,7 @@
 {
     display: block;
     width: 90%;
+    height: auto;
     min-height: 300px;
     margin-top: 10px;
 }
@@ -16,18 +17,14 @@
 .item
 {
     width: 300px;
+    height: 850px;
     display: inline-block;
     margin: 20px;
 }
 
-.item:hover
-{
-    border: 3px solid;
-}
-
 .item:hover .description
 {
-    font: 20px 'Bookman Old Style', serif;
+    font: 16px 'Bookman Old Style', serif;
 }
 
 .name
@@ -87,7 +84,7 @@
     user-select: none;
 }
 
-h1
+h1, h2
 {
     text-align: center;
 }
