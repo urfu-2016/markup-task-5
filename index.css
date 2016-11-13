@@ -1,0 +1,91 @@
+.list-view:checked ~ .items-container .item
+{
+    display: block;
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    margin-top: 10px;
+}
+
+.list-view:checked ~ .items-container .item img
+{
+    float: left;
+    margin-right: 30px;
+    max-width: 160px;
+}
+
+.item
+{
+    width: 300px;
+    height: 850px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.item:hover .description
+{
+    font: 16px 'Bookman Old Style', serif;
+}
+
+.name
+{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+.name:hover
+{
+    color: red;
+}
+
+.category:hover
+{
+    text-decoration: underline;
+}
+
+.item img
+{
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.item img:hover
+{
+    opacity: .7;
+}
+
+.description
+{
+    display: table;
+}
+
+.price
+{
+    color: #f00;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    color: #000;
+}
+
+.rating
+{
+    font-size: 24px;
+    color: #ffd700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1,
+h2
+{
+    text-align: center;
+}
