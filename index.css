@@ -40,10 +40,10 @@ a
     width: 100%;
     height: auto;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
     margin: 10;
+
 }
 
 .photo
@@ -132,7 +132,7 @@ a:hover
 .inline:checked ~ main .cat .card,
 .inline:checked ~ main .cat .description
 {
-    display: inline-block;
+    display: inline-block; 
     position: relative;
     width: 33%;
     margin: 0;
