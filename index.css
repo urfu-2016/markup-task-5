@@ -22,11 +22,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 600;
 }
 
-.name:hover
+.name a
 {
-    background-color: #cfb0d5;
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover
+{
+    color: #8d369e;
 }
 
 .price
@@ -67,13 +74,52 @@
 
 .changeLook:checked ~ main > .cat
 {
-    width: 97%;
-    height: auto;
+    display: block;
+    width: auto;
 }
 
-.changeLook:checked ~ main > .cat div
+.changeLook:checked ~ main > .cat > div
 {
     display: inline-block;
     width: 300px;
     vertical-align: middle;
+}
+
+.rating
+{
+    width: 100px;
+    height: 20px;
+    background: url(emptyStar.png) repeat-x;
+}
+
+.stars
+{
+    display: inline-block;
+    background: url(star.png) repeat-x;
+    height: 20px;
+}
+
+.stars1
+{
+    width: 20px;
+}
+
+.stars2
+{
+    width: 40px;
+}
+
+.stars3
+{
+    width: 60px;
+}
+
+.stars4
+{
+    width: 80px;
+}
+
+.stars5
+{
+    width: 100px;
 }
