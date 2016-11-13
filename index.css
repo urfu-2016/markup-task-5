@@ -1,0 +1,146 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
+article
+{
+    margin: 2%;
+    width: 20%;
+    display: inline-block;
+    border: 2px dashed black;
+    vertical-align: top;
+    min-height: 300px;
+    min-width: 380px;
+}
+
+section
+{
+    min-height: 310px;
+    position: relative;
+}
+
+a > p
+{
+    position: absolute;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #f85c37;
+    font-size: 24px;
+}
+
+img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+}
+
+.info
+{
+    margin: 0 2%;
+    min-height: 270px;
+    vertical-align: bottom;
+    font-size: 20px;
+}
+
+.price span
+{
+    text-decoration: line-through;
+}
+
+p > input
+{
+    display: none;
+}
+
+.stars
+{
+    direction: rtl;
+    text-align: center;
+}
+
+.stars label:before
+{
+    font-family: FontAwesome, fantasy;
+    content: '\f006';
+    font-size: 40px;
+    width: 19px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.half:before
+{
+    transform: scale(-1, 1);
+}
+
+p > label:hover:before,
+p > label:hover ~ label:before
+{
+    opacity: .8;
+}
+
+p > label:hover:before,
+p > input:checked ~ label:before,
+p > label:hover ~ label:before
+{
+    content: '\f005';
+}
+
+article:hover
+{
+    border: 2px solid black;
+}
+
+a[href^='http://www.zoopicture.ru']:hover p
+{
+    color: black;
+    text-transform: uppercase;
+}
+
+.line-mode:checked ~ main > article
+{
+    display: block;
+    width: 96%;
+}
+
+.line-mode:checked ~ main section
+{
+    display: inline-block;
+    margin: 2%;
+    width: 33%;
+}
+
+.line-mode:checked ~ main img
+{
+    position: static;
+}
+
+.line-mode:checked ~ main .info
+{
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 24px;
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+}
+
+.line-mode:checked ~ main a p
+{
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    padding-left: 10%;
+    margin-left: 100%;
+    font-size: 34px;
+}
+
+.line-mode:checked ~ main .stars
+{
+    margin-right: 40%;
+}
