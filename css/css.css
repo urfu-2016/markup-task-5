@@ -228,8 +228,7 @@
     max-height: 100%;
     opacity: 0;
     -webkit-transition: opacity 2s linear;
-    -webkit-transition: opacity .5s linear;
-    transition: opacity .5s linear;
+    transition: opacity .2s linear;
 }
 
 .cat-item__img img:first-of-type
@@ -291,28 +290,28 @@
 {
     background: red;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
 }
 
 .radio-1-1:checked ~ .img-1-1
 {
     opacity: 1;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
 }
 
 .radio-1-2:checked ~ .img-1-2
 {
     opacity: 1;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
 }
 
 .radio-1-3:checked ~ .img-1-3
 {
     opacity: 1;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
 }
 
 .cat-item__name,
