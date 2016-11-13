@@ -5,8 +5,9 @@ body
     width: 100%;
     height: 100%;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    margin: 20;
+    margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header
@@ -15,14 +16,9 @@ header
     text-align: center;
 }
 
-h1 span
-{
-    color: #f00;
-}
-
 span
 {
-    color: red;
+    color: #f00;
 }
 
 label
@@ -33,6 +29,8 @@ label
 img
 {
     width: 90%;
+    height: auto;
+    align-self: center;
 }
 
 a
@@ -40,11 +38,19 @@ a
     font-size: 20px;
     display: block;
     width: 100%;
+    height: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
-    margin: 0;
+    margin: 10;
+}
+
+.photo
+{
+    max-width: 100%;
+    max-height: 256px;
+    margin: 0 auto;
 }
 
 .cross-out
@@ -55,7 +61,7 @@ a
 .cat
 {
     display: inline-block;
-    width: 250pt;
+    width: 350px;
     vertical-align: top;
     margin: 30px;
     padding: 20px;
@@ -63,99 +69,72 @@ a
 
 .cat:hover
 {
-    box-shadow: 0 0 3em red;
-    background-color: yellow;
+    box-shadow: 0 0 3em #f00;
+    background-color: #ff0;
 }
 
 .categoryCats:hover,
 a:hover
 {
-    color: red;
+    color: #f00;
+    margin: 0;
 }
 
-.text
+.categoryCats
+{
+    font: 15px 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+
+.description
 {
     width: 100%;
     vertical-align: top;
     font: 15px 'Gloria Hallelujah', cursive;
     text-align: center;
+    margin: 0;
+    padding: .5rem 0 0;
 }
 
 .price
 {
     font: bold 30px 'Pacifico', cursive;
     color: black;
+    text-align: center;
+    margin: 0;
 }
 
-img
+.inline:checked ~ main,
+.inline:checked ~ main div.cat
 {
     width: 90%;
-    height: 90%;
-    align-self: center;
-}
-
-input[value='inline']:checked ~ main
-{
-    width: 100%;
-    display: table;
+    display: inline-block;
     border-collapse: collapse;
+    margin: 10px;
+    padding: 20px;
 }
 
-input[value='inline']:checked ~ main div.cat
+.inline:checked ~ main img
 {
-    display: table-row;
-    width: 100%;
-    margin-top: 20px;
-    height: 70px;
-    padding: 2px;
-}
-
-input[value='inline']:checked ~ main div.cat a
-{
-    display: table-cell;
-    width: 25%;
-    height: 25%;
-    margin-top: 10px;
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    height: auto;
     text-align: left;
 }
 
-input[value='inline']:checked ~ main div.cat a img
+.card
 {
-    display: table-cell;
-    width: 250pt;
-    text-align: left;
+    vertical-align: top;
 }
 
-input[value='inline']:checked ~ main div.cat div
+.inline:checked ~ main .cat .photo,
+.inline:checked ~ main .cat .card,
+.inline:checked ~ main .cat .description
 {
-    width: 50%;
-    height: 50%;
-    display: table-cell;
-    padding: 0;
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    margin: 0;
     text-align: left;
 }
-
-input[value='inline']:checked ~ main div.cat div a
-{
-    display: block;
-    width: 70%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: left;
-}
-
-input[value='inline']:checked ~ main div.cat div div
-{
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-
-input[value='inline']:checked ~ main div.cat div div p
-{
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-
