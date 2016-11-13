@@ -1,57 +1,56 @@
-input[value='list'].radio:checked ~ main figcaption
+.switching-display[value='list']:checked ~ main figcaption
 {
-    display: inline-block;
-    width: 70%;
+    width: 60%;
     vertical-align: top;
     margin: 0 3%;
 }
 
-input[value='list'].radio:checked ~ main img
+.switching-display[value='list']:checked ~ main img
 {
-    display: inline-block;
     width: 20%;
 }
 
-input[value='list'].radio:checked ~ main figure
+.switching-display[value='list']:checked ~ main .cat-card
 {
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     padding: 40px;
     display: block;
 }
 
-input[value='list'].radio:checked ~ main .features
+.switching-display[value='list']:checked ~ main .features
 {
     vertical-align: top;
-    display: inline-block;
     width: 45%;
 }
 
-input[value='list'].radio:checked ~ main .description
+.switching-display[value='list']:checked ~ main .description
 {
-    display: inline-block;
     vertical-align: top;
     width: 30%;
 }
 
-img
-{
-    width: 290px;
-}
-
-figure
+img,
+.cat-card
 {
     width: 300px;
+}
+
+.cat-card,
+.switching-display[value='list']:checked ~ main figcaption,
+.switching-display[value='list']:checked ~ main img,
+.switching-display[value='list']:checked ~ main .features,
+.switching-display[value='list']:checked ~ main .description
+{
     display: inline-block;
 }
 
 .name
 {
-    padding: 3px;
     font-size: 25px;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
-    height: 30px;
     width: 275px;
     display: block;
 }
@@ -61,7 +60,6 @@ figure
     font-size: 13px;
     color: #888;
     text-decoration: underline;
-    padding: 3px;
 }
 
 .price
@@ -69,22 +67,31 @@ figure
     font-size: 22px;
     color: #8b0000;
     font-weight: bold;
-    padding: 3px;
 }
 
-.description
+.cat-description
 {
     padding: 3px;
 }
 
-.kind
+.rating
+{
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.red-heart,
+.black-heart
 {
     display: inline-block;
+}
+
+.red-heart
+{
     color: #f00;
 }
 
-.evil
+.black-heart
 {
-    display: inline-block;
     color: #000;
 }
