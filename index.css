@@ -1,0 +1,125 @@
+.cat
+{
+    border: 1px solid;
+    border-color: white;
+    display: inline-block;
+    margin: 20px 10px;
+    vertical-align: top;
+    width: 250px;
+    padding: 5px;
+    text-align: left;
+}
+
+.cat:hover
+{
+    border: 1px solid;
+    border-color: #cfb0d5;
+    box-shadow: 0 0 30px;
+}
+
+.name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.name a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.name a:hover
+{
+    color: #8d369e;
+}
+
+.price
+{
+    color: #b5030f;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.oldprice
+{
+    text-decoration: line-through;
+    color: #b36565;
+    font-size: .8em;
+}
+
+.mainPicture
+{
+    text-align: center;
+    opacity: .8;
+}
+
+.mainPicture:hover
+{
+    opacity: 1;
+}
+
+.breed a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.breed a:hover
+{
+    color: #8d369e;
+}
+
+.changeLook:checked ~ main > .cat
+{
+    display: block;
+    width: auto;
+}
+
+.changeLook:checked ~ main > .cat > div
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.rating
+{
+    width: 100px;
+    height: 20px;
+    background: url(emptyStar.png) repeat-x;
+}
+
+.stars
+{
+    display: inline-block;
+    background: url(star.png) repeat-x;
+    height: 20px;
+}
+
+.stars1
+{
+    width: 20px;
+}
+
+.stars2
+{
+    width: 40px;
+}
+
+.stars3
+{
+    width: 60px;
+}
+
+.stars4
+{
+    width: 80px;
+}
+
+.stars5
+{
+    width: 100px;
+}
