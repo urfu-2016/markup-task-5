@@ -1,13 +1,20 @@
 body
 {
+    margin: 0;
+    padding: 0;
     background: url('fon.jpg') no-repeat;
     background-size: cover;
 }
 
 .list
 {
-    display: block;
+    display: inline-block;
     vertical-align: top;
+}
+
+label.list
+{
+    width: 80%;
 }
 
 .cat
@@ -17,11 +24,23 @@ body
     width: 22.5%;
     border: .1em solid #946b54;
     margin: 1%;
+    vertical-align: top;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 1em;
 }
 
 .photo img
 {
     width: 100%;
+}
+
+.photo img:hover
+{
+    filter: opacity(85%);
+    -webkit-filter: opacity(85%);
 }
 
 .cat-name,
@@ -53,42 +72,55 @@ body
     margin-left: 2em;
 }
 
+a:hover
+{
+    color: #8b4513;
+}
+
 .rating
 {
-    unicode-bidi: embed;
-    direction: rtl;
-    text-align: left;
-    margin-left: 2em;
+    border: none;
+    float: left;
+    margin-left: 1em;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: .1em;
+    font-size: 2.2em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ccc;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #fff700;
 }
 
 .price
 {
     font-size: 1.3em;
-    margin-top: 1.3em;
-    margin-left: 1.7em;
-}
-
-.rating input
-{
-    visibility: hidden;
-}
-
-.rating input:before
-{
-    visibility: visible;
-    position: relative;
-    content: '✰';
-    font-size: 2em;
-    color: #000;
-}
-
-.rating input:hover:before,
-.rating input:hover ~ input:before,
-.rating input:checked:before,
-.rating input:checked ~ input:before
-{
-    content: '★';
-    color: #ffdf00;
+    margin: 3.1em 0 0 1.7em;
 }
 
 .current-price,
@@ -99,7 +131,6 @@ body
 
 .description
 {
-    margin: 0 1em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -107,13 +138,19 @@ body
 .description p
 {
     font-size: 1.1em;
+    margin: 0 1em;
 }
 
 .list:checked ~ .cat
 {
-    width: 100%;
+    width: 98%;
     border: none;
     display: block;
+}
+
+.list:checked ~ .cat.rating
+{
+    font-size: .5em;
 }
 
 .list:checked ~ .cat .photo,
@@ -124,10 +161,20 @@ body
     display: inline-block;
 }
 
+.list:checked ~ .cat
+{
+    min-width: 715px;
+}
+
 .list:checked ~ .cat .photo,
 .list:checked ~ .cat .information
 {
-    width: 30%;
+    width: 29%;
+}
+
+.list:checked ~ .cat .photo img
+{
+    margin: .1em;
 }
 
 .list:checked ~ .cat .description
@@ -140,46 +187,26 @@ body
     .cat
     {
         width: 30%;
-        /*margin-left: 1.6%;*/
+        margin-left: 1.6%;
+        font-size: .9em;
     }
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
     .cat
     {
-        width: 100%;
-        border: none;
-        display: block;
+        width: 46%;
+        margin-left: 1.5%;
+        font-size: .7em;
     }
+}
 
-    .photo,
-    .information,
-    .description
+@media screen and (max-width: 400px)
+{
+    .cat
     {
-        vertical-align: top;
-        display: inline-block;
-    }
-
-    .information,
-    .description
-    {
+        width: 98%;
         font-size: .5em;
-    }
-
-    .photo,
-    .information
-    {
-        width: 30%;
-    }
-
-    .rating input:before
-    {
-        font-size: 1.5em;
-    }
-
-    .description
-    {
-        width: 30%;
     }
 }
