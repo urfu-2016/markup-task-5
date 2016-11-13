@@ -132,7 +132,7 @@ a:hover
 .inline:checked ~ main .cat .card,
 .inline:checked ~ main .cat .description
 {
-    display: inline-block; 
+    display: inline-block;
     position: relative;
     width: 33%;
     margin: 0;
