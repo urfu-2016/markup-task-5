@@ -1,0 +1,112 @@
+main
+{
+    text-align: center;
+}
+
+.item
+{
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+}
+
+.cat-photo
+{
+    width: 100%;
+    height: auto;
+}
+
+.card
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 10px #0078ff;
+}
+
+.cost
+{
+    color: red;
+    font: bold 110% serif;
+}
+
+span.cost
+{
+    color: #000;
+    text-decoration: line-through;
+}
+
+.category
+{
+    color: #a9a9a9;
+}
+
+.rating
+{
+    text-align: left;
+    color: blue;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 2em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+{
+    content: '\2605';
+    position: absolute;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: #e24486;
+}
+
+.list:checked ~ main .item
+{
+    display: block;
+    width: 95%;
+}
+
+.list:checked ~ main .card,
+.list:checked ~ main .photo
+{
+    margin: 5px;
+    vertical-align: middle;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+.list:checked ~ main .description
+{
+    margin: 5px;
+    vertical-align: middle;
+    width: 30%;
+    display: inline-block;
+}
+
+.description
+{
+    hyphens: manual;
+}
+
+.list:checked ~ .item .photo
+{
+    position: relative;
+    width: 50%;
+}
