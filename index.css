@@ -41,9 +41,11 @@ a
     width: 100%;
     height: auto;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
-    margin: 10;
+    margin: 10px;
+
 }
 
 .cross-out
@@ -73,7 +75,8 @@ a:hover
     margin: 0;
 }
 
-.categoryCats
+.categoryCats,
+.description
 {
     font: 15px 'Gloria Hallelujah', cursive;
     text-align: center;
@@ -83,8 +86,6 @@ a:hover
 {
     width: 100%;
     vertical-align: top;
-    font: 15px 'Gloria Hallelujah', cursive;
-    text-align: center;
     margin: 0;
     padding: .5rem 0 0;
 }
