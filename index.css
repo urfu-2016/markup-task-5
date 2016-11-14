@@ -1,0 +1,124 @@
+body
+{
+    min-width: 550px;
+    margin: 2%;
+}
+
+header,
+h3,
+h4,
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+h1::first-letter
+{
+    color: #f00;
+}
+
+h3
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+h4
+{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.oldCost
+{
+    text-align: right;
+    text-decoration: line-through;
+    color: #c0c0c0;
+    font-size: .8em;
+    display: inline-block;
+}
+
+.newCost
+{
+    text-align: right;
+    font-size: 1em;
+    color: #f00;
+    display: inline-block;
+}
+
+.сost
+{
+    font-size: 1em;
+    display: inline-block;
+}
+
+.cat
+{
+    width: 22.45%;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cat p
+{
+    display: inline-block;
+}
+
+.cat img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.list-view:checked ~ .market .cat
+{
+    width: 90%;
+}
+
+.list-view:checked ~ .market .cat img
+{
+    margin: 4px;
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+}
+
+.list-view:checked ~ .market .cat .comment
+{
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+.star:before
+{
+    content: '\2605';
+    position: absolute;
+    color: yellow;
+}
+
+.сost:hover,
+.newCost:hover
+{
+    color: #000080;
+}
+
+img:hover
+{
+    -webkit-filter: contrast(185%);
+}
+
+.cat:hover
+{
+    background: #e6ffff;
+}
