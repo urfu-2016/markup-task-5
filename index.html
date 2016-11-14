@@ -1,8 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+    <title>Мяндекс.Муррркет</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <label class="fake-button" for="view-switcher">Переключить режим отображения</label>
+    <main class="card-list">
+        <input class="fake-checkbox" type="checkbox" name="view-switcher" id="view-switcher">
+        <div class="card">
+            <div class="photo">
+                <a href="cat-1"><img src="images/cat1.jpeg" alt="Мурзик"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-1">Мурзик</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1000₽</span>
+                </div>
+            </div>
+            <div class="description">Ленивый домашний кот, 4 месяца, приучен к лотку.
+                Питается сухим кормом.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-2"><img src="images/cat2.jpeg" alt="Дуся"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-2">Дуся</a>
+                <div class="category">
+                    <a href="category-1">Девочки</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1200₽</span><span class="previous-price">1400₽</span>
+                </div>
+            </div>
+            <div class="description">Привередливая кошечка, 6 месяцев, приучена к лотку и когтеточке.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-3"><img src="images/cat3.jpeg" alt="Китти"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-3">Китти</a>
+                <div class="category">
+                    <a href="category-1">Девочки</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1300₽</span><span class="previous-price">1800₽</span>
+                </div>
+            </div>
+            <div class="description">Веселая киса, очень жизнерадостная, 5 месяцев.
+                Подойдет для ловли мышей.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-4"><img src="images/cat4.jpg" alt="Масяня"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-4">Масяня</a>
+                <div class="category">
+                    <a href="category-1">Девочки</a> - <a href="category-2">Длинношерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">2100₽</span>
+                </div>
+            </div>
+            <div class="description">Молодая кошечка, привита, 2 месяца. От титулованных родителей.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-5"><img src="images/cat5.jpg" alt="Барон"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-5">Барон</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">2300₽</span>
+                </div>
+            </div>
+            <div class="description">Воспитанный домашний кот, 4 месяца. Дрессированный (знает команды "место"
+                и "лежать").</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-6"><img src="images/cat6.jpg" alt="Буся"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-6">Буся</a>
+                <div class="category">
+                    <a href="category-1">Девочки</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1500₽</span><span class="previous-price">1700₽</span>
+                </div>
+            </div>
+            <div class="description">Привита, приучена к лотку и когтеточке, 2 месяца. Любит полакомиться
+                рыбой и огурцами.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-7"><img src="images/cat7.jpeg" alt="Марсик"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-7">Марсик</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Длинношерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1800₽</span><span class="previous-price">2000₽</span>
+                </div>
+            </div>
+            <div class="description">Жизнерадостный котенок, 2 месяца. Породистый, от титулованных
+                родителей.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-8"><img src="images/cat8.jpg" alt="Пусик"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-8">Пусик</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1000₽</span>
+                </div>
+            </div>
+            <div class="description">Своенравный котенок, кушает только вискас, 3 месяца. Приучен к
+                когтеточке.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-9"><img src="images/cat9.jpeg" alt="Лизун"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-9">Лизун</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">1500₽</span>
+                </div>
+            </div>
+            <div class="description">Дружелюбный кот, 4 месяца. Любит общаться с детьми и играть с другими
+                котиками.</div>
+        </div><!--
+        --><div class="card">
+            <div class="photo">
+                <a href="cat-10"><img src="images/cat10.jpg" alt="Малыш"></a>
+            </div>
+            <div class="info">
+                <a class="link" href="cat-10">Малыш</a>
+                <div class="category">
+                    <a href="category-1">Мальчики</a> - <a href="category-2">Короткошерстные</a>
+                </div>
+                <div class="goodness">
+                    <span>★</span><span>★</span><span>★</span><span>☆</span><span>☆</span>
+                </div>
+                <div class="price">
+                    <span class="current-price">800₽</span><span class="previous-price">900₽</span>
+                </div>
+            </div>
+            <div class="description">Дворовый котенок ищет хозяев! Прошел подготовку в приемнике, привит.
+                Аккуратный и чистоплотный, 5 месяцев.</div>
+        </div>
+    </main>
 </body>
+
 </html>
