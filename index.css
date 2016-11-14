@@ -1,0 +1,212 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url('fon.jpg') no-repeat;
+    background-size: cover;
+}
+
+.list
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+label.list
+{
+    width: 80%;
+}
+
+.cat
+{
+    font: 16px Arial serif;
+    display: inline-block;
+    width: 22.5%;
+    border: .1em solid #946b54;
+    margin: 1%;
+    vertical-align: top;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 1em;
+}
+
+.photo img
+{
+    width: 100%;
+}
+
+.photo img:hover
+{
+    filter: opacity(85%);
+    -webkit-filter: opacity(85%);
+}
+
+.cat-name,
+.cat-breed
+{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-name a,
+.cat-breed a
+{
+    text-decoration: none;
+    color: #36170c;
+}
+
+.cat-name a
+{
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+.cat-breed a
+{
+    font-size: 1em;
+    font-style: italic;
+    margin-left: 2em;
+}
+
+a:hover
+{
+    color: #8b4513;
+}
+
+.rating
+{
+    border: none;
+    float: left;
+    margin-left: 1em;
+}
+
+.rating > input
+{
+    display: none;
+}
+
+.rating > label:before
+{
+    margin: .1em;
+    font-size: 2.2em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+}
+
+.rating > label
+{
+    color: #ccc;
+    float: right;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label
+{
+    color: #fff700;
+}
+
+.price
+{
+    font-size: 1.3em;
+    margin: 3.1em 0 0 1.7em;
+}
+
+.current-price,
+.old-price
+{
+    color: #f80000;
+}
+
+.description
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description p
+{
+    font-size: 1.1em;
+    margin: 0 1em;
+}
+
+.list:checked ~ .cat
+{
+    width: 98%;
+    border: none;
+    display: block;
+}
+
+.list:checked ~ .cat.rating
+{
+    font-size: .5em;
+}
+
+.list:checked ~ .cat .photo,
+.list:checked ~ .cat .information,
+.list:checked ~ .cat .description
+{
+    vertical-align: top;
+    display: inline-block;
+}
+
+.list:checked ~ .cat
+{
+    min-width: 715px;
+}
+
+.list:checked ~ .cat .photo,
+.list:checked ~ .cat .information
+{
+    width: 29%;
+}
+
+.list:checked ~ .cat .photo img
+{
+    margin: .1em;
+}
+
+.list:checked ~ .cat .description
+{
+    width: 35%;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .cat
+    {
+        width: 30%;
+        margin-left: 1.6%;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .cat
+    {
+        width: 46%;
+        margin-left: 1.5%;
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .cat
+    {
+        width: 98%;
+        font-size: .5em;
+    }
+}
