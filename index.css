@@ -154,7 +154,7 @@ header h1::first-letter
 
 .list-mode:checked ~ section .cat .cat-photo
 {
-   height: auto;
+    height: auto;
 }
 
 .list-mode:checked ~ section .cat .cat-photo .photo-wrapper
