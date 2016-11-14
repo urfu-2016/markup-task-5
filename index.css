@@ -103,5 +103,5 @@ a:hover
 .list:checked ~ .item .photo
 {
     position: relative;
-	width: 50%;
+    width: 50%;
 }
