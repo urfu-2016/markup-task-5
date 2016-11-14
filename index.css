@@ -1,10 +1,10 @@
-@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url(https://i.icomoon.io/public/temp/be674d8858/UntitledProject/style.css);
 
 @font-face
 {
     font-family: 'Open Sans';
     src: local('Open Sans'), url('./fonts/OpenSans-Regular.ttf')
-        format('tff'), url('./fonts/OpenSans.woff') format('woff');
+        format('ttf'), url('./fonts/OpenSans.woff') format('woff');
 }
 
 .kindness-wrapper
@@ -34,7 +34,7 @@
 {
     display: inline-block;
     cursor: pointer;
-    font: 2em 'FontAwesome', fantasy;
+    font: 2em 'icomoon', fantasy;
     content: '\f005';
     margin: 0;
 }
@@ -58,6 +58,21 @@
 .kindness-input:checked ~ .kindness-label:hover ~ .kindness-label
 {
     color: #f9be02;
+}
+
+.label:before
+{
+    font: 1.5em 'icomoon', fantasy;
+}
+
+.label-tile:before
+{
+    content: '\f00a';
+}
+
+.label-list:before
+{
+    content: '\f00b';
 }
 
 body
@@ -212,16 +227,17 @@ body
 
 .tile:checked ~ .content .image
 {
-    min-height: 300px;
+    height: 300px;
+    width: 300px;
     margin-bottom: 20px;
+    display: table-cell;
     position: relative;
+    vertical-align: bottom;
+    text-align: center;
 }
 
 .tile:checked ~ .content .image > img
 {
     max-width: 100%;
     max-height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
