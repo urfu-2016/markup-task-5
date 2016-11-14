@@ -5,13 +5,20 @@ html
     margin: 0;
 }
 
+main
+{
+    display: inline-block;
+    margin: 0 5%;
+}
+
 .card
 {
-    width: 21%;
+    width: 22.55%;
     display: inline-block;
     margin: 1%;
     position: relative;
     font-family: sans-serif;
+    margin-bottom: 50px;
     vertical-align: top;
     -webkit-transition: transform .1s ease-out .01s;
     -moz-transition: transform .1s ease-out .01s;
@@ -99,46 +106,46 @@ html
     word-wrap: break-word;
 }
 
-.view-view-switch + label
+.view-switch + label
 {
     display: inline-block;
     width: 80%;
     margin-bottom: 100px;
 }
 
-.view-view-switch:checked ~ .card
+.view-switch:checked ~ .card
 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.view-view-switch:checked ~ .card .card-img,
+.view-switch:checked ~ .card .card-img,
 .view-switch:checked ~ .card .card-info,
 .view-switch:checked ~ .card .card-description
 {
     width: 30%;
-    display: inline-block;
+    display: inline-block !important;
     vertical-align: top;
     margin: .5%;
 }
 
 .view-switch:checked ~ .card .card-img
 {
-    width: 28%;
+    width: 25%;
 }
 
 .view-switch:checked ~ .card .card-description
 {
-    width: 28%;
+    width: 25%;
 }
 
-.view-view-switch:checked ~ .card .description-header
+.view-switch:checked ~ .card .description-header
 {
     margin: 0;
 }
 
-.view-view-switch:checked ~ .card .card-info
+.view-switch:checked ~ .card .card-info
 {
     min-width: 150px;
 }
@@ -147,7 +154,7 @@ html
 {
     .card
     {
-        width: 28%;
+        width: 30.5%;
     }
 }
 
@@ -155,39 +162,15 @@ html
 {
     .card
     {
-        display: block;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card-img,
-    .card-info,
-    .card-description
-    {
-        width: 30%;
         display: inline-block;
-        vertical-align: top;
-        margin: .5%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 120px;
     }
 
-    .card-img
+    .card-info .name
     {
-        width: 28%;
-    }
-
-    .card-description
-    {
-        width: 28%;
-    }
-
-    .description-header
-    {
-        margin: 0;
-    }
-
-    .card-info
-    {
-        min-width: 150px;
+        white-space: normal;
     }
 }
 
@@ -205,13 +188,14 @@ html
 .rating > label:before
 {
     font-size: 1.25em;
-    font-family: FontAwesome;
-    content: '\f005';
+    font-family: 'icomoon';
+    content: '\e901';
+
 }
 
 .rating > .half-star:before
 {
-    content: '\f089';
+    content: '\e900';
     position: absolute;
     margin: 0;
     left: 4px;
@@ -246,4 +230,16 @@ html
 .rating > input:checked ~ label:hover ~ label
 {
     color: #ffed85;
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?sj8zym');
+    src: url('fonts/icomoon.eot?sj8zym#iefix') format('embedded-opentype');
+    src: url('fonts/icomoon.ttf?sj8zym') format('truetype');
+    src: url('fonts/icomoon.woff?sj8zym') format('woff');
+    src: url('fonts/icomoon.svg?sj8zym#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
