@@ -64,11 +64,43 @@ header h1::first-letter
     height: 24px;
 }
 
-.rating-and-price .full-stars
+.rating-and-price .one-star
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 24px;
+    height: 24px;
+}
+
+.rating-and-price .two-stars
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 48px;
+    height: 24px;
+}
+
+.rating-and-price .three-stars
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 72px;
+    height: 24px;
+}
+
+.rating-and-price .four-stars
 {
     display: inline-block;
     background-image: url(img/star.png);
     width: 96px;
+    height: 24px;
+}
+
+.rating-and-price .five-stars
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 120px;
     height: 24px;
 }
 
