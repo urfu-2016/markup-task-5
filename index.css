@@ -38,17 +38,14 @@ header h1::first-letter
 {
     margin-top: 10px;
     font-size: 1.4em;
-    display: inline-block;
-    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.cat .about .category
+.cat .about .category a
 {
     font-size: .8em;
     color: #0f0;
-    display: table-cell;
 }
 
 .cat .about .rating-and-price
@@ -176,12 +173,12 @@ header h1::first-letter
     opacity: 1;
 }
 
-.cat .about .name:hover
+.cat .about .name a:hover
 {
     color: #f00;
 }
 
-.cat .about .category:hover
+.cat .about .category a:hover
 {
     color: #000;
 }
