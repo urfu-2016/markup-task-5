@@ -123,19 +123,34 @@ a:hover
     height: 100%;
 }
 
-.fourStars div
+.star_value_4 div
 {
     width: 80%;
 }
 
-.fourPlusStars div
+.star_value_5 div
 {
-    width: 90%;
+    width: 100%;
 }
 
-.threePlusStars div
+.star_value_3 div
 {
-    width: 70%;
+    width: 60%;
+}
+
+.star_value_2 div
+{
+    width: 40%;
+}
+
+.star_value_1 div
+{
+    width: 20%;
+}
+
+.star_value_0 div
+{
+    width: 0;
 }
 
 .display-line:checked ~ .item
