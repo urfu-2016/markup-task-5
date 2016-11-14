@@ -1,10 +1,11 @@
 .catblock
 {
-    width: 200px;
+    width: 220px;
     vertical-align: top;
-    height: 460px;
+    height: 465px;
     display: inline-block;
     margin: 20px 15px 15px;
+    overflow: hidden;
 }
 
 .head:hover img
@@ -51,7 +52,7 @@
 {
     vertical-align: top;
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
 }
 
 .price
@@ -107,4 +108,16 @@
 .head
 {
     height: 200px;
+    text-align: center;
 }
+
+.head img
+{
+    margin: 6px;
+}
+
+.content, .description
+{
+    margin: 5px;
+}
+
