@@ -202,7 +202,6 @@ body
     opacity: .6;
 }
 
-.item-rate input:checked ~ label:hover,
 .item-rate input:checked ~ label
 {
     opacity: 1;
