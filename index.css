@@ -64,44 +64,37 @@ header h1::first-letter
     height: 24px;
 }
 
-.rating-and-price .one-star
-{
-    display: inline-block;
-    background-image: url(img/star.png);
-    width: 24px;
-    height: 24px;
-}
-
-.rating-and-price .two-stars
-{
-    display: inline-block;
-    background-image: url(img/star.png);
-    width: 48px;
-    height: 24px;
-}
-
-.rating-and-price .three-stars
-{
-    display: inline-block;
-    background-image: url(img/star.png);
-    width: 72px;
-    height: 24px;
-}
-
-.rating-and-price .four-stars
-{
-    display: inline-block;
-    background-image: url(img/star.png);
-    width: 96px;
-    height: 24px;
-}
-
-.rating-and-price .five-stars
+.rating-and-price .stars
 {
     display: inline-block;
     background-image: url(img/star.png);
     width: 120px;
     height: 24px;
+}
+
+.rating-and-price .one-star
+{
+    width: 24px;
+}
+
+.rating-and-price .two-stars
+{
+    width: 48px;
+}
+
+.rating-and-price .three-stars
+{
+    width: 72px;
+}
+
+.rating-and-price .four-stars
+{
+    width: 96px;
+}
+
+.rating-and-price .five-stars
+{
+    width: 120px;
 }
 
 .rating-and-price .rating
