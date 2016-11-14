@@ -1,0 +1,208 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.items-list:checked ~ .market .market-item
+{
+    min-width: 1100px;
+    display: block;
+    width: 100%;
+    height: 290px;
+
+}
+
+.items-list:checked ~ .market .item-img-wrap,
+.items-list:checked ~ .market .item-short-info-wrap,
+.items-list:checked ~ .market .item-info-wrap
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.items-list:checked ~ .market .item-img-wrap
+{
+    width: 23%;
+}
+
+.items-list:checked ~ .market .cat-img
+{
+    top: 17%;
+}
+
+.items-list:checked ~ .market .item-short-info-wrap
+{
+    width: 27%;
+}
+
+.items-list:checked ~ .market .item-info-wrap
+{
+    width: 49%;
+}
+
+.market
+{
+    width: 90%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.wrapper
+{
+    margin: -15px -15px 0;
+}
+
+.market-item
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 15px 15px 0;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    padding: 0 10px;
+    box-sizing: border-box;
+    height: 800px;
+    overflow: auto;
+}
+
+.item-img
+{
+    height: 250px;
+    position: relative;
+}
+
+.cat-img
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.choose-me
+{
+    display: none;
+    position: absolute;
+    left: 30%;
+}
+
+.item-name
+{
+    font-size: 16px;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item-tags
+{
+    text-align: center;
+    color: #aaa;
+    font: 13px sans-serif;
+}
+
+.item-tags span
+{
+    cursor: pointer;
+}
+
+.item-rate
+{
+    text-align: center;
+    direction: rtl;
+}
+
+.item-cost
+{
+    text-align: center;
+    font-size: 20px;
+    height: 35px;
+}
+
+.item-cost__old
+{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.item-info
+{
+    line-height: 1.6em;
+}
+
+.link
+{
+    cursor: pointer;
+    color: #1883bb;
+    text-decoration: none;
+}
+
+.market-item:hover
+{
+    -webkit-box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+    -moz-box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+    box-shadow: -1px 1px 24px 1px rgba(128,157,245,1);
+}
+
+.link:hover,
+.item-tags span:hover
+{
+    color: #ec008c;
+}
+
+.cat-img:hover
+{
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: .8;
+}
+
+.cat-img:hover + .choose-me
+{
+    display: block;
+}
+
+.item-rate__inp
+{
+    display: none;
+}
+
+.item-rate label:nth-of-type(even),
+.item-rate label:nth-of-type(odd)
+{
+    display: inline-block;
+    width: 25px;
+    height: 47px;
+    background: url(img/leftstar.png);
+    background-size: 100%;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.item-rate label:nth-of-type(odd)
+{
+    background: url(img/righstar.png);
+    background-size: 100%;
+    margin-left: -4px;
+}
+
+.item-rate label:hover ~ label,
+.item-rate label:hover
+{
+    opacity: .6;
+}
+
+.item-rate input:checked ~ label
+{
+    opacity: 1;
+}
