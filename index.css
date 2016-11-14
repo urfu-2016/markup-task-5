@@ -286,6 +286,7 @@ input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
     color: #f00;
     font-family: FontAwesome;
     margin-bottom: 20px;
+    /*background: green*/
 }
 
 label:before
@@ -310,3 +311,12 @@ input.star:checked ~ label
     color: #000;
 }
 
+.rating-container:hover label
+{
+    color: red !important;
+}
+
+.rating-container input.star:hover ~ label
+{
+    color: #000 !important;
+}
