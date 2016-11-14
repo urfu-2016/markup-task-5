@@ -94,7 +94,11 @@
 .photo
 {
     filter: grayscale(.4) brightness(.8);
-    cursor: pointer;
+}
+
+.photo img
+{
+    width: 100%;
 }
 
 .photo:hover
