@@ -60,9 +60,6 @@
 
 .rating
 {
-    margin: 0 180px 0 0;
-    padding: 0;
-    border: none;
     display: inline-block;
 }
 
@@ -98,7 +95,7 @@
     margin-top: 15px;
 }
 
-.items-view:checked ~ .content .item .main-information .rating
+.items-view:checked ~ .content .rating
 {
     margin-right: 60%;
     padding: 0;
@@ -113,11 +110,6 @@
 .item:hover
 {
     box-shadow: 0 0 10px 5px rgb(195, 167, 202);
-}
-
-.race
-{
-    margin: 0;
 }
 
 .name:hover
@@ -137,8 +129,6 @@
 
 .rating > label:before
 {
-    font-size: 1.25em;
-    font-family: FontAwesome;
     content: '\f005';
 }
 
@@ -153,6 +143,8 @@
     color: #ddd;
     float: right;
     margin: 10px 0;
+    font-size: 1.25em;
+    font-family: FontAwesome;
 }
 
 .rating > input:checked ~ label,
