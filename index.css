@@ -1,8 +1,9 @@
-@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body
 {
-    font: 16px 'Ubuntu', sans-serif;
+    font: 16px 'Roboto', sans-serif;
     margin: 0;
     background: #73b0dd;
 }
@@ -89,6 +90,11 @@ h1
     right: 0;
 }
 
+.cat-item .photo:hover
+{
+    box-shadow: 0 0 20px;
+}
+
 .cat-item .description-container
 {
     margin-top: 20px;
@@ -110,6 +116,13 @@ h1
     white-space: nowrap;
     height: 30px;
     display: block;
+}
+
+.cat-item .name:hover,
+.cat-item .breed:hover
+{
+    color: red;
+    cursor: pointer;
 }
 
 .cat-item .breed
@@ -255,7 +268,6 @@ input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
 .rating
 {
     border: none;
-    float: left;
 }
 
 .rating input
@@ -265,51 +277,36 @@ input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
 
 .rating label
 {
-    float: right;
     overflow: hidden;
     white-space: nowrap;
+    letter-spacing: -5px;
     cursor: pointer;
     font-size: 200%;
     line-height: 1.2;
-    color: #000;
+    color: #f00;
     font-family: FontAwesome;
     margin-bottom: 20px;
 }
 
-.rating:not(:checked) > label:before
+label:before
 {
     content: '\f005';
-    display: inline-block;
 }
 
-.rating:not(:checked) > .half:before
+.rating > .half:before
 {
     content: '\f089';
     position: absolute;
+    z-index: 20;
 }
 
-.rating input:checked ~ label
+.rating > .full:before
 {
-    color: #f70;
+    position: relative;
 }
 
-.rating input:checked ~ label.full:before
+input.star:checked ~ label
 {
-    content: '\f005';
-}
-
-.rating input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label
-{
-    color: #ffd700;
-}
-
-.rating input:checked + label:hover,
-.rating input:checked ~ label:hover,
-.rating label:hover ~ input:checked ~ label,
-.rating input:checked ~ label:hover ~ label
-{
-    color: #ffed85;
+    color: #000;
 }
 
