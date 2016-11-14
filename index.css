@@ -260,14 +260,19 @@ input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
 
 .rating-container
 {
-    display: inline-block;
-    position: relative;
-    left: 50px;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .rating
 {
     border: none;
+    padding: 0;
+
+    background: green;
+    height: 0;
+
 }
 
 .rating input
@@ -285,7 +290,7 @@ input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
     line-height: 1.2;
     color: #f00;
     font-family: FontAwesome;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     /*background: green*/
 }
 
@@ -316,7 +321,8 @@ input.star:checked ~ label
     color: red !important;
 }
 
-.rating-container label:hover ~ label
+.rating label:hover ~ label
 {
     color: #000 !important;
 }
+
