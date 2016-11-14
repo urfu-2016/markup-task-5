@@ -2,6 +2,7 @@ html
 {
     font-family: Cambria;
     background: #ab9acd;
+    min-width: 800px;
 }
 
 header
@@ -34,7 +35,7 @@ a:hover
 .item
 {
     background: #dfdef1;
-    width: 300px;
+    width: 30%;
     height: 550px;
     box-sizing: border-box;
     display: inline-block;
@@ -122,19 +123,59 @@ a:hover
     height: 100%;
 }
 
-.fourStars div
+div[data-value='5']
 {
-    width: 80%;
+    width: 100%;
 }
 
-.fourPlusStars div
+div[data-value='4,5']
 {
     width: 90%;
 }
 
-.threePlusStars div
+div[data-value='4']
+{
+    width: 80%;
+}
+
+div[data-value='3,5']
 {
     width: 70%;
+}
+
+div[data-value='3']
+{
+    width: 60%;
+}
+
+div[data-value='2,5']
+{
+    width: 50%;
+}
+
+div[data-value='2']
+{
+    width: 40%;
+}
+
+div[data-value='1,5']
+{
+    width: 30%;
+}
+
+div[data-value='1']
+{
+    width: 20%;
+}
+
+div[data-value='0,5']
+{
+    width: 10%;
+}
+
+div[data-value='0']
+{
+    width: 0;
 }
 
 .display-line:checked ~ .item
