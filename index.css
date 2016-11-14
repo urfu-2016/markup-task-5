@@ -116,8 +116,16 @@
     margin: 6px;
 }
 
-.content, .description
+.content,
+.description
 {
     margin: 5px;
+}
+
+header
+{
+    font-size: 5em;
+    text-align: center;
+    color: #f00;
 }
 
