@@ -8,9 +8,11 @@ body
 
 .items-list:checked ~ .market .market-item
 {
+    min-width: 1100px;
     display: block;
     width: 100%;
     height: 290px;
+
 }
 
 .items-list:checked ~ .market .item-img-wrap,
@@ -33,12 +35,12 @@ body
 
 .items-list:checked ~ .market .item-short-info-wrap
 {
-    width: 25%;
+    width: 27%;
 }
 
 .items-list:checked ~ .market .item-info-wrap
 {
-    width: 50%;
+    width: 49%;
 }
 
 .market
@@ -104,7 +106,7 @@ body
 {
     text-align: center;
     color: #aaa;
-    font: 13, sans-serif, Arial, Times;
+    font: 13px sans-serif;
 }
 
 .item-tags span
@@ -115,15 +117,7 @@ body
 .item-rate
 {
     text-align: center;
-}
-
-.item-rate__star
-{
-    display: inline-block;
-    background: url('img/star.png') 0 0 no-repeat;
-    width: 31px;
-    background-size: 100%;
-    height: 33px;
+    direction: rtl;
 }
 
 .item-cost
@@ -176,4 +170,40 @@ body
 .cat-img:hover + .choose-me
 {
     display: block;
+}
+
+.item-rate__inp
+{
+    display: none;
+}
+
+.item-rate label:nth-of-type(even),
+.item-rate label:nth-of-type(odd)
+{
+    display: inline-block;
+    width: 25px;
+    height: 47px;
+    background: url(img/leftstar.png);
+    background-size: 100%;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.item-rate label:nth-of-type(odd)
+{
+    background: url(img/righstar.png);
+    background-size: 100%;
+    margin-left: -4px;
+}
+
+.item-rate label:hover ~ label,
+.item-rate label:hover
+{
+    opacity: .6;
+}
+
+.item-rate input:checked ~ label:hover,
+.item-rate input:checked ~ label
+{
+    opacity: 1;
 }
