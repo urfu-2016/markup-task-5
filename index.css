@@ -5,15 +5,11 @@ header h1::first-letter
 
 .cat
 {
+    padding: 0 5px;
     vertical-align: top;
     display: inline-block;
     width: 430px;
     margin-top: 50px;
-}
-
-.cat > div
-{
-    padding-left: 10px;
 }
 
 .cat-photo
@@ -58,6 +54,22 @@ header h1::first-letter
 {
     display: block;
     margin-top: 20px;
+}
+
+.rating-and-price .empty-stars
+{
+    display: inline-block;
+    background-image: url(img/empty-star.png);
+    width: 120px;
+    height: 24px;
+}
+
+.rating-and-price .full-stars
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 96px;
+    height: 24px;
 }
 
 .rating-and-price .rating
