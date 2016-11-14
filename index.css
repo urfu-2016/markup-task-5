@@ -38,7 +38,8 @@ header h1::first-letter
 {
     margin-top: 10px;
     font-size: 1.4em;
-    display: block;
+    display: inline-block;
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -47,7 +48,7 @@ header h1::first-letter
 {
     font-size: .8em;
     color: #0f0;
-    display: block;
+    display: table-cell;
 }
 
 .cat .about .rating-and-price
@@ -140,14 +141,20 @@ header h1::first-letter
 {
     display: block;
     width: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .list-mode:checked ~ section .cat > div
 {
     width: 400px;
-    margin-top: 20px;
     vertical-align: top;
     display: inline-block;
+}
+
+.list-mode:checked ~ section .cat .cat-photo
+{
+   height: auto;
 }
 
 .list-mode:checked ~ section .cat .cat-photo .photo-wrapper
