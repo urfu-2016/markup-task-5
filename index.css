@@ -32,9 +32,17 @@ label.list
     box-shadow: 0 0 1em;
 }
 
+.photo
+{
+    position: relative;
+    height: 245px;
+}
+
 .photo img
 {
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .photo img:hover
@@ -170,6 +178,7 @@ a:hover
 .list:checked ~ .cat .information
 {
     width: 29%;
+    height: 330px;
 }
 
 .list:checked ~ .cat .photo img
@@ -190,6 +199,11 @@ a:hover
         margin-left: 1.6%;
         font-size: .9em;
     }
+
+    .photo
+    {
+        height: 285px;
+    }
 }
 
 @media screen and (max-width: 800px)
@@ -199,6 +213,10 @@ a:hover
         width: 46%;
         margin-left: 1.5%;
         font-size: .7em;
+    }
+    .photo
+    {
+        height: 290px;
     }
 }
 
