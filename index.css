@@ -1,6 +1,7 @@
 body
 {
-    min-width: 320px;
+    min-width: 550px;
+    margin: 2%;
 }
 
 header,
@@ -61,7 +62,7 @@ h4
 
 .cat
 {
-    width: 22.75%;
+    width: 22.457%;
     padding: 1%;
     display: inline-block;
     vertical-align: top;
