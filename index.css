@@ -1,0 +1,328 @@
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+    font: 16px 'Roboto', sans-serif;
+    margin: 0;
+    background: #73b0dd;
+}
+
+header .header-bg
+{
+    width: 100%;
+}
+
+header .title
+{
+    padding: 10px;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    color: #fff;
+}
+
+header .title::first-letter
+{
+    color: red;
+}
+
+header .slogan
+{
+    font-size: 5em;
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    color: #fff;
+}
+
+.content
+{
+    padding: 0 30px;
+    margin-top: 0;
+    background: linear-gradient(#73b0dd 0%, #73b0dd 28%, #fff 44%);
+}
+
+h1
+{
+    font-size: 4em;
+    color: #fff;
+    font-variant-caps: small-caps;
+}
+
+.cat-item
+{
+    vertical-align: top;
+    background: rgba(255, 255, 255, .5);
+    border: 1px solid #676767;
+    padding: 20px;
+    margin: 1em;
+    max-width: 300px;
+    min-height: 300px;
+    display: inline-block;
+    -webkit-box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
+    -moz-box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
+    box-shadow: inset 0 3px 20px -8px rgba(0, 0, 0, .75);
+}
+
+.cat-item .img-container
+{
+    min-height: 180px;
+    position: relative;
+}
+
+.cat-item:hover
+{
+    -webkit-box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 3px 14px 2px rgba(0, 0, 0, .75);
+}
+
+.cat-item .photo
+{
+    display: block;
+    max-height: 180px;
+    max-width: 300px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cat-item .photo:hover
+{
+    box-shadow: 0 0 20px;
+}
+
+.cat-item .description-container
+{
+    margin-top: 20px;
+}
+
+.cat-item .description
+{
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+.cat-item .name
+{
+    font-variant-caps: small-caps;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 30px;
+    display: block;
+}
+
+.cat-item .name:hover,
+.cat-item .breed:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.cat-item .breed
+{
+    font-size: 1.3em;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cat-item .breed::before
+{
+    position: relative;
+    right: 20px;
+    top: 5px;
+    display: inline-block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url('img/breed.png');
+}
+
+.cat-item .price
+{
+    padding-left: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.3em;
+    display: inline;
+}
+
+.cat-item .price::before
+{
+    position: relative;
+    right: 20px;
+    display: inline-block;
+    content: '';
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    background-image: url('img/money.png');
+}
+
+.cat-item .old-price
+{
+    padding-left: 20px;
+    font-size: 12px;
+    color: #f00;
+    display: inline;
+    text-decoration: line-through;
+}
+
+input.switch
+{
+    display: none;
+}
+
+input[type='checkbox'].switch + label span
+{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background-image: url('img/rows.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+input[type='checkbox'].switch:checked + label span
+{
+    background-image: url('img/icons.svg');
+}
+
+input[type='checkbox'].switch:checked + label::after
+{
+    content: 'Switch to Grid View';
+}
+
+input[type='checkbox'].switch + label::after
+{
+    content: 'Switch to List View';
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item
+{
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    min-height: 0;
+    max-height: 100%;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .photo
+{
+    position: inherit;
+    margin: auto;
+    padding: 25px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .img-container
+{
+    display: inline-block;
+    position: inherit;
+    max-width: 100%;
+    min-width: 0;
+    vertical-align: middle;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .description-container
+{
+    display: inline-block;
+    position: inherit;
+    max-width: 800px;
+    vertical-align: top;
+    padding: 30px;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .description
+{
+    vertical-align: top;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .name
+{
+    font-size: 30px;
+}
+
+input[type='checkbox'].switch:checked ~ div .cat-item .rating-container
+{
+    left: 30px;
+    position: relative;
+}
+
+.rating-container
+{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rating
+{
+    border: none;
+    padding: 0;
+
+    background: green;
+    height: 0;
+
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: -5px;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #f00;
+    font-family: FontAwesome;
+    /*margin-bottom: 20px;*/
+    /*background: green*/
+}
+
+label:before
+{
+    content: '\f005';
+}
+
+.rating > .half:before
+{
+    content: '\f089';
+    position: absolute;
+    z-index: 20;
+}
+
+.rating > .full:before
+{
+    position: relative;
+}
+
+input.star:checked ~ label
+{
+    color: #000;
+}
+
+.rating-container:hover label
+{
+    color: red !important;
+}
+
+.rating label:hover ~ label
+{
+    color: #000 !important;
+}
+
