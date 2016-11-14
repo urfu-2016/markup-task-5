@@ -232,7 +232,7 @@ body
     margin-bottom: 20px;
     display: table-cell;
     position: relative;
-    vertical-align: bottom;
+    vertical-align: middle;
     text-align: center;
 }
 
