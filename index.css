@@ -1,4 +1,4 @@
-.block
+.item
 {
     margin: 10px;
     padding: 5px;
@@ -20,7 +20,7 @@
     text-overflow: ellipsis;
 }
 
-.block:hover
+.item:hover
 {
     box-shadow: 0 0 10px #0078ff;
 }
@@ -34,7 +34,6 @@
 span.cost
 {
     color: #000;
-    font: normal;
     text-decoration: line-through;
 }
 
@@ -72,14 +71,14 @@ a:hover
     background: #e24486;
 }
 
-.string:checked ~ main .block
+.list:checked ~ main .item
 {
     display: block;
     width: 100%;
 }
 
-.string:checked ~ main .card,
-.string:checked ~ main .photo
+.list:checked ~ main .card,
+.list:checked ~ main .photo
 {
     margin: 5px;
     vertical-align: middle;
@@ -88,7 +87,7 @@ a:hover
     display: inline-block;
 }
 
-.string:checked ~ main .description
+.list:checked ~ main .description
 {
     margin: 5px;
     vertical-align: middle;
