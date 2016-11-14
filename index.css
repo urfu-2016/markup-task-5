@@ -13,7 +13,7 @@ header h1::first-letter
 
 .cat > div
 {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .cat-photo
@@ -54,22 +54,26 @@ header h1::first-letter
     display: block;
 }
 
-.cat .rating
+.cat .about .rating-and-price
+{
+    display: block;
+    margin-top: 20px;
+}
+
+.rating-and-price .rating
 {
     display: inline-block;
     width: 200px;
     height: 24px;
-    margin: 20px 0 20px 10px;
     direction: rtl;
     text-align: left;
 }
 
-.cat .price
+.rating-and-price .price
 {
     display: inline-block;
     height: 24px;
     vertical-align: top;
-    margin-top: 20px;
 }
 
 .cat .information p
@@ -89,7 +93,7 @@ header h1::first-letter
     font-size: 1.2em;
 }
 
-.price p + p
+.price p.old-price
 {
     text-decoration: line-through;
     opacity: .5;
