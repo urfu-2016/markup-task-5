@@ -1,0 +1,221 @@
+header h1::first-letter
+{
+    color: #f00;
+}
+
+.cat
+{
+    padding: 0 5px;
+    vertical-align: top;
+    display: inline-block;
+    width: 430px;
+    margin-top: 50px;
+}
+
+.cat-photo
+{
+    position: relative;
+    height: 430px;
+}
+
+.cat-photo .photo-wrapper
+{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.cat-photo img
+{
+    opacity: .8;
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+.cat .about .name
+{
+    margin-top: 10px;
+    font-size: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat .about .category a
+{
+    font-size: .8em;
+    color: #0f0;
+}
+
+.cat .about .rating-and-price
+{
+    display: block;
+    margin-top: 20px;
+}
+
+.rating-and-price .empty-stars
+{
+    display: inline-block;
+    background-image: url(img/empty-star.png);
+    width: 120px;
+    height: 24px;
+}
+
+.rating-and-price .stars
+{
+    display: inline-block;
+    background-image: url(img/star.png);
+    width: 120px;
+    height: 24px;
+}
+
+.rating-and-price .one-star
+{
+    width: 24px;
+}
+
+.rating-and-price .two-stars
+{
+    width: 48px;
+}
+
+.rating-and-price .three-stars
+{
+    width: 72px;
+}
+
+.rating-and-price .four-stars
+{
+    width: 96px;
+}
+
+.rating-and-price .five-stars
+{
+    width: 120px;
+}
+
+.rating-and-price .rating
+{
+    display: inline-block;
+    width: 200px;
+    height: 24px;
+    direction: rtl;
+    text-align: left;
+}
+
+.rating-and-price .price
+{
+    display: inline-block;
+    height: 24px;
+    vertical-align: top;
+}
+
+.cat .information p
+{
+    color: #eb0c0c;
+}
+
+.cat .about .price p
+{
+    display: inline;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cat h2
+{
+    font-size: 1.2em;
+}
+
+.price p.old-price
+{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.list-mode:checked ~ section .cat
+{
+    display: block;
+    width: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.list-mode:checked ~ section .cat > div
+{
+    width: 400px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.list-mode:checked ~ section .cat .cat-photo
+{
+    height: auto;
+}
+
+.list-mode:checked ~ section .cat .cat-photo .photo-wrapper
+{
+    position: relative;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.cat:hover
+{
+    border-radius: 10px;
+    box-shadow: inset #bfbfbf 0 -3px 8px
+        , #000 0 3px 8px -10px;
+}
+
+.cat .cat-photo img:hover
+{
+    opacity: 1;
+}
+
+.cat .about .name a:hover
+{
+    color: #f00;
+}
+
+.cat .about .category a:hover
+{
+    color: #000;
+}
+
+/*Задание на звездочку*/
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    opacity: .4;
+}
+
+.rating label:nth-child(2n)
+{
+    margin-left: -4px;
+}
+
+.rating label:hover
+{
+    opacity: 1;
+}
+
+.rating label:hover ~ label
+{
+    opacity: 1;
+}
+
+.rating input:checked + label
+{
+    opacity: 1;
+}
+
+.rating input:checked ~ label
+{
+    opacity: 1;
+}
