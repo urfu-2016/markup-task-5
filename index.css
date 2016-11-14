@@ -316,7 +316,7 @@ input.star:checked ~ label
     color: red !important;
 }
 
-.rating-container input.star:hover ~ label
+.rating-container label:hover ~ label
 {
     color: #000 !important;
 }
