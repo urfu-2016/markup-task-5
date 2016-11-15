@@ -1,0 +1,101 @@
+.product
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title
+{
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.title:hover
+{
+    text-decoration: underline;
+}
+
+a
+{
+    color: inherit;
+}
+
+.product:hover
+{
+    box-shadow: 0 0 1em gold;
+}
+
+.category:hover
+{
+    text-decoration: underline;
+}
+
+.photo
+{
+    text-align: center;
+}
+
+.photo img
+{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.photo:hover img
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
+.text-strike
+{
+    text-decoration: line-through;
+}
+
+img
+{
+    width: 80%;
+    height: 80%;
+}
+
+.switch-btn:checked ~ .content .product
+{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.switch-btn:checked ~ .content .product .photo
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.switch-btn:checked ~ .content .product .options
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+}
+
+.switch-btn:checked ~ .content .product .description
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 35%;
+}
