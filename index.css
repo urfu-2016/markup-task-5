@@ -7,6 +7,24 @@
     padding: 20px;
 }
 
+.title
+{
+    display: inline-block;
+    padding: 15px 0;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.title:hover
+{
+    text-decoration: underline;
+}
+
+a
+{
+    color: inherit;
+}
+
 .product:hover
 {
     box-shadow: 0 0 1em gold;
@@ -17,11 +35,32 @@
     text-decoration: underline;
 }
 
+.photo
+{
+    text-align: center;
+}
+
+.photo img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.photo:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .price
 {
     font-weight: bold;
     font-size: 18px;
     color: red;
+}
+
+.text-strike
+{
+    text-decoration: line-through;
 }
 
 img
