@@ -1,0 +1,143 @@
+h1
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+article
+{
+    display: inline-block;
+    width: 400px;
+    margin: 30px 10px;
+}
+
+article:hover
+{
+    background-color: #d3d3d3;
+}
+
+hr
+{
+    min-width: 390px;
+}
+
+.img
+{
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    width: 400px;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+.img.view-block:hover img
+{
+    transform: scale(1.15);
+}
+
+.name
+{
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-weight: 500;
+}
+
+.category
+{
+    font-size: .8em;
+    text-decoration: underline;
+    color: #808080;
+}
+
+.name:hover
+{
+    font-weight: 600;
+}
+
+.category:hover
+{
+    text-shadow: 1px 1px 1px #a9a9a9;
+}
+
+.kindness
+{
+    color: #ffa500;
+    font-size: 1.5em;
+}
+
+.price,
+.oldprice
+{
+    display: inline-block;
+}
+
+.price
+{
+    font-size: 2em;
+    color: #8b0000;
+}
+
+.oldprice
+{
+    color: #404040;
+    text-decoration: line-through;
+}
+
+.infinity
+{
+    font-size: 1.5em;
+}
+
+.hidden
+{
+    display: none;
+    color: #fff;
+}
+
+.kind:hover div.hidden
+{
+    display: block;
+}
+
+ul li:after
+{
+    content: ';';
+}
+
+.list:checked ~ article
+{
+    display: block;
+    width: 100%;
+    margin: 30px .5%;
+}
+
+.list:checked ~ article .view-block
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.list:checked ~ article .view-block.text
+{
+    margin: 1%;
+}
+
+.list:checked ~ hr
+{
+    min-width: 100%;
+}
+
+.table:checked ~ article .hidden
+{
+    display: none;
+}
