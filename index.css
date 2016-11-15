@@ -10,11 +10,6 @@ header
     text-align: center;
 }
 
-main
-{
-    text-align: center;
-}
-
 h1
 {
     font-size: 60px;
@@ -27,14 +22,15 @@ header img
     width: 150px;
 }
 
-a
+.content
 {
-    font-size: 25px;
+    text-align: center;
 }
 
-a:hover
+.photo
 {
-    text-decoration: none;
+    width: 100%;
+    display: inline-block;
 }
 
 .item
@@ -89,6 +85,14 @@ a:hover
 .item .description
 {
     text-align: center;
+}
+
+.name
+{
+    margin: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444a69;
 }
 
 .price,
@@ -158,6 +162,11 @@ a:hover
     width: 0;
 }
 
+.display-line:checked ~ .content
+{
+    text-align: left;
+}
+
 .display-line:checked ~ .item
 {
     display: block;
@@ -169,19 +178,22 @@ a:hover
 .display-line:checked ~ .item .description,
 .display-line:checked ~ .item .about
 {
+    vertical-align: top;
+    margin-top: 50px ;
     width: 30%;
     padding: 10px;
-    margin-top: 3%;
     display: inline-block;
+}
+
+.display-line:checked ~ .item .photo
+{
+    width: 30%;
 }
 
 .display-line:checked ~ .item .img-horizon,
 .display-line:checked ~ .item .img-vertical
 {
     height: auto;
-    position: static;
-    vertical-align: top;
-    width: 30%;
     margin: 5px;
 }
 
