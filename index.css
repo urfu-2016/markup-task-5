@@ -8,6 +8,7 @@ body
 
 header
 {
+    min-width: 900px;
     background: #f386b7;
     height: 50px;
     font: 2em bold;
@@ -19,8 +20,14 @@ header
 
 footer
 {
+    min-width: 900px;
     background: #f386b7;
     height: 50px;
+}
+
+main
+{
+    text-align: center;
 }
 
 .product
