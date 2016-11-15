@@ -40,13 +40,16 @@ a
     text-align: center;
 }
 
-.photo img {
+.photo img
+{
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
-.photo:hover img {
+
+.photo:hover img
+{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
