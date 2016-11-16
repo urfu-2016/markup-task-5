@@ -17,8 +17,9 @@
     text-align: justify;
 }
 
-.list-view-type:checked ~ .cat-block:after {
-    content: "";
+.list-view-type:checked ~ .cat-block:after
+{
+    content: '';
     display: inline-block;
     width: 100%;
 }
