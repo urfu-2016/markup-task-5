@@ -1,0 +1,228 @@
+body,
+html
+{
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Verdana', sans-serif;
+}
+
+.card
+{
+    width: 250px;
+    display: inline-block;
+    margin: 20px 5px;
+    position: relative;
+    vertical-align: top;
+    transition: transform .1s;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+.card:hover
+{
+    border: 2px solid #111;
+    box-shadow: 0 0 3px #111;
+}
+
+.card-img
+{
+    transition: transform .1s;
+    margin: 0;
+}
+
+.card-img:hover
+{
+    transform: rotate(10deg);
+}
+
+.card-img figcaption
+{
+    display: none;
+}
+
+.card .card-img img
+{
+    width: 100%;
+    padding: 0;
+}
+
+.card-info .name-link
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin: 5px 0;
+    font-size: 20px;
+    display: block;
+}
+
+.card-info .name-link:hover
+{
+    color: #111;
+}
+
+.card-info .category
+{
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+}
+
+.card-info .category:hover
+{
+    text-shadow: 0 0 4px #aaa;
+    cursor: pointer;
+}
+
+.card-info .price-new
+{
+    font-size: 25px;
+    display: inline-block;
+    color: #a10000;
+    font-weight: 900;
+}
+
+.card-info .price-old
+{
+    display: inline-block;
+}
+
+.description-header
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    margin: 5px 0;
+}
+
+.card-description
+{
+    word-wrap: break-word;
+}
+
+.view-switch
+{
+    position: absolute;
+}
+
+.view-switch + label
+{
+    display: block;
+    margin: 0 0 50px 30px;
+}
+
+.view-switch:checked ~ .card
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.view-switch:checked ~ .card .card-img,
+.view-switch:checked ~ .card .card-info,
+.view-switch:checked ~ .card .card-description
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .5%;
+}
+
+.view-switch:checked ~ .card .card-img,
+.view-switch:checked ~ .card .card-description
+{
+    width: 25%;
+}
+
+.view-switch:checked ~ .card .description-header
+{
+    margin: 0;
+}
+
+.view-switch:checked ~ .card .card-info
+{
+    min-width: 150px;
+}
+
+@media screen and (max-width: 400px)
+{
+    .card
+    {
+        display: inline-block;
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+.rating
+{
+    margin: 5px;
+}
+
+.rating > input
+{
+    display: none;
+    border: none;
+}
+
+.rating > label:before
+{
+    font-size: 20px;
+    font-family: 'icomoon';
+    content: '\e901';
+
+}
+
+.rating > .half-star:before
+{
+    content: '\e900';
+    position: absolute;
+    margin: 0;
+    left: 5px;
+    padding: 0;
+}
+
+.rating > .half-star:last-child
+{
+    top: 0;
+    left: -5px;
+    padding: 0;
+
+}
+
+.rating > label
+{
+    color: #aaa;
+    unicode-bidi: embed;
+    direction: rtl;
+    position: relative;
+}
+
+.rating > input:checked ~ label,
+.rating > label:hover,
+.rating > label:hover ~ label
+{
+    color: #ffd700;
+}
+
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label
+{
+    color: #ffed85;
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.woff?sj8zym') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
