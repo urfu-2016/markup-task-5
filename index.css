@@ -33,11 +33,17 @@ main
 .card-img
 {
     transition: transform .1s;
+    margin: 0;
 }
 
 .card-img:hover
 {
     transform: rotate(10deg);
+}
+
+.card-img figcaption
+{
+    display: none;
 }
 
 .card .card-img img
@@ -46,7 +52,7 @@ main
     padding: 0;
 }
 
-.card-info .name
+.card-info .name-link
 {
     white-space: nowrap;
     overflow: hidden;
@@ -54,9 +60,10 @@ main
     text-align: left;
     margin: 5px 0;
     font-size: 20px;
+    display: block;
 }
 
-.card-info .name .name-link:hover
+.card-info .name-link:hover
 {
     color: #111;
 }
@@ -79,13 +86,12 @@ main
     font-size: 25px;
     display: inline-block;
     color: #a10000;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .card-info .price-old
 {
     display: inline-block;
-    text-decoration: line-through;
 }
 
 .description-header
@@ -129,11 +135,7 @@ main
     margin: 0 .5%;
 }
 
-.view-switch:checked ~ .card .card-img
-{
-    width: 25%;
-}
-
+.view-switch:checked ~ .card .card-img,
 .view-switch:checked ~ .card .card-description
 {
     width: 25%;
@@ -156,11 +158,6 @@ main
         display: inline-block;
         margin: 0 auto;
         width: 95%;
-    }
-
-    .card-info .name
-    {
-        white-space: normal;
     }
 }
 
@@ -188,14 +185,14 @@ main
     content: '\e900';
     position: absolute;
     margin: 0;
-    left: 5.5px;
+    left: 5px;
     padding: 0;
 }
 
 .rating > .half-star:last-child
 {
     top: 0;
-    left: -5.5px;
+    left: -5px;
     padding: 0;
 
 }
