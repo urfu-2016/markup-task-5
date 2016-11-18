@@ -15,17 +15,17 @@ body
     padding: 1rem;
     background-color: white;
     width: 20rem;
-    border: 0.1rem solid #dadada;
-    border-radius: 0.3rem;
+    border: .1rem solid #dadada;
+    border-radius: .3rem;
     margin: 1rem;
     display: inline-block;
-    transition: box-shadow 0.3s, border-radius 0.3s;
+    transition: box-shadow .3s, border-radius .3s;
     vertical-align: top;
 }
 
 .card:hover
 {
-    box-shadow: 0 0 0.7rem 0.7rem #d1d1d1;
+    box-shadow: 0 0 .7rem .7rem #d1d1d1;
 }
 
 .mode:checked ~ .card
@@ -62,49 +62,49 @@ body
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #2979FF;
+    color: #2979ff;
 }
 
 .card .title:hover
 {
-    color: #82B1FF;
+    color: #82b1ff;
 }
 
 .card .title:active
 {
-    color: #2962FF;
+    color: #2962ff;
 }
 
 .card .title:visited
 {
-    color: #D500F9;
+    color: #d500f9;
 }
 
 .card .title:visited:hover
 {
-    color: #EA80FC;
+    color: #ea80fc;
 }
 
 .card .title:visited:active
 {
-    color: #AA00FF;
+    color: #aa00ff;
 }
 
 .card .category
 {
-    margin-top: 0.3rem;
+    margin-top: .3rem;
     font-size: 1.5rem;
-    color: #607D8B;
+    color: #607d8b;
 }
 
 .card .category:hover
 {
-    color: #90A4AE;
+    color: #90a4ae;
 }
 
 .card .category:active
 {
-    color: #455A64;
+    color: #455a64;
 }
 
 .card img
@@ -112,7 +112,7 @@ body
     /*Ширина прибита, но есть красивые анимации*/
     width: 20rem;
     height: 20rem;
-    transition: transform 0.3s, border 0.3s, margin 0.3s;
+    transition: transform .3s, border .3s, margin .3s;
     border: 0 solid white;
     margin: 0;
     object-fit: cover;
@@ -120,7 +120,7 @@ body
 
 .card img:hover
 {
-    transform:scale(1.25);
+    transform: scale(1.25);
     margin: 2.5rem 0;
 }
 
@@ -133,7 +133,7 @@ body
 {
     height: 2.8rem;
     width: 1.5rem;
-    margin: 0.7rem 0 0 -1.5rem;
+    margin: .7rem 0 0 -1.5rem;
     opacity: 0;
     padding: 0;
     border: 0;
@@ -146,7 +146,7 @@ body
     height: 2.8rem;
     width: 1.5rem;
     display: inline-block;
-    transition: background-image 0.15s;
+    transition: background-image .15s;
 }
 
 .card .stars .star:nth-of-type(2n+1)
@@ -164,7 +164,6 @@ body
     background-image: url(res/heart-dis-left.png);
 }
 
-
 .card .stars input:checked ~ .star:nth-of-type(2n)
 {
     background-image: url(res/heart-dis-right.png);
@@ -172,24 +171,22 @@ body
 
 .card .stars:hover .star:nth-of-type(2n+1)
 {
-    background-image: url(res/heart-en-left.png)!important;
+    background-image: url(res/heart-en-left.png) !important;
 }
 
 .card .stars:hover .star:nth-of-type(2n)
 {
-    background-image: url(res/heart-en-right.png)!important;
+    background-image: url(res/heart-en-right.png) !important;
 }
-
 
 .card .stars input:hover ~ .star:nth-of-type(2n+1)
 {
-    background-image: url(res/heart-dis-left.png)!important;
+    background-image: url(res/heart-dis-left.png) !important;
 }
-
 
 .card .stars input:hover ~ .star:nth-of-type(2n)
 {
-    background-image: url(res/heart-dis-right.png)!important;
+    background-image: url(res/heart-dis-right.png) !important;
 }
 
 .card .price
@@ -202,26 +199,26 @@ body
 .card .price .old
 {
     color: #7a7a7a;
-    font-size: 0.85em;
+    font-size: .85em;
     text-decoration: line-through;
-    padding-left: 0.5em;
+    padding-left: .5em;
 }
 
 .card .description
 {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     font-size: 1.2rem;
     width: 20rem;
 }
 
-.mode:checked ~.card .description
+.mode:checked ~ .card .description
 {
     width: 30rem;
     margin-left: 1rem;
-    transition: width 0.3s;
+    transition: width .3s;
 }
 
-.mode:checked ~.card img:hover ~ .description
+.mode:checked ~ .card img:hover ~ .description
 {
     width: 25rem;
 }
@@ -230,5 +227,5 @@ body
 {
     font-weight: bold;
     display: block;
-    margin: 0.5em 0;
+    margin: .5em 0;
 }
