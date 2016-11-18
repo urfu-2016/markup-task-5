@@ -34,7 +34,7 @@ body
     display: block;
 }
 
-.mode:checked ~ .card >
+.mode:checked ~ .card > div
 {
     display: inline-block;
     vertical-align: top;
