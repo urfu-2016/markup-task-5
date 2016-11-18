@@ -34,7 +34,7 @@ body
     display: block;
 }
 
-.mode:checked ~ .card > *
+.mode:checked ~ .card >
 {
     display: inline-block;
     vertical-align: top;
@@ -87,7 +87,7 @@ body
 
 .card .title:visited:active
 {
-    color: #aa00ff;
+    color: #a0f;
 }
 
 .card .category
