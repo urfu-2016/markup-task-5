@@ -5,7 +5,16 @@ body
     min-width: 700px;
 }
 
-main
+.cat,
+.current_price,
+.old_price
+{
+    display: inline-block;
+}
+
+main,
+.cat,
+.header_title
 {
     text-align: center;
 }
@@ -13,23 +22,17 @@ main
 .cat
 {
     width: 350px;
-    height: 450px;
+    min-height: 480px;
     padding: 15px;
     margin-bottom: 10px;
-    display: inline-block;
     margin-right: 10px;
     vertical-align: top;
-    text-align: center;
 }
 
-.category_cat a
+.category_cat a,
+.name_cat a
 {
     color: #8fb2ff;
-}
-
-.category_cat a:hover
-{
-    color: #ff5f5f;
 }
 
 .cat:hover
@@ -44,7 +47,15 @@ main
     vertical-align: top;
 }
 
-.header_title::first-letter
+.old_price
+{
+    text-decoration: line-through;
+    color: #d14;
+}
+
+.header_title::first-letter,
+.name_cat a:hover,
+.category_cat a:hover
 {
     color: #ff5f5f;
 }
@@ -52,7 +63,7 @@ main
 .header_title
 {
     font-size: 30px;
-    text-align: center;
+    line-height: 45px;
 }
 
 header
@@ -64,15 +75,15 @@ header
 
 img
 {
-    display: inline-block;
     width: 90%;
-    filter: saturate(100%);
     border-radius: 10px;
 }
 
-img:hover
+img:hover,
+a:hover img
 {
-    filter: saturate(150%);
+    transform: rotate(360deg);
+    transition: transform 1s;
 }
 
 .name_cat
@@ -83,13 +94,7 @@ img:hover
 
 .name_cat a
 {
-    color: #8fb2ff;
     font: 25px Arial serif;
-}
-
-.name_cat a:hover
-{
-    color: #ff5f5f;
 }
 
 .stars
@@ -103,28 +108,38 @@ img:hover
     display: block;
     padding: 10px 0;
     width: 100%;
-    height: 100%;
+    min-height: 150px;
+}
+
+.list-mode:checked ~ main .cat .name_cat
+{
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+}
+
+.list-mode:checked ~ main .cat .name_cat span
+{
+    width: 33%;
+    position: absolute;
+    bottom: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
 }
 
 .list-mode:checked ~ main .cat .info
 {
-    display: inline-block;
+    margin-top: 30px;
     width: 33%;
     vertical-align: top;
     margin-right: 30px;
-}
-
-.list-mode:checked ~ main .cat img
-{
     display: inline-block;
-    width: 23%;
-    vertical-align: top;
-    margin-right: 30px;
 }
 
 .list-mode:checked ~ main .cat .description_cat
 {
-    display: inline-block;
     width: 33%;
     vertical-align: top;
+    display: inline-block;
 }
