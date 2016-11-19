@@ -1,9 +1,8 @@
-.content
+main
 {
-    position: absolute;
+    position: relative;
     left: 15%;
     width: 80%;
-    line-height: auto;
 }
 
 .switch-list,
@@ -42,10 +41,22 @@
     background: rgba(229, 221, 221, .8);
 }
 
+.card-title:hover
+{
+    background: red;
+}
+
 .tabled .card-image
 {
     max-width: 100%;
     height: auto;
+}
+
+.tabled .card-image:hover
+{
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
 }
 
 .switch-list:checked ~ .tabled .card
@@ -56,7 +67,7 @@
 
 .switch-list:checked ~ .tabled .card .card-image
 {
-    display: inline;
+    display: inline-block;
     width: 30%;
 }
 
@@ -99,6 +110,11 @@
     height: 20%;
 }
 
+.card-category
+{
+    padding: 2px;
+}
+
 .card-category:after
 {
     content: ', ';
@@ -111,6 +127,7 @@
 
 .card-category:hover
 {
+    padding: 1px;
     border: 1px solid black;
 }
 
