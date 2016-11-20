@@ -8,6 +8,18 @@ body
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
+}
+
+a,
+p,
+.rating,
+.price,
+.description,
+.categoryCats
+{
+    padding: 0;
+    margin: 0;
 }
 
 header
@@ -23,7 +35,7 @@ span
 
 label
 {
-    font: bold 30px;
+    font-size: 30px;
 }
 
 img
@@ -36,23 +48,10 @@ a
 {
     font-size: 20px;
     display: block;
-    width: 100%;
-    height: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-}
-
-a,
-p,
-.rating,
-.price,
-.description,
-.categoryCats
-{
-    padding: 0;
-    margin: 0;
 }
 
 .cross-out
@@ -124,10 +123,15 @@ a:hover
 
 .price
 {
-    font: bold 20px 'Arial';
+    font: bold 20px Arial;
     color: red;
     text-align: left;
     margin-top: 3px;
+}
+
+.card
+{
+    vertical-align: top;
 }
 
 .inline:checked ~ main,
@@ -148,12 +152,6 @@ a:hover
     height: auto;
     text-align: left;
     margin: 0;
-}
-
-.card
-{
-    vertical-align: top;
-    padding: 3px;
 }
 
 .inline:checked ~ main .cat .card,
