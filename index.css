@@ -60,7 +60,9 @@ div.image:hover
     width: 100%;
 }
 
-div.name:hover, div.category:hover, div.price:hover
+div.name:hover,
+div.category:hover,
+div.price:hover
 {
     font-size: 150%;
     color: #f00;
