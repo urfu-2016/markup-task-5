@@ -10,11 +10,15 @@ body
     display: inline-block;
     vertical-align: top;
     text-overflow: ellipsis;
+    padding: 5px;
+    margin: 1px;
 }
 
 .note:hover
 {
     background-color: #aaa;
+    transform: scale(1.05);
+    border: 1px black solid;
 }
 
 .cat
@@ -29,15 +33,6 @@ body
     position: absolute;
     bottom: 0;
     opacity: .9;
-}
-
-.cat img:hover
-{
-    bottom: -5%;
-    left: -5%;
-    width: 110%;
-    z-index: 1;
-    opacity: 1;
 }
 
 .note section
@@ -60,21 +55,14 @@ body
 
 .price
 {
-    color: #b00000;
+    color: #b00;
     font: bold 1.5em sans-serif;
 }
 
 .price:hover
 {
-    text-shadow: 4px  4px 10px #f00, -4px -4px 10px #0f0;
-}
-
-.price:hover::after
-{
-    color: #000;
-    content: 'купи меня';
-    text-shadow: none;
-    font-size: .5em;
+    text-shadow: 1px  1px 1px #000;
+    cursor: pointer;
 }
 
 .description
@@ -91,6 +79,10 @@ body
     height: 100%;
     vertical-align: top;
     position: relative;
+}
+
+.list:checked ~ .note:hover {
+    transform: scaleX(1);
 }
 
 .list:checked ~ .note .cat
