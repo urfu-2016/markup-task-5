@@ -81,7 +81,8 @@ body
     position: relative;
 }
 
-.list:checked ~ .note:hover {
+.list:checked ~ .note:hover
+{
     transform: scaleX(1);
 }
 
