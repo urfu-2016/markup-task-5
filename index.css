@@ -79,7 +79,7 @@ img
     border-radius: 10px;
 }
 
-img:hover,
+.name_cat:hover img,
 a:hover img
 {
     transform: rotate(360deg);
