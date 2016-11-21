@@ -1,0 +1,263 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    font: 15px normal sans-serif;
+}
+
+header
+{
+    min-width: 900px;
+    background: #f386b7;
+    height: 50px;
+    font: 2em bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+footer
+{
+    min-width: 900px;
+    background: #f386b7;
+    height: 50px;
+}
+
+main
+{
+    text-align: center;
+}
+
+.product
+{
+    position: relative;
+    display: inline-block;
+    margin: 50px 10px;
+    width: 340px;
+}
+
+.product:hover
+{
+    box-shadow: 0 0 20px 3px black;
+}
+
+.capture
+{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 310px;
+}
+
+.capture__img
+{
+    max-width: 300px;
+}
+
+.capture__img:hover
+{
+    cursor: pointer;
+}
+
+.info-wrapper
+{
+    height: 160px;
+    width: 310px;
+    margin: auto;
+}
+
+.info
+{
+    position: absolute;
+    font-size: 1.5em;
+    width: 300px;
+    height: 120px;
+    text-align: center;
+}
+
+.cat-name
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category ul
+{
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
+}
+
+.category li
+{
+    padding: 0 4px;
+    display: inline-block;
+}
+
+.price
+{
+    color: #000;
+    font-weight: 600;
+}
+
+.price:hover,
+.category li:hover,
+.cat-name:hover a
+{
+    color: #c00000;
+    cursor: pointer;
+}
+
+.prev-price
+{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: .8em;
+}
+
+.cat-rating
+{
+    margin: 0;
+    width: 300px;
+    height: 30px;
+}
+
+.cat-rating__img
+{
+    width: 15px;
+}
+
+.cat-rating__radio
+{
+    display: none;
+}
+
+.cat-rating__radio:checked ~ .cat-rating__label
+{
+    opacity: .3;
+}
+
+.cat-rating__radio:checked
+{
+    pointer-events: none;
+}
+
+.cat-rating__label
+{
+    display: inline-block;
+    width: 15px;
+    border: 0;
+    margin-left: -6px;
+    padding: 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cat-rating:hover .cat-rating__label
+{
+    opacity: 1;
+}
+
+.cat-rating__label:hover ~ .cat-rating__label
+{
+    opacity: .3;
+}
+
+.description-wrapper
+{
+    position: relative;
+    display: inline-block;
+    width: 310px;
+}
+
+.description
+{
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.description:hover
+{
+    box-shadow: 0 0 10px black;
+}
+
+.change-checkbox
+{
+    position: absolute;
+    display: none;
+}
+
+.change-checkbox-label
+{
+    display: block;
+    position: relative;
+    width: 150px;
+    border: 1px solid black;
+    padding: 4px;
+    box-shadow: inset 0 0 6px black;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #edebeb;
+    text-align: center;
+}
+
+.change-checkbox-label:active
+{
+    box-shadow: inset 0 0 15px 2px black;
+}
+
+.change-checkbox:checked ~ .product
+{
+    width: 90%;
+    min-width: 850px;
+    display: block;
+    margin: 50px auto;
+}
+
+.change-checkbox:checked ~ .product .capture
+{
+    display: inline-block;
+    width: 25%;
+}
+
+.change-checkbox:checked ~ .product .capture__img
+{
+    max-width: none;
+    width: 100%;
+}
+
+.change-checkbox:checked ~ .product .info-wrapper
+{
+    display: inline-block;
+    width: 45%;
+}
+
+.change-checkbox:checked ~ .product .info
+{
+    text-align: left;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.change-checkbox:checked ~ .product .cat-rating
+{
+    margin-left: 10px;
+}
+
+.change-checkbox:checked ~ .product .description-wrapper
+{
+    vertical-align: bottom;
+    width: 25%;
+}
+
+.change-checkbox:checked ~ .product .description
+{
+    width: 100%;
+}
