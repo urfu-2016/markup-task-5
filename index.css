@@ -1,8 +1,8 @@
-.switching-display[value='list']:checked ~ main figcaption
+.switching-display[value='list']:checked ~ main .cat-description
 {
     width: 60%;
     vertical-align: top;
-    margin: 0 3%;
+    margin: 0 10px;
 }
 
 .switching-display[value='list']:checked ~ main img
@@ -12,7 +12,7 @@
 
 .switching-display[value='list']:checked ~ main .cat-card
 {
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 40px;
     display: block;
@@ -36,8 +36,20 @@ img,
     width: 300px;
 }
 
+.cat-card
+{
+    margin: 40px;
+    border: solid 2px #fff;
+
+}
+
+.cat-card:hover
+{
+    border-color: #00008b;
+}
+
 .cat-card,
-.switching-display[value='list']:checked ~ main figcaption,
+.switching-display[value='list']:checked ~ main .cat-description,
 .switching-display[value='list']:checked ~ main img,
 .switching-display[value='list']:checked ~ main .features,
 .switching-display[value='list']:checked ~ main .description
@@ -55,21 +67,36 @@ img,
     display: block;
 }
 
-.category
+.category a
 {
     font-size: 13px;
     color: #888;
-    text-decoration: underline;
 }
 
-.price
+.category a:hover
+{
+    color: #cd5c5c;
+}
+
+.price-now
 {
     font-size: 22px;
     color: #8b0000;
     font-weight: bold;
 }
 
-.cat-description
+.price-old
+{
+    text-decoration: line-through;
+}
+
+.price-now:hover
+{
+    transform: scale(1.2);
+}
+
+.cat-description,
+.cat-card
 {
     padding: 3px;
 }
@@ -81,7 +108,9 @@ img,
 }
 
 .red-heart,
-.black-heart
+.black-heart,
+.price-now,
+.price-old
 {
     display: inline-block;
 }
