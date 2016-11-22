@@ -1,39 +1,56 @@
-.photo:hover{
-    opacity: 0.6;
+.photo:hover
+{
+    opacity: .6;
 }
-a {
+
+a
+{
     color: #008000;
     text-decoration: none;
 }
-a:visited {
+
+a:visited
+{
     color: #800080;
 }
-a:hover {
+
+a:hover
+{
     color: #800000; /* Цвет ссылки при наведении на нее курсора мыши */
     text-decoration: underline;
 }
-span.red {
+
+span.red
+{
     color: red;
     font-size: larger;
 }
-.category {
+
+.category
+{
     color: gray;
 }
-.cat:hover {
+
+.cat:hover
+{
     background: #fff5ee;
 }
-section.cat {
+
+section.cat
+{
     width: 250px;
     display: inline-block;
     padding: 5px;
 }
 
-#typew:checked ~ main > section.cat .content-img {
+.typew:checked ~ main > section.cat .content-img
+{
     display: inline-block;
     width: 270px;
 }
 
-#typew:checked ~ main > section.cat .content-text {
+.typew:checked ~ main > section.cat .content-text
+{
     display: inline-block;
     width: 35%;
     text-align: justify;
@@ -41,33 +58,50 @@ section.cat {
     padding: 0 20px;
     box-sizing: border-box;
 }
-#typew:checked ~ main > section.cat {
+
+.typew:checked ~ main > section.cat
+{
     display: block;
     width: 100%;
     border-bottom: 1px solid mediumslateblue;
 }
-#typew:checked ~ main > section > img.photo {
-    align: left;
+
+.typew:checked ~ main > section > img.photo
+{
+    text-align: left;
     margin: 10px;
 }
-.dist {
+
+.dist
+{
     color: gray;
 }
-div > strike {
-    color: gray;
-}
+
 .size
 {
     white-space: nowrap; /* Отменяем перенос текста */
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     overflow: hidden; /* Обрезаем содержимое */
     padding: 5px; /* Поля */
 }
+
 .photo
 {
     width: 250px;
 }
-#typew:checked ~ main
+
+.typew:checked ~ main
 {
     text-align: center;
+}
+
+.zach
+{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.footer
+{
+    text-align: right;
 }
