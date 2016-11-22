@@ -1,0 +1,222 @@
+html
+{
+    font-family: Cambria;
+    background: #ab9acd;
+    min-width: 800px;
+}
+
+header
+{
+    text-align: center;
+}
+
+h1
+{
+    font-size: 60px;
+    color: white;
+    margin: 15px;
+}
+
+header img
+{
+    width: 150px;
+}
+
+.content
+{
+    text-align: center;
+}
+
+.photo
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.item
+{
+    position: relative;
+    background: #dfdef1;
+    max-width: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #6e797f;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.img-horizon
+{
+    margin: 10px;
+    width: 90%;
+}
+
+.img-vertical
+{
+    margin: 2px 22%;
+    width: 54%;
+}
+
+.photo:hover .img-horizon,
+.photo:hover .img-vertical,
+.photo:hover .name
+{
+    text-decoration: underline;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.item .about
+{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.item .description
+{
+    text-align: center;
+}
+
+.name
+{
+
+    display: inline-block;
+    margin: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #444a69;
+}
+
+.price,
+.old-price
+{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.price
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: #991d30;
+}
+
+.old-price
+{
+    font-size: 18px;
+    text-decoration: line-through;
+    color: red;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.product_rate
+{
+    background: url(pic/starempty.png);
+    width: 120px;
+    height: 24px;
+    margin-left: 30%;
+}
+
+.product_rate div
+{
+    background: url(pic/starfull.png);
+    height: 100%;
+}
+
+.star_value_4 div
+{
+    width: 80%;
+}
+
+.star_value_5 div
+{
+    width: 100%;
+}
+
+.star_value_3 div
+{
+    width: 60%;
+}
+
+.star_value_2 div
+{
+    width: 40%;
+}
+
+.star_value_1 div
+{
+    width: 20%;
+}
+
+.star_value_0 div
+{
+    width: 0;
+}
+
+.display-line:checked ~ .content
+{
+    text-align: left;
+}
+
+.display-line:checked ~ .item
+{
+    display: block;
+    margin-top: 40px;
+    min-width: 95%;
+    height: auto;
+}
+
+.display-line:checked ~ .item .description,
+.display-line:checked ~ .item .about
+{
+    vertical-align: top;
+    margin-top: 50px ;
+    width: 30%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.display-line:checked ~ .item .photo
+{
+    width: 30%;
+}
+
+.display-line:checked ~ .item .img-horizon,
+.display-line:checked ~ .item .img-vertical
+{
+    height: auto;
+    margin: 5px;
+}
+
+.display-line:checked ~ .item .photo p
+{
+    margin-top: 40px;
+    position: absolute;
+    left: 45%;
+}
+
+.display-line:checked ~ .item .about
+{
+    font-size: 18px;
+}
+
+footer
+{
+    background: #444a69;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
