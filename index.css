@@ -35,9 +35,9 @@ header img
 
 .item
 {
+    position: relative;
     background: #dfdef1;
-    width: 30%;
-    height: 550px;
+    max-width: 300px;
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid #6e797f;
@@ -63,9 +63,11 @@ header img
     width: 54%;
 }
 
-.img-vertical:hover,
-.img-horizon:hover
+.photo:hover .img-horizon,
+.photo:hover .img-vertical,
+.photo:hover .name
 {
+    text-decoration: underline;
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -89,6 +91,8 @@ header img
 
 .name
 {
+
+    display: inline-block;
     margin: 5px;
     font-size: 22px;
     font-weight: bold;
@@ -171,7 +175,7 @@ header img
 {
     display: block;
     margin-top: 40px;
-    width: 95%;
+    min-width: 95%;
     height: auto;
 }
 
@@ -195,6 +199,13 @@ header img
 {
     height: auto;
     margin: 5px;
+}
+
+.display-line:checked ~ .item .photo p
+{
+    margin-top: 40px;
+    position: absolute;
+    left: 45%;
 }
 
 .display-line:checked ~ .item .about
