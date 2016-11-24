@@ -1,0 +1,140 @@
+body
+{
+    background: #feece3;
+}
+
+.rating
+{
+    font-size: 40px;
+}
+
+.rating .yellow-star
+{
+    color: #ffd805;
+    display: inline-block;
+}
+
+.rating .black-star
+{
+    display: inline-block;
+    color: #000;
+}
+
+.content
+{
+    text-align: center;
+    min-width: 1100px;
+}
+
+.content .item
+{
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+    padding: 20px 0;
+    border: solid 3px #000;
+    margin: 10px;
+    vertical-align: top;
+    font-size: 19px;
+}
+
+.item .main-information
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.item:hover
+{
+    background: #e8ebed;
+}
+
+.name
+{
+    margin: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name:hover
+{
+    color: #00f;
+}
+
+.price
+{
+    color: #f00;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+}
+
+.price,
+.old-price
+{
+    margin: 2%;
+    display: inline;
+    font-weight: 900;
+}
+
+.description,
+.section
+{
+    margin: 2%;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+    color: blue;
+}
+
+.image
+{
+    width: 90%;
+}
+
+.image:hover
+{
+    transform: scale(1.1);
+}
+
+.list:checked ~ .content .item
+{
+    text-align: left;
+    box-sizing: border-box;
+    display: block;
+    font-size: 24px;
+    height: auto;
+    margin: 1% 0;
+    width: 100%;
+}
+
+.list:checked ~ .content .image
+{
+    vertical-align: middle;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.list:checked ~ .content .item .main-information
+{
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.list:checked ~ .content .item .description
+{
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+}
