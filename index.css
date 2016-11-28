@@ -1,0 +1,194 @@
+
+html,
+body
+{
+    width: 100%;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a,
+p,
+.rating,
+.price,
+.description,
+.categoryCats
+{
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    font: 30px 'Indie Flower', cursive;
+    text-align: center;
+}
+
+span
+{
+    color: #f00;
+}
+
+label
+{
+    font-size: 30px;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+a
+{
+    font-size: 13px;
+    display: inline-block;
+}
+
+.name,
+.photo
+{
+    font-size: 20px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.cross-out
+{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: gray;
+}
+
+.cat
+{
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.cat:hover
+{
+    box-shadow: 0 0 2em #000;
+}
+
+.rating
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+}
+
+.rating > span
+{
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:before,
+.rating > span:before
+{
+    content: '\2605';
+    position: absolute;
+    color: yellow;
+    text-align: left;
+}
+
+.categoryCats
+{
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.categoryCats:hover,
+a:hover
+{
+    color: #f00;
+
+}
+
+.description
+{
+    font: 15px;
+    text-align: left;
+    width: 100%;
+    vertical-align: top;
+}
+
+.price
+{
+    font: bold 20px Arial;
+    color: red;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.card
+{
+    vertical-align: top;
+}
+
+.inline:checked ~ main
+{
+    min-width: 850px;
+}
+
+.inline:checked ~ main,
+.inline:checked ~ main div.cat
+{
+    width: 95%;
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 10px;
+    padding: 20px;
+}
+
+.inline:checked ~ main .cat .photo img
+{
+    display: inline-block;
+    position: relative;
+    height: auto;
+    text-align: left;
+    margin: 0;
+}
+
+.inline:checked ~ main .cat .photo
+{
+    display: inline-block;
+    width: 30%;
+    margin-top: 8px;
+}
+
+.inline:checked ~ main .cat .name
+{
+    vertical-align: top;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.inline:checked ~ main .cat .card
+{
+    margin-top: 30px;
+}
+
+.inline:checked ~ main .cat .card,
+.inline:checked ~ main .cat .description
+{
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    text-align: left;
+}
