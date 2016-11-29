@@ -1,12 +1,17 @@
+.marketContainer
+{
+    font-size: 16px;
+}
+
 .title
 {
     text-align: center;
-    font-size: 14px;
+    font-size: 1.2em;
 }
 
-.title h1
+.marketName
 {
-    font: 300 42px sans-serif;
+    font: 300 3em sans-serif;
 }
 
 .switcherStyle
@@ -14,13 +19,14 @@
     margin-left: 50px;
 }
 
-.title h1:first-letter
+.marketName:first-letter
 {
-    color: red;
+    color: #f00;
 }
 
 .catalog
 {
+    position: relative;
     padding: 10px;
     text-align: center;
 }
@@ -29,9 +35,14 @@
 {
     display: inline-block;
     text-align: left;
-    width: 300px;
+    width: 25%;
     margin: 10px;
     vertical-align: top;
+}
+
+.productParameters
+{
+    padding: 10px;
 }
 
 .product:hover
@@ -41,32 +52,28 @@
 
 .productImage
 {
-    position: relative;
     height: 250px;
-    vertical-align: bottom;
+    position: relative;
 }
 
-.productImage img
+.productImage .photoProduct
 {
     width: 100%;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
-.productImage img:hover
+.productImage .photoProduct:hover
 {
-    left: -2%;
-    width: 104%;
-    position: absolute;
     bottom: 0;
-    z-index: 5;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .productName
 {
     margin: 5px 0;
-    font: 22px sans-serif;
+    font: 1.6em sans-serif;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -74,19 +81,19 @@
 
 .productName:hover
 {
-    background-color: thistle;
+    background-color: #d8bfd8;
 }
 
 .category
 {
     color: #58585a;
-    font: 600 13px sans-serif;
+    font: 600 .9em sans-serif;
 }
 
 .category:hover
 {
     background-color: #58585a;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 .productRating
@@ -98,8 +105,9 @@
 .star
 {
     display: inline-block;
-    height: 20px;
-    overflow: hidden;
+    height: 19px;
+    width: 19px;
+    background: url(image/star.png) no-repeat;
     cursor: pointer;
 }
 
@@ -110,33 +118,24 @@
 
 .fullStar
 {
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    top: -40px;
+    background-position: 0 -36px;
 }
 
 .halfStar
 {
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    top: -21px;
+    background-position: 0 -18px;
 }
 
 .emptyStar
 {
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    top: -2px;
+    background-position: 0 0;
 }
 
 .currentPrice
 {
     display: inline-block;
     color: #96070a;
-    font: 600 18px sans-serif;
+    font: 600 1.5em sans-serif;
 }
 
 .oldPrice
@@ -148,49 +147,51 @@
 
 .productDescription
 {
-    margin: 10px 0;
+    padding: 10px;
     color: #3a3a3c;
 }
 
 .switcherStyle:checked ~ .catalog
 {
-    padding: 100px;
+    padding: 30px;
+    text-align: center;
 }
 
 .switcherStyle:checked ~ .catalog .product
 {
     display: block;
-    width: 1000px;
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
     white-space: nowrap;
-}
-
-.switcherStyle:checked ~ .catalog .product .productImage
-{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
     position: relative;
 }
 
-.switcherStyle:checked ~ .catalog .product .productImage img
+.switcherStyle:checked ~ .catalog .productImage
 {
     display: inline-block;
-    width: 300px;
-    position: absolute;
-    top: 0;
+    width: 30%;
+    vertical-align: top;
 }
 
-.switcherStyle:checked ~ .catalog .product .productParameters
+.switcherStyle:checked ~ .catalog .productImage .photoProduct
+{
+    display: inline-block;
+    height: 100%;
+}
+
+.switcherStyle:checked ~ .catalog .productParameters
 {
     display: inline-block;
     vertical-align: top;
-    padding: 0 50px;
-    width: 250px;
+    padding: 20px 50px;
+    width: 30%;
 }
 
-.switcherStyle:checked ~ .catalog .product .productDescription
+.switcherStyle:checked ~ .catalog .productDescription
 {
+    padding: 20px 10px;
     display: inline-block;
     white-space: normal;
-    width: 250px;
+    width: 30%;
 }
