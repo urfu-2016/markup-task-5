@@ -6,31 +6,31 @@
     margin-bottom: 20px;
 }
 
-.mode:checked ~ .cart
+.mode:checked ~ .card
 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.mode:checked ~ .cart > .cat-img
+.mode:checked ~ .card > .cat-img
 {
     float: left;
     width: 30%;
     margin-right: 20px;
 }
 
-.cart
+.card
 {
     width: 350px;
     display: inline-block;
     font-family: 'Philosopher', cursive;
     padding: 10px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    vertical-align: top;
 }
 
-.cart:hover
+.card:hover
 {
     box-shadow: 0 0 10px 5px #540a00;
 }
@@ -60,7 +60,7 @@
     font-size: 20px;
 }
 
-mark
+.old-price
 {
     text-decoration: line-through;
     background-color: inherit;
