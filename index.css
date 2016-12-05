@@ -1,30 +1,39 @@
 input[name='style-switcher']:checked ~ .products .products-item
 {
     display: block;
-    width: 100%;
+    width: 95%;
+}
+
+input[name='style-switcher']:checked ~ .products .products-item-image,
+input[name='style-switcher']:checked ~ .products .products-item-info,
+input[name='style-switcher']:checked ~ .products .products-item-description,
+.products-item
+{
+    display: inline-block;
+    vertical-align: top;
 }
 
 input[name='style-switcher']:checked ~ .products .products-item-image
 {
-    display: inline-block;
     width: 20%;
     margin-right: 5%;
-    vertical-align: top;
 }
 
 input[name='style-switcher']:checked ~ .products .products-item-info
 {
-    display: inline-block;
-    vertical-align: top;
     margin-right: 5%;
     width: 30%;
 }
 
 input[name='style-switcher']:checked ~ .products .products-item-description
 {
-    display: inline-block;
-    vertical-align: top;
     width: 30%;
+}
+
+.m-y-1
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .products
@@ -34,22 +43,27 @@ input[name='style-switcher']:checked ~ .products .products-item-description
 
 .products-item
 {
-    display: inline-block;
-    font-size: 1rem;
+    font-size: 16px;
     margin: 1%;
-    vertical-align: top;
-    width: 31%;
+    width: 28.5%;
+    border: 1px solid transparent;
+    padding: 1%;
 }
 
-.products-item .products-item-image img
+.products-item:hover
+{
+    border-color: #000;
+}
+
+.products-item-image
 {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 .products-item-info .title a
 {
-    font-size: 1.3rem;
+    font-size: 21px;
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -58,7 +72,6 @@ input[name='style-switcher']:checked ~ .products .products-item-description
 
 .products-item-info .categories
 {
-    margin: .31rem 0;
     padding: 0;
     color: #555;
 }
@@ -75,40 +88,29 @@ input[name='style-switcher']:checked ~ .products .products-item-description
     margin-right: 3px;
 }
 
-.products-item-info .rank
-{
-    margin: .31rem 0;
-}
-
 .products-item-info .price
 {
-    margin: .31rem 0;
+    clear: both;
 }
 
 .products-item-info .price .current-price
 {
     color: #d60004;
-    font-size: 1.3rem;
+    font-size: 21px;
 }
 
 .products-item-info .price .old-price
 {
     color: #555;
     text-decoration: line-through;
-    margin-left: .31rem;
+    margin-left: 5px;
 }
 
 .rank
 {
-    border: 0;
+    float: left;
+    display: block;
     direction: rtl;
-    font-size: 0;
-    text-align: left;
-}
-
-.rank input
-{
-    display: none;
 }
 
 .rank legend
@@ -117,51 +119,50 @@ input[name='style-switcher']:checked ~ .products .products-item-description
     height: 0;
 }
 
+.rank input
+{
+    position: absolute;
+    display: none;
+}
+
 .rank label
 {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 1.3rem;
-    height: 1rem;
-    line-height: 1.3rem;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    text-indent: 100%;
-    width: 1.2rem;
+    color: #ddd;
 }
 
 .rank label:before
 {
-    bottom: 0;
-    color: #d69d00;
-    content: '☆';
-    left: 0;
-    line-height: 1rem;
-    position: absolute;
-    right: 0;
-    text-indent: 0;
-    top: 0;
-}
-
-.rank label:hover:before,
-.rank label:hover ~ label:before,
-.rank input:checked ~ label:before
-{
-    color: #ffbb04;
     content: '★';
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-.rank label:active
+.rank input:checked ~ label
 {
-    position: relative;
-    top: 1px;
+    color: #ff8f1f;
+}
+
+.rank label:hover,
+.rank label:hover ~ label
+{
+    color: #ffdcbd;
+}
+
+.rank input:checked + label:hover,
+.rank input:checked + label:hover ~ label,
+.rank input:checked ~ label:hover,
+.rank input:checked ~ label:hover ~ label,
+.rank label:hover ~ input:checked ~ label
+{
+    color: #ffc08a;
 }
 
 @media only screen and (min-width: 768px)
 {
     .products-item
     {
-        width: 23%;
+        width: 20.5%;
     }
 }
