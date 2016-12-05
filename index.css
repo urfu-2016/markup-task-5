@@ -233,7 +233,7 @@ body
     width: 24.5rem;
 }
 
-.card .description b
+.card .description .bold
 {
     font-weight: bold;
     display: block;
