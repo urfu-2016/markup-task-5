@@ -209,6 +209,15 @@ body
     margin-top: .5rem;
     font-size: 1.2rem;
     width: 20rem;
+    max-height: 17rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+
+.card img:hover ~ .description
+{
+    max-height: 12rem;
 }
 
 .mode:checked ~ .card .description
@@ -220,10 +229,11 @@ body
 
 .mode:checked ~ .card img:hover ~ .description
 {
-    width: 25rem;
+    /*special for firefox*/
+    width: 24.5rem;
 }
 
-.card .description strong
+.card .description b
 {
     font-weight: bold;
     display: block;
