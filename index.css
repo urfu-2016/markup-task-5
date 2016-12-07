@@ -54,7 +54,7 @@ img,
 .switching-display[value='list']:checked ~ main .features,
 .switching-display[value='list']:checked ~ main .description
 {
-    display: inline-block;
+    display: inline-table;
 }
 
 .name
@@ -107,20 +107,53 @@ img,
     user-select: none;
 }
 
-.red-heart,
-.black-heart,
+.rating-radio
+{
+    display: none;
+}
+
+.rating
+{
+    width: 105px;
+    height: 18px;
+    padding: 0;
+    border: none;
+}
+
+.heart
+{
+    float: right;
+    height: 18px;
+}
+
+.heart.left
+{
+    background-image: url("images/black-heart-left.png");
+    width: 11px;
+}
+
+.heart.right
+{
+    background-image: url("images/black-heart-rigth.png");
+    width: 10px;
+}
+
+.heart.left:hover,
+.heart:hover ~ .heart.left,
+.rating-radio:checked ~ .heart.left
+{
+    background-image: url("images/red-heart-left.png");
+}
+
+.heart.right:hover,
+.heart:hover ~ .heart.right,
+.rating-radio:checked ~ .heart.right
+{
+    background-image: url("images/red-heart-rigth.png");
+}
+
 .price-now,
 .price-old
 {
     display: inline-block;
-}
-
-.red-heart
-{
-    color: #f00;
-}
-
-.black-heart
-{
-    color: #000;
 }
