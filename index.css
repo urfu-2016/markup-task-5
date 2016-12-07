@@ -113,7 +113,8 @@ h3
 
 .category
 {
-    text-decoration: underline;
+    display: block;
+
 }
 
 .category:hover
