@@ -2,7 +2,419 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <title>cat market</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="radio" class="switching-display" checked name="display" value="tile" id="tile">
+    <label for="tile" class="radio-caption">плитка</label>
+    <input type="radio" class="switching-display" name="display" value="list" id="list">
+    <label for="list" class="radio-caption">список</label>
+    <main>
+        <div class="cat-card">
+            <label for="Princess"><img src="images/котик1.jpg"
+                 alt="котик Принцесса"
+                 title="Принцесса"></label>
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" id="Princess" class="name" title="Принцесса">Принцесса</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="second-half-star5-1-cat" class="heart right"></label>
+                        <input id="first-half-star5-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="first-half-star5-1-cat" class="heart left"></label>
+                        <input id="second-half-star4-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="second-half-star4-1-cat" class="heart right"></label>
+                        <input id="first-half-star4-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="first-half-star4-1-cat" class="heart left"></label>
+                        <input id="second-half-star3-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="second-half-star3-1-cat" class="heart right"></label>
+                        <input id="first-half-star3-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="first-half-star3-1-cat" class="heart left"></label>
+                        <input id="second-half-star2-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="second-half-star2-1-cat" class="heart right"></label>
+                        <input id="first-half-star2-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="first-half-star2-1-cat" class="heart left"></label>
+                        <input id="second-half-star1-1-cat" class="rating-radio" name="radio-rating1"  type="radio">
+                        <label for="second-half-star1-1-cat" class="heart right"></label>
+                        <input id="first-half-star1-1-cat" class="rating-radio" name="radio-rating1" type="radio">
+                        <label for="first-half-star1-1-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">10000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Мой первый кот. Она моя маленькая принцесса</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик2.jpg"
+                 alt="котик Егоза"
+                 title="Егоза">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Егоза">Егоза</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <fieldset class="rating">
+                        <input id="second-half-star5-2-cat" class="rating-radio" name="radio-rating2" checked type="radio">
+                        <label for="second-half-star5-2-cat" class="heart right"></label>
+                        <input id="first-half-star5-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="first-half-star5-2-cat" class="heart left"></label>
+                        <input id="second-half-star4-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="second-half-star4-2-cat" class="heart right"></label>
+                        <input id="first-half-star4-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="first-half-star4-2-cat" class="heart left"></label>
+                        <input id="second-half-star3-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="second-half-star3-2-cat" class="heart right"></label>
+                        <input id="first-half-star3-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="first-half-star3-2-cat" class="heart left"></label>
+                        <input id="second-half-star2-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="second-half-star2-2-cat" class="heart right"></label>
+                        <input id="first-half-star2-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="first-half-star2-2-cat" class="heart left"></label>
+                        <input id="second-half-star1-2-cat" class="rating-radio" name="radio-rating2"  type="radio">
+                        <label for="second-half-star1-2-cat" class="heart right"></label>
+                        <input id="first-half-star1-2-cat" class="rating-radio" name="radio-rating2" type="radio">
+                        <label for="first-half-star1-2-cat" class="heart left"></label>
+                    </fieldset>
+                    <div class="price">
+                        <div class="price-now">12000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Мой любимчик. Самый добрый котик. Очень милый и нежный</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик3.jpg"
+                 alt="котик Мурзик"
+                 title="Мурзик">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Мурзик">Мурзик</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a></div>
+                    <div class="rating">
+                        <input id="second-half-star5-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="second-half-star5-3-cat" class="heart right"></label>
+                        <input id="first-half-star5-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="first-half-star5-3-cat" class="heart left"></label>
+                        <input id="second-half-star4-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="second-half-star4-3-cat" class="heart right"></label>
+                        <input id="first-half-star4-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="first-half-star4-3-cat" class="heart left"></label>
+                        <input id="second-half-star3-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="second-half-star3-3-cat" class="heart right"></label>
+                        <input id="first-half-star3-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="first-half-star3-3-cat" class="heart left"></label>
+                        <input id="second-half-star2-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="second-half-star2-3-cat" class="heart right"></label>
+                        <input id="first-half-star2-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="first-half-star2-3-cat" class="heart left"></label>
+                        <input id="second-half-star1-3-cat" class="rating-radio" name="radio-rating3"  type="radio">
+                        <label for="second-half-star1-3-cat" class="heart right"></label>
+                        <input id="first-half-star1-3-cat" class="rating-radio" name="radio-rating3" type="radio">
+                        <label for="first-half-star1-3-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">8000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Просто Мурзик</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик4.jpg"
+                 alt="котик Агата"
+                 title="Агата">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Агата">Агата</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="second-half-star5-4-cat" class="heart right"></label>
+                        <input id="first-half-star5-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="first-half-star5-4-cat" class="heart left"></label>
+                        <input id="second-half-star4-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="second-half-star4-4-cat" class="heart right"></label>
+                        <input id="first-half-star4-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="first-half-star4-4-cat" class="heart left"></label>
+                        <input id="second-half-star3-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="second-half-star3-4-cat" class="heart right"></label>
+                        <input id="first-half-star3-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="first-half-star3-4-cat" class="heart left"></label>
+                        <input id="second-half-star2-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="second-half-star2-4-cat" class="heart right"></label>
+                        <input id="first-half-star2-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="first-half-star2-4-cat" class="heart left"></label>
+                        <input id="second-half-star1-4-cat" class="rating-radio" name="radio-rating4"  type="radio">
+                        <label for="second-half-star1-4-cat" class="heart right"></label>
+                        <input id="first-half-star1-4-cat" class="rating-radio" name="radio-rating4" type="radio">
+                        <label for="first-half-star1-4-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">5000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Маленький ангелок. Она еще слишком мала, чтоб быть злой</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик5.jpg"
+                 alt="котик Пончик"
+                 title="Пончик">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Пончик">Пончик</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">толстые кошки</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="second-half-star5-5-cat" class="heart right"></label>
+                        <input id="first-half-star5-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="first-half-star5-5-cat" class="heart left"></label>
+                        <input id="second-half-star4-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="second-half-star4-5-cat" class="heart right"></label>
+                        <input id="first-half-star4-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="first-half-star4-5-cat" class="heart left"></label>
+                        <input id="second-half-star3-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="second-half-star3-5-cat" class="heart right"></label>
+                        <input id="first-half-star3-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="first-half-star3-5-cat" class="heart left"></label>
+                        <input id="second-half-star2-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="second-half-star2-5-cat" class="heart right"></label>
+                        <input id="first-half-star2-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="first-half-star2-5-cat" class="heart left"></label>
+                        <input id="second-half-star1-5-cat" class="rating-radio" name="radio-rating5"  type="radio">
+                        <label for="second-half-star1-5-cat" class="heart right"></label>
+                        <input id="first-half-star1-5-cat" class="rating-radio" name="radio-rating5" type="radio">
+                        <label for="first-half-star1-5-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">13000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">
+                    Очень жирный кот. Ест всегда и все. Надо держать
+                    подальше от еды других животных
+                </div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик6.jpg"
+                 alt="котик Господин фон Шнабелевопский"
+                 title="Господин фон Шнабелевопский">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Господин фон Шнабелевопский">
+                        Господин фон Шнабелевопский
+                    </a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="second-half-star5-6-cat" class="heart right"></label>
+                        <input id="first-half-star5-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="first-half-star5-6-cat" class="heart left"></label>
+                        <input id="second-half-star4-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="second-half-star4-6-cat" class="heart right"></label>
+                        <input id="first-half-star4-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="first-half-star4-6-cat" class="heart left"></label>
+                        <input id="second-half-star3-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="second-half-star3-6-cat" class="heart right"></label>
+                        <input id="first-half-star3-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="first-half-star3-6-cat" class="heart left"></label>
+                        <input id="second-half-star2-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="second-half-star2-6-cat" class="heart right"></label>
+                        <input id="first-half-star2-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="first-half-star2-6-cat" class="heart left"></label>
+                        <input id="second-half-star1-6-cat" class="rating-radio" name="radio-rating6"  type="radio">
+                        <label for="second-half-star1-6-cat" class="heart right"></label>
+                        <input id="first-half-star1-6-cat" class="rating-radio" name="radio-rating6" type="radio">
+                        <label for="first-half-star1-6-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">9000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Одиночка. Боится других котов</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик7.jpg"
+                 alt="котик Джокер"
+                 title="Джокер">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Джокер">Джокер</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="second-half-star5-7-cat" class="heart right"></label>
+                        <input id="first-half-star5-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="first-half-star5-7-cat" class="heart left"></label>
+                        <input id="second-half-star4-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="second-half-star4-7-cat" class="heart right"></label>
+                        <input id="first-half-star4-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="first-half-star4-7-cat" class="heart left"></label>
+                        <input id="second-half-star3-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="second-half-star3-7-cat" class="heart right"></label>
+                        <input id="first-half-star3-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="first-half-star3-7-cat" class="heart left"></label>
+                        <input id="second-half-star2-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="second-half-star2-7-cat" class="heart right"></label>
+                        <input id="first-half-star2-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="first-half-star2-7-cat" class="heart left"></label>
+                        <input id="second-half-star1-7-cat" class="rating-radio" name="radio-rating7"  type="radio">
+                        <label for="second-half-star1-7-cat" class="heart right"></label>
+                        <input id="first-half-star1-7-cat" class="rating-radio" name="radio-rating7" type="radio">
+                        <label for="first-half-star1-7-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">10000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Считает себя хозяином жизни. Не любит никого, кроме себя</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик8.jpg"
+                 alt="котик Ластик"
+                 title="Ластик">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Ластик">Ластик</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="second-half-star5-8-cat" class="heart right"></label>
+                        <input id="first-half-star5-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="first-half-star5-8-cat" class="heart left"></label>
+                        <input id="second-half-star4-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="second-half-star4-8-cat" class="heart right"></label>
+                        <input id="first-half-star4-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="first-half-star4-8-cat" class="heart left"></label>
+                        <input id="second-half-star3-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="second-half-star3-8-cat" class="heart right"></label>
+                        <input id="first-half-star3-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="first-half-star3-8-cat" class="heart left"></label>
+                        <input id="second-half-star2-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="second-half-star2-8-cat" class="heart right"></label>
+                        <input id="first-half-star2-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="first-half-star2-8-cat" class="heart left"></label>
+                        <input id="second-half-star1-8-cat" class="rating-radio" name="radio-rating8"  type="radio">
+                        <label for="second-half-star1-8-cat" class="heart right"></label>
+                        <input id="first-half-star1-8-cat" class="rating-radio" name="radio-rating8" type="radio">
+                        <label for="first-half-star1-8-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">11000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Очень самоуверенный кот. Ваша самооценка падет пред ним</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик9.jpg"
+                 alt="котик Фея"
+                 title="Фея">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Фея">Фея</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="second-half-star5-9-cat" class="heart right"></label>
+                        <input id="first-half-star5-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="first-half-star5-9-cat" class="heart left"></label>
+                        <input id="second-half-star4-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="second-half-star4-9-cat" class="heart right"></label>
+                        <input id="first-half-star4-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="first-half-star4-9-cat" class="heart left"></label>
+                        <input id="second-half-star3-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="second-half-star3-9-cat" class="heart right"></label>
+                        <input id="first-half-star3-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="first-half-star3-9-cat" class="heart left"></label>
+                        <input id="second-half-star2-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="second-half-star2-9-cat" class="heart right"></label>
+                        <input id="first-half-star2-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="first-half-star2-9-cat" class="heart left"></label>
+                        <input id="second-half-star1-9-cat" class="rating-radio" name="radio-rating9"  type="radio">
+                        <label for="second-half-star1-9-cat" class="heart right"></label>
+                        <input id="first-half-star1-9-cat" class="rating-radio" name="radio-rating9" type="radio">
+                        <label for="first-half-star1-9-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">14000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Очень глупая кошка. Может часами бегать за своим хвостом</div>
+            </div>
+        </div>
+
+        <div class="cat-card">
+            <img src="images/котик10.jpg"
+                 alt="котик Ярик"
+                 title="Ярик">
+            <div class="cat-description">
+                <div class="features">
+                    <a href="#" class="name" title="Ярик">Ярик</a>
+                    <div class="category">
+                        <a href="#">кошки</a>, <a href="#">домашние кошки</a>, <a href="#">любимчики</a>
+                    </div>
+                    <div class="rating">
+                        <input id="second-half-star5-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="second-half-star5-10-cat" class="heart right"></label>
+                        <input id="first-half-star5-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="first-half-star5-10-cat" class="heart left"></label>
+                        <input id="second-half-star4-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="second-half-star4-10-cat" class="heart right"></label>
+                        <input id="first-half-star4-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="first-half-star4-10-cat" class="heart left"></label>
+                        <input id="second-half-star3-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="second-half-star3-10-cat" class="heart right"></label>
+                        <input id="first-half-star3-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="first-half-star3-10-cat" class="heart left"></label>
+                        <input id="second-half-star2-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="second-half-star2-10-cat" class="heart right"></label>
+                        <input id="first-half-star2-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="first-half-star2-10-cat" class="heart left"></label>
+                        <input id="second-half-star1-10-cat" class="rating-radio" name="radio-rating10"  type="radio">
+                        <label for="second-half-star1-10-cat" class="heart right"></label>
+                        <input id="first-half-star1-10-cat" class="rating-radio" name="radio-rating10" type="radio">
+                        <label for="first-half-star1-10-cat" class="heart left"></label>
+                    </div>
+                    <div class="price">
+                        <div class="price-now">7000&dollar;</div>
+                        <div class="price-old">5000&dollar;</div>
+                    </div>
+                </div>
+                <div class="description">Не умолкает никогда. Даже на фото</div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

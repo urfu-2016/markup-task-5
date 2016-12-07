@@ -1,0 +1,159 @@
+.switching-display[value='list']:checked ~ main .cat-description
+{
+    width: 60%;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.switching-display[value='list']:checked ~ main img
+{
+    width: 20%;
+}
+
+.switching-display[value='list']:checked ~ main .cat-card
+{
+    width: 90%;
+    margin: 0;
+    padding: 40px;
+    display: block;
+}
+
+.switching-display[value='list']:checked ~ main .features
+{
+    vertical-align: top;
+    width: 45%;
+}
+
+.switching-display[value='list']:checked ~ main .description
+{
+    vertical-align: top;
+    width: 30%;
+}
+
+img,
+.cat-card
+{
+    width: 300px;
+}
+
+.cat-card
+{
+    margin: 40px;
+    border: solid 2px #fff;
+
+}
+
+.cat-card:hover
+{
+    border-color: #00008b;
+}
+
+.cat-card,
+.switching-display[value='list']:checked ~ main .cat-description,
+.switching-display[value='list']:checked ~ main img,
+.switching-display[value='list']:checked ~ main .features,
+.switching-display[value='list']:checked ~ main .description
+{
+    display: inline-table;
+}
+
+.name
+{
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 275px;
+    display: block;
+}
+
+.category a
+{
+    font-size: 13px;
+    color: #888;
+}
+
+.category a:hover
+{
+    color: #cd5c5c;
+}
+
+.price-now
+{
+    font-size: 22px;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+.price-old
+{
+    text-decoration: line-through;
+}
+
+.price-now:hover
+{
+    transform: scale(1.2);
+}
+
+.cat-description,
+.cat-card
+{
+    padding: 3px;
+}
+
+.rating
+{
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.rating-radio
+{
+    display: none;
+}
+
+.rating
+{
+    width: 105px;
+    height: 18px;
+    padding: 0;
+    border: none;
+}
+
+.heart
+{
+    float: right;
+    height: 18px;
+}
+
+.heart.left
+{
+    background-image: url("images/black-heart-left.png");
+    width: 11px;
+}
+
+.heart.right
+{
+    background-image: url("images/black-heart-rigth.png");
+    width: 10px;
+}
+
+.heart.left:hover,
+.heart:hover ~ .heart.left,
+.rating-radio:checked ~ .heart.left
+{
+    background-image: url("images/red-heart-left.png");
+}
+
+.heart.right:hover,
+.heart:hover ~ .heart.right,
+.rating-radio:checked ~ .heart.right
+{
+    background-image: url("images/red-heart-rigth.png");
+}
+
+.price-now,
+.price-old
+{
+    display: inline-block;
+}
