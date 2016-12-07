@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 
-.hr
+.wrapper
 {
-    border-bottom: 2px solid #000;
-    margin-bottom: 20px;
+    border-top: 2px solid #000;
+    margin-top: 20px;
 }
 
-.mode:checked ~ .card
+.mode:checked ~ .wrapper .card
 {
     display: block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.mode:checked ~ .card > .cat-img
+.mode:checked ~ .wrapper .card > .cat-img
 {
     float: left;
     width: 30%;
@@ -39,7 +39,7 @@
 {
     width: 100%;
     -moz-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    transition: transform 1s ease-out;
 }
 
 .cat-img:hover
@@ -50,14 +50,47 @@
 
 .rating
 {
-    width: 150px;
+    width: 120px;
+    height: 50px;
+    background: url("images/empty_star.png") repeat-x;
+}
+
+.stars
+{
+    height: 50px;
+    background: url("images/star.png") repeat-x;
+}
+
+.rating5
+{
+    width: 120px;
+}
+
+.rating4
+{
+    width: 96px;
+}
+
+.rating3
+{
+    width: 72px;
+}
+
+.rating2
+{
+    width: 48px;
+}
+
+.rating1
+{
+    width: 24px;
 }
 
 .price
 {
     color: #8b0000;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .old-price
@@ -69,7 +102,7 @@
 
 .name
 {
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 p,
