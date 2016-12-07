@@ -52,13 +52,13 @@
 {
     width: 120px;
     height: 50px;
-    background: url("images/empty_star.png") repeat-x;
+    background: url('images/empty_star.png') repeat-x;
 }
 
 .stars
 {
     height: 50px;
-    background: url("images/star.png") repeat-x;
+    background: url('images/star.png') repeat-x;
 }
 
 .rating5
