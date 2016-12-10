@@ -16,13 +16,14 @@ input[name='style-switcher']:checked ~ .products .products-item-description,
 input[name='style-switcher']:checked ~ .products .products-item-image
 {
     width: 20%;
-    margin-right: 5%;
+    margin-right: 2%;
 }
 
 input[name='style-switcher']:checked ~ .products .products-item-info
 {
-    margin-right: 5%;
+    margin-right: 2%;
     width: 30%;
+    max-width: 250px;
 }
 
 input[name='style-switcher']:checked ~ .products .products-item-description
@@ -157,6 +158,11 @@ input[name='style-switcher']:checked ~ .products .products-item-description
 .rank label:hover ~ input:checked ~ label
 {
     color: #ffc08a;
+}
+
+a:hover
+{
+    color: #f00;
 }
 
 @media only screen and (min-width: 768px)
