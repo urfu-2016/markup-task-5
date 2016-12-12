@@ -1,0 +1,123 @@
+img
+{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.kitty
+{
+    display: inline-block;
+    width: 300px;
+    height: 550px;
+}
+
+input[value='list']:checked ~ .kitty
+{
+    width: 100%;
+    height: auto;
+}
+
+.kitty:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+img:hover
+{
+    border-radius: 50%;
+}
+
+.name
+{
+    white-space: nowrap;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+a:hover
+{
+    color: green;
+}
+
+.type:hover
+{
+    color: red;
+}
+
+.rating
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.star
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rating > .star > input
+{
+    display: none;
+}
+
+.rating > .star > label
+{
+    font-size: 200%;
+}
+
+.rating > .star > .s5:checked ~ .label_s5,
+.rating > .star > .s4:checked ~ .label_s5,
+.rating > .star > .s4:checked ~ .label_s4,
+.rating > .star > .s3:checked ~ .label_s5,
+.rating > .star > .s3:checked ~ .label_s4,
+.rating > .star > .s3:checked ~ .label_s3,
+.rating > .star > .s2:checked ~ .label_s5,
+.rating > .star > .s2:checked ~ .label_s4,
+.rating > .star > .s2:checked ~ .label_s3,
+.rating > .star > .s2:checked ~ .label_s2,
+.rating > .star > .s1:checked ~ label,
+.rating > .star > .s10:checked ~ .label_s10,
+.rating > .star > .s9:checked ~ .label_s10,
+.rating > .star > .s9:checked ~ .label_s9,
+.rating > .star > .s8:checked ~ .label_s10,
+.rating > .star > .s8:checked ~ .label_s9,
+.rating > .star > .s8:checked ~ .label_s8,
+.rating > .star > .s7:checked ~ .label_s10,
+.rating > .star > .s7:checked ~ .label_s9,
+.rating > .star > .s7:checked ~ .label_s8,
+.rating > .star > .s7:checked ~ .label_s7,
+.rating > .star > .s6:checked ~ label,
+.rating > .star > .s15:checked ~ .label_s15,
+.rating > .star > .s14:checked ~ .label_s15,
+.rating > .star > .s14:checked ~ .label_s14,
+.rating > .star > .s13:checked ~ .label_s15,
+.rating > .star > .s13:checked ~ .label_s14,
+.rating > .star > .s13:checked ~ .label_s13,
+.rating > .star > .s12:checked ~ .label_s15,
+.rating > .star > .s12:checked ~ .label_s14,
+.rating > .star > .s12:checked ~ .label_s13,
+.rating > .star > .s12:checked ~ .label_s12,
+.rating > .star > .s11:checked ~ label,
+.rating > .star > .s20:checked ~ .label_s20,
+.rating > .star > .s19:checked ~ .label_s20,
+.rating > .star > .s19:checked ~ .label_s19,
+.rating > .star > .s18:checked ~ .label_s20,
+.rating > .star > .s18:checked ~ .label_s19,
+.rating > .star > .s18:checked ~ .label_s18,
+.rating > .star > .s17:checked ~ .label_s20,
+.rating > .star > .s17:checked ~ .label_s19,
+.rating > .star > .s17:checked ~ .label_s18,
+.rating > .star > .s17:checked ~ .label_s17,
+.rating > .star > .s16:checked ~ label
+{
+    color: yellow;
+}
+
+.rating > .star > label:hover,
+.rating > .star > label:hover ~ label
+{
+    color: orange;
+}
