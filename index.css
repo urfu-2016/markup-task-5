@@ -2,15 +2,17 @@ body
 {
     margin: 0;
     background-color: #f2f2f2;
+    text-align: center;
 }
 
 .mode
 {
-    display: block;
+    display: inline-block;
 }
 
 .card
 {
+    text-align: left;
     box-sizing: content-box;
     padding: 1rem;
     background-color: white;
@@ -121,12 +123,6 @@ body
 .card img:hover
 {
     transform: scale(1.25);
-    margin: 2.5rem 0;
-}
-
-.mode:checked ~ .card img:hover
-{
-    margin: 0 2.5rem;
 }
 
 .card .stars input
@@ -209,28 +205,13 @@ body
     margin-top: .5rem;
     font-size: 1.2rem;
     width: 20rem;
-    max-height: 17rem;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: max-height .3s;
-}
-
-.card img:hover ~ .description
-{
-    max-height: 12rem;
 }
 
 .mode:checked ~ .card .description
 {
     width: 30rem;
-    margin-left: 1rem;
-    transition: width .3s;
-}
-
-.mode:checked ~ .card img:hover ~ .description
-{
-    /*special for firefox*/
-    width: 24.5rem;
 }
 
 .card .description .bold
