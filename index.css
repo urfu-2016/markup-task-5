@@ -21,6 +21,30 @@ input[value='list']:checked ~ .kitty
 {
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
+img
+{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.kitty
+{
+    display: inline-block;
+    width: 300px;
+    height: 550px;
+}
+
+input[value='list']:checked ~ .kitty
+{
+    width: 100%;
+    height: auto;
+}
+
+.kitty:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
 
 img:hover
 {
@@ -42,39 +66,85 @@ a:hover
 
 .type:hover
 {
-    visibility: hidden;
+    color: red;
 }
 
 .rating
 {
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
-.rating:not(:checked) > input
+.star
 {
-    position: absolute;
-    top: -9999px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.rating:not(:checked) > label
+.rating > .star > input
 {
-    float: right;
-    width: 1em;
-    padding: 0 .1em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 150%;
-    line-height: 1.2;
-    color: #ddd;
+    display:  none
 }
 
-.rating:not(:checked) > label:before
+.rating > .star > label
 {
-    content: '★ ';
+    font-size:200%;
 }
 
-.rating > input:checked ~ label
+.rating > .star > .s5:checked ~ .label_s5,
+.rating > .star > .s4:checked ~ .label_s5,
+.rating > .star > .s4:checked ~ .label_s4,
+.rating > .star > .s3:checked ~ .label_s5,
+.rating > .star > .s3:checked ~ .label_s4,
+.rating > .star > .s3:checked ~ .label_s3,
+.rating > .star > .s2:checked ~ .label_s5,
+.rating > .star > .s2:checked ~ .label_s4,
+.rating > .star > .s2:checked ~ .label_s3,
+.rating > .star > .s2:checked ~ .label_s2,
+.rating > .star > .s1:checked ~ label,
+.rating > .star > .s10:checked ~ .label_s10,
+.rating > .star > .s9:checked ~ .label_s10,
+.rating > .star > .s9:checked ~ .label_s9,
+.rating > .star > .s8:checked ~ .label_s10,
+.rating > .star > .s8:checked ~ .label_s9,
+.rating > .star > .s8:checked ~ .label_s8,
+.rating > .star > .s7:checked ~ .label_s10,
+.rating > .star > .s7:checked ~ .label_s9,
+.rating > .star > .s7:checked ~ .label_s8,
+.rating > .star > .s7:checked ~ .label_s7,
+.rating > .star > .s6:checked ~ label,
+.rating > .star > .s15:checked ~ .label_s15,
+.rating > .star > .s14:checked ~ .label_s15,
+.rating > .star > .s14:checked ~ .label_s14,
+.rating > .star > .s13:checked ~ .label_s15,
+.rating > .star > .s13:checked ~ .label_s14,
+.rating > .star > .s13:checked ~ .label_s13,
+.rating > .star > .s12:checked ~ .label_s15,
+.rating > .star > .s12:checked ~ .label_s14,
+.rating > .star > .s12:checked ~ .label_s13,
+.rating > .star > .s12:checked ~ .label_s12,
+.rating > .star > .s11:checked ~ label,
+.rating > .star > .s20:checked ~ .label_s20,
+.rating > .star > .s19:checked ~ .label_s20,
+.rating > .star > .s19:checked ~ .label_s19,
+.rating > .star > .s18:checked ~ .label_s20,
+.rating > .star > .s18:checked ~ .label_s19,
+.rating > .star > .s18:checked ~ .label_s18,
+.rating > .star > .s17:checked ~ .label_s20,
+.rating > .star > .s17:checked ~ .label_s19,
+.rating > .star > .s17:checked ~ .label_s18,
+.rating > .star > .s17:checked ~ .label_s17,
+.rating > .star > .s16:checked ~ label
+{
+    color: yellow;
+}
+
+.rating:not(:checked) > .star > label:hover,
+.rating:not(:checked) > .star > label:hover ~ label
+{
+    color: orange;
+}
+
 {
     color: #f70;
 }
