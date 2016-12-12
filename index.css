@@ -1,8 +1,4 @@
-.view-type
-{
-    width: 100%;
-}
-
+.view-type,
 .main-kun
 {
     width: 100%;
@@ -102,9 +98,6 @@
 .change-view:checked ~ .cat
 {
     display: table-row;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
 }
 
 .div-image :hover,
@@ -130,13 +123,13 @@ input
 }
 
 .change-view:checked ~ .list,
-.change-view:not(:checked) ~ .cards
+.cards
 {
     display: none;
 }
 
 .change-view:checked ~ .cards,
-.change-view:not(:checked) ~ .list
+.list
 {
     width: 100%;
     height: 30px;
