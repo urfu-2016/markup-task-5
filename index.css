@@ -60,12 +60,12 @@ a:hover
 
 .rating > .star > input
 {
-    display:  none
+    display: none;
 }
 
 .rating > .star > label
 {
-    font-size:200%;
+    font-size: 200%;
 }
 
 .rating > .star > .s5:checked ~ .label_s5,
@@ -117,7 +117,7 @@ a:hover
 }
 
 .rating > .star > label:hover,
-.rating > .star  > label:hover ~ label
+.rating > .star > label:hover ~ label
 {
     color: orange;
 }
