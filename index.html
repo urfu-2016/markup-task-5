@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Cat</title>
-    <link href="index.css" rel="stylesheet">
-</head>
-<body>
+        <meta charset="utf-8">
+        <title>Cat</title>
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
         <input id="t" type="radio" name="cat" value="table" checked>
-    <label for="t">Таблица<br></label>
-    <input id="l" type="radio" name="cat" value="list">
-    <label for="l">Список</label><br>
-    <div class="kitty">
-        <img src="img/Луна.jpg" alt="Котик" title="Котик">
-        <div class="name">
-             Имя котика: <a href="#">Луна</a>
+        <label for="t">Таблица<br></label>
+        <input id="l" type="radio" name="cat" value="list">
+        <label for="l">Список</label><br>
+        <div class="kitty">
+            <img src="img/Луна.jpg" alt="Котик" title="Котик">
+            <div class="name">
+                 Имя котика: <a href="#">Луна</a>
+            </div>
+            <div class="type">
+                Категория котика: Милая
+            </div><br>
+            <div class="rating">
+                Уровень доброты котика:<br>
+                <div class="star">
+                    <input type="radio" class="s1" id="star1" name="rating">
+                    <input type="radio" class="s2" id="star2" name="rating">
+                    <input type="radio" class="s3" id="star3" name="rating">
+                    <input type="radio" class="s4" id="star4" name="rating">
+                    <input type="radio" class="s5" id="star5" name="rating">
+                    <label for="star1" class="label_s1">*</label>
+                    <label for="star2" class="label_s2">*</label>
+                    <label for="star3" class="label_s3">*</label>
+                    <label for="star4" class="label_s4">*</label>
+                    <label for="star5" class="label_s5">*</label>
+                </div>
+            </div><br>
+            <span class="description">
+                Стоимость котика: 500руб<br><br>
+                Описание котика: Любит гулять ночью и смотреть на луну. Очень тихая и скромная.
+                мурчит громко. Любит когда ее гладят по животику. Боится громких звуков и насекомых.
+            </span>
         </div>
-        <div class="type">
-            Категория котика: Милая
-        </div><br>
-        <div class="rating">
-            Уровень доброты котика:<br>
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">5 stars</label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">4 stars</label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">3 stars</label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">2 stars</label>
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1">1 star</label>
-        </div><br><br><br>
-        Стоимость котика: 500руб<br>
-        Описание котика: бла бла бла
-    </div>
-    <div class="kitty">
-        <img src="img/Дракоша.JPG" alt="Котик" title="Котик">
-        <div class="name">
-            Имя котика: <a href="#">Дракоша</a>
+        <div class="kitty">
+            <img src="img/Дракоша.JPG" alt="Котик" title="Котик">
+            <div class="name">
+                Имя котика: <a href="#">Дракоша</a>
+            </div>
+            <div class="type">
+                Категория котика: Гордый
+            </div><br>
+            <div class="rating">
+                Уровень доброты котика:<br>
+                <div class="star">
+                    <input type="radio" class="s6" id="star6" name="rating">
+                    <input type="radio" class="s7" id="star7" name="rating">
+                    <input type="radio" class="s8" id="star8" name="rating">
+                    <input type="radio" class="s9" id="star9" name="rating">
+                    <input type="radio" class="s10" id="star10" name="rating">
+                    <label for="star6" class="label_s6">*</label>
+                    <label for="star7" class="label_s7">*</label>
+                    <label for="star8" class="label_s8">*</label>
+                    <label for="star9" class="label_s9">*</label>
+                    <label for="star10" class="label_s10">*</label>
+                </div>
+            </div><br>
+            <span class="description">
+                Стоимость котика: 400руб<br><br>
+                Описание котика: Котик не любит излишней ласки, любит гладится только если сам хочет.
+                Превередлив в еде. Ест все, но только с мясом или рыбкой. Любит смотреть на огонь.
+            </span>
         </div>
-        <div class="type">
-            Категория котика: Гордый
-        </div><br>
-        <div class="rating">
-            Уровень доброты котика:<br>
-            <input type="radio" id="star10" name="rating" value="5">
-            <label for="star10">5 stars</label>
-            <input type="radio" id="star9" name="rating" value="4">
-            <label for="star9">4 stars</label>
-            <input type="radio" id="star8" name="rating" value="3">
-            <label for="star8">3 stars</label>
-            <input type="radio" id="star7" name="rating" value="2">
-            <label for="star7">2 stars</label>
-            <input type="radio" id="star6" name="rating" value="1">
-            <label for="star6">1 star</label>
-        </div><br><br><br>
-        Стоимость котика: 400руб<br>
-        Описание котика: бла бла бла
-    </div>
-    <div class="kitty">
-        <img src="img/Барсик.jpg" alt="Котик" title="Котик">
-        <div class="name">
-            Имя котика: <a href="#" title="Барсик-Снежный-Король">Барсик-Снежный-Король</a>
+        <div class="kitty">
+            <img src="img/Барсик.jpg" alt="Котик" title="Котик">
+            <div class="name">
+                Имя котика: <a href="#" title="Барсик-Снежный-Король">Барсик-Снежный-Король</a>
+            </div>
+            <div class="type">
+                 Категория котика: Лентяй
+            </div><br>
+            <div class="rating">
+                Уровень доброты котика:<br>
+                <div class="star">
+                     <input type="radio" class="s11" id="star11" name="rating">
+                     <input type="radio" class="s12" id="star12" name="rating">
+                     <input type="radio" class="s13" id="star13" name="rating">
+                     <input type="radio" class="s14" id="star14" name="rating">
+                     <input type="radio" class="s15" id="star15" name="rating">
+                     <label for="star11" class="label_s11">*</label>
+                     <label for="star12" class="label_s12">*</label>
+                     <label for="star13" class="label_s13">*</label>
+                     <label for="star14" class="label_s14">*</label>
+                     <label for="star15" class="label_s15">*</label>
+                </div>
+            </div><br>
+            <span class="description">
+                Стоимость котика: 100000руб<br><br>
+                Описание котика: Ленивость котика зашкаливает, может спать до 20 часов в сутки.
+                Очень любит сидеть на руках. Особенно когда его носят, так как самому ему ходить лениво.
+            </span>
         </div>
-        <div class="type">
-             Категория котика: Лентяй
-        </div><br>
-        <div class="rating">
-            Уровень доброты котика:<br>
-            <input type="radio" id="star15" name="rating" value="5">
-            <label for="star15">5 stars</label>
-            <input type="radio" id="star14" name="rating" value="4">
-            <label for="star14">4 stars</label>
-            <input type="radio" id="star13" name="rating" value="3">
-            <label for="star13">3 stars</label>
-            <input type="radio" id="star12" name="rating" value="2">
-            <label for="star12">2 stars</label>
-            <input type="radio" id="star11" name="rating" value="1">
-            <label for="star11">1 star</label>
-        </div><br><br><br>
-        Стоимость котика: 100000руб<br>
-        Описание котика: бла бла бла>
-    </div>
-    <div class="kitty">
-        <img src="img/Дюймовочка.jpg" alt="Котик" title="Котик">
-        <div class="name">
-            Имя котика: <a href="#">Дюймовочка</a>
+        <div class="kitty">
+            <img src="img/Дюймовочка.jpg" alt="Котик" title="Котик">
+            <div class="name">
+                Имя котика: <a href="#">Дюймовочка</a>
+            </div>
+            <div class="type">
+                Категория котика: Скромняшка
+            </div><br>
+            <div class="rating">
+                Уровень доброты котика:<br>
+                <div class="star">
+                    <input type="radio" class="s16" id="star16" name="rating">
+                    <input type="radio" class="s17" id="star17" name="rating">
+                    <input type="radio" class="s18" id="star18" name="rating">
+                    <input type="radio" class="s19" id="star19" name="rating">
+                    <input type="radio" class="s20" id="star20" name="rating">
+                    <label for="star16" class="label_s16">*</label>
+                    <label for="star17" class="label_s17">*</label>
+                    <label for="star18" class="label_s18">*</label>
+                    <label for="star19" class="label_s19">*</label>
+                    <label for="star20" class="label_s20">*</label>
+                </div>
+            </div><br>
+            <span class="description">
+                Стоимость котика: 400руб<br><br>
+                Описание котика: Очень игривая и вообще безбашенная. Но как дело доходит до обнимашек , так она
+                стесняется. Позволит ее гладить только когда заслужишь ее доверие.
+            </span>
         </div>
-        <div class="type">
-            Категория котика: Скромняшка
-        </div><br>
-        <div class="rating">
-            Уровень доброты котика:<br>
-            <input type="radio" id="star20" name="rating" value="5">
-            <label for="star20">5 stars</label>
-            <input type="radio" id="star19" name="rating" value="4">
-            <label for="star19">4 stars</label>
-            <input type="radio" id="star18" name="rating" value="3">
-            <label for="star18">3 stars</label>
-            <input type="radio" id="star17" name="rating" value="2">
-            <label for="star17">2 stars</label>
-            <input type="radio" id="star16" name="rating" value="1">
-            <label for="star16">1 star</label>
-        </div><br><br><br>
-        Стоимость котика: 400руб<br>
-        Описание котика: бла бла бла
-    </div>
-</body>
+    </body>
 </html>
