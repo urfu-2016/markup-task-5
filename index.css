@@ -14,36 +14,26 @@ body
     padding: 20px;
 }
 
-.display-type-select
-{
-    height: 40px;
-    width: 100%;
-}
-
-.not-displayed
+.hidden
 {
     display: none;
 }
 
-.display-type-select label img
-{
-    margin: 0 20px;
-    float: right;
-    display: inline-block;
-    width: 2%;
-    height: auto;
-}
-
 .cat
 {
-    font-size: .7rem;
+    font-size: .85rem;
     vertical-align: top;
     margin: 15px;
     padding: 15px;
     border: 5px ridge #d3e2ed;
 }
 
-input[id='tile']:checked ~ .cat
+.list-view
+{
+    display: block;
+}
+
+.list-view:not(:checked) ~ .cat
 {
     width: 250px;
     display: inline-block;
@@ -55,15 +45,18 @@ input[id='tile']:checked ~ .cat
         #a9a2ed, 0 0 25px #80ed90;
 }
 
-input[id='tile']:checked ~ .cat > :nth-child(n)
+.cat > a,
+.cat > div,
+.cat > p
 {
-    text-align: left;
     margin: auto;
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
-input[id='list']:checked ~ .cat > :nth-child(n)
+.list-view:checked ~ .cat > a,
+.list-view:checked ~ .cat > div,
+.list-view:checked ~ .cat > p
 {
     display: inline-block;
     width: 31%;
@@ -71,10 +64,21 @@ input[id='list']:checked ~ .cat > :nth-child(n)
     vertical-align: top;
 }
 
-.cat > img:hover
+.cat-img img
+{
+    width: 100%;
+    height: auto;
+}
+
+.cat-img:hover
 {
     box-shadow: 0 0 3px
         #a9a2ed, 0 0 10px #80ed90;
+}
+
+.cat-img:hover + div .name
+{
+    text-shadow: 0 0 7px #d6dced;
 }
 
 .name:hover
@@ -101,11 +105,25 @@ input[id='list']:checked ~ .cat > :nth-child(n)
     font-size: .9rem;
 }
 
-.cat .kindness img
+.cat .kindness
 {
-    width: 10%;
-    height: auto;
-    display: inline-block;
+    background: url('kind.png');
+    height: 30px;
+}
+
+.kind-3
+{
+    width: 90px;
+}
+
+.kind-4
+{
+    width: 120px;
+}
+
+.kind-5
+{
+    width: 150px;
 }
 
 .price
