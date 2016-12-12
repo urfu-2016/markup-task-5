@@ -1,0 +1,222 @@
+body
+{
+    margin: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.mode
+{
+    display: inline-block;
+}
+
+.card
+{
+    text-align: left;
+    box-sizing: content-box;
+    padding: 1rem;
+    background-color: white;
+    width: 20rem;
+    border: .1rem solid #dadada;
+    border-radius: .3rem;
+    margin: 1rem;
+    display: inline-block;
+    transition: box-shadow .3s, border-radius .3s;
+    vertical-align: top;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 .7rem .7rem #d1d1d1;
+}
+
+.mode:checked ~ .card
+{
+    width: 72rem;
+    display: block;
+}
+
+.mode:checked ~ .card > div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .info
+{
+    width: 20rem;
+}
+
+.mode:checked ~ .card .info
+{
+    margin-left: 1rem;
+}
+
+.card a
+{
+    display: block;
+    width: 20rem;
+}
+
+.card .title
+{
+    font-size: 2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #2979ff;
+}
+
+.card .title:hover
+{
+    color: #82b1ff;
+}
+
+.card .title:active
+{
+    color: #2962ff;
+}
+
+.card .title:visited
+{
+    color: #d500f9;
+}
+
+.card .title:visited:hover
+{
+    color: #ea80fc;
+}
+
+.card .title:visited:active
+{
+    color: #a0f;
+}
+
+.card .category
+{
+    margin-top: .3rem;
+    font-size: 1.5rem;
+    color: #607d8b;
+}
+
+.card .category:hover
+{
+    color: #90a4ae;
+}
+
+.card .category:active
+{
+    color: #455a64;
+}
+
+.card img
+{
+    /*Ширина прибита, но есть красивые анимации*/
+    width: 20rem;
+    height: 20rem;
+    transition: transform .3s, border .3s, margin .3s;
+    border: 0 solid white;
+    margin: 0;
+    object-fit: cover;
+}
+
+.card img:hover
+{
+    transform: scale(1.25);
+}
+
+.card .stars input
+{
+    height: 2.8rem;
+    width: 1.5rem;
+    margin: .7rem 0 0 -1.5rem;
+    opacity: 0;
+    padding: 0;
+    border: 0;
+}
+
+.card .stars .star
+{
+    background: center no-repeat;
+    background-size: contain;
+    height: 2.8rem;
+    width: 1.5rem;
+    display: inline-block;
+    transition: background-image .15s;
+}
+
+.card .stars .star:nth-of-type(2n+1)
+{
+    background-image: url(res/heart-en-left.png);
+}
+
+.card .stars .star:nth-of-type(2n)
+{
+    background-image: url(res/heart-en-right.png);
+}
+
+.card .stars input:checked ~ .star:nth-of-type(2n+1)
+{
+    background-image: url(res/heart-dis-left.png);
+}
+
+.card .stars input:checked ~ .star:nth-of-type(2n)
+{
+    background-image: url(res/heart-dis-right.png);
+}
+
+.card .stars:hover .star:nth-of-type(2n+1)
+{
+    background-image: url(res/heart-en-left.png) !important;
+}
+
+.card .stars:hover .star:nth-of-type(2n)
+{
+    background-image: url(res/heart-en-right.png) !important;
+}
+
+.card .stars input:hover ~ .star:nth-of-type(2n+1)
+{
+    background-image: url(res/heart-dis-left.png) !important;
+}
+
+.card .stars input:hover ~ .star:nth-of-type(2n)
+{
+    background-image: url(res/heart-dis-right.png) !important;
+}
+
+.card .price
+{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #96070a;
+}
+
+.card .price .old
+{
+    color: #7a7a7a;
+    font-size: .85em;
+    text-decoration: line-through;
+    padding-left: .5em;
+}
+
+.card .description
+{
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mode:checked ~ .card .description
+{
+    width: 30rem;
+}
+
+.card .description .bold
+{
+    font-weight: bold;
+    display: block;
+    margin: .5em 0;
+}
