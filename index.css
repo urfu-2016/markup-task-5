@@ -9,29 +9,6 @@ img
 {
     display: inline-block;
     width: 300px;
-    height: auto;
-}
-
-input[value='list']:checked ~ .kitty
-{
-    width: 100%;
-}
-
-.kitty:hover
-{
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-}
-img
-{
-    width: 300px;
-    height: 300px;
-    float: left;
-}
-
-.kitty
-{
-    display: inline-block;
-    width: 300px;
     height: 550px;
 }
 
@@ -139,34 +116,8 @@ a:hover
     color: yellow;
 }
 
-.rating:not(:checked) > .star > label:hover,
-.rating:not(:checked) > .star > label:hover ~ label
+.rating > .star > label:hover,
+.rating > .star  > label:hover ~ label
 {
     color: orange;
-}
-
-{
-    color: #f70;
-}
-
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label
-{
-    color: gold;
-}
-
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label
-{
-    color: #ea0;
-}
-
-.rating > label:active
-{
-    position: relative;
-    top: 2px;
-    left: 2px;
 }
