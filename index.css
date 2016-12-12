@@ -54,14 +54,13 @@
 {
     height: 250px;
     position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 .productImage .photoProduct
 {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 100%;
 }
 
 .productImage .photoProduct:hover
@@ -161,6 +160,7 @@
 {
     display: block;
     width: 100%;
+    min-width: 1200px;
     text-align: left;
     margin: 15px 0;
     white-space: nowrap;
@@ -171,13 +171,15 @@
 {
     display: inline-block;
     width: 30%;
-    vertical-align: top;
+    overflow: hidden;
 }
 
 .switcherStyle:checked ~ .catalog .productImage .photoProduct
 {
+    position: static;
     display: inline-block;
-    height: 100%;
+    vertical-align: top;
+    width: 100%;
 }
 
 .switcherStyle:checked ~ .catalog .productParameters
@@ -193,5 +195,6 @@
     padding: 20px 10px;
     display: inline-block;
     white-space: normal;
+    vertical-align: top;
     width: 30%;
 }
