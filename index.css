@@ -1,0 +1,138 @@
+.view-type,
+.main-kun
+{
+    width: 100%;
+}
+
+.cat
+{
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #7ec0ee;
+    width: 300px;
+    padding: 4px;
+}
+
+.cat-image
+{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category
+{
+    font-size: .8em;
+    color: #808080;
+    text-decoration: underline;
+}
+
+.property
+{
+    color: #000;
+    font-weight: 800;
+}
+
+.current-cost
+{
+    color: #b22222;
+    font-weight: 900;
+}
+
+.old-cost
+{
+    color: #808080;
+    font-size: .9em;
+    text-decoration: line-through;
+}
+
+.description
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.cat
+{
+    min-height: 500px;
+}
+
+.div-image
+{
+    display: table-cell;
+    height: 230px;
+    width: 500px;
+    vertical-align: bottom;
+}
+
+.div-image,
+.main-info,
+.description-info
+{
+    min-width: 200px;
+    margin: 5px 10px;
+}
+
+.view-type:checked ~ .cat
+{
+    display: inline-block;
+    border: 2px solid #4169e1;
+}
+
+.change-view:checked ~ .cat .div-image,
+.change-view:checked ~ .cat .main-info,
+.change-view:checked ~ .cat .description-info
+{
+    display: table-cell;
+    vertical-align: middle;
+    height: 400px;
+    max-width: 500px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.change-view:checked ~ .cat
+{
+    display: table-row;
+}
+
+.div-image :hover,
+.name :hover,
+.category :hover
+{
+    border: 2px solid #4169e1;
+}
+
+.view-type:checked ~ .cat .div-image :hover
+{
+    border: none;
+}
+
+.yellow-star
+{
+    color: #ff0;
+}
+
+input
+{
+    display: none;
+}
+
+.change-view:checked ~ .list,
+.cards
+{
+    display: none;
+}
+
+.change-view:checked ~ .cards,
+.list
+{
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
