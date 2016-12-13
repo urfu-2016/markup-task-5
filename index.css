@@ -1,0 +1,155 @@
+body
+{
+    padding: 0;
+}
+
+.label-button
+{
+    cursor: pointer;
+}
+
+.note
+{
+    width: 250px;
+    height: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    padding: 5px;
+    margin: 1px;
+    position: relative;
+}
+
+.note:hover
+{
+    background-color: #fa0;
+}
+
+.grid:checked ~ .note:hover
+{
+    transform: scale(1.05);
+}
+
+.cat
+{
+    min-width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.cat img:hover
+{
+    opacity: 1;
+}
+
+.cat img
+{
+    position: absolute;
+    bottom: 0;
+    opacity: .8;
+}
+
+.note section
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note a
+{
+    font-size: 2.2em;
+    text-overflow: ellipsis;
+}
+
+.note a:hover
+{
+    color: red;
+}
+
+.note small
+{
+    margin: 2px;
+}
+
+.note small span
+{
+    text-decoration: underline;
+    cursor: pointer;
+    border: 2px solid inherit;
+}
+
+.price
+{
+    color: #b00;
+    font: 700 1.5em sans-serif;
+
+}
+
+.price::after
+{
+    content: attr(id);
+    font-size: .75em;
+    color: black;
+    text-decoration: line-through;
+
+}
+
+.price:hover
+{
+    text-shadow: 1px  1px 1px #000;
+    cursor: pointer;
+}
+
+.info,
+.description
+{
+    vertical-align: top;
+}
+
+.info small span:hover
+{
+    border: 2px solid black;
+}
+
+.description
+{
+    padding: 0;
+    margin: 0;
+}
+
+.description-head
+{
+    display: block;
+    font: 700 1.05em serif;
+}
+
+.list:checked ~ .note
+{
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.list:checked ~ .note .cat
+{
+    display: inline-block;
+}
+
+.list:checked ~ .note .cat img
+{
+    top: 0;
+}
+
+.list:checked ~ .note .info,
+.list:checked ~ .note .description
+{
+    width: 35%;
+}
+
+.list:checked ~ .note section
+{
+    display: inline-block;
+    padding-left: 30px;
+}
