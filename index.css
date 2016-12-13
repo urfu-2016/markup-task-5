@@ -3,6 +3,11 @@ body
     padding: 0;
 }
 
+.label-button
+{
+    cursor: pointer;
+}
+
 .note
 {
     width: 250px;
@@ -18,8 +23,11 @@ body
 .note:hover
 {
     background-color: #fa0;
+}
+
+.grid:checked ~ .note:hover
+{
     transform: scale(1.05);
-    border: 3px black solid;
 }
 
 .cat
@@ -53,6 +61,11 @@ body
     text-overflow: ellipsis;
 }
 
+.note a:hover
+{
+    color: red;
+}
+
 .note small span
 {
     text-decoration: underline;
@@ -62,13 +75,13 @@ body
 .price
 {
     color: #b00;
-    font: bold 1.5em sans-serif;
+    font: 700 1.5em sans-serif;
 
 }
 
 .price::after
 {
-    content: attr(dataoldprice);
+    content: attr(id);
     font-size: .75em;
     color: black;
     text-decoration: line-through;
@@ -87,6 +100,11 @@ body
     vertical-align: top;
 }
 
+.info small span:hover
+{
+    border: 2px solid;
+}
+
 .description
 {
     padding: 0;
@@ -96,7 +114,7 @@ body
 .description-head
 {
     display: block;
-    font: bold 1.05em serif;
+    font: 700 1.05em serif;
 }
 
 .list:checked ~ .note
@@ -106,11 +124,6 @@ body
     height: 100%;
     vertical-align: top;
     position: relative;
-}
-
-.list:checked ~ .note:hover
-{
-    transform: scaleX(1);
 }
 
 .list:checked ~ .note .cat
