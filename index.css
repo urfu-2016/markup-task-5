@@ -35,7 +35,7 @@
 {
     display: inline-block;
     text-align: left;
-    width: 300px;
+    width: 350px;
     margin: 10px;
     vertical-align: top;
 }
@@ -53,6 +53,7 @@
 .productImage
 {
     height: 250px;
+    width: auto;
     position: relative;
     overflow: hidden;
     text-align: center;
