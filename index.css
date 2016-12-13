@@ -110,11 +110,6 @@
     cursor: pointer;
 }
 
-.star:hover
-{
-    box-shadow: 0 0 10px rgba(207, 198, 3, 1);
-}
-
 .fullStar
 {
     background-position: 0 -36px;
