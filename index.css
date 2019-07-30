@@ -1,0 +1,229 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Antenna, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.switcher-div {
+    max-width: 1000px;
+    height: 30px;
+    margin: 15px auto;
+}
+
+.switcher {
+    display: none;
+}
+
+.switcher-tiles, .switcher-table {
+    font-family: FontAwesome, sans-serif;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    margin: 10px 0 10px 25px;
+    display: inline-block;
+}
+
+.switcher-table {
+    margin-left: 10px;
+}
+
+.switcher-tiles:hover, .switcher-table:hover {
+    color: #999;
+}
+
+.switcher-tiles::before {
+    content: '\f009';
+}
+
+.switcher-table::before {
+    content: '\f00b';
+}
+
+#show-as-tiles:checked~label[for='show-as-tiles'], #show-as-table:checked~label[for='show-as-table'] {
+    color: #000;
+}
+
+#show-as-table:checked~.content {
+    display: table;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 0;
+}
+
+#show-as-table:checked~.content>.item {
+    display: table-row;
+    height: 400px;
+}
+
+#show-as-table:checked~.content>.item>.item-img, #show-as-table:checked~.content>.item>.item-info, #show-as-table:checked~.content>.item>.item-description {
+    display: table-cell;
+}
+
+#show-as-table:checked~.content>.item>.item-img {
+    width: 400px;
+    padding: 15px 0;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+}
+
+#show-as-table:checked~.content>.item>.item-img>.item-image img:hover {
+    transform: scale(1.2);
+}
+
+#show-as-table:checked~.content>.item>.item-info {
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+#show-as-table:checked~.content>.item>.item-info {
+    width: 200px;
+}
+
+#show-as-table:checked~.content>.item>.item-description {
+    padding: 15px 10px;
+}
+
+.content {
+    /*  max-width: 1000px;
+    margin: auto;*/
+}
+
+.content .item {
+    width: 300px;
+    height: 600px;
+    /*float: left;*/
+    display: inline-block;
+    margin: 10px;
+}
+
+.item:hover {
+    /*  border: 2px solid #d0d0d0;*/
+    /* box-shadow: 0 5px 15px 0 rgba(0,0,0,.5);*/
+}
+
+.item-header {
+    font-size: 14px;
+    font-weight: 700;
+    color: #474747;
+    font-family: Antenna, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    width: 100%;
+    height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-header:hover {
+    color: #af2626;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: transform 1s;
+}
+
+.item-image:hover {
+    opacity: .7;
+    transform: scale(1.2);
+}
+
+.item-category {
+    font-size: 12px;
+    color: #252525;
+    margin-left: 10px;
+}
+
+.item-price {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin: 5px auto 0 10px;
+}
+
+.item-new-price {
+    font-size: 16px;
+    color: #af2626;
+}
+
+.item-old-price {
+    color: #252525;
+    text-decoration: line-through;
+}
+
+.item-description {
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
+}
+
+fieldset, label {
+    margin: 0;
+    padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover, .rating>label:hover~input:checked~label,
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}

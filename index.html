@@ -1,8 +1,526 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <title>Myandex.Murrrket</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <div class="main">
+
+        <input id="show-as-tiles" name="switcher" type="radio" class="switcher" checked>
+        <label for="show-as-tiles" class="switcher-tiles"></label>
+        <input id="show-as-table" name="switcher" type="radio" class="switcher">
+        <label for="show-as-table" class="switcher-table"></label>
+
+        <div class="content">
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Abyssinian.jpg"
+                            class="item-image" alt="Abyssinian Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">Abyssinian </p>
+
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+
+                    <fieldset class="rating">
+                        <input type="radio" id="star5-1" name="rating-1" value="5" /><label class="full" for="star5-1"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half-1" name="rating-1" value="4 and a half" /><label class="half"
+                            for="star4half-1" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4-1" name="rating-1" value="4" /><label class="full" for="star4-1"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half-1" name="rating-1" value="3 and a half" /><label class="half"
+                            for="star3half-1" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3-1" name="rating-1" value="3" /><label class="full" for="star3-1"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half-1" name="rating-1" value="2 and a half" /><label class="half"
+                            for="star2half-1" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2-1" name="rating-1" value="2" /><label class="full" for="star2-1"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half-1" name="rating-1" value="1 and a half" /><label class="half"
+                            for="star1half-1" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1-1" name="rating-1" value="1" /><label class="full" for="star1-1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf-1" name="rating-1" value="half" /><label class="half"
+                            for="starhalf-1" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+
+                </div>
+                <div class="item-description">
+                    Abyssinians are highly intelligent and intensely inquisitive. They love to investigate and will
+                    leave no
+                    nook or cranny unexplored. They’re sometimes referred to as “Aby-grabbys” because they tend to take
+                    things that grab their interest. The playful Aby loves to jump and climb. Keep a variety of toys on
+                    hand
+                    to keep her occupied, including puzzle toys that challenge her intelligence.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/AmericanBobtail.jpg"
+                            class="item-image" alt="American Bobtail Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">American Bobtail</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5-2" name="rating-2" value="5" /><label class="full" for="star5-2"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half-2" name="rating-2" value="4 and a half" /><label class="half"
+                            for="star4half-2" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4-2" name="rating" value="4" /><label class="full" for="star4-2"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half-2" name="rating-2" value="3 and a half" /><label class="half"
+                            for="star3half-2" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3-2" name="rating" value="3" /><label class="full" for="star3-2"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half-2" name="rating-2" value="2 and a half" /><label class="half"
+                            for="star2half-2" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2-2" name="rating-2" value="2" /><label class="full" for="star2-2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half-2" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half-2" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1-2" name="rating-2" value="1" /><label class="full" for="star1-2"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf-2" name="rating-2" value="half" /><label class="half"
+                            for="starhalf-2" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    Confident and friendly, the American Bobtail is a highly intelligent breed with a clownlike
+                    personality.
+                    Looking much like a bobtailed wildcat, this rare and athletic breed can be taught to walk on a
+                    leash.
+                    The American Bobtail has two coat varieties, shorthair and longhair, and does not reach adulthood
+                    until
+                    2 or 3 years old. A devoted family companion, this cat interacts well with people of all ages and is
+                    ideal with children.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/AmericanCurl.jpg"
+                            class="item-image" alt="American Curl Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">American Curl</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5-3" name="rating-3" value="5" /><label class="full" for="star5-3"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half-3" name="rating-3" value="4 and a half" /><label class="half"
+                            for="star4half-3" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4-3" name="rating-3" value="4" /><label class="full" for="star4-3"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half-3" name="rating-3" value="3 and a half" /><label class="half"
+                            for="star3half-3" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3-3" name="rating-3" value="3" /><label class="full" for="star3-3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half-3" name="rating-3" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2-3" name="rating-3" value="2" /><label class="full" for="star2-3"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half-3" name="rating-3" value="1 and a half" /><label class="half"
+                            for="star1half-3" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating-3" value="1" /><label class="full" for="star1-3"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf-3" name="rating-3" value="half" /><label class="half"
+                            for="starhalf-3" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    The American Curl has distinctive curled ears that form a graceful arc, giving an alert, perky
+                    expression. This breed is known as the “Peter Pan” of cats due to retaining its kittenlike
+                    personality
+                    throughout life. The Curl has two coat varieties, shorthair and longhair. With her outstanding
+                    temperament, the Curl is a people-oriented breed that makes an affectionate soul mate and easily
+                    adjusts
+                    to other pets and children.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/AmericanShorthair.jpg"
+                            class="item-image" alt="American Shorthair Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">American Shorthair</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5-4" name="rating-4" value="5" /><label class="full" for="star5-4"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half-4" name="rating-4" value="4 and a half" /><label class="half"
+                            for="star4half-4" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4-4" name="rating-4" value="4" /><label class="full" for="star4-4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half-4" name="rating-4" value="3 and a half" /><label class="half"
+                            for="star3half-4" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3-4" name="rating-4" value="3" /><label class="full" for="star3-4"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half-4" name="rating-4" value="2 and a half" /><label class="half"
+                            for="star2half-4" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2-4" name="rating-4" value="2" /><label class="full" for="star2-4"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half-4" name="rating-4" value="1 and a half" /><label class="half"
+                            for="star1half-4" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1-4" name="rating-4" value="1" /><label class="full" for="star1-4"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf-4" name="rating-4" value="half" /><label class="half"
+                            for="starhalf-4" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    Formerly used to keep rodents and vermin away from food stores, the American Shorthair still enjoys
+                    exercising her hunting skills on unsuspecting insects. As a smart, moderately active feline, she
+                    enjoys
+                    learning tricks and challenging her intelligence with puzzles and interactive toys.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/AmericanWirehair.jpg"
+                            class="item-image" alt="American Wirehair Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">American Wirehair</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5-5" name="rating-5" value="5" /><label class="full" for="star5-5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half-5" name="rating-5" value="4 and a half" /><label class="half"
+                            for="star4half-5" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4-5" name="rating-5" value="4" /><label class="full" for="star4-5"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half-5" name="rating-5" value="3 and a half" /><label class="half"
+                            for="star3half-5" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3-5" name="rating-5" value="3" /><label class="full" for="star3-5"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half-5" name="rating-5" value="2 and a half" /><label class="half"
+                            for="star2half-5" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating-5" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half-5" name="rating-5" value="1 and a half" /><label class="half"
+                            for="star1half-5" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1-5" name="rating-5" value="1" /><label class="full" for="star1-5"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf-5" name="rating-5" value="half" /><label class="half"
+                            for="starhalf-5" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    Distinguished from other breeds by its wiry, dense coat that is described as feeling like steel
+                    wool,
+                    the American Wirehair is considered a national treasure. This intelligent and highly adaptable breed
+                    is
+                    playful and keenly interested in her surroundings. Easy to care for, the American Wirehair has a
+                    relaxed, loving, sweet personality, making her an ideal companion for families with children 6 and
+                    older
+                    and having other pets.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Bengal.jpg" class="item-image"
+                            alt="Bengal Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">Bengal</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    This docile house cat has what some would call a rambunctious personality. Bengal cats are playful
+                    and
+                    love to chase, climb, investigate and be part of the action. They seek out a lot of attention, are
+                    always on the move and can easily get into mischief around your home.
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Birman.jpg" class="item-image"
+                            alt="Birman Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">Birman</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    With her marvelous, social personality, the Birman doesn’t like being the only animal in the house.
+                    She
+                    is active and playful but quiet if you are busy. This healthy, long-lived breed has an outstanding
+                    semi-long silky coat that does not mat and a luxurious, long bottle-brush tail. Brilliant blue,
+                    almost-round eyes are prominent features of her sweet expression.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Bombay.jpg" class="item-image"
+                            alt="Bombay Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">Bombay</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    The Bombay is an easy-going, yet energetic cat. She does well in quiet apartments where she’s the
+                    center
+                    of attention as well as in lively homes with children and other pets. She’ll talk to you in a
+                    distinct
+                    voice, and you’re likely to find her in the warmest spot in your home, whether that’s in the
+                    sunlight
+                    from a window or curled up under the covers in bed with you. Bombays are smart and learn tricks
+                    quickly,
+                    so keep them entertained by teaching them new tricks and providing them interactive toys to play
+                    with.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/BritishShorthair.jpg"
+                            class="item-image" alt="British Shorthair Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">British Shorthair</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    The British Shorthair is an easygoing feline. She enjoys affection but isn’t needy and dislikes
+                    being
+                    carried. She’ll follow you from room to room, though, out of curiosity. British Shorthairs aren’t
+                    lap
+                    cats, but they do enjoy snuggling next to their people on the couch.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Burmese.jpg" class="item-image"
+                            alt="British Shorthair Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">British Shorthair</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    The British Shorthair is an easygoing feline. She enjoys affection but isn’t needy and dislikes
+                    being
+                    carried. She’ll follow you from room to room, though, out of curiosity. British Shorthairs aren’t
+                    lap
+                    cats, but they do enjoy snuggling next to their people on the couch.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-img">
+                    <a href="https://en.wikipedia.org/wiki/Abyssinian_cat"><img src="img/Chartruese.jpg"
+                            class="item-image" alt="British Shorthair Cat"></a>
+                </div>
+                <div class="item-info">
+                    <p class="item-header">British Shorthair</p>
+                    <div class="item-category"><a href="#">Cats</a> &nbsp;&gt;&nbsp; <a href="#">Exotic</a> </div>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                            title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half"
+                            for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                            title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half"
+                            for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                            title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half"
+                            for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                            title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half"
+                            for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                            title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                            for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                    <div class="item-price">
+                        <span class="item-new-price">99 &#x20AC;</span>
+                        <span class="item-old-price">100 &#x20AC;</span>
+                    </div>
+                </div>
+                <div class="item-description">
+                    The British Shorthair is an easygoing feline. She enjoys affection but isn’t needy and dislikes
+                    being
+                    carried. She’ll follow you from room to room, though, out of curiosity. British Shorthairs aren’t
+                    lap
+                    cats, but they do enjoy snuggling next to their people on the couch.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
